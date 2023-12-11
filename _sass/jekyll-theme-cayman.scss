@@ -188,12 +188,12 @@ a {
 }
 
 .nav-links{
-    // position: relative;
+    position: absolute;
 	padding: 0 0;
 }
 
 .nav-links li{
-    position: absolute;
+    // position: absolute;
 	display: inline-block;
 	margin: 0 15px;
 }
