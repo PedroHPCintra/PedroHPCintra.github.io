@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<p style="text-align:center;"><button type="button" onclick="location.href='https://youtu.be/oowBXzfcl90?si=lITokxgPOZMoQH0c'">E cadê o amor?</button></p>
+<p style="text-align:center;"><button class="button" type="button" onclick="location.href='https://youtu.be/oowBXzfcl90?si=lITokxgPOZMoQH0c'">E cadê o amor?</button></p>
 
 # Academic Career
 
