@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<p style="text-align:center;"><button class="button" type="button" onclick="window.open('https://youtu.be/oowBXzfcl90?si=lITokxgPOZMoQH0c','blank')">E cadê o amor?</button></p>
-
 # Academic Career
 
 - :mortar_board: I got my degree as a Bachelor of Science in Physics by the University of Brasilia (UnB), Brazil, in 2020.
