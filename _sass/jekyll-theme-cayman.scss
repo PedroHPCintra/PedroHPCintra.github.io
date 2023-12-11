@@ -172,14 +172,14 @@ a {
 }
 
 .button {
-    background-color: rgb(48, 4, 170);
+    background-color: $body-text-color;
     border: none;
-    color: white;
-    padding: 5px 10px;
+    color: $header-heading-color;
+    padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 10px;
   }
 
 .project-tagline {
