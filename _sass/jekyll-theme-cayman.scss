@@ -146,6 +146,15 @@ a {
     width: 200px;
 }
 
+.bio {
+    display: inline-block;
+    max-width: 80%;
+    height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
