@@ -143,7 +143,7 @@ a {
 }
 
 .mini-bio {
-    color: $header-heading-color;
+    color: $section-headings-color;
     padding-left: 10px;
 }
 
@@ -152,6 +152,7 @@ a {
 }
 
 .bio {
+    color: $body-text-color;
     max-width: 20%;
 }
 
