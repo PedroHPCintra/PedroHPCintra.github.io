@@ -160,6 +160,15 @@ a {
     position: static;
 }
 
+.intro {
+    display: inline-block;
+    max-width: 90%;
+    // height: 1.5em;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+}
+
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
