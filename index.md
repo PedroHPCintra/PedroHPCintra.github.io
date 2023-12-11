@@ -2,6 +2,8 @@
 layout: default
 ---
 
+E cadê o amor?
+
 # Carreira acadêmica
 
 Bota na cabeça que estimo não é marra
