@@ -110,7 +110,7 @@ a {
   text-align: center;
 //   background-color: $header-bg-color;
   background-image: url("/assets/img/Lotka-Volterra_art.png");
-//   background-size: 100%;
+  background-size: 100%;
 
   @include large {
     padding: 5rem 6rem;

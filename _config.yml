@@ -1,7 +1,7 @@
 title: Pedro Cintra
-logo: /assets/img/Lotka-Volterra_art.png
-image: /assets/img/Lotka-Volterra_art.png
+# logo: /assets/img/Lotka-Volterra_art.png
+# image: /assets/img/Lotka-Volterra_art.png
 description: Welcome to my website!
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-cayman
