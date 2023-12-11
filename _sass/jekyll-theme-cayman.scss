@@ -148,12 +148,12 @@ a {
 }
 
 .logo {
-    width: 40%;
+    width: 100%;
 }
 
 .bio {
     color: $body-text-color;
-    max-width: 40%;
+    max-width: 100%;
 }
 
 .view {
@@ -164,7 +164,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: center
-   }
+}
+
+.intro {
+    font-size: 20px;
+    padding-left: 20px;
+}
 
 .project-tagline {
   margin-bottom: 2rem;
