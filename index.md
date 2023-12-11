@@ -2,15 +2,13 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+**English intro**
+Welcome to my website! Here you'll find information about my research projects, my academic career, publications and some personal details, such as my Lego photos and favorite YouTube Channels. If you're an undergrad student, I have prepared a [page](./another-page.md) on recommendations to your undergraduation in Physics (only in Portuguese)
 
-[Link to another page](./another-page.md).
+**Portuguese intro**
+Bem vindo(a/e) ao meu site! Aqui você encontrará informações sobre meus projetos de pesquisa, minha carreira acadêmica, publicações e alguns detalhes pessoais, como minha paixão por fotos de Legos e meus canais do YouTube favoritos. Se você é um aluno de graduação, eu preparei uma [página](./another-page.md) com várias recomendações para a sua graduação em Física.
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
+# Carreira acadêmica
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
