@@ -109,7 +109,8 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: linear-gradient("./assets/img/Lotka-Volterra_art.png");
+  background-size: 100%;
 
   @include large {
     padding: 5rem 6rem;
@@ -295,7 +296,7 @@ a {
     padding: 0 1rem;
     margin-left: 0;
     color: $blockquote-text-color;
-    border-left: 0.3rem // Breakpoints
+    border-left: 0.3rem; // Breakpoints
     $large-breakpoint: 64em !default;
     $medium-breakpoint: 42em !default;
     
@@ -317,7 +318,7 @@ a {
     // Borders
     $border-color: #dce6f0 !default;
     $table-border-color: #e9ebec !default;
-    $hr-border-color: #eff0f1 !default;solid $border-color;
+    $hr-border-color: #eff0f1 !default;
 
     > :first-child {
       margin-top: 0;
