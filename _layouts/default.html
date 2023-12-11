@@ -17,6 +17,7 @@
 
     <header class="page-header">
         <!-- <nav> -->
+        <!-- <img src="assets/img/logo.png" class = "logo"> -->
         <ul class="nav-links">
             <li><a href="https://pedrohpcintra.github.io/">Home</a></li>
             <li><a href="https://pedrohpcintra.github.io/projects">Projects</a></li>
@@ -43,7 +44,7 @@
             <h1>{{ site.subtitle | default: site.github.repository_name }}</h1>
 
             {% if site.logo %}
-            <img src="{{site.logo | relative_url}}" class="logo" />
+            <img src="{{site.logo | relative_url}}" class="photo" />
             {% endif %}
         
             <p class="bio">{{ site.bio | default: site.github.project_tagline }}</p>

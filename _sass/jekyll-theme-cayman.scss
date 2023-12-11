@@ -147,7 +147,7 @@ a {
     padding-left: 10px;
 }
 
-.logo {
+.photo {
     width: 100%;
 }
 
@@ -182,13 +182,17 @@ a {
     font-size: 10px;
 }
 
+.logo{
+	width: 140px;
+}
+
 .nav-links{
-    position: relative;
+    // position: relative;
 	padding: 0 0;
 }
 
 .nav-links li{
-    // position: absolute;
+    position: absolute;
 	display: inline-block;
 	margin: 0 15px;
 }
