@@ -111,6 +111,7 @@ a {
 //   background-color: $header-bg-color;
   background-image: url("/assets/img/Lotka-Volterra_art.png");
   background-size: 100%;
+  position: relative;
 
   @include large {
     padding: 5rem 6rem;
@@ -187,7 +188,7 @@ a {
 }
 
 .nav-links{
-    position: relative;
+    // position: relative;
 	padding: 0 0;
 }
 
