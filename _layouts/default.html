@@ -27,19 +27,22 @@
       {% endif %}
     </header>
 
-    <header class="mini-bio">
-        <h1>{{ site.subtitle | default: site.github.repository_name }}</h1>
+    <div class="container">
+        <div class="mini-bio">
+            h1>{{ site.subtitle | default: site.github.repository_name }}</h1>
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" class="logo" />
-        {% endif %}
+            {% if site.logo %}
+            <img src="{{site.logo | relative_url}}" class="logo" />
+            {% endif %}
         
-        <p class="bio">{{ site.bio | default: site.github.project_tagline }}</p>
+            <p class="bio">{{ site.bio | default: site.github.project_tagline }}</p>
 
-        <p class="intro">{{site.intro}}</p>
-
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-    </header>
+            <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        </div>
+        <div class="intro">
+            <p>{{site.intro}}</p>
+        </div>
+    </div>
 
     <main id="content" class="main-content" role="main">
       {{ content }}

@@ -160,14 +160,12 @@ a {
     position: static;
 }
 
-.intro {
-    display: inline-block;
-    max-width: 90%;
-    height: 1.5em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
 
 .project-tagline {
   margin-bottom: 2rem;
