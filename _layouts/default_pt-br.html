@@ -15,9 +15,23 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
+    <nav class="nav-links">
+      <!-- <img src="assets/img/logo.png" class = "logo"> -->
+      <ul>
+        <li><a style="background-color: #51127c ; padding: 10x; border-radius: 5px;" href="https://pedrohpcintra.github.io/">Página inicial</a></li>
+        <li><a href="https://pedrohpcintra.github.io/projects">Projetos</a></li>
+        <li><a href="https://pedrohphttps://pedrohpcintra.github.io/science-communicationcintra.github.io/CV">CV</a></li>
+        <li><a href="https://pedrohpcintra.github.io/publications">Publicações</a></li>
+        <li><a href="https://pedrohpcintra.github.io/science-communication">Divulgação Científica</a></li>
+        <li><a href="https://pedrohpcintra.github.io/recipes">Receitas</a></li>
+        <li><a href="https://pedrohpcintra.github.io/recommendations">Recomendações</a></li>
+        <li><a href="https://pedrohpcintra.github.io/class-notes">Notas de Aula</a></li>
+      </ul>
+    </nav>
+
     <header class="page-header-pt-br" role="banner">
       <h1 class="project-name">{{site.title}}</h1>
-      <h2 class="project-tagline">Meu site pessoal</h2>
+      <h2 class="project-tagline">&#x1F986 Meu site pessoal</h2>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
@@ -32,10 +46,14 @@
             <h1>Este sou eu!</h1>
 
             {% if site.logo %}
-            <img src="{{site.logo | relative_url}}" class="logo" />
+            <img src="{{site.logo | relative_url}}" class="photo" />
             {% endif %}
         
             <p class="bio">Mestre em física e divulgador científico. Sou apaixonado por ciência, cozinha e Legos.</p>
+
+            <p>Redes Sociais: <a href="https://twitter.com/pedrocintra52">{{site.twitter}}</a></p>
+
+            <p>Contato: <a href="">{{site.email}}</a></p>
 
             <p class="view"><a href="{{ site.github.owner_url }}">Veja meu perfil no GitHub</a></p>
 
@@ -46,11 +64,11 @@
         <div class="intro">
             <p><b>Português</b></p>
             <p>Bem vindo(a/e) ao meu site! Aqui você encontrará informações sobre meus
-                projetos de pesquisa, minha carreira acadêmica, publicações e alguns detalhes
-                pessoais, como minha paixão por fotos de Legos e meus canais do YouTube
-                favoritos. Se você é um aluno de graduação, eu preparei uma
-                <a href="https://pedrohpcintra.github.io/another-page">página</a> com várias recomendações para a sua
-                graduação em Física.</p>
+              projetos de pesquisa, minha carreira acadêmica, publicações e alguns detalhes
+              pessoais, como minha paixão por fotos de Legos, meus canais do YouTube
+              favoritos e algumas receitas. Se você é alguém na graduação ou pensa em fazer graduação em física, eu preparei uma
+              <a href="https://pedrohpcintra.github.io/another-page">página</a> com várias recomendações para a sua
+              graduação em física.</p>
 
             <p><b><a href="https://pedrohpcintra.github.io/">English version</a></b></p>
         </div>
