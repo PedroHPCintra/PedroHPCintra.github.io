@@ -151,18 +151,17 @@ a {
 }
 
 #pot {
-    bottom: 0;
     position: absolute;
     animation: linear infinite;
     animation-name: run;
-    animation-duration: 5s;
+    animation-duration: 30s;
 }
 @keyframes run {
 0% {
     left: 0;
 }
 50% { 
-    left: calc(100% - 100px); 
+    left: calc(100% - 60px); 
     }
 100% {
     left: 0;     
