@@ -18,7 +18,7 @@
     <nav class="nav-links">
         <!-- <img src="assets/img/logo.png" class = "logo"> -->
         <ul>
-            <li><a style="background-color: #51127c ; padding: 10px; border-radius: 5px;" href="https://pedrohpcintra.github.io/">Home</a></li>
+            <li><a style="background-color: #51127c ; padding: 8x; border-radius: 6px;" href="https://pedrohpcintra.github.io/">Home</a></li>
             <li><a href="https://pedrohpcintra.github.io/projects">Projects</a></li>
             <li><a href="">CV</a></li>
             <li><a href="">Science Communication</a></li>
@@ -49,6 +49,8 @@
             {% endif %}
         
             <p class="bio">{{ site.bio | default: site.github.project_tagline }}</p>
+
+            <p>X: <a href="https://twitter.com/pedrocintra52">{{site.twitter}}</a></p>
 
             <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         </div>
