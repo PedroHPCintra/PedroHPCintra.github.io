@@ -148,7 +148,26 @@ a {
     @include small {
       padding: 2rem 1rem;
     }
-  }
+}
+
+#pot {
+bottom: 15%;
+position: absolute;
+// -webkit-animation: linear infinite;
+// -webkit-animation-name: run;
+// -webkit-animation-duration: 5s;
+}
+// @-webkit-keyframes run {
+// 0% {
+//     left: 0;
+// }
+// 50% { 
+//     left: calc(100% - 100px); 
+//     }
+// 100% {
+//     left: 0;     
+// }
+// }
 
 .project-name {
   margin-top: 0;
