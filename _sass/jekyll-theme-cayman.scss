@@ -107,7 +107,7 @@ a {
 
 .page-header {
   color: $header-heading-color;
-//   text-align: center;
+  text-align: center;
 //   background-color: $header-bg-color;
   background-image: url("/assets/img/Lotka-Volterra_art.png");
   background-size: 100%;
@@ -189,8 +189,8 @@ a {
 
 .nav-links{
     position: absolute;
-	padding-right: 5%;
-    padding-top: 5%;
+	padding-right: 0;
+    padding-bottom: 10%;
 }
 
 .nav-links li{
