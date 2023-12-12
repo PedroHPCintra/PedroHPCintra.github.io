@@ -153,21 +153,21 @@ a {
 #pot {
 bottom: 0;
 position: absolute;
-// -webkit-animation: linear infinite;
-// -webkit-animation-name: run;
-// -webkit-animation-duration: 5s;
+-webkit-animation: linear infinite;
+-webkit-animation-name: run;
+-webkit-animation-duration: 5s;
 }
-// @-webkit-keyframes run {
-// 0% {
-//     left: 0;
-// }
-// 50% { 
-//     left: calc(100% - 100px); 
-//     }
-// 100% {
-//     left: 0;     
-// }
-// }
+@-webkit-keyframes run {
+0% {
+    left: 0;
+}
+50% { 
+    left: calc(100% - 100px); 
+    }
+100% {
+    left: 0;     
+}
+}
 
 .project-name {
   margin-top: 0;
