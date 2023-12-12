@@ -2,7 +2,7 @@
 layout: sub-page
 ---
 
-Some academic projects I took part during my undergrad and that contributed to my development, some others I'm still part of doing research or just having fun in learning something new :)
+Some academic projects I took part during my undergrad and that contributed to my development, some others I'm still part of, doing research or just having fun in learning something new :)
 
 # Microalgae Spectroscopy
 
