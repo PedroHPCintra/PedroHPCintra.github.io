@@ -215,6 +215,12 @@ a {
     padding-left: 20px;
 }
 
+.intro li{
+  // position: absolute;
+display: inline-block;
+margin: 0 15px;
+}
+
 .button {
     background-color: #dfe3e7;
     border: none;
