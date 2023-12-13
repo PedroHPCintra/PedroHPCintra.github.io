@@ -191,6 +191,12 @@ a {
     padding-left: 10px;
 }
 
+.mini-bio-CV {
+  color: $section-headings-color;
+  padding-left: 10px;
+  width: 20%;
+}
+
 .photo {
     width: 100%;
 }
@@ -216,9 +222,9 @@ a {
 }
 
 .intro li{
-  // position: absolute;
-display: inline-block;
-margin: 0 15px;
+  position: absolute;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .button {
