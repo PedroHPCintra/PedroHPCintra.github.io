@@ -57,7 +57,7 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 > **Volunteer**
 > 
-> :calendar: Jan 2019 – Jan 2020
+> :calendar: Jan 2019 - Jan 2020
 > :round_pushpin: University Hospital of Brasilia
 > 
 > - Workload: 15 hours per week.
@@ -67,7 +67,7 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 > **Hired**
 > 
-> :calendar: Sep 2020 – Apr 2021
+> :calendar: Sep 2020 - Apr 2021
 > :round_pushpin: Stefanini IT solutions
 > 
 > - Workload: 40 hours per week.
@@ -75,5 +75,55 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 <hr style="border:2px black; color: black">
 
-# Research Projects
+# <u>Research Projects</u>
 
+## <em>Undergrad Project</em> - Caracterization of micro algae and the study of pigment dynamics by optical spectroscopy
+
+> **Volunteer**
+>
+> :calendar: 2018 - 2019
+> :round_pushpin: University of Brasília
+>
+> - On this project we used a spectrometer capable of measuring the absorption spectrum in the visible region to characterize _in vivo_ samples of micro algae.
+
+## <em>Undergrad Project</em> - Hypothesis of the Uncanny Valley: Hierarchical processing and the categorization of disgust and anger faces at the dimension of human resemblance
+
+> **Volunteer**
+>
+> :calendar: 2019 - 2020
+> :round_pushpin: University of Brasília
+>
+> - The objective of this project is to investigate how are processed the facial
+emotions of anger and disgust under the uncanny valley.
+
+## <em>Undegraduate Program Final Project</em> - The Physics and detection of supernova neutrinos
+
+> **Volunteer**
+>
+> :calendar: 2019 - 2020
+> :round_pushpin: University of Brasília
+>
+> - In this work, we review the theoretical background necessary to understand electroweak interactions and neutrino production on supernovae, as well as showing how the detection of these neutrinos allows us to obtain valuable information of the event through the neutrino flux at the detector on Earth.
+
+## Click COVID - An Informational Tool
+
+> **Volunteer**
+> :calendar: 2020 - 2022
+> :round_pushpin: National Lab. of Scientific Comp.
+> - In this project, we make use of compartmental models and bayesian fitting to develop an algorithm for generating short-term forecasts taking into account the temporal variability of epidemiological parameters.
+
+## <em>Masters’ Project</em> - Supernova observation and distance estimation using neutrino detectors
+
+> **Scholarship**
+> :calendar: 2021 - 2023
+> :round_pushpin: State University of Campinas
+>
+> - The aim of this research is reconstructing the distance from Earth to supernovae from the detection of neutrinos. Using computer simulations, we compare detectors from current and future generation on their capability of reconstructing the distance and direction of these events.
+
+## Population spatial dynamics near toxic sources: A race for survival
+
+> **Volunteer**
+> :calendar: 2023 – today
+> :round_pushpin: State University of Campinas
+>
+> - In this work, we use numerical simulations of a coupled partial different equations system that describes both bacteria population and substance behavior. Aiming to investigate how different aspects of the substance characteristics affect the final state of the distribution of bacteria throughout the habitat.
