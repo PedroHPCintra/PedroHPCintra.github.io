@@ -24,12 +24,12 @@ layout: CV-page
 :mailbox: pedrohpc96@hotmail.com
 ![alt text][1.1] [@pedrocintra52](https://twitter.com/pedrocintra52)
 :round_pushpin: Brasilia, Brazil
-orcid.org/0000-0001-6604-3597
+orcid.org/0000-0001eff0f1-6604-3597
 ![alt text][2.1] [PedroHPCintra](https://github.com/PedroHPCintra)
 
----
+<hr style="border:2px solid gray">
 
-# Professional experience
+# <u>Professional experience</u>
 
 ## Teaching assistant of undergrad course
 
