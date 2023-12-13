@@ -125,7 +125,7 @@ emotions of anger and disgust under the uncanny valley.
 ## Population spatial dynamics near toxic sources: A race for survival
 
 > **Volunteer**
-> :calendar: 2023 – today
+> <i style="font-size:24px" class="fa fa-calendar"></i> 2023 – today
 > :round_pushpin: State University of Campinas
 >
 > - In this work, we use numerical simulations of a coupled partial different equations system that describes both bacteria population and substance behavior. Aiming to investigate how different aspects of the substance characteristics affect the final state of the distribution of bacteria throughout the habitat.
@@ -138,4 +138,52 @@ emotions of anger and disgust under the uncanny valley.
 
 ### <i style="font-size:24px" class="fa fa-trophy"></i> 2021
 
-Mathematical Epidemiology Poster Prize at the Society for Mathematical Biology Annual Meeting 2021.
+**Mathematical Epidemiology Poster Prize at the Society for Mathematical Biology Annual Meeting 2021.**
+
+### <i style="font-size:24px" class="fa fa-trophy"></i> 2021
+
+**First place at the McGill Physics Hackathon with the project _General Relativistic Three-Body Simulator_.**
+
+### <i style="font-size:24px" class="fa fa-trophy"></i> 2022
+
+**Best poster presentation on Astroparticle Physics at the Spring Meeting 2022 of the Brazilian Physical Society.**
+
+### <i style="font-size:24px" class="fa fa-trophy"></i> 2022
+
+**First place at the McGill Physics Hackathon with the project _Black Hole Photography_.**
+
+# <u>LANGUAGES</u>
+
+### Portuguese:
+**Native language**
+
+### English:
+**Fluent**
+
+TOEFL-IBT 2023: 110/120
+
+# <u>EDUCATION</u>
+
+### Bachelor of Science in Physics
+
+**University of Brasília**
+
+2015 – 2020
+
+### Master of Science in physics
+
+**State University of Campinas**
+
+2021 – 2023
+
+COMPLEMENTARY EDUCATION
+English Course: Basic/Plus/Master
+ 2006 – 2012 1⁄2 Sociedade Brasileira de Cultura Inglesa
+School on High Energy Astrophysics
+ 2019 1⁄2 Institute of Theoretical Physics, UNESP
+The Physics of Particle Detectors
+ 2019 1⁄2 Brazilian Center for Research in Physics
+Deep Neural Networks and Applications
+ 2020 1⁄2 Brazilian Center for Research in Physics
+Training Program in Quantitative Ecology
+ 2023 1⁄2 Serrapilheira institute and ICTP-SAIFR
