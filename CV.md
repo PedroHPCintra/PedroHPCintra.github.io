@@ -108,6 +108,7 @@ emotions of anger and disgust under the uncanny valley.
 ## Click COVID - An Informational Tool
 
 > **Volunteer**
+>
 > :calendar: 2020 - 2022
 > :round_pushpin: National Lab. of Scientific Comp.
 > - In this project, we make use of compartmental models and bayesian fitting to develop an algorithm for generating short-term forecasts taking into account the temporal variability of epidemiological parameters.
@@ -115,6 +116,7 @@ emotions of anger and disgust under the uncanny valley.
 ## <em>Masters’ Project</em> - Supernova observation and distance estimation using neutrino detectors
 
 > **Scholarship**
+>
 > :calendar: 2021 - 2023
 > :round_pushpin: State University of Campinas
 >
@@ -130,11 +132,10 @@ emotions of anger and disgust under the uncanny valley.
 
 <hr style="border:2px black; color: black">
 
-# AWARDS AND TITLES
+# <u>AWARDS AND TITLES</u>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<i class="fa fa-trophy"></i>
 
-### <i style="font-size:12px" class="fa">&#xf091;</i> 2021
+### <i style="font-size:24px" class="fa fa-trophy"></i> 2021
 
 Mathematical Epidemiology Poster Prize at the Society for Mathematical Biology Annual Meeting 2021.
