@@ -13,11 +13,8 @@ layout: CV-page
 <!-- icons with padding -->
 
 [1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
-[2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
-[3.1]: http://i.imgur.com/yCsTjba.png (google plus icon with padding)
-[4.1]: http://i.imgur.com/YckIOms.png (tumblr icon with padding)
-[5.1]: http://i.imgur.com/1AGmwO3.png (dribbble icon with padding)
-[6.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+[2.1]: https://www.flaticon.com/free-icon/github-logo_25231# (github icon with padding)
+[3.1]: https://i.imgur.com/repqUlu.png (email icon with padding)
 
 <img style="float: left; width: 20%; margin-right: 15px;" src="/assets/img/Me_folha_crop.png">
 
@@ -25,10 +22,10 @@ layout: CV-page
 
 # Pedro Henrique Pinheiro Cintra
 
-- :mailbox: pedrohpc96@hotmail.com
-- ![alt text][1.1] [@pedrocintra52](https://twitter.com/pedrocintra52)
-- :round_pushpin: Brasilia, Brazil
-- orcid.org/0000-0001-6604-3597
-- ![alt text][6.1] [PedroHPCintra](https://github.com/PedroHPCintra)
+![alt text][3.1] pedrohpc96@hotmail.com
+![alt text][1.1] [@pedrocintra52](https://twitter.com/pedrocintra52)
+:round_pushpin: Brasilia, Brazil
+orcid.org/0000-0001-6604-3597
+![alt text][2.1] [PedroHPCintra](https://github.com/PedroHPCintra)
 
 # Professional experience
