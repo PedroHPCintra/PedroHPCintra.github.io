@@ -177,14 +177,29 @@ TOEFL-IBT 2023: 110/120
 
 2021 – 2023
 
-COMPLEMENTARY EDUCATION
-English Course: Basic/Plus/Master
- 2006 – 2012 1⁄2 Sociedade Brasileira de Cultura Inglesa
-School on High Energy Astrophysics
- 2019 1⁄2 Institute of Theoretical Physics, UNESP
-The Physics of Particle Detectors
- 2019 1⁄2 Brazilian Center for Research in Physics
-Deep Neural Networks and Applications
- 2020 1⁄2 Brazilian Center for Research in Physics
-Training Program in Quantitative Ecology
- 2023 1⁄2 Serrapilheira institute and ICTP-SAIFR
+# <u>COMPLEMENTARY EDUCATION</u>
+
+### English Course: Basic/Plus/Master
+
+<i style="font-size:24px" class="fa fa-calendar"></i> 2006 – 2012     
+<i style="font-size:24px" class="fa fa-map-marker"></i> Sociedade Brasileira de Cultura Inglesa
+
+### School on High Energy Astrophysics
+
+<i style="font-size:24px" class="fa fa-calendar"></i> 2019     
+<i style="font-size:24px" class="fa fa-map-marker"></i> Institute of Theoretical Physics, UNESP
+
+### The Physics of Particle Detectors
+
+<i style="font-size:24px" class="fa fa-calendar"></i> 2019     
+<i style="font-size:24px" class="fa fa-map-marker"></i> Brazilian Center for Research in Physics
+
+### Deep Neural Networks and Applications
+
+<i style="font-size:24px" class="fa fa-calendar"></i> 2020     
+<i style="font-size:24px" class="fa fa-map-marker"></i> Brazilian Center for Research in Physics
+
+### Training Program in Quantitative Ecology
+
+<i style="font-size:24px" class="fa fa-calendar"></i> 2023     
+<i style="font-size:24px" class="fa fa-map-marker"></i> Serrapilheira institute and ICTP-SAIFR
