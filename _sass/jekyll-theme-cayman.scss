@@ -151,11 +151,11 @@ a {
 }
 
 #pot {
-    bottom: 20%;
+    bottom: 0;
     position: absolute;
     animation: linear infinite;
     animation-name: run;
-    animation-duration: 60s;
+    animation-duration: 90s;
 }
 @keyframes run {
 0% {
