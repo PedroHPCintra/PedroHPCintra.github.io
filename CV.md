@@ -28,3 +28,35 @@ orcid.org/0000-0001-6604-3597
 ![alt text][2.1] [PedroHPCintra](https://github.com/PedroHPCintra)
 
 # Professional experience
+
+## Tutor of undergrad course
+
+**Volunteer**
+
+:calendar: Jul 2017 - Dec 2017
+:round_pushpin: University of Brasília
+
+- Course: Waves, Optics and Thermodynamics
+- Workload: 4 hours per week
+- Organization of review lessons to the students and exercise correction.
+
+## Tutor of undergrad course
+
+**Volunteer**
+
+:calendar: Mar 2018 - Jul 2018
+:round_pushpin: University of Brasília
+
+- Course: Relativity and Quantum Physics
+- Workload: 4 hours per week
+- Organization of review lessons to the students and exercise correction.
+
+## Extension project on Medical Physics - Partnership between the physics institute and the University Hospital of Brasilia
+
+**Volunteer**
+
+:calendar: Jan 2019 – Jan 2020
+:round_pushpin: University Hospital of Brasilia
+
+- Workload: 15 hours per week.
+- Treatment and planning of radiotherapy for patients at the university hospital, as well as radiological calibration of linear accelerators for safety.
