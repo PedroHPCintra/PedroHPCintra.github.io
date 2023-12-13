@@ -21,11 +21,11 @@ layout: CV-page
 
 # Pedro Henrique Pinheiro Cintra
 
-:mailbox: pedrohpc96@hotmail.com
-![alt text][1.1] [@pedrocintra52](https://twitter.com/pedrocintra52)
-:round_pushpin: Brasilia, Brazil
-orcid.org/0000-0001eff0f1-6604-3597
-![alt text][2.1] [PedroHPCintra](https://github.com/PedroHPCintra)
+<i style="font-size:24px" class="fa fa-envelope"></i> pedrohpc96@hotmail.com
+<i style="font-size:24px" class="fa fa-twitter"></i> [@pedrocintra52](https://twitter.com/pedrocintra52)
+<i style="font-size:24px" class="fa fa-map-marker"></i> Brasilia, Brazil
+<i style="font-size:24px" class="fa fa-orcid" aria-hidden="true"></i> orcid.org/0000-0001eff0f1-6604-3597
+<i style="font-size:24px" class="fa fa-github"></i> [PedroHPCintra](https://github.com/PedroHPCintra)
 
 <hr style="border:2px black; color: black">
 
@@ -35,8 +35,8 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 > **Volunteer**
 > 
-> :calendar: Jul 2017 - Dec 2017
-> :round_pushpin: University of Brasília
+> <i style="font-size:24px" class="fa fa-calendar"></i> Jul 2017 - Dec 2017
+> <i style="font-size:24px" class="fa fa-map-marker"></i> University of Brasília
 > 
 > - Course: Waves, Optics and Thermodynamics
 > - Workload: 4 hours per week
@@ -46,8 +46,8 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 > **Volunteer**
 > 
-> :calendar: Mar 2018 - Jul 2018
-> :round_pushpin: University of Brasília
+> <i style="font-size:24px" class="fa fa-calendar"></i> Mar 2018 - Jul 2018
+> <i style="font-size:24px" class="fa fa-map-marker"></i> University of Brasília
 > 
 > - Course: Relativity and Quantum Physics
 > - Workload: 4 hours per week
@@ -57,8 +57,8 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 > **Volunteer**
 > 
-> :calendar: Jan 2019 - Jan 2020
-> :round_pushpin: University Hospital of Brasilia
+> <i style="font-size:24px" class="fa fa-calendar"></i> Jan 2019 - Jan 2020
+> <i style="font-size:24px" class="fa fa-map-marker"></i> University Hospital of Brasilia
 > 
 > - Workload: 15 hours per week.
 > - Treatment and planning of radiotherapy for patients at the university hospital, as well as radiological calibration of linear accelerators for safety.
@@ -67,8 +67,8 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 > **Hired**
 > 
-> :calendar: Sep 2020 - Apr 2021
-> :round_pushpin: Stefanini IT solutions
+> <i style="font-size:24px" class="fa fa-calendar"></i> Sep 2020 - Apr 2021
+> <i style="font-size:24px" class="fa fa-map-marker"></i> Stefanini IT solutions
 > 
 > - Workload: 40 hours per week.
 > - Development and analysis of Machine Learning models aiming to provide solutions to specific problems concerning sustainable growth, focusing of Deep Learning Neural Networks.
@@ -81,8 +81,8 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 > **Volunteer**
 >
-> :calendar: 2018 - 2019
-> :round_pushpin: University of Brasília
+> <i style="font-size:24px" class="fa fa-calendar"></i> 2018 - 2019
+> <i style="font-size:24px" class="fa fa-map-marker"></i> University of Brasília
 >
 > - On this project we used a spectrometer capable of measuring the absorption spectrum in the visible region to characterize _in vivo_ samples of micro algae.
 
@@ -90,8 +90,8 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 > **Volunteer**
 >
-> :calendar: 2019 - 2020
-> :round_pushpin: University of Brasília
+> <i style="font-size:24px" class="fa fa-calendar"></i> 2019 - 2020
+> <i style="font-size:24px" class="fa fa-map-marker"></i> University of Brasília
 >
 > - The objective of this project is to investigate how are processed the facial
 emotions of anger and disgust under the uncanny valley.
@@ -100,8 +100,8 @@ emotions of anger and disgust under the uncanny valley.
 
 > **Volunteer**
 >
-> :calendar: 2019 - 2020
-> :round_pushpin: University of Brasília
+> <i style="font-size:24px" class="fa fa-calendar"></i> 2019 - 2020
+> <i style="font-size:24px" class="fa fa-map-marker"></i> University of Brasília
 >
 > - In this work, we review the theoretical background necessary to understand electroweak interactions and neutrino production on supernovae, as well as showing how the detection of these neutrinos allows us to obtain valuable information of the event through the neutrino flux at the detector on Earth.
 
@@ -109,24 +109,25 @@ emotions of anger and disgust under the uncanny valley.
 
 > **Volunteer**
 >
-> :calendar: 2020 - 2022
-> :round_pushpin: National Lab. of Scientific Comp.
+> <i style="font-size:24px" class="fa fa-calendar"></i> 2020 - 2022
+> <i style="font-size:24px" class="fa fa-map-marker"></i> National Lab. of Scientific Comp.
 > - In this project, we make use of compartmental models and bayesian fitting to develop an algorithm for generating short-term forecasts taking into account the temporal variability of epidemiological parameters.
 
 ## <em>Masters’ Project</em> - Supernova observation and distance estimation using neutrino detectors
 
 > **Scholarship**
 >
-> :calendar: 2021 - 2023
-> :round_pushpin: State University of Campinas
+> <i style="font-size:24px" class="fa fa-calendar"></i> 2021 - 2023
+> <i style="font-size:24px" class="fa fa-map-marker"></i> State University of Campinas
 >
 > - The aim of this research is reconstructing the distance from Earth to supernovae from the detection of neutrinos. Using computer simulations, we compare detectors from current and future generation on their capability of reconstructing the distance and direction of these events.
 
 ## Population spatial dynamics near toxic sources: A race for survival
 
 > **Volunteer**
+>
 > <i style="font-size:24px" class="fa fa-calendar"></i> 2023 – today
-> :round_pushpin: State University of Campinas
+> <i style="font-size:24px" class="fa fa-map-marker"></i> State University of Campinas
 >
 > - In this work, we use numerical simulations of a coupled partial different equations system that describes both bacteria population and substance behavior. Aiming to investigate how different aspects of the substance characteristics affect the final state of the distribution of bacteria throughout the habitat.
 
