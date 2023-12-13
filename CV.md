@@ -24,7 +24,7 @@ layout: CV-page
 <i style="font-size:24px" class="fa fa-envelope"></i> pedrohpc96@hotmail.com
 <i style="font-size:24px" class="fa fa-twitter"></i> [@pedrocintra52](https://twitter.com/pedrocintra52)
 <i style="font-size:24px" class="fa fa-map-marker"></i> Brasilia, Brazil
-<i style="font-size:24px" class="fa fa-orcid" aria-hidden="true"></i> orcid.org/0000-0001eff0f1-6604-3597
+<i style="font-size:24px" class="fa fa-orcid"></i> orcid.org/0000-0001eff0f1-6604-3597
 <i style="font-size:24px" class="fa fa-github"></i> [PedroHPCintra](https://github.com/PedroHPCintra)
 
 <hr style="border:2px black; color: black">
@@ -35,7 +35,7 @@ layout: CV-page
 
 > **Volunteer**
 > 
-> <i style="font-size:24px" class="fa fa-calendar"></i> Jul 2017 - Dec 2017
+> <i style="font-size:24px" class="fa fa-calendar"></i> Jul 2017 - Dec 2017    
 > <i style="font-size:24px" class="fa fa-map-marker"></i> University of Brasília
 > 
 > - Course: Waves, Optics and Thermodynamics
