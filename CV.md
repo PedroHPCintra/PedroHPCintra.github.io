@@ -27,6 +27,8 @@ layout: CV-page
 orcid.org/0000-0001-6604-3597
 ![alt text][2.1] [PedroHPCintra](https://github.com/PedroHPCintra)
 
+---
+
 # Professional experience
 
 ## Teaching assistant of undergrad course
@@ -69,3 +71,8 @@ orcid.org/0000-0001-6604-3597
 
 - Workload: 40 hours per week.
 - Development and analysis of Machine Learning models aiming to provide solutions to specific problems concerning sustainable growth, focusing of Deep Learning Neural Networks.
+
+---
+
+# Research Projects
+
