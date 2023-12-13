@@ -41,24 +41,6 @@
         {% endif %}
     </header>
 
-    <div class="container">
-        <div class="mini-bio-CV">
-            {% if site.logo %}
-            <img src="{{site.logo | relative_url}}" class="photo" />
-            {% endif %}
-        
-            <p class="bio">{{ site.bio | default: site.github.project_tagline }}</p>
-        </div>
-        <div class="intro">
-            <p><b>Pedro Henrique Pinheiro Cintra</b></p>
-            <ul>
-                <li>Social Networks: <a href="https://twitter.com/pedrocintra52">{{site.twitter}}</a></li>
-                <li>Contact: <a href="">{{site.email}}</a></li>
-                <li><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></li>
-            </ul>
-        </div>
-    </div>
-
     <main id="content" class="main-content" role="main">
       {{ content }}
 
