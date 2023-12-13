@@ -29,7 +29,7 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 <hr style="border:2px black; color: black">
 
-# <u>Professional experience</u>
+# <u>PROFESSIONAL EXPERIENCE</u>
 
 ## Teaching assistant of undergrad course
 
@@ -75,7 +75,7 @@ orcid.org/0000-0001eff0f1-6604-3597
 
 <hr style="border:2px black; color: black">
 
-# <u>Research Projects</u>
+# <u>RESEARCH PROJECTS</u>
 
 ## <em>Undergrad Project</em> - Caracterization of micro algae and the study of pigment dynamics by optical spectroscopy
 
@@ -127,3 +127,11 @@ emotions of anger and disgust under the uncanny valley.
 > :round_pushpin: State University of Campinas
 >
 > - In this work, we use numerical simulations of a coupled partial different equations system that describes both bacteria population and substance behavior. Aiming to investigate how different aspects of the substance characteristics affect the final state of the distribution of bacteria throughout the habitat.
+
+<hr style="border:2px black; color: black">
+
+# AWARDS AND TITLES
+
+### <i style="font-size:12px" class="fa">&#xf091;</i> 2021
+
+Mathematical Epidemiology Poster Prize at the Society for Mathematical Biology Annual Meeting 2021.
