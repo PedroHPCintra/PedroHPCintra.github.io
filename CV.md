@@ -20,15 +20,14 @@ layout: CV-page
 
 <img style="float: left; width: 20%; margin-right: 15px;" src="/assets/img/Me_folha_crop.png">
 
-<!-- ![image](/assets/img/Me_folha_crop.png){: style="float: left"; margin-right: 10em; height="25%" width="25%"} -->
-
 # Pedro Henrique Pinheiro Cintra
 
-<i style="font-size:24px" class="fa fa-envelope"></i> pedrohpc96@hotmail.com
-<i style="font-size:24px" class="fa fa-twitter"></i> [@pedrocintra52](https://twitter.com/pedrocintra52)
-<i style="font-size:24px" class="fa fa-map-marker"></i> Brasilia, Brazil
-<i style="font-size:24px" class="ai ai-orcid"></i> orcid.org/0000-0001eff0f1-6604-3597
-<i style="font-size:24px" class="fa fa-github"></i> [PedroHPCintra](https://github.com/PedroHPCintra)
+<i style="font-size:24px" class="fa fa-envelope"></i> pedrohpc96@hotmail.com 
+<i style="font-size:24px" class="fa fa-map-marker"></i> Brasilia, Brazil 
+<i style="font-size:24px" class="fa fa-github"></i> [PedroHPCintra](https://github.com/PedroHPCintra) 
+
+<i style="font-size:24px" class="fa fa-twitter"></i> [@pedrocintra52](https://twitter.com/pedrocintra52) 
+<i style="font-size:24px" class="ai ai-orcid"></i> orcid.org/0000-0001eff0f1-6604-3597 
 
 <hr style="border:2px black; color: black">
 
