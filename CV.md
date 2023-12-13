@@ -132,6 +132,9 @@ emotions of anger and disgust under the uncanny valley.
 
 # AWARDS AND TITLES
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i class="fa fa-trophy"></i>
+
 ### <i style="font-size:12px" class="fa">&#xf091;</i> 2021
 
 Mathematical Epidemiology Poster Prize at the Society for Mathematical Biology Annual Meeting 2021.
