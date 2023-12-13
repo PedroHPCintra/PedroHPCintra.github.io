@@ -6,13 +6,6 @@ layout: CV-page
 
 <!-- display the social media buttons in your README -->
 
-[![alt text][1.1]][1]
-[![alt text][2.1]][2]
-[![alt text][3.1]][3]
-[![alt text][4.1]][4]
-[![alt text][5.1]][5]
-[![alt text][6.1]][6]
-
 
 <!-- links to social media icons -->
 <!-- no need to change these -->
@@ -31,9 +24,9 @@ layout: CV-page
 # Pedro Henrique Pinheiro Cintra
 
 - :mailbox: pedrohpc96@hotmail.com
-- [![alt text][1.1]][1] [@pedrocintra52](https://twitter.com/pedrocintra52)
+- ![alt text][1.1] [@pedrocintra52](https://twitter.com/pedrocintra52)
 - :round_pushpin: Brasilia, Brazil
 - orcid.org/0000-0001-6604-3597
-- [![alt text][6.1]][1] [PedroHPCintra](https://github.com/PedroHPCintra)
+- ![alt text][6.1] [PedroHPCintra](https://github.com/PedroHPCintra)
 
 # Professional experience
