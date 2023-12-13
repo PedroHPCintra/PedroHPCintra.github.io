@@ -12,6 +12,9 @@ layout: CV-page
 
 <!-- icons with padding -->
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/path/to/folder/css/academicons.min.css"/>
+
 [1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
 [2.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
 
@@ -24,7 +27,7 @@ layout: CV-page
 <i style="font-size:24px" class="fa fa-envelope"></i> pedrohpc96@hotmail.com
 <i style="font-size:24px" class="fa fa-twitter"></i> [@pedrocintra52](https://twitter.com/pedrocintra52)
 <i style="font-size:24px" class="fa fa-map-marker"></i> Brasilia, Brazil
-<i style="font-size:24px" class="fa fa-orcid"></i> orcid.org/0000-0001eff0f1-6604-3597
+<i style="font-size:24px" class="ai ai-orcid"></i> orcid.org/0000-0001eff0f1-6604-3597
 <i style="font-size:24px" class="fa fa-github"></i> [PedroHPCintra](https://github.com/PedroHPCintra)
 
 <hr style="border:2px black; color: black">
@@ -134,8 +137,6 @@ emotions of anger and disgust under the uncanny valley.
 <hr style="border:2px black; color: black">
 
 # <u>AWARDS AND TITLES</u>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 ### <i style="font-size:24px" class="fa fa-trophy"></i> 2021
 
