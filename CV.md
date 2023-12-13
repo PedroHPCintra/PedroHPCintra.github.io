@@ -19,7 +19,9 @@ layout: CV-page
 [5.1]: http://i.imgur.com/1AGmwO3.png (dribbble icon with padding)
 [6.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
 
-<img style="float: left; width: 20%" src="/assets/img/Me_folha_crop.png">
+<img style="float: left; width: 20%; margin-right: 15px;" src="/assets/img/Me_folha_crop.png">
+
+<!-- ![image](/assets/img/Me_folha_crop.png){: style="float: left"; margin-right: 10em; height="25%" width="25%"} -->
 
 # Pedro Henrique Pinheiro Cintra
 
