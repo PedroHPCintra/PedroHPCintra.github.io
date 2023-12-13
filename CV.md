@@ -29,18 +29,18 @@ orcid.org/0000-0001-6604-3597
 
 # Professional experience
 
-## Tutor of undergrad course
+## Teaching assistant of undergrad course
 
-**Volunteer**
+> **Volunteer**
+> 
+> :calendar: Jul 2017 - Dec 2017
+> :round_pushpin: University of Brasília
+> 
+> - Course: Waves, Optics and Thermodynamics
+> - Workload: 4 hours per week
+> - Organization of review lessons to the students and exercise correction.
 
-:calendar: Jul 2017 - Dec 2017
-:round_pushpin: University of Brasília
-
-- Course: Waves, Optics and Thermodynamics
-- Workload: 4 hours per week
-- Organization of review lessons to the students and exercise correction.
-
-## Tutor of undergrad course
+## Teaching assistant of undergrad course
 
 **Volunteer**
 
@@ -60,3 +60,12 @@ orcid.org/0000-0001-6604-3597
 
 - Workload: 15 hours per week.
 - Treatment and planning of radiotherapy for patients at the university hospital, as well as radiological calibration of linear accelerators for safety.
+
+## Data Scientist
+
+**Hired**
+:calendar: Sep 2020 – Apr 2021
+:round_pushpin: Stefanini IT solutions
+
+- Workload: 40 hours per week.
+- Development and analysis of Machine Learning models aiming to provide solutions to specific problems concerning sustainable growth, focusing of Deep Learning Neural Networks.
