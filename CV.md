@@ -206,6 +206,45 @@ TOEFL-IBT 2023: 110/120
 
 # <u>ABILITIES</u>
 
-<div class="box">
-  LaTeX
-</div>
+- LaTeX
+- Python
+- GitHub
+- Deep Learning
+- Bayesian Statistics
+- Mathematical Modelling
+- Numerical Simulations
+
+# <u>PARTICIPATION AT EVENTS</u>
+
+**Brazilian Center for Research in Physics**
+<i style="font-size:20px" class="fa fa-trophy"></i> Honorable mention
+<i style="font-size:20px" class="fa fa-calendar"></i> 2019
+<i style="font-size:20px" class="fa fa-map-marker"></i> University of Brasilia
+
+**McGill Physics Hackathon**
+<i style="font-size:20px" class="fa fa-trophy"></i> 1st place
+<i style="font-size:20px" class="fa fa-calendar"></i> 2021
+<i style="font-size:20px" class="fa fa-map-marker"></i> Online
+
+**Society for Mathematical Biology Annual Meeting**
+<i style="font-size:20px" class="fa fa-trophy"></i> Best poster award
+<i style="font-size:20px" class="fa fa-calendar"></i> 2021
+<i style="font-size:20px" class="fa fa-map-marker"></i> Online
+
+**II Spring Meeting of the Brazilia Physical Society**
+<i style="font-size:20px" class="fa fa-trophy"></i> Best poster award
+<i style="font-size:20px" class="fa fa-calendar"></i> 2022
+<i style="font-size:20px" class="fa fa-map-marker"></i> International Institue of Physics
+
+**I Demography Week of Unicamp**
+<i style="font-size:20px" class="fa fa-calendar"></i> 2022
+<i style="font-size:20px" class="fa fa-map-marker"></i> University of Campinas
+
+**McGill Physics Hackathon**
+<i style="font-size:20px" class="fa fa-trophy"></i> 1st place
+<i style="font-size:20px" class="fa fa-calendar"></i> 2022
+<i style="font-size:20px" class="fa fa-map-marker"></i> Online
+
+**Autumm Meeting of the Brazilian Physical Society**
+<i style="font-size:20px" class="fa fa-calendar"></i> 2023
+<i style="font-size:20px" class="fa fa-map-marker"></i> Federal University of Ouro Preto
