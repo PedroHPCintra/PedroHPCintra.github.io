@@ -203,3 +203,9 @@ TOEFL-IBT 2023: 110/120
 
 <i style="font-size:20px" class="fa fa-calendar"></i> 2023     
 <i style="font-size:20px" class="fa fa-map-marker"></i> Serrapilheira institute and ICTP-SAIFR
+
+# <u>ABILITIES</u>
+
+<div class="box">
+  LaTeX
+</div>
