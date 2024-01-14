@@ -217,11 +217,11 @@ TOEFL-IBT 2023: 110/120
 # <u>PARTICIPATION AT EVENTS</u>
 
 ### Brazilian Center for Research in Physics
->
+
 > <i style="font-size:20px" class="fa fa-trophy"></i> Honorable mention
 > <i style="font-size:20px" class="fa fa-calendar"></i> 2019
 > <i style="font-size:20px" class="fa fa-map-marker"></i> University of Brasilia
->
+
 ### McGill Physics Hackathon
 
 > <i style="font-size:20px" class="fa fa-trophy"></i> 1st place
@@ -255,3 +255,5 @@ TOEFL-IBT 2023: 110/120
 
 > <i style="font-size:20px" class="fa fa-calendar"></i> 2023
 > <i style="font-size:20px" class="fa fa-map-marker"></i> Federal University of Ouro Preto
+
+# <u><a href="https://pedrohpcintra.github.io/publications">PUBLICATIONS</a></u>
