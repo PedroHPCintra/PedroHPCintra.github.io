@@ -219,7 +219,9 @@ TOEFL-IBT 2023: 110/120
 ### Brazilian Center for Research in Physics
 
 > <i style="font-size:20px" class="fa fa-trophy"></i> Honorable mention
+
 > <i style="font-size:20px" class="fa fa-calendar"></i> 2019
+
 > <i style="font-size:20px" class="fa fa-map-marker"></i> University of Brasilia
 
 ### McGill Physics Hackathon
