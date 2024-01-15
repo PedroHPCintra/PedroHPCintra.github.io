@@ -78,7 +78,7 @@ Apesar de querer o melhor para as futuras e atuais pessoas que cursam física, n
 
 1. Aline Novais: [@astroaline](https://twitter.com/astroaline)
 >
->She/her :rainbow_flag: / brazilian astronomer ✨ / PhD candidate @ValongoUFRJ + @LMU_Muenchen / exoplanet atmospheres & astrobiology / divulgação científica #scicomm 🔭
+>She/her :rainbow_flag: / brazilian astronomer :sparkles: / PhD candidate @ValongoUFRJ + @LMU_Muenchen / exoplanet atmospheres & astrobiology / divulgação científica #scicomm :telescope:
 >
 
 2. Ana Apleiade: [@a_pleiade](https://twitter.com/a_pleiade)
@@ -88,5 +88,5 @@ Apesar de querer o melhor para as futuras e atuais pessoas que cursam física, n
 
 3. Bruna Shinohara [@Shinossaura](https://twitter.com/Shinossaura)
 >
->Staff Scientist - Quantum at @cmcmicrosystems / (views are my own). / Divulgando física e computação quântica!
+>Staff Scientist - Quantum at @cmcmicrosystems / (views are my own). / Divulgando física e computação quântica! :atom_symbol:
 >
