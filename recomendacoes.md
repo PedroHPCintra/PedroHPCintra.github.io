@@ -41,7 +41,7 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 > <p style="font-size: 12px;">The vital question é um livro incrível descrevendo a vida no nível celular. Um dos pesquisadores que trabalham com o autor é um físico, então o livro contém muitos conceitos físicos. Cada capítulo traz uma questão que é trabalhada até a solução, explicando as consequências de cada hipótese em porque algumas são falsas ou dificilmente verdadeiras, enquanto outras possuem evidências razoáveis ao seu favor.</p>
 >
 
-- The Most Human Human, Brian Christian
+- O Humano mais Humano, Brian Christian
 >
 > <p style="font-size: 12px;">Máquinas estão vivas? O seu celular merece direitos? A forma como humanos se relacionam com máquinas e inteligências artificiais, e o que essa relação nos ensina sobre nós mesmos, é o tema do livro. Do teste de Turing até experimentos sociais entre humanos e IAs, o livro é uma leitura leve que traz reflexões filosóficas sobre o que é estar vivo, e o que é ser um humano.</p>
 >
@@ -63,33 +63,28 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 
 ### Fantasy
 
-- The Name of the Wind (The kingkiller chronicle: day 1), Patrick Rothfuss
->
-> <p style="font-size: 12px;">This one was a recommendation from a friend, it took a few pages to catch me but when it did, oh man I could only thing about what would happend with Kvothe in the next chapter. Probably the second best fantasy book I have ever read. The amount of pages might be scary, but I assure you, it's all worth it.</p>
->
-
-- A Wise Man's Fear (The kingkiller chronicle: day 2), Patrick Rothfuss
->
-> <p style="font-size: 12px;">Somehow, the second book in the sequence manages to be better than the first. The first is just the second best fantasy book I have ever read because this is the first.</p>
+- A coleção do Nome do Vento (As Crônicas do Matador de Reis), Patrick Rothfuss
+>R
+> <p style="font-size: 12px;">Esse foi uma recomendação de um amigo, me levou algumas páginas para ficar cativado com o livro, mas quando eu fiquei... eu simplesmente não conseguia parar e pensar em o que acontecia com o Kvothe no próximo capítulo. O sistema de magia do livro é fascinante e é tratado como uma forma de ciência. Eu amei isso. Provavelmente a melhor saga de fantasia que já li. O número de páginas pode ser assustador, mas eu te garanto que vale a pena.</p>
 >
 
-- Percy Jackson & the Olympians 1 Collection, Rick Riordan
+- Coleção Percy Jackson & os Olimpianos, Rick Riordan
 >
-> <p style="font-size: 12px;">The first time I read this book I was in high school. Back then, I didn't like reading much, so every time the school told me to read a book for literature or anything, I used to hate it. However things changed when it came to this book. The book creates this world in which greek mythology is real and the gods and titans are alive in our lifetime. It is an excelent way to get to know greek mythology, while having fun and feelling anxious about the main character at the same time!</p>
+> <p style="font-size: 12px;">Primeira vez que eu li essa coleção eu estava no ensino médio. Na época, eu não gostava muito de ler, toda vez que a escola me mandava um livro para ler eu odiava. Porém as coisas mudaram com esse livro. O livro cria um mundo no qual a mitologia grega é real e deuses e titãs vivem nos dias atuais. É uma ótima forma de se conheer a mitologia grega, ao mesmo tempo que se diverte e sente ansiedade a respeito do personagem principal hahaha. É uma saga muito legal!</p>
 >
 
 ### Sci-fi
 
-- Foundation Collection, Isaac Asimov
+- Coleção Foundation, Isaac Asimov
 >
-> <p style="font-size: 12px;">The predecessor of almost every sci-fi story. In it's universe, humanity is a galatic empire hundreds of years old. The book work out this scientific theory in which they call "psyco-history", which is a way of predicting the behaviour of large societies based on data, math and their cultural values. Asimov has a different way of writting, instead of narrating scenes and actions, the whole book series is written as conversations, each chapter is new conversation at some new situation and you figure out what is happening by the conversation.</p>
+> <p style="font-size: 12px;">A predecessora de praticamente toda história de sci-fi. Neste universo, a humanidade é um império galáctico de centenas de anos. O livro trabalha em cima dessa teoria científica chamada "psico-história", que é uma forma de se prever o comportamento de sociedades grandes baseando-se em dados, matemática e seus valores culturais. Asimov tem um jeito diferente de escrever, ao invés de narrar as cenas e ações, o livro todo é escrito em conversas. Cada capítulo é uma nova conversa em uma nova situação, e você desvenda o que está acontecendo através da conversa.</p>
 >
 
 ### Romance
 
 - The Love Hypothesis, Ali Hazelwood
 >
-> <p style="font-size: 12px;">This book tells the story of this PhD student in biology and her fake relationship with an academic peer. I won't get it details of the story, but it was one of the best books I've read in 2022. The book is clearly meant for academia persons, there are just so many jokes and situations that all of us in academia can relate to. The main character is amazing and I saw myself on her so many times that I felt like I knew her completly. I actually cried in the end, which is something very difficult for me when reading romance.</p>
+> <p style="font-size: 12px;">Esse livro conta a história de uma aluna de doutorado em biologia e o seu relacionamento falso com um outro acadêmico. Não vou dar muitos detalhes da história, mas esse foi um dos melhores livros que li em 2022. O livro é claramente voltado para pessoas acadêmicas, tem simplesmente muitas situações nas quais nós acadêmicos nos identificamos com a personagem principal. Ela é incrível por sinal, e eu me vi nela diversas vezes, ao ponto de sentir que eu a conhecia completamente.</p>
 >
 
 - Love on the Brain, Ali Hazelwood
