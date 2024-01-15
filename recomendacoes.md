@@ -43,53 +43,53 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 
 - The Most Human Human, Brian Christian
 >
-> Are machines alive? Does your phone deserve rights? How humans relate to machines and AIs, and what this relation teach us about ourselves is the main subject of this book. From the Turing test to social experiments between humans and AIs, the book is a light read on the subject and provides some philosophical insight on what it means to be alive, and to be a human.
+> <p style="font-size: 12px;">Are machines alive? Does your phone deserve rights? How humans relate to machines and AIs, and what this relation teach us about ourselves is the main subject of this book. From the Turing test to social experiments between humans and AIs, the book is a light read on the subject and provides some philosophical insight on what it means to be alive, and to be a human.</p>
 >
 
 - From Bacteria to Bach and Back: The Evolution of Minds, Daniel Dennet
 >
-> A bit heavy on the read I guess, but nonetheless an excelent journey through the evolution of minds and how consciousness emerge naturally from social interactions. With a lot of examples and research, the book sometimes take on a big loop to explain a point, leaving the reader a little lost (At least that's how I felt), in order to later conclude the idea, making sense to the entire loop.
+> <p style="font-size: 12px;">A bit heavy on the read I guess, but nonetheless an excelent journey through the evolution of minds and how consciousness emerge naturally from social interactions. With a lot of examples and research, the book sometimes take on a big loop to explain a point, leaving the reader a little lost (At least that's how I felt), in order to later conclude the idea, making sense to the entire loop.</p>
 >
 
 - The Self Illusion, Bruce Hood
 >
->This one is definetly a must read, it too exploits consciousness, but in a lighter way and touching the subject of free will. When do we become counsciouss of ourselves? And counsciouss of others? The book start explaining the internal workings of the brain, to later discuss how the sense of "self" emerges as we develop from childhood to adulthood.
+> <p style="font-size: 12px;">This one is definetly a must read, it too exploits consciousness, but in a lighter way and touching the subject of free will. When do we become counsciouss of ourselves? And counsciouss of others? The book start explaining the internal workings of the brain, to later discuss how the sense of "self" emerges as we develop from childhood to adulthood.</p>
 >
 
 - The Knowledge Illusion, Steven Sloman
 >
->The book is all about how humans build knowledge and why we never actually think alone. It is the first book I've seen that treats the topic of spread of misinformation and the creation of opinions in a scientific way, using experiments and stuff. The reading is very light, in my opinion, and the authors follow a intuitive way of thinking about the question of how humans acquire knowledge (or think they acquire knowledge). Really one of the best books I've read in 2021.
+> <p style="font-size: 12px;">The book is all about how humans build knowledge and why we never actually think alone. It is the first book I've seen that treats the topic of spread of misinformation and the creation of opinions in a scientific way, using experiments and stuff. The reading is very light, in my opinion, and the authors follow a intuitive way of thinking about the question of how humans acquire knowledge (or think they acquire knowledge). Really one of the best books I've read in 2021.</p>
 >
 
 ### Fantasy
 
 - The Name of the Wind (The kingkiller chronicle: day 1), Patrick Rothfuss
 >
-> This one was a recommendation from a friend, it took a few pages to catch me but when it did, oh man I could only thing about what would happend with Kvothe in the next chapter. Probably the second best fantasy book I have ever read. The amount of pages might be scary, but I assure you, it's all worth it.
+> <p style="font-size: 12px;">This one was a recommendation from a friend, it took a few pages to catch me but when it did, oh man I could only thing about what would happend with Kvothe in the next chapter. Probably the second best fantasy book I have ever read. The amount of pages might be scary, but I assure you, it's all worth it.</p>
 >
 
 - A Wise Man's Fear (The kingkiller chronicle: day 2), Patrick Rothfuss
 >
-> Somehow, the second book in the sequence manages to be better than the first. The first is just the second best fantasy book I have ever read because this is the first.
+> <p style="font-size: 12px;">Somehow, the second book in the sequence manages to be better than the first. The first is just the second best fantasy book I have ever read because this is the first.</p>
 >
 
 - Percy Jackson & the Olympians 1 Collection, Rick Riordan
 >
->The first time I read this book I was in high school. Back then, I didn't like reading much, so every time the school told me to read a book for literature or anything, I used to hate it. However things changed when it came to this book. The book creates this world in which greek mythology is real and the gods and titans are alive in our lifetime. It is an excelent way to get to know greek mythology, while having fun and feelling anxious about the main character at the same time!
+> <p style="font-size: 12px;">The first time I read this book I was in high school. Back then, I didn't like reading much, so every time the school told me to read a book for literature or anything, I used to hate it. However things changed when it came to this book. The book creates this world in which greek mythology is real and the gods and titans are alive in our lifetime. It is an excelent way to get to know greek mythology, while having fun and feelling anxious about the main character at the same time!</p>
 >
 
 ### Sci-fi
 
 - Foundation Collection, Isaac Asimov
 >
-> The predecessor of almost every sci-fi story. In it's universe, humanity is a galatic empire hundreds of years old. The book work out this scientific theory in which they call "psyco-history", which is a way of predicting the behaviour of large societies based on data, math and their cultural values. Asimov has a different way of writting, instead of narrating scenes and actions, the whole book series is written as conversations, each chapter is new conversation at some new situation and you figure out what is happening by the conversation.
+> <p style="font-size: 12px;">The predecessor of almost every sci-fi story. In it's universe, humanity is a galatic empire hundreds of years old. The book work out this scientific theory in which they call "psyco-history", which is a way of predicting the behaviour of large societies based on data, math and their cultural values. Asimov has a different way of writting, instead of narrating scenes and actions, the whole book series is written as conversations, each chapter is new conversation at some new situation and you figure out what is happening by the conversation.</p>
 >
 
 ### Romance
 
 - The Love Hypothesis, Ali Hazelwood
 >
-> This book tells the story of this PhD student in biology and her fake relationship with an academic peer. I won't get it details of the story, but it was one of the best books I've read in 2022. The book is clearly meant for academia persons, there are just so many jokes and situations that all of us in academia can relate to. The main character is amazing and I saw myself on her so many times that I felt like I knew her completly. I actually cried in the end, which is something very difficult for me when reading romance.
+> <p style="font-size: 12px;">This book tells the story of this PhD student in biology and her fake relationship with an academic peer. I won't get it details of the story, but it was one of the best books I've read in 2022. The book is clearly meant for academia persons, there are just so many jokes and situations that all of us in academia can relate to. The main character is amazing and I saw myself on her so many times that I felt like I knew her completly. I actually cried in the end, which is something very difficult for me when reading romance.</p>
 >
 
 - Love on the Brain, Ali Hazelwood
