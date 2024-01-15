@@ -38,27 +38,27 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 
 - The Vital Question: Energy, Evolution and the Origins of Complex Life, Nick Lane
 >
-> <p style="font-size: 12px;">The vital question is an amazing book describing life at the cellular level. One of the researches that worked with the author is a physicist, so there are many insights from physics. The book brings forth a question in each chapter and throughout the chapter work out the ideas that provide the solution for the question, explaining the consequences of each hypothesis and why some are not true or likely false, while others have resonable evidence in favor.</p>
+> <p style="font-size: 12px;">The vital question é um livro incrível descrevendo a vida no nível celular. Um dos pesquisadores que trabalham com o autor é um físico, então o livro contém muitos conceitos físicos. Cada capítulo traz uma questão que é trabalhada até a solução, explicando as consequências de cada hipótese em porque algumas são falsas ou dificilmente verdadeiras, enquanto outras possuem evidências razoáveis ao seu favor.</p>
 >
 
 - The Most Human Human, Brian Christian
 >
-> <p style="font-size: 12px;">Are machines alive? Does your phone deserve rights? How humans relate to machines and AIs, and what this relation teach us about ourselves is the main subject of this book. From the Turing test to social experiments between humans and AIs, the book is a light read on the subject and provides some philosophical insight on what it means to be alive, and to be a human.</p>
+> <p style="font-size: 12px;">Máquinas estão vivas? O seu celular merece direitos? A forma como humanos se relacionam com máquinas e inteligências artificiais, e o que essa relação nos ensina sobre nós mesmos, é o tema do livro. Do teste de Turing até experimentos sociais entre humanos e IAs, o livro é uma leitura leve que traz reflexões filosóficas sobre o que é estar vivo, e o que é ser um humano.</p>
 >
 
 - From Bacteria to Bach and Back: The Evolution of Minds, Daniel Dennet
 >
-> <p style="font-size: 12px;">A bit heavy on the read I guess, but nonetheless an excelent journey through the evolution of minds and how consciousness emerge naturally from social interactions. With a lot of examples and research, the book sometimes take on a big loop to explain a point, leaving the reader a little lost (At least that's how I felt), in order to later conclude the idea, making sense to the entire loop.</p>
+> <p style="font-size: 12px;">Um pouco pesado na leitura eu acho, porém uma jornada excelente através da evolução das mentes e como a consciência emerge a partir das interações sociais. Com muitos exemplos e pesquisa, o livro as vezes faz um loop bem grande para explicar um ponto, o que deixa o leitor um pouco perdido (ou ao menos eu me senti assim).</p>
 >
 
 - The Self Illusion, Bruce Hood
 >
-> <p style="font-size: 12px;">This one is definetly a must read, it too exploits consciousness, but in a lighter way and touching the subject of free will. When do we become counsciouss of ourselves? And counsciouss of others? The book start explaining the internal workings of the brain, to later discuss how the sense of "self" emerges as we develop from childhood to adulthood.</p>
+> <p style="font-size: 12px;">Esse é definitivamente uma leitura obrigatória, ele explora a consciência, porém de uma forma mais leve, tocando no assunto do livre arbítrio. Quando nos tornamos conscientes de nós mesmos? E dos outros? O livro trás explicações a respeito do funcionamento interno do cérebro, e mais tarde discute como a sensação de "eu" emerge conforme passamos da infância para a vida adulta.</p>
 >
 
 - The Knowledge Illusion, Steven Sloman
 >
-> <p style="font-size: 12px;">The book is all about how humans build knowledge and why we never actually think alone. It is the first book I've seen that treats the topic of spread of misinformation and the creation of opinions in a scientific way, using experiments and stuff. The reading is very light, in my opinion, and the authors follow a intuitive way of thinking about the question of how humans acquire knowledge (or think they acquire knowledge). Really one of the best books I've read in 2021.</p>
+> <p style="font-size: 12px;">Esse livro é sobre como humanos constroem o conhecimento e o porque de nunca pensarmos sozinhos de fato. Foi o primeiro livro que vi que trata o tópico do espalhamento de desinformação e a criação de opiniões de uma forma científica, usando experimentos. A leitura é bem leve na minha opinião, e os autores seguem um caminho intuitivo de pensamento a respeito de como os humanos adquirem conhecimento, ou pensam que adquirem. Sem dúvida um dos melhores livros que li em 2021.</p>
 >
 
 ### Fantasy
