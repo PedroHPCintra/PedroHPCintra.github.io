@@ -6,19 +6,19 @@ Here you'll find my favorite books, articles and YouTube channels. I highly reco
 
 ## Academic papers, news articles and blog posts
 
-- Loeb, A. Benefits of diversity. Nature Phys 10, 616–617 (2014). https://doi.org/10.1038/nphys3089
+- Loeb, A. Benefits of diversity. Nature Phys 10, 616–617 (2014). [https://doi.org/10.1038/nphys3089](https://doi.org/10.1038/nphys3089)
 
-- Bergström, A., Frantz, L., Schmidt, R., Ersmark, E., Lebrasseur, O., Girdland-Flink, L., ... & Antipina, E. (2020). Origins and genetic legacy of prehistoric dogs. Science, 370(6516), 557-564. https://doi.org/10.1126/science.aba9572
+- Bergström, A., Frantz, L., Schmidt, R., Ersmark, E., Lebrasseur, O., Girdland-Flink, L., ... & Antipina, E. (2020). Origins and genetic legacy of prehistoric dogs. Science, 370(6516), 557-564. [https://doi.org/10.1126/science.aba9572](https://doi.org/10.1126/science.aba9572)
 
-- Harden, K.P., Koellinger, P.D. Using genetics for social science. Nat Hum Behav 4, 567–576 (2020). https://doi.org/10.1038/s41562-020-0862-5
+- Harden, K.P., Koellinger, P.D. Using genetics for social science. Nat Hum Behav 4, 567–576 (2020). [https://doi.org/10.1038/s41562-020-0862-5](https://doi.org/10.1038/s41562-020-0862-5)
 
-- Krause, R. J., & Rucker, D. D. (2020). Can Bad Be Good? The Attraction of a Darker Self. Psychological science, 31(5), 518-530. https://doi.org/10.1177/0956797620909742 
+- Krause, R. J., & Rucker, D. D. (2020). Can Bad Be Good? The Attraction of a Darker Self. Psychological science, 31(5), 518-530. [https://doi.org/10.1177/0956797620909742 ](https://doi.org/10.1177/0956797620909742)
 
-- Friedrich, B., & Herschbach, D. (2003). Stern and Gerlach: How a bad cigar helped reorient atomic physics. Physics Today, 56(12), 53-59. http://dx.doi.org/10.1063/1.1650229
+- Friedrich, B., & Herschbach, D. (2003). Stern and Gerlach: How a bad cigar helped reorient atomic physics. Physics Today, 56(12), 53-59. [http://dx.doi.org/10.1063/1.1650229](http://dx.doi.org/10.1063/1.1650229)
 
-- Iwasaki, A. Antidote to toxic principal investigators. Nat Med 26, 457 (2020). https://doi.org/10.1038/s41591-020-0831-6 
+- Iwasaki, A. Antidote to toxic principal investigators. Nat Med 26, 457 (2020). [https://doi.org/10.1038/s41591-020-0831-6](https://doi.org/10.1038/s41591-020-0831-6)
 
-- Willcox, K. E., Ghattas, O., & Heimbach, P. (2021). The imperative of physics-based modeling and inverse theory in computational science. Nature Computational Science, 1(3), 166-168. https://doi.org/10.1038/s43588-021-00040-z 
+- Willcox, K. E., Ghattas, O., & Heimbach, P. (2021). The imperative of physics-based modeling and inverse theory in computational science. Nature Computational Science, 1(3), 166-168. [https://doi.org/10.1038/s43588-021-00040-z](https://doi.org/10.1038/s43588-021-00040-z)
 
 - Greenland, S., Senn, S. J., Rothman, K. J., Carlin, J. B., Poole, C., Goodman, S. N., & Altman, D. G. (2016). Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations. European journal of epidemiology, 31(4), 337-350. [https://doi.org/10.1007/s10654-016-0149-3](https://doi.org/10.1007/s10654-016-0149-3)
 
@@ -98,24 +98,24 @@ If you want to see more books I've read and my opinions about them, you can chec
 
 ## Videos
 
-[How We're Fooled By Statistics](https://www.youtube.com/watch?v=1tSqSMOyNFE&ab_channel=Veritasium)
+- [How We're Fooled By Statistics](https://www.youtube.com/watch?v=1tSqSMOyNFE&ab_channel=Veritasium)
 
-[Is Success Luck or Hard Work?](https://www.youtube.com/watch?v=3LopI4YeC4I&ab_channel=Veritasium)
+- [Is Success Luck or Hard Work?](https://www.youtube.com/watch?v=3LopI4YeC4I&ab_channel=Veritasium)
 
-[O segredo da MERITOCRACIA](https://www.youtube.com/watch?v=YINTTVjBrY4&ab_channel=AtilaIamarino)
+- [O segredo da MERITOCRACIA](https://www.youtube.com/watch?v=YINTTVjBrY4&ab_channel=AtilaIamarino)
 
-[This equation will change how you see the world (the logistic map)](https://www.youtube.com/watch?v=ovJcsL7vyrk&ab_channel=Veritasium)
+- [This equation will change how you see the world (the logistic map)](https://www.youtube.com/watch?v=ovJcsL7vyrk&ab_channel=Veritasium)
 
-[Bayes theorem, the geometry of changing beliefs](https://www.youtube.com/watch?v=HZGCoVF3YvM&ab_channel=3Blue1Brown)
+- [Bayes theorem, the geometry of changing beliefs](https://www.youtube.com/watch?v=HZGCoVF3YvM&ab_channel=3Blue1Brown)
 
-[When Time Became History - The Human Era](https://www.youtube.com/watch?v=CWu29PRCUvQ&ab_channel=Kurzgesagt%E2%80%93InaNutshell)
+- [When Time Became History - The Human Era](https://www.youtube.com/watch?v=CWu29PRCUvQ&ab_channel=Kurzgesagt%E2%80%93InaNutshell)
 
-[LIGO Feel That Space (The Weeknd Parody) A Capella Science](https://www.youtube.com/watch?v=degD69wnZcY&ab_channel=acapellascience)
+- [LIGO Feel That Space (The Weeknd Parody) A Capella Science](https://www.youtube.com/watch?v=degD69wnZcY&ab_channel=acapellascience)
 
-[The Molecular Shape of You (Ed Sheeran Parody) A Capella Science](https://www.youtube.com/watch?v=f8FAJXPBdOg&ab_channel=acapellascience)
+- [The Molecular Shape of You (Ed Sheeran Parody) A Capella Science](https://www.youtube.com/watch?v=f8FAJXPBdOg&ab_channel=acapellascience)
 
-[POKÉMON E STAR WARS DENUNCIAM PREDADORES DA CIÊNCIA](https://www.youtube.com/watch?v=Xj8fw3fkdxM&ab_channel=MeteoroBrasil)
+- [POKÉMON E STAR WARS DENUNCIAM PREDADORES DA CIÊNCIA](https://www.youtube.com/watch?v=Xj8fw3fkdxM&ab_channel=MeteoroBrasil)
 
-[Tim Urban: Inside the mind of a master procastinator](https://www.youtube.com/watch?v=arj7oStGLkU&ab_channel=TED)
+- [Tim Urban: Inside the mind of a master procastinator](https://www.youtube.com/watch?v=arj7oStGLkU&ab_channel=TED)
 
-[Global Warming: The Decade We Lost Earth](https://www.youtube.com/watch?v=hvGQMZFP9IA&ab_channel=SimonClark)
+- [Global Warming: The Decade We Lost Earth](https://www.youtube.com/watch?v=hvGQMZFP9IA&ab_channel=SimonClark)
