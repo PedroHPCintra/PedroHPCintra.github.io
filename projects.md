@@ -30,7 +30,7 @@ Some academic projects I took part during my undergrad and that contributed to m
 
 # Supernova Observation and Distance Estimation using Neutrino Detectors
 
-### 2021 - Today
+### 2021 - 2023
 
 **Description:** Can we use neutrinos as a probe for finding the location of a Supernova in the sky, that is, its distance and direction? Answering this question is the main objective of my Masters.
 
