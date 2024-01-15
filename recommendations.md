@@ -20,15 +20,15 @@ Here you'll find my favorite books, articles and YouTube channels. I highly reco
 
 - Willcox, K. E., Ghattas, O., & Heimbach, P. (2021). The imperative of physics-based modeling and inverse theory in computational science. Nature Computational Science, 1(3), 166-168. https://doi.org/10.1038/s43588-021-00040-z 
 
-- Greenland, S., Senn, S. J., Rothman, K. J., Carlin, J. B., Poole, C., Goodman, S. N., & Altman, D. G. (2016). Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations. European journal of epidemiology, 31(4), 337-350. https://doi.org/10.1007/s10654-016-0149-3 
+- Greenland, S., Senn, S. J., Rothman, K. J., Carlin, J. B., Poole, C., Goodman, S. N., & Altman, D. G. (2016). Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations. European journal of epidemiology, 31(4), 337-350. [https://doi.org/10.1007/s10654-016-0149-3](https://doi.org/10.1007/s10654-016-0149-3)
 
-- Morrill, K., Hekman, J., Li, X., McClure, J., Logan, B., Goodman, L., ... & Karlsson, E. K. (2022). Ancestry-inclusive dog genomics challenges popular breed stereotypes. Science, 376(6592), eabk0639. https://doi.org/10.1126/science.abk0639
+- Morrill, K., Hekman, J., Li, X., McClure, J., Logan, B., Goodman, L., ... & Karlsson, E. K. (2022). Ancestry-inclusive dog genomics challenges popular breed stereotypes. Science, 376(6592), eabk0639. [https://doi.org/10.1126/science.abk0639](https://doi.org/10.1126/science.abk0639)
 
-- How Nature contributed to science’s discriminatory legacy. Nature 609, 875-876 (2022). https://doi.org/10.1038/d41586-022-03035-6
+- How Nature contributed to science’s discriminatory legacy. Nature 609, 875-876 (2022). [https://doi.org/10.1038/d41586-022-03035-6](https://doi.org/10.1038/d41586-022-03035-6)
 
-- The rise and fall of peer review: Why the greatest scientific experiment in history failed, and why that's a great thing. Adam Mastroianni. 2022. https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review
+- The rise and fall of peer review: Why the greatest scientific experiment in history failed, and why that's a great thing. Adam Mastroianni. 2022. [https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review](https://experimentalhistory.substack.com/p/the-rise-and-fall-of-peer-review)
 
-- Things could be better: Eight studies reveal a (possibly universal) bias in human imagination. Adam Mastroianni. 2022. https://experimentalhistory.substack.com/p/things-could-be-better
+- Things could be better: Eight studies reveal a (possibly universal) bias in human imagination. Adam Mastroianni. 2022. [https://experimentalhistory.substack.com/p/things-could-be-better](https://experimentalhistory.substack.com/p/things-could-be-better)
 
 ## Books
 
@@ -110,9 +110,9 @@ If you want to see more books I've read and my opinions about them, you can chec
 
 [When Time Became History - The Human Era](https://www.youtube.com/watch?v=CWu29PRCUvQ&ab_channel=Kurzgesagt%E2%80%93InaNutshell)
 
-[LIGO Feel That Space (The Weeknd Parody) | A Capella Science](https://www.youtube.com/watch?v=degD69wnZcY&ab_channel=acapellascience)
+[LIGO Feel That Space (The Weeknd Parody) A Capella Science](https://www.youtube.com/watch?v=degD69wnZcY&ab_channel=acapellascience)
 
-[The Molecular Shape of You (Ed Sheeran Parody) | A Capella Science](https://www.youtube.com/watch?v=f8FAJXPBdOg&ab_channel=acapellascience)
+[The Molecular Shape of You (Ed Sheeran Parody) A Capella Science](https://www.youtube.com/watch?v=f8FAJXPBdOg&ab_channel=acapellascience)
 
 [POKÉMON E STAR WARS DENUNCIAM PREDADORES DA CIÊNCIA](https://www.youtube.com/watch?v=Xj8fw3fkdxM&ab_channel=MeteoroBrasil)
 
