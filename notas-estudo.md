@@ -14,4 +14,4 @@ layout: sub-page_pt-br
 
 ## Ecologia Teórica
 
-- [De Indivíduos à Populações](./assets/pdf/Class-note-de-individuos-a-populacoes.pdf): Anotações a respeito de equações mestras em ecologia e como equações diferenciais podem ser encontradas a partir das dinâmicas individuais.
+- [De Indivíduos à Populações](./assets/pdf/Class-note-de-individuos-a-populacoes.pdf) (AINDA EM DESENVOLVIMENTO): Anotações a respeito de equações mestras em ecologia e como equações diferenciais podem ser encontradas a partir das dinâmicas individuais.
