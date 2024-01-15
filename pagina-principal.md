@@ -2,13 +2,7 @@
 layout: default_pt-br
 ---
 
-E cadê o amor?
-
 # Carreira acadêmica
-
-Bota na cabeça que estilo não é marra
-
-> Eai marquinhos DJ, faz um sampley de guitarra.
 
 - :mortar_board: Eu adquiri meu diploma de Bacharel em Física pela Universidade de Brasília (UnB) em 2020.
 
