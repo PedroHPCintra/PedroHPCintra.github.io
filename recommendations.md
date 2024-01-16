@@ -61,6 +61,16 @@ If you want to see more books I've read and my opinions about them, you can chec
 > <p style="font-size: 12px;">The book is all about how humans build knowledge and why we never actually think alone. It is the first book I've seen that treats the topic of spread of misinformation and the creation of opinions in a scientific way, using experiments and stuff. The reading is very light, in my opinion, and the authors follow a intuitive way of thinking about the question of how humans acquire knowledge (or think they acquire knowledge). Really one of the best books I've read in 2021.</p>
 >
 
+- The Serengeti Rules, Sean B. Carroll
+>
+> <p style="font-size: 12px;">The Serengeti Rules explores the basic rules that dictate ecological interactions and animal populations throughtout the world. It's a light reading and the author writes in such a way that makes everything seem interesting. The national park of the Serengeti is the stage in which we can clearly see these rules in action.</p>
+>
+
+- Merchants of Doubt, Naomi Oreskes
+>
+> <p style="font-size: 12px;">On this book Naomi Oreskes shows us the history behind the misinformation industry, telling us how the narratives are present in almost every scientific advance that threatens big industries such as tobaco and fossil fuel. The book dives deep into the methods used to spread doubt around scientific knowledge and make it manipulatable. It is a book that triggers a feeling of indignation, yet excelent.</p>
+>
+
 ### Fantasy
 
 - The Name of the Wind (The kingkiller chronicle: day 1), Patrick Rothfuss
@@ -77,6 +87,8 @@ If you want to see more books I've read and my opinions about them, you can chec
 >
 > <p style="font-size: 12px;">The first time I read this book I was in high school. Back then, I didn't like reading much, so every time the school told me to read a book for literature or anything, I used to hate it. However things changed when it came to this book. The book creates this world in which greek mythology is real and the gods and titans are alive in our lifetime. It is an excelent way to get to know greek mythology, while having fun and feelling anxious about the main character at the same time!</p>
 >
+
+- Poppy War, R. F. Kuang
 
 ### Sci-fi
 
