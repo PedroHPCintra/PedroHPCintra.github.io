@@ -61,6 +61,16 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 > <p style="font-size: 12px;">Esse livro é sobre como humanos constroem o conhecimento e o porque de nunca pensarmos sozinhos de fato. Foi o primeiro livro que vi que trata o tópico do espalhamento de desinformação e a criação de opiniões de uma forma científica, usando experimentos. A leitura é bem leve na minha opinião, e os autores seguem um caminho intuitivo de pensamento a respeito de como os humanos adquirem conhecimento, ou pensam que adquirem. Sem dúvida um dos melhores livros que li em 2021.</p>
 >
 
+- The Serengeti Rules, Sean B. Carroll
+>
+> <p style="font-size: 12px;">O Serengeti Rules explora as regras básicas que regem as relações ecológicas e populações de animais pelo mundo. A leitura é bem leve e o autor escreve de uma forma a nos prender bastante. O parque nacional do Serengeti é o palco para o vislumbre dessas regras.</p>
+>
+
+- Mercadores da Dúvida, Naomi Oreskes
+>
+> <p style="font-size: 12px;">Nesse livro Naomi Oreskes nos mostra a história da industria da desinformação, contando como a narrativa de desinformação se mostra presente em praticamente todos os avanços científicos que ameaçam a dominância das grandes industrias (tabaco, combustíveis fósseis...). O livro mergulha fundo nos métodos utilizados para espalhar dúvida em torno do conhecimento científico e torná-lo manipulável. É um livro indignante, porém excelente.</p>
+>
+
 ### Fantasy
 
 - A coleção do Nome do Vento (As Crônicas do Matador de Reis), Patrick Rothfuss
@@ -72,6 +82,8 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 >
 > <p style="font-size: 12px;">Primeira vez que eu li essa coleção eu estava no ensino médio. Na época, eu não gostava muito de ler, toda vez que a escola me mandava um livro para ler eu odiava. Porém as coisas mudaram com esse livro. O livro cria um mundo no qual a mitologia grega é real e deuses e titãs vivem nos dias atuais. É uma ótima forma de se conheer a mitologia grega, ao mesmo tempo que se diverte e sente ansiedade a respeito do personagem principal hahaha. É uma saga muito legal!</p>
 >
+
+- A Guerra da Papoula, R. F. Kuang
 
 ### Sci-fi
 
@@ -114,3 +126,9 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 - [Tim Urban: Inside the mind of a master procastinator](https://www.youtube.com/watch?v=arj7oStGLkU&ab_channel=TED)
 
 - [Global Warming: The Decade We Lost Earth](https://www.youtube.com/watch?v=hvGQMZFP9IA&ab_channel=SimonClark)
+
+- [The Most Misunderstanded Concept in Physics](https://www.youtube.com/watch?v=DxL2HoqLbyA&t=7s&ab_channel=Veritasium)
+
+- [Math's Fundamental Flaw](https://www.youtube.com/watch?v=HeQX2HjkcNo&t=216s&ab_channel=Veritasium)
+
+- [What The Prisoner's Dilemma Reveals About Life, The Universe, and Everything](https://www.youtube.com/watch?v=mScpHTIi-kM&ab_channel=Veritasium)
