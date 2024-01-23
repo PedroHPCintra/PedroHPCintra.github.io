@@ -128,12 +128,25 @@ a {
   }
 }
 
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
 .page-header-pt-br {
     color: $header-heading-color;
     text-align: center;
   //   background-color: $header-bg-color;
-    background-clip: url("/assets/video/output_Julia.mp4");
-    // background-image: url("/assets/img/Lotka-Volterra_artv2.png");
+    // background-clip: url("/assets/video/output_Julia.mp4");
+    background-image: url("/assets/img/Lotka-Volterra_artv2.png");
     background-size: 100%;
     position: relative;
     z-index: 0;

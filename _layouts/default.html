@@ -32,6 +32,9 @@
     </nav>
     
     <header class="page-header">
+      <video autoplay muted loop id="myVideo">
+        <source src="/assets/video/output_Julia.mp4" type="video/mp4">
+      </video>
       <h1 class="project-name">{{site.title}}</h1>
       <h2 class="project-tagline">&#x1F986 {{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
