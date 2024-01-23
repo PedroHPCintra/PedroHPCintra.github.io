@@ -132,7 +132,8 @@ a {
     color: $header-heading-color;
     text-align: center;
   //   background-color: $header-bg-color;
-    background-image: url("/assets/img/Lotka-Volterra_artv2.png");
+    background-clip: url("/assets/video/output_Julia.mp4");
+    // background-image: url("/assets/img/Lotka-Volterra_artv2.png");
     background-size: 100%;
     position: relative;
     z-index: 0;
