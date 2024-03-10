@@ -2,5 +2,4 @@
 layout: sub-page_pt-br
 ---
 
-# This page is still under construction...
-![Area under construction sign](./assets/img/under_construction.png "Area under construction")
+## [Desmentindo fake news](https://pedrohpcintra.github.io/science-communication/pt-br/desmentindo-fake-news/desmentindo-fake-news)
