@@ -30,4 +30,8 @@ sendo $d_v$ a disposição de vacinados a se exporem ao vírus, em comparação 
 
 Dependendo da efetividade da vacinação, que por si depende da eficácia, da exposição dos vacinados e das vacinas utilizadas, essa relação de prevalência de _breakthroughs_ nos desfechos e vacinação anda de formas diferentes.
 
-![breakthroug_infections](assets/img/fake_news/breakthrough_deaths.png)
+![breakthroug_infections](https://pedrohpcintra.github.io/assets/img/fake_news/breakthrough_deaths.png)
+
+O que esse gráfico NÃO MOSTRA é que o numero total de desfechos (casos/hosp/óbitos) será muito menor. Esse gráfico mostra a proporção nos desfechos, não o total.
+
+Com isso, vamos ver se esse tipo de comportamento esperado bate com o que vemos nos EUA. Calcular a efetividade da vacinação em um país é trabalhoso sem estudos observacionais. Felizmente, no caso dos EUA, 97% das doses foram de vacinas de mRNA (Pfizer e Moderna). E para essas duas, já há estudos de efetividade total das vacinas de mRNA nos EUA. Para o desfecho de óbito, a efetividade observada foi de 98.2% (91-99.8).
