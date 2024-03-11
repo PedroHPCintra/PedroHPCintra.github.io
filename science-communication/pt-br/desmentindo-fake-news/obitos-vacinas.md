@@ -12,7 +12,11 @@ Imaginem um cenário lindo onde 100% da população está vacinada com uma vacin
 
 Podemos inclusive descrever o quanto casos/hospitalizações/óbitos de breakthrough (aqueles que afetam pessoas já vacinadas) vão representar do total de casos/hospitalizações/óbitos quantitativamente. Isso depende principalmente da % de pessoas já vacinadas e da efetividade ($V_E$) da vacina em prevenir o desfecho específico
 
-$$ B(f_{v}|V_{E}) = \frac{f_{v} (1 - V_E)}{f_v (1 - V_E) + (1 - f_v)} $$
+$$
+\begin{equation}
+    B(f_{v}|V_{E}) = \frac{f_{v} (1 - V_E)}{f_v (1 - V_E) + (1 - f_v)}
+\end{equation}
+$$
 
 onde
 
