@@ -10,11 +10,11 @@ Acontece que isso é normal, inclusive esperado, e não mostra nenhuma ineficác
 
 Imaginem um cenário lindo onde 100% da população está vacinada com uma vacina 99.99% eficaz em prevenir óbitos. É claro que, já que a vacina não é 100% eficaz, e todo mundo ta vacinado, todos os óbitos vistos serão em vacinados, apesar de serem MUITO menores.
 
-Podemos inclusive descrever o quanto casos/hospitalizações/óbitos de breakthrough (aqueles que afetam pessoas já vacinadas) vão representar do total de casos/hospitalizações/óbitos quantitativamente. Isso depende principalmente da % de pessoas já vacinadas e da efetividade ($V_E$) da vacina em prevenir o desfecho específico
+Podemos inclusive descrever o quanto casos/hospitalizações/óbitos de breakthrough (aqueles que afetam pessoas já vacinadas) vão representar do total de casos/hospitalizações/óbitos quantitativamente. Isso depende principalmente da % de pessoas já vacinadas e da efetividade $\left( V_E \right)$ da vacina em prevenir o desfecho específico
 
 $$
 \begin{equation}
-    B(f_{v}|V_{E}) = \frac{f_{v} (1 - V_E)}{f_v (1 - V_E) + (1 - f_v)}
+    B\left(f_{v}|V_{E} \right) = \frac{f_{v} \left(1 - V_E \right)}{f_v \left(1 - V_E \right) + \left(1 - f_v \right)}
 \end{equation}
 $$
 
@@ -27,3 +27,7 @@ $$
 $$
 
 sendo $d_v$ a disposição de vacinados a se exporem ao vírus, em comparação a não vacinados, $w_{ij}$ é a prevalência de uso da vacina $i$ na faixa etária $j$, $p_{ij}$ é a eficácia da vacina $i$ na faixa etária $j$ e $f_v$ é a fração da população que já foi vacinada.
+
+Dependendo da efetividade da vacinação, que por si depende da eficácia, da exposição dos vacinados e das vacinas utilizadas, essa relação de prevalência de _breakthroughs_ nos desfechos e vacinação anda de formas diferentes.
+
+![breakthroug_infections](assets/img/fake_news/breakthrough_deaths.png)
