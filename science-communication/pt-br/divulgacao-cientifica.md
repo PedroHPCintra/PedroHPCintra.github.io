@@ -17,3 +17,5 @@ Aqui você pode encontrar alguns posts de divulgação científica que já fiz p
 ## Tópicos
 
 ### [:thinking: Desmentindo fake news](https://pedrohpcintra.github.io/science-communication/pt-br/desmentindo-fake-news/desmentindo-fake-news)
+
+### [:nerd_face: Física](https://pedrohpcintra.github.io/science-communication/pt-br/desmentindo-fake-news/fisica)
