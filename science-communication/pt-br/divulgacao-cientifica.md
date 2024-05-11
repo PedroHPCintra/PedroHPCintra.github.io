@@ -6,6 +6,12 @@ Aqui você pode encontrar alguns posts de divulgação científica que já fiz p
 
 ## Posts mais recentes
 
+:calendar: 11/05/2024
+
+> **[O sol é o causador do aquecimento global?](https://pedrohpcintra.github.io/science-communication/pt-br/desmentindo-fake-news/sol-aquece-a-terra)**
+>
+> Esse foi um post que fiz para o twitter em Junho de 2023 ([veja aqui](https://twitter.com/pedrocintra52/status/1667919670270107648)).
+
 :calendar: 11/03/2024
 
 > **[O que a luz de elementos e moléculas pode nos dizer?](https://pedrohpcintra.github.io/science-communication/pt-br/fisica/espectros-atomicos)**
