@@ -110,16 +110,6 @@
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient821"
-       id="linearGradient823"
-       x1="25.123335"
-       y1="222.69908"
-       x2="278.49487"
-       y2="222.69908"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(15.345837,12.700001)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient1155"
        id="linearGradient1157"
        x1="10.09236"
@@ -153,6 +143,15 @@
        x2="13.905848"
        y2="157.75761"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient821"
+       id="linearGradient950"
+       x1="40.469181"
+       y1="235.39902"
+       x2="293.8407"
+       y2="235.39902"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -162,8 +161,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="600.29877"
-     inkscape:cy="425.56595"
+     inkscape:cx="575.78439"
+     inkscape:cy="283.83304"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -189,41 +188,8 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-87)">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 293.84075,217.22476 139.20972,157.48797"
-       id="path1149"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
     <rect
-       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:2.2111733;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect1426-3-2"
-       width="80.479485"
-       height="7.2830949"
-       x="125.42723"
-       y="179.17183" />
-    <rect
-       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:1.14328063;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect1426-3"
-       width="21.515196"
-       height="7.2830944"
-       x="176.14818"
-       y="168.51482" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 40.469177,217.22476 131.50063,157.62151"
-       id="path1147"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <rect
-       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect1426"
-       width="18.307962"
-       height="6.5481033"
-       x="91.427002"
-       y="168.58163" />
-    <rect
-       style="opacity:1;vector-effect:none;fill:url(#linearGradient823);fill-opacity:1;fill-rule:evenodd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;vector-effect:none;fill:url(#linearGradient950);fill-opacity:1.0;fill-rule:evenodd;stroke-width:2.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stroke:none"
        id="rect815"
        width="253.37152"
        height="36.348656"
@@ -549,17 +515,23 @@
          id="tspan1443-6-4"
          x="320.49979"
          y="118.6842"
-         style="font-size:4.93888903px;text-align:end;text-anchor:end;stroke-width:0.26458332">Comprimentos de onda mais</tspan><tspan
+         style="font-size:4.93888903px;text-align:end;text-anchor:end;stroke-width:0.26458332">Comprimentos de onda <tspan
+   style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan969">mais</tspan></tspan><tspan
          sodipodi:role="line"
          x="320.49979"
          y="124.85781"
          style="font-size:4.93888903px;text-align:end;text-anchor:end;stroke-width:0.26458332"
-         id="tspan1580">altos possuem frequências</tspan><tspan
+         id="tspan1580"><tspan
+   style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan971">altos</tspan> possuem frequências</tspan><tspan
          sodipodi:role="line"
          x="320.49979"
          y="131.03143"
          style="font-size:4.93888903px;text-align:end;text-anchor:end;stroke-width:0.26458332"
-         id="tspan1582">mais baixas, e portanto</tspan><tspan
+         id="tspan1582"><tspan
+   style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan973">mais baixas</tspan>, e portanto</tspan><tspan
          sodipodi:role="line"
          x="320.49979"
          y="137.20503"
@@ -575,17 +547,23 @@
          id="tspan1443-6-99"
          x="2.52812"
          y="118.68384"
-         style="font-size:4.93888903px;stroke-width:0.26458332">Comprimentos de onda mais</tspan><tspan
+         style="font-size:4.93888903px;stroke-width:0.26458332">Comprimentos de onda <tspan
+   style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan963">mais</tspan></tspan><tspan
          sodipodi:role="line"
          x="2.52812"
          y="124.85745"
          style="font-size:4.93888903px;stroke-width:0.26458332"
-         id="tspan1561">baixos possuem frequências</tspan><tspan
+         id="tspan1561"><tspan
+   style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan965">baixos</tspan> possuem frequências</tspan><tspan
          sodipodi:role="line"
          x="2.52812"
          y="131.03107"
          style="font-size:4.93888903px;stroke-width:0.26458332"
-         id="tspan1563">mais altas, e portanto</tspan><tspan
+         id="tspan1563"><tspan
+   style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan967">mais altas</tspan>, e portanto</tspan><tspan
          sodipodi:role="line"
          x="2.52812"
          y="137.20467"
@@ -702,5 +680,33 @@
        height="16.525713"
        x="139.20972"
        y="141.19414" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 131.50063,157.62151 -21.66311,14.17388"
+       id="path938"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 40.469182,217.22468 104.73625,175.1418"
+       id="path940"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 139.20971,157.71985 36.80907,13.95742"
+       id="path942"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 293.84069,217.22468 205.95623,183.27681"
+       id="path946"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 187.64589,176.1691 7.60243,2.99682"
+       id="path944-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

@@ -6,6 +6,8 @@ Aqui você vai encontrar meus livros favoritos, artigos e canais do Youtube. Rec
 
 ## Artigos acadêmicos, artigos de jornal e posts em blogs
 
+- Wigner, E. The Unreasonable Effectivenss of Mathematics in the Natural Sciences. Communications in Pure and Applied Mathematics, 13 (1960). [https://www.maths.ed.ac.uk/~v1ranick/papers/wigner.pdf](https://www.maths.ed.ac.uk/~v1ranick/papers/wigner.pdf)
+
 - Loeb, A. Benefits of diversity. Nature Phys 10, 616–617 (2014). [https://doi.org/10.1038/nphys3089](https://doi.org/10.1038/nphys3089)
 
 - Bergström, A., Frantz, L., Schmidt, R., Ersmark, E., Lebrasseur, O., Girdland-Flink, L., ... & Antipina, E. (2020). Origins and genetic legacy of prehistoric dogs. Science, 370(6516), 557-564. [https://doi.org/10.1126/science.aba9572](https://doi.org/10.1126/science.aba9572)
