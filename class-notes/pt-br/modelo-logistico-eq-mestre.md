@@ -34,7 +34,7 @@ $$
 
 $$
 \begin{align}
-    X \underset{d}{\rightarrow} \empty
+    X \underset{d}{\rightarrow} \0
 \end{align}
 $$
 
@@ -145,3 +145,144 @@ Aaahh vejam só, uma equação diferencial! Felizmente elas são muito mais trat
 
 > "Desde Newton, a humanidade percebeu que as leis da natureza são sempre expressas na língua das equações diferenciais"
 
+Na verdade está é justamente a **equação mestra** para este sistema!
+
+Entretanto, essa equação é mais uma vez complicada demais, poís a probabilidade parar um estado $N$ depende da probabilidade de $N$, $N+1$ e $N-1$. E as probabilidades de $N+1$ e $N-1$ vão depender das probabilidades de $N+2$, $N$, $N-1$ e $N-2$, $N$ e $N-1$, respectivamente; e assim por diante. No fim teremos um sistema de sei la quantas centenas de ou milhares de equações diferenciais acopladas. Isso pode até ser solúvel para $N$ baixos, se estabelecermos um limite máximo para a distribuição de probabilidades de $N$, mas rapidamente se torna impraticável para $N$ altos.
+
+E se então nos perguntarmos a respeito do comportamento médio :thinking:?
+
+E se ao invés de nos preocuparmos com a distribuição de probabilidades de $N$ em um dado instante $t$, nos perguntarmos qual é o valor médio de $N$? Aqui entra a nossa **5ª premissa**, a de que **nosso sistema é homogêneo o suficiente de forma que a média seja representativa da população inteira**. Para uma distribuição discreta, tal qual a distribuição de valores de população $N$, a média é calculada através de
+
+$$
+\begin{align}
+    \left \langle N \right \rangle = \displaystyle \sum_{N} N P(N;t) .
+\end{align}
+$$
+
+Aqui a notação $\left \langle N \right \rangle$ significa _o valor médio de_ $N$. Leitores físicos provavelmente estão acostumados a esta notação e novamente peço desculpas aos amigos e amigas biológos pela possível confusão na mente de vocês com notações novas, mas pela minha formação acho a escrita dessa forma muito mais fluída e fácil. Multiplicando a equação mestra por $N$ e somando sobre todos os estados, obtemos
+
+$$
+\begin{align}
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle & = - (b + d+ \alpha) \sum_{N} N^2 P(N;t) + \\
+    \nonumber
+    & + b \sum_{N} N^2 P(N-1;t) - \\
+    \nonumber
+    & - b \sum_{N} N P(N-1;t) + \\
+    \nonumber
+    & + (d + \alpha) \sum_{N} N^2 P(N+1;t) + \\
+    \nonumber
+    & + (d+\alpha) \sum_{N} N P(N+1;t)
+\end{align}
+$$
+
+E agora parece que a situação piorou ainda mais. Antes tinhamos um sistema de equações acoplado e agora temos uma equação diferencial com vários somatórios??? Mas confiem no processo. Se pudermos deixar os somatórios no formato $\displaystyle \sum_{N} N P(N;t)$, poderemos escrever tudo apenas em termos das médias de $N$. O primeiro termo da equação diferencial já tem esse formato, e portanto nos atentaremos ao segundo. Se fizermos uma renomeação dos índices no somatório fazendo $M = N - 1$, reescrevemos
+
+$$
+\begin{align}
+    b \sum_{N} N^2 P(N-1;t) = b \sum_{M} (M+1)^2 P(M;t)
+\end{align}
+$$
+
+Porém, $M$ é apenas um índice de soma e podemos nomeá-lo da forma como quisermos. Por isso iremos renomeá-lo novamente para $N$, de forma que
+
+$$
+\begin{align}
+    b \sum_{N} N^2 P(N-1;t) = b \sum_{N} (N+1)^2 P(N;t)
+\end{align}
+$$
+
+Isso pode parecer um truque sem sentido e talvez mágico para alguns, então permitam-me fazer um pause em nossa derivação afim de explicar o que ocorre aqui (quem não quiser ver pode continuar lendo após o ---).
+
+---
+O que fizemos aqui na prática foi mover o somatório em 1 índice para trás. Isso pode soar um movimento ilegal e freestyle, mas peguemos um exemplo prático:
+
+Suponha $P(0) = 0.05$, $P(1) = 0.15$, $P(2) = 0.3$, $P(3) = 0.3$, $P(4) = 0.15$, $P(5) = 0.05$ e $P(N>5) = 0$. Nesse caso
+
+$$
+\sum_{N} N^2 P(N-1) = \sum_{N=0}^\infty N^2 P(N-1) = 0\times P(-1) + 1^2 \times P(0) + \cdots + 6^2 \times P(5) + 7^2 \times P(6) + \cdots
+$$
+
+naturalmente todos os termos que envolvem $P(6)$ em diante serão nulos, bem como o primeiro termo por envolver $P(-1) = 0$. O resultado desta soma é $13.7$. Poís bem, façamos uma mudança no índice de tal forma que $M$ agora é $N-1$. Neste caso
+
+$$
+\sum_{N=0}^\infty N^2 P(N-1) = \sum_{M=-1}^\infty (M+1)^2 P(M) = 0^2\times P(-1) + 1^2 \times P(0) + \cdots + 6^2 \times P(5) + 7^2 \times P(6) + \cdots
+$$
+
+Note que o somatório é o mesmo, inclusive o resultado continua sendo o mesmo $13.7$. Isso poís a relação entre os termos da soma ainda é a mesma, como você mesmo pode verificar escrevendo termo a termo da soma.
+
+---
+
+Expandindo o termo do somatório recém encontrado, podemos escrever
+
+$$
+\begin{align}
+    b \sum_{N} (N+1)^2 P(N;t) & = b \sum_{N} N^2 P(N;t) + 2 b \sum_{N} N P(N;t) + b \underbrace{\sum_{N} P(N;t)}_{=1} = \\
+    \nonumber
+    & = b \sum_{N} N^2 P(N;t) + 2 b \sum_{N} N P(N;t) + b,
+\end{align}
+$$
+
+onde na última linha utilizamos a normalização $ \sum_{N} P(N;t) = 1$. O somatório no terceiro termo fica
+
+$$
+\begin{align}
+    b \sum_{N} N P(N-1;t) & = b \sum_{N} (N+1) P(N;t) = b \sum_{N} N P(N;t) + b
+\end{align}
+$$
+
+Analogamente para as somas envolvendo $P(N+1;t)$, fazemos a mudança de índice $M = N+1$ e obtemos, após a renomeação de $M$
+
+$$
+\begin{align}
+    (d + \alpha) \sum_{N} N^2 P(N+1;t) & = (d + \alpha) \sum_{N} (N-1)^2 P(N;t) = (d + \alpha) \sum_{N} N^2 P(N;t) - \\
+    \nonumber
+    & - 2 (d + \alpha) \sum_{N} N P(N;t) + (d + \alpha)
+\end{align}
+$$
+
+$$
+\begin{align}
+    (d + \alpha) \sum_{N} N P(N+1;t) & = (d + \alpha) \sum_{N} (N-1) P(N;t) = (d + \alpha) \sum_{N} N P(N;t) - (d + \alpha)
+\end{align}
+$$
+
+Juntando tudo, a equação mestra fica escrita como
+
+\begin{align}
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle n \right \rangle & = - (b + d+ \alpha) \sum_n n^2 P(n;t) + b \sum_n n^2 P(n;t) + 2 b \sum_n n P(n;t) + \\
+    \nonumber
+    & + b - b \sum_n n P(n;t) - b + (d + \alpha) \sum_n n^2 P(n;t) - 2 (d + \alpha) \sum_n n P(n;t) + (d + \alpha) + \\
+    \nonumber
+    & + (d + \alpha) \sum_n n P(n;t) - (d + \alpha) = \\
+    \nonumber
+    & = b \sum_n n P(n;t) - d \sum_n n P(n;t) - \alpha \sum_n n P(n;t)
+\end{align}
+
+Novamente, vemos que caso $b$, $d$ e $\alpha$ sejam constantes, e equação mestra se torna a mesma equação do modelo de reprodução e morte, com a diferença que o termo de mortalidade é agora adicionado de um fator devido à competição por recursos, e ao invés de $b > d$ ser a condição necessária para o crescimento exponencial, precisamos ter $b > d + \alpha$.
+
+Mais realisticamente, a competição por recursos depende da quantidade de indivíduos na população. Quanto menos indivíduos, menor a necessidade de competir com vizinhos por comida, água, espaço, etc. Portanto, uma consideração mais realística é $\alpha = \alpha_0 n$. Isto é, a competição por recursos aumenta linearmente com o aumento da população. Manteremos a taxa de reprodução e a mortalidade natural constantes.
+
+\begin{align}
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle n \right \rangle & = b \sum_n n P(n;t) - d \sum_n n P(n;t) - \alpha_0 \sum_n n^2 P(n;t) = \\
+    \nonumber
+    & = b \left \langle n \right \rangle - d \left \langle n \right \rangle - \alpha_0 \left \langle n^2 \right \rangle
+\end{align}
+
+Note que está equação envolve a média de $n^2$, isto é, o segundo momento estatístico da distribuição de probabilidades para os estados possíveis do sistema. Poderíamos refazer todo o processo para encontrar uma equação que descreva a variação temporal de $\left \langle n^2 \right \rangle$, e substituir a integral desta equação no último termo. Porém, está equação iria depender do terceiro momento estatístico $\left \langle n^3 \right \rangle$. Não ajudaria muito.
+
+A aproximação de campo médio também supõe no fundo que todos os momentos estatísticos de ordem maior que 1 são dados em termos do primeiro momento estatístico (a média), como explicitado na equação \eqref{eq.23}. Logo
+
+\begin{align}
+\label{eq.63}
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle n \right \rangle = b \left \langle n \right \rangle - d \left \langle n \right \rangle - \alpha_0 \left \langle n \right \rangle^2 = \left[ \underbrace{(b-d)}_{r} - \alpha_0 \left \langle n \right \rangle \right] \left \langle n \right \rangle
+\end{align}
+
+Esta é a equação conhecida para um crescimento logístico!
+
+No fundo, o que a aproximação de campo médio está dizendo nesta equação é que a variância na distribuição de probabilidade dos estados $n$, em um dado instante $t$, é nula $\mathrm{Var}[n] = \left \langle n^2 \right \rangle - \left \langle n \right \rangle^2 = 0 \Rightarrow \left \langle n^2 \right \rangle = \left \langle n \right \rangle^2$. Caso a variância não seja nula, podemos reescrever a equação \eqref{eq.63} como
+
+\begin{align}
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle n \right \rangle = b \left \langle n \right \rangle - d \left \langle n \right \rangle - \alpha_0 \left( \left \langle n^2 \right  \rangle + \mathrm{Var}[n] \right) 
+\end{align}
+
+Ou seja, a presença de uma variação na probabilidade de distribuição de estados do sistema, naturalmente provoca uma diminuição no valor esperado de $n$ para um dado instante de tempo $t$. A estocasticidade não apenas provoca flutuações em torno da média, como também é capaz de mudar o próprio valor esperado de população $t$ tempo após o início da dinâmica.
