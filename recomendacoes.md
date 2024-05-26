@@ -6,6 +6,8 @@ Aqui você vai encontrar meus livros favoritos, artigos e canais do Youtube. Rec
 
 ## Artigos acadêmicos, artigos de jornal e posts em blogs
 
+- Laughlin, D. C. 2024. Letter to a Young Ecologist. Bull Ecol Soc Am 00(00): e2151. [https://doi.org/10.1002/bes2.2151](https://doi.org/10.1002/bes2.2151)
+
 - Wigner, E. The Unreasonable Effectivenss of Mathematics in the Natural Sciences. Communications in Pure and Applied Mathematics, 13 (1960). [https://www.maths.ed.ac.uk/~v1ranick/papers/wigner.pdf](https://www.maths.ed.ac.uk/~v1ranick/papers/wigner.pdf)
 
 - Loeb, A. Benefits of diversity. Nature Phys 10, 616–617 (2014). [https://doi.org/10.1038/nphys3089](https://doi.org/10.1038/nphys3089)
@@ -68,12 +70,12 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 > <p style="font-size: 12px;">O Serengeti Rules explora as regras básicas que regem as relações ecológicas e populações de animais pelo mundo. A leitura é bem leve e o autor escreve de uma forma a nos prender bastante. O parque nacional do Serengeti é o palco para o vislumbre dessas regras.</p>
 >
 
-- Mercadores da Dúvida, Naomi Oreskes
+- Merchants of Doubt, Naomi Oreskes
 >
 > <p style="font-size: 12px;">Nesse livro Naomi Oreskes nos mostra a história da industria da desinformação, contando como a narrativa de desinformação se mostra presente em praticamente todos os avanços científicos que ameaçam a dominância das grandes industrias (tabaco, combustíveis fósseis...). O livro mergulha fundo nos métodos utilizados para espalhar dúvida em torno do conhecimento científico e torná-lo manipulável. É um livro indignante, porém excelente.</p>
 >
 
-### Fantasy
+### Fantasia
 
 - A coleção do Nome do Vento (As Crônicas do Matador de Reis), Patrick Rothfuss
 >R

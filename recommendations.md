@@ -6,6 +6,8 @@ Here you'll find my favorite books, articles and YouTube channels. I highly reco
 
 ## Academic papers, news articles and blog posts
 
+- Laughlin, D. C. 2024. Letter to a Young Ecologist. Bull Ecol Soc Am 00(00): e2151. [https://doi.org/10.1002/bes2.2151](https://doi.org/10.1002/bes2.2151)
+
 - Wigner, E. The Unreasonable Effectivenss of Mathematics in the Natural Sciences. Communications in Pure and Applied Mathematics, 13 (1960). [https://www.maths.ed.ac.uk/~v1ranick/papers/wigner.pdf](https://www.maths.ed.ac.uk/~v1ranick/papers/wigner.pdf)
 
 - Loeb, A. Benefits of diversity. Nature Phys 10, 616–617 (2014). [https://doi.org/10.1038/nphys3089](https://doi.org/10.1038/nphys3089)
