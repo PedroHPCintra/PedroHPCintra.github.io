@@ -111,7 +111,7 @@ $$
     \nonumber
     & + \underbrace{\overbrace{P(N+1;t)}^{\text{prob. estar em N+1 no instante t}} (d + \alpha)(N+1) \Delta t}_{\text{prob. morte}} + \\
     \nonumber
-    & + \underbrace{\overbrace{P(N;t)}^{\text{prob. estar em N no instante t}} (1 - bN\Delta t)(1 - dN \Delta t)(1 - \alpha N \Delta t)}_{\text{prob. nada acontece}} + \\
+    & + \underbrace{\overbrace{P(N:t)}^{\text{prob. estar em N no instante t}} (1 - bN\Delta t)(1 - dN \Delta t)(1 - \alpha N \Delta t)}_{\text{prob. nada acontece}} + \\
     \nonumber
     & + \underbrace{\mathcal{O}(\Delta t^2)}_{\text{outros termos de ordem maior ou igual a } \Delta t^2}
 \end{align}
@@ -119,7 +119,7 @@ $$
 $$
 \begin{align}
     \nonumber
-    P(N;t+\Delta t) & = P(N;t)(1 - bN \Delta t - dN \Delta t - \alpha N \Delta t) + \\
+    P(N;t+\Delta t) & = P(N:t)(1 - bN \Delta t - dN \Delta t - \alpha N \Delta t) + \\
     \nonumber
     & + P(N-1;t)b(N-1) \Delta t +\\
     \nonumber
@@ -137,7 +137,7 @@ Ao invés de se perguntar então sobre a chance de que a população esteja em u
 
 $$
 \begin{align}
-    \frac{\mathrm{d}}{\mathrm{d}t}P(N;t) = -P(N;t)(b+d+\alpha)n + P(N-1;t)b(N-1) + P(N+1;t)(N+1)(d + \alpha)
+    \frac{\mathrm{d}}{\mathrm{d}t}P(N:t) = -P(N:t)(b+d+\alpha)n + P(N-1;t)b(N-1) + P(N+1;t)(N+1)(d + \alpha)
 \end{align}
 $$
 
@@ -155,7 +155,7 @@ E se ao invés de nos preocuparmos com a distribuição de probabilidades de $N$
 
 $$
 \begin{align}
-    \left \langle N \right \rangle = \displaystyle \sum_{N} N P(N;t) .
+    \left \langle N \right \rangle = \displaystyle \sum_{N} N P(N:t) .
 \end{align}
 $$
 
@@ -163,7 +163,7 @@ Aqui a notação $\left \langle N \right \rangle$ significa _o valor médio de_ 
 
 $$
 \begin{align}
-    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle & = - (b + d+ \alpha) \sum_{N} N^2 P(N;t) + \\
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle & = - (b + d+ \alpha) \sum_{N} N^2 P(N:t) + \\
     \nonumber
     & + b \sum_{N} N^2 P(N-1;t) - \\
     \nonumber
@@ -175,7 +175,7 @@ $$
 \end{align}
 $$
 
-E agora parece que a situação piorou ainda mais. Antes tinhamos um sistema de equações acoplado e agora temos uma equação diferencial com vários somatórios??? Mas confiem no processo. Se pudermos deixar os somatórios no formato $\displaystyle \sum_{N} N P(N;t)$, poderemos escrever tudo apenas em termos das médias de $N$. O primeiro termo da equação diferencial já tem esse formato, e portanto nos atentaremos ao segundo. Se fizermos uma renomeação dos índices no somatório fazendo $M = N - 1$, reescrevemos
+E agora parece que a situação piorou ainda mais. Antes tinhamos um sistema de equações acoplado e agora temos uma equação diferencial com vários somatórios??? Mas confiem no processo. Se pudermos deixar os somatórios no formato $\displaystyle \sum_{N} N P(N:t)$, poderemos escrever tudo apenas em termos das médias de $N$. O primeiro termo da equação diferencial já tem esse formato, e portanto nos atentaremos ao segundo. Se fizermos uma renomeação dos índices no somatório fazendo $M = N - 1$, reescrevemos
 
 $$
 \begin{align}
@@ -187,7 +187,7 @@ Porém, $M$ é apenas um índice de soma e podemos nomeá-lo da forma como quise
 
 $$
 \begin{align}
-    b \sum_{N} N^2 P(N-1;t) = b \sum_{N} (N+1)^2 P(N;t)
+    b \sum_{N} N^2 P(N-1;t) = b \sum_{N} (N+1)^2 P(N:t)
 \end{align}
 $$
 
@@ -216,17 +216,17 @@ Expandindo o termo do somatório recém encontrado, podemos escrever
 
 $$
 \begin{align}
-    b \sum_{N} (N+1)^2 P(N;t) & = b \sum_{N} N^2 P(N;t) + 2 b \sum_{N} N P(N;t) + b \underbrace{\sum_{N} P(N;t)}_{=1} = \\
+    b \sum_{N} (N+1)^2 P(N:t) & = b \sum_{N} N^2 P(N:t) + 2 b \sum_{N} N P(N:t) + b \underbrace{\sum_{N} P(N:t)}_{=1} = \\
     \nonumber
-    & = b \sum_{N} N^2 P(N;t) + 2 b \sum_{N} N P(N;t) + b,
+    & = b \sum_{N} N^2 P(N:t) + 2 b \sum_{N} N P(N:t) + b,
 \end{align}
 $$
 
-onde na última linha utilizamos a normalização $ \sum_{N} P(N;t) = 1$. O somatório no terceiro termo fica
+onde na última linha utilizamos a normalização $ \sum_{N} P(N:t) = 1$. O somatório no terceiro termo fica
 
 $$
 \begin{align}
-    b \sum_{N} N P(N-1;t) & = b \sum_{N} (N+1) P(N;t) = b \sum_{N} N P(N;t) + b
+    b \sum_{N} N P(N-1;t) & = b \sum_{N} (N+1) P(N:t) = b \sum_{N} N P(N:t) + b
 \end{align}
 $$
 
@@ -234,55 +234,62 @@ Analogamente para as somas envolvendo $P(N+1;t)$, fazemos a mudança de índice 
 
 $$
 \begin{align}
-    (d + \alpha) \sum_{N} N^2 P(N+1;t) & = (d + \alpha) \sum_{N} (N-1)^2 P(N;t) = (d + \alpha) \sum_{N} N^2 P(N;t) - \\
+    (d + \alpha) \sum_{N} N^2 P(N+1;t) & = (d + \alpha) \sum_{N} (N-1)^2 P(N:t) = (d + \alpha) \sum_{N} N^2 P(N:t) - \\
     \nonumber
-    & - 2 (d + \alpha) \sum_{N} N P(N;t) + (d + \alpha)
+    & - 2 (d + \alpha) \sum_{N} N P(N:t) + (d + \alpha)
 \end{align}
 $$
 
 $$
 \begin{align}
-    (d + \alpha) \sum_{N} N P(N+1;t) & = (d + \alpha) \sum_{N} (N-1) P(N;t) = (d + \alpha) \sum_{N} N P(N;t) - (d + \alpha)
+    (d + \alpha) \sum_{N} N P(N+1;t) & = (d + \alpha) \sum_{N} (N-1) P(N:t) = (d + \alpha) \sum_{N} N P(N:t) - (d + \alpha)
 \end{align}
 $$
 
 Juntando tudo, a equação mestra fica escrita como
 
+$$
 \begin{align}
-    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle n \right \rangle & = - (b + d+ \alpha) \sum_n n^2 P(n;t) + b \sum_n n^2 P(n;t) + 2 b \sum_n n P(n;t) + \\
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle & = - (b + d+ \alpha) \sum_{N} N^2 P(N:t) + b \sum_{N} N^2 P(N:t) + 2 b \sum_{N} N P(N:t) + \\
     \nonumber
-    & + b - b \sum_n n P(n;t) - b + (d + \alpha) \sum_n n^2 P(n;t) - 2 (d + \alpha) \sum_n n P(n;t) + (d + \alpha) + \\
+    & + b - b \sum_{N} N P(N:t) - b + (d + \alpha) \sum_{N} N^2 P(N:t) - 2 (d + \alpha) \sum_{N} N P(N:t) + (d + \alpha) + \\
     \nonumber
-    & + (d + \alpha) \sum_n n P(n;t) - (d + \alpha) = \\
+    & + (d + \alpha) \sum_{N} N P(N:t) - (d + \alpha) = \\
     \nonumber
-    & = b \sum_n n P(n;t) - d \sum_n n P(n;t) - \alpha \sum_n n P(n;t)
+    & = b \sum_{N} N P(N:t) - d \sum_{N} N P(N:t) - \alpha \sum_{N} N P(N:t)
 \end{align}
+$$
 
-Novamente, vemos que caso $b$, $d$ e $\alpha$ sejam constantes, e equação mestra se torna a mesma equação do modelo de reprodução e morte, com a diferença que o termo de mortalidade é agora adicionado de um fator devido à competição por recursos, e ao invés de $b > d$ ser a condição necessária para o crescimento exponencial, precisamos ter $b > d + \alpha$.
+Veja que caso $b$, $d$ e $\alpha$ sejam constantes, e equação mestra se torna a mesma equação do crescimento exponencial, com a diferença que o termo de mortalidade é agora adicionado de um fator devido à competição por recursos, e ao invés de $b > d$ ser a condição necessária para o crescimento exponencial, precisamos ter $b > d + \alpha$.
 
-Mais realisticamente, a competição por recursos depende da quantidade de indivíduos na população. Quanto menos indivíduos, menor a necessidade de competir com vizinhos por comida, água, espaço, etc. Portanto, uma consideração mais realística é $\alpha = \alpha_0 n$. Isto é, a competição por recursos aumenta linearmente com o aumento da população. Manteremos a taxa de reprodução e a mortalidade natural constantes.
+Porém a taxa de mortalidade por competição de recursos é proporcional à probabilidade de que outro indivíduo adquira o recurso antes, levando o primeiro à fome. Naturalmente a chance de que isso ocorra é proporcional ao numero de indivíduos. Portanto em uma descrição mais realística a competição por recursos depende da quantidade de indivíduos na população. Quanto menos indivíduos, menor a necessidade de competir com vizinhos por comida, água, espaço, etc. Portanto, faz mais sentido considerar $\alpha = \alpha_0 n$. Isto é, a competição por recursos aumenta linearmente com o aumento da população. Apenas com essa melhoria, mantendo a taxa de mortalidade por causas naturais e a natalidade fixas, obtemos
 
+$$
 \begin{align}
-    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle n \right \rangle & = b \sum_n n P(n;t) - d \sum_n n P(n;t) - \alpha_0 \sum_n n^2 P(n;t) = \\
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle & = b \sum_{N} N P(N:t) - d \sum_{N} N P(N:t) - \alpha_0 \sum_{N} N^2 P(N:t) = \\
     \nonumber
-    & = b \left \langle n \right \rangle - d \left \langle n \right \rangle - \alpha_0 \left \langle n^2 \right \rangle
+    & = b \left \langle N \right \rangle - d \left \langle N \right \rangle - \alpha_0 \left \langle N^2 \right \rangle .
 \end{align}
+$$
 
-Note que está equação envolve a média de $n^2$, isto é, o segundo momento estatístico da distribuição de probabilidades para os estados possíveis do sistema. Poderíamos refazer todo o processo para encontrar uma equação que descreva a variação temporal de $\left \langle n^2 \right \rangle$, e substituir a integral desta equação no último termo. Porém, está equação iria depender do terceiro momento estatístico $\left \langle n^3 \right \rangle$. Não ajudaria muito.
+Note que está equação envolve a média de $N^2$, isto é, o segundo momento estatístico da distribuição de probabilidades para os estados possíveis do sistema. Poderíamos refazer todo o processo para encontrar uma equação que descreva a variação temporal de $\left \langle N^2 \right \rangle$, e substituir a integral desta equação no último termo. Porém, está equação iria depender do terceiro momento estatístico $\left \langle N^3 \right \rangle$. Não ajudaria muito.
 
-A aproximação de campo médio também supõe no fundo que todos os momentos estatísticos de ordem maior que 1 são dados em termos do primeiro momento estatístico (a média), como explicitado na equação \eqref{eq.23}. Logo
+A aproximação de campo médio também supõe no fundo que todos os momentos estatísticos de ordem maior que 1 são dados em termos do primeiro momento estatístico (a média), como explicitado na equação 17. Logo
 
+$$
 \begin{align}
-\label{eq.63}
-    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle n \right \rangle = b \left \langle n \right \rangle - d \left \langle n \right \rangle - \alpha_0 \left \langle n \right \rangle^2 = \left[ \underbrace{(b-d)}_{r} - \alpha_0 \left \langle n \right \rangle \right] \left \langle n \right \rangle
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle = b \left \langle N \right \rangle - d \left \langle N \right \rangle - \alpha_0 \left \langle N \right \rangle^2 = \left \langle N \right \rangle \left[ \underbrace{(b-d)}_{r} - \alpha_0 \left \langle N \right \rangle \right]
 \end{align}
+$$
 
 Esta é a equação conhecida para um crescimento logístico!
 
-No fundo, o que a aproximação de campo médio está dizendo nesta equação é que a variância na distribuição de probabilidade dos estados $n$, em um dado instante $t$, é nula $\mathrm{Var}[n] = \left \langle n^2 \right \rangle - \left \langle n \right \rangle^2 = 0 \Rightarrow \left \langle n^2 \right \rangle = \left \langle n \right \rangle^2$. Caso a variância não seja nula, podemos reescrever a equação \eqref{eq.63} como
+No fundo, o que a aproximação de campo médio está dizendo nesta equação é que a variância na distribuição de probabilidade dos estados $N$, em um dado instante $t$, é nula $\mathrm{Var}[N] = \left \langle N^2 \right \rangle - \left \langle N \right \rangle^2 = 0 \Rightarrow \left \langle N^2 \right \rangle = \left \langle N \right \rangle^2$. Caso a variância não seja nula, podemos reescrever a equação 17 como
 
+$$
 \begin{align}
-    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle n \right \rangle = b \left \langle n \right \rangle - d \left \langle n \right \rangle - \alpha_0 \left( \left \langle n^2 \right  \rangle + \mathrm{Var}[n] \right) 
+    \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle = b \left \langle N \right \rangle - d \left \langle N \right \rangle - \alpha_0 \left( \left \langle N^2 \right  \rangle + \mathrm{Var}[N] \right) 
 \end{align}
+$$
 
-Ou seja, a presença de uma variação na probabilidade de distribuição de estados do sistema, naturalmente provoca uma diminuição no valor esperado de $n$ para um dado instante de tempo $t$. A estocasticidade não apenas provoca flutuações em torno da média, como também é capaz de mudar o próprio valor esperado de população $t$ tempo após o início da dinâmica.
+Ou seja, a presença de uma variação na probabilidade de distribuição de estados do sistema, naturalmente provoca uma diminuição no valor esperado de $N$ para um dado instante de tempo $t$. A estocasticidade não apenas provoca flutuações em torno da média, como também é capaz de mudar o próprio valor esperado de população $t$ tempo após o início da dinâmica.
