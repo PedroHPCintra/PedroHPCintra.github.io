@@ -186,7 +186,9 @@ Ao invés de se perguntar então sobre a chance de que a população esteja em u
 
 $$
 \begin{align}
-    & \frac{P(N;t+\Delta t) - P(N;t)}{\Delta t} = -P(N;t)(b+d+\alpha)n + P(N-1;t)b(N-1) + P(N+1;t)(N+1)(d + \alpha) + \mathcal{O}(\Delta t),
+    \frac{P(N;t+\Delta t) - P(N;t)}{\Delta t} &= -P(N;t)(b+d+\alpha)n + P(N-1;t)b(N-1) \\
+    \nonumber
+    & + P(N+1;t)(N+1)(d + \alpha) + \mathcal{O}(\Delta t),
 \end{align}
 $$
 
