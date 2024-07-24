@@ -193,6 +193,7 @@ $$
 $$
 
 e como mencionado anteriormente, tomamos o limite $\Delta t \rightarrow 0$.
+
 $$
 \begin{align}
 \lim_{\Delta t \rightarrow 0} \frac{P(N;t+\Delta t) - P(N;t)}{\Delta t} = \frac{\mathrm{d}}{\mathrm{d}t}P(N;t),
