@@ -12,7 +12,7 @@ $$
 
 onde $k$ é a capacidade de suporte da população; isto é, o valor máximo que ela pode atingir, $r$ é a taxa de crescimento e $N$ é o valor da população em um certo instante de tempo. O que essa equação nos diz é que a taxa de variação no tempo, de uma população sujeita apenas à limitação de recursos (sem sofrer predação ou outras interações com outras populações) cresce rapidamente mas tende a se estabilizar em um valor máximo, ditado pelas condições ambientais.
 
-Mas ok, e de onde essa equação veio? Você talvez tenha visto uma construção que começa a partir de um crescimento exponencial, e então adiciona a limitação por recursos para chegar ao modelo logístico. Eu não gosto muito dessa derivação (aos mais preciosistas que queiram arugmentar se isso é ou não uma derivação, estou simplificando a linguagem aqui para tentar elaborar algo mais coloquial), pois ela não nos mostra de forma clara que tipo de premissas assumimos a respeito dos indivíduos que compõe essa população. Para isso, precisamos montar essa equação, partindo da dinâmica individual. **Esté é meu objetivo aqui.**
+Mas ok, e de onde essa equação veio? Você talvez tenha visto uma construção que começa a partir de um crescimento exponencial, e então adiciona a limitação por recursos para chegar ao modelo logístico. Eu não gosto muito dessa derivação (aos mais preciosistas que queiram argumentar se isso é ou não uma derivação, estou simplificando a linguagem aqui para tentar elaborar algo mais coloquial), pois ela não nos mostra de forma clara que tipo de premissas assumimos a respeito dos indivíduos que compõe essa população. Para isso, precisamos montar essa equação, partindo da dinâmica individual. **Esté é meu objetivo aqui.**
 
 A transição entre a dinâmica de indivíduos para o comportamento de população é para mim um fenômeno extraordinário. Talvez pelo meu histórico como um físico, eu tenha me apegado e encontrado uma certa beleza em observar descrições individuais e simples resultar em comportamentos macroscópicos complexos. Para os leitores físicos, eu tendo a pensar na transição entre o formalismo de operadores da mecânica quântica para o formalismo padrão da mecânica clássica, ao tomarmos a média dos operadores em um sistema de muitas partículas. Aqui a coisa não será tão diferente, matematicamente falando.
 
@@ -84,7 +84,7 @@ E você pode estar pensando _"ora, ora, ora, mas você mesmo disse que muitas co
 
 $$
 \begin{align}
-    P_{N-2 \rightarrow N}^{r} = \underbrace{(N-2)b \Delta t}_{\text{1ª reprodução}} \overbrace{(N-1) b \Delta t'}^{2ª reprodução} \underbrace{\left(1 - b \Delta t\right)^{N-3}}_{\text{Ninguém mais reproduz}}.
+    P_{N-2 \rightarrow N}^{r} = \underbrace{(N-2)b \Delta t}_{\text{1ª reprodução}} \overbrace{(N-1) b \Delta t'}^{\text{2ª reprodução}} \underbrace{\left(1 - b \Delta t\right)^{N-3}}_{\text{Ninguém mais reproduz}}.
 \end{align}
 $$
 
@@ -118,7 +118,7 @@ $$
 \end{align}
 $$
 
-Note que apenas o evento de uma única reprodução possui uma contribuição de $\Delta t$. Isso significa que conform $\Delta t \rightarrow 0$, este termo fica muito maior do que todos os demais e então $P_{3 \rightarrow 4}^{r} \gg P_{2 \rightarrow 4}^{r}$. Ou seja, se olharmos para um intervalo de tempo curto o suficiente, a chance de que dois eventos ocorram se torna muito menor do que apenas um deles ocorrer.
+Note que apenas o evento de uma única reprodução possui uma contribuição de $\Delta t$. Isso significa que conforme $\Delta t \rightarrow 0$, este termo fica muito maior do que todos os demais e então $P_{3 \rightarrow 4}^{r} \gg P_{2 \rightarrow 4}^{r}$. Ou seja, se olharmos para um intervalo de tempo curto o suficiente, a chance de que dois eventos ocorram se torna muito menor do que apenas um deles ocorrer.
 
 > Antes de continuar, vamos parar um pouco para pensar sobre isso. Se considerarmos um intervalo de tempo de 1 mês, o que você acha mais provável, que apenas uma criança nasça no Brasil durante esse intervalo, ou que muitas crianças nasçam? Certamente em um mês, é mais provável algumas milhares de crianças nascerem no Brasil do que uma apenas (na verdade em 2022, cerca de 200 mil nascimentos ocorreram a cada mês de acordo com o [noticias.uol.com.br](https://noticias.uol.com.br/cotidiano/ultimas-noticias/2024/03/27/criancas-nascidas-2022-brasil.htm)).
 
@@ -149,11 +149,11 @@ Portanto, podemos escrever a probabilidade de observar o sistema com $N$ indiví
 $$
 \begin{align}
     \nonumber
-    P(N;t+\Delta t) & = \underbrace{\overbrace{P(N-1;t)}^{\text{prob. estar em N-1 no instante t}} b (N-1) \Delta t}_{\text{prob. reprodução}} + \\
+    P(N;t+\Delta t) & = \overbrace{P(N-1;t)}^{\text{prob. estar em N-1 no instante t}} \underbrace{b (N-1) \Delta t}_{\text{prob. reprodução}} + \\
     \nonumber
-    & + \underbrace{\overbrace{P(N+1;t)}^{\text{prob. estar em N+1 no instante t}} (d + \alpha)(N+1) \Delta t}_{\text{prob. morte}} + \\
+    & + \overbrace{P(N+1;t)}^{\text{prob. estar em N+1 no instante t}} \underbrace{(d + \alpha)(N+1) \Delta t}_{\text{prob. morte}} + \\
     \nonumber
-    & + \underbrace{\overbrace{P(N;t)}^{\text{prob. estar em N no instante t}} (1 - bN\Delta t)(1 - dN \Delta t)(1 - \alpha N \Delta t)}_{\text{prob. nada acontece}} + \\
+    & + \overbrace{P(N;t)}^{\text{prob. estar em N no instante t}} \underbrace{(1 - bN\Delta t)(1 - dN \Delta t)(1 - \alpha N \Delta t)}_{\text{prob. nada acontece}} + \\
     \nonumber
     & + \underbrace{\mathcal{O}(\Delta t^2)}_{\text{outros termos de ordem maior ou igual a } \Delta t^2}
 \end{align}
