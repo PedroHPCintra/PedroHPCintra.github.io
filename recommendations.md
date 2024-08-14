@@ -75,6 +75,11 @@ If you want to see more books I've read and my opinions about them, you can chec
 > <p style="font-size: 12px;">On this book Naomi Oreskes shows us the history behind the misinformation industry, telling us how the narratives are present in almost every scientific advance that threatens big industries such as tobaco and fossil fuel. The book dives deep into the methods used to spread doubt around scientific knowledge and make it manipulatable. It is a book that triggers a feeling of indignation, yet excelent.</p>
 >
 
+- Wonderful Life, Stephen Jay Gould
+>
+> <p style="font-size: 12px;">The book tells the story of the Burgess Shale fossils discovery, and it's impact on the development of the theory of evolution. It is a book rich in details, thoughts and anecdotes. At some moments the reading is a bit slow due to the amount of details in anatomy and phylogeny, which are great for readers without a biology background, like me. However it does force you to have a slower pace. Stephen J. pauses the main topic to talk about his views of scientific knowledge here and then, which is a feature that I enjoy quite a lot. I love this book.</p>
+>
+
 ### Fantasy
 
 - The Name of the Wind (The kingkiller chronicle: day 1), Patrick Rothfuss
@@ -135,3 +140,13 @@ If you want to see more books I've read and my opinions about them, you can chec
 - [Tim Urban: Inside the mind of a master procastinator](https://www.youtube.com/watch?v=arj7oStGLkU&ab_channel=TED)
 
 - [Global Warming: The Decade We Lost Earth](https://www.youtube.com/watch?v=hvGQMZFP9IA&ab_channel=SimonClark)
+
+- [The Most Misunderstanded Concept in Physics](https://www.youtube.com/watch?v=DxL2HoqLbyA&t=7s&ab_channel=Veritasium)
+
+- [Math's Fundamental Flaw](https://www.youtube.com/watch?v=HeQX2HjkcNo&t=216s&ab_channel=Veritasium)
+
+- [What The Prisoner's Dilemma Reveals About Life, The Universe, and Everything](https://www.youtube.com/watch?v=mScpHTIi-kM&ab_channel=Veritasium)
+
+- [A History of Two Problem Solvers](https://youtu.be/ltLUadnCyi0?si=vcq4FeXPDA3IkR1K)
+
+- [Bertrand's Paradox (with 3blue1brown) - Numberphile](https://youtu.be/mZBwsm6B280?si=EP-qbOa4LHunZ4X0)

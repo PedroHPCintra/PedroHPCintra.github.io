@@ -75,6 +75,11 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 > <p style="font-size: 12px;">Nesse livro Naomi Oreskes nos mostra a história da industria da desinformação, contando como a narrativa de desinformação se mostra presente em praticamente todos os avanços científicos que ameaçam a dominância das grandes industrias (tabaco, combustíveis fósseis...). O livro mergulha fundo nos métodos utilizados para espalhar dúvida em torno do conhecimento científico e torná-lo manipulável. É um livro indignante, porém excelente.</p>
 >
 
+- Vida Maravilhosa, Stephen Jay Gould
+>
+> <p style="font-size: 12px;">O livro conta a história da descoberta dos fósseis do Burgess Shale e o impacto da descoberta na formulação da teoria da evolução. É um livro muito rico em detalhes, em pensamentos e anedotas. Em alguns momentos a leitura se torna um tanto quanto cansativa pela quantidade de detalhes de anatomia e filogenia que o Stephen J. coloca, o que é ótimo para um leitor não graduado em biologia, como eu, mas deixa a leitura um tanto lenta. Em diversos pedaços do livro do Stephen J. faz pausas para comentar sobre suas visões a respeito da ciência e do conhecimento científico, das quais concordo em sua maioria. Adoro este livro.</p>
+>
+
 ### Fantasia
 
 - A coleção do Nome do Vento (As Crônicas do Matador de Reis), Patrick Rothfuss
@@ -136,3 +141,7 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 - [Math's Fundamental Flaw](https://www.youtube.com/watch?v=HeQX2HjkcNo&t=216s&ab_channel=Veritasium)
 
 - [What The Prisoner's Dilemma Reveals About Life, The Universe, and Everything](https://www.youtube.com/watch?v=mScpHTIi-kM&ab_channel=Veritasium)
+
+- [Uma história de dois solucionadores de problemas](https://youtu.be/ltLUadnCyi0?si=vcq4FeXPDA3IkR1K)
+
+- [Bertrand's Paradox (with 3blue1brown) - Numberphile](https://youtu.be/mZBwsm6B280?si=EP-qbOa4LHunZ4X0)
