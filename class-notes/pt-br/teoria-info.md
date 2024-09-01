@@ -9,7 +9,7 @@ Você talvez já tenha visto ou jogado o jogo _wordle_, ou o _termo_ (a versão 
 Por exemplo, se a palavra é **beijo** e seu primeiro chute é **jeito**, o jogo irá de dizer que o **j** está na palavra secreta, porém em outra posição; o **e** está na palavra secreta e está na posição correta; o **i** também, o **t** não está na palavra secreta; e o **o** está e também está na posição correta, assim como o **ei**. O jogo diz isso colorindo a posição de cada palavra para você, tipo assim:
 
 > Tentativa: **jeito** \
-> Feedback: $\color{yellow}{j}\color{green}{ei}\color{grey}{t}\color{green}{o}$
+> Feedback: :yellow_circle: :large_blue_circle: :large_blue_circle: :red_circle: :large_blue_circle:
 
 Com essa informação, você chuta uma nova palavra. Tente jogar uma partida aqui: [termo.pt](https://termo.pt/index.html)
 
@@ -33,4 +33,15 @@ Ou seja, as letras **e** e **i** estão na resposta final, porém em posições 
 
 :red_circle: :large_blue_circle: :yellow_circle: :red_circle: :red_circle:
 
-Nesse caso restariam 142 palavras.
+Nesse caso restariam 142 palavras. Podemos fazer isso com todos os possíveis feedbacks que o jogo nos dá. Temos 3 opções de feedback para cada uma das 5 letras da palavra, portanto o total de feedbacks possíveis é $3 \times 3 \times 3 \times 3 \times 3 = 3^5 = 243$. Em cada um deles, vai existir uma quantidade $n$ de palavras restantes que atendem às informações fornecidas pelo jogo. Como não sabemos qual é a palavra secreta, cada feedback tem uma chance $p$ de ocorrer dado pela quantidade de palavras restantes dividido pelo total de palavras de 5 letras inicialmente. Ou seja
+
+$$
+\begin{align}
+p = \frac{n}{5481}
+\end{align}
+$$
+
+No caso de **beijo** como chute inicial, podemos organizar cada possibilidade de feedback da mais provável para a menos provável.
+
+![prob-eq](https://pedrohpcintra.github.io/assets/img/class_notes/Feedbacks_probability_beijo.png)
+
