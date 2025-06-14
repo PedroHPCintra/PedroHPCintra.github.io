@@ -268,13 +268,21 @@ O que fizemos aqui na prática foi mover o somatório em 1 índice para trás. I
 Suponha $P(0) = 0.05$, $P(1) = 0.15$, $P(2) = 0.3$, $P(3) = 0.3$, $P(4) = 0.15$, $P(5) = 0.05$ e $P(N>5) = 0$. Nesse caso
 
 $$
-\sum_{N} N^2 P(N-1) = \sum_{N=0}^\infty N^2 P(N-1) = 0\times P(-1) + 1^2 \times P(0) + \cdots + 6^2 \times P(5) + 7^2 \times P(6) + \cdots
+\begin{align}
+\nonumber
+& \sum_{N} N^2 P(N-1) = \\
+& = \sum_{N=0}^\infty N^2 P(N-1) = 0\times P(-1) + 1^2 \times P(0) + \cdots + 6^2 \times P(5) + \cdots
+\end{align}
 $$
 
 naturalmente todos os termos que envolvem $P(6)$ em diante serão nulos, bem como o primeiro termo por envolver $P(-1) = 0$. O resultado desta soma é $13.7$. Poís bem, façamos uma mudança no índice de tal forma que $M$ agora é $N-1$. Neste caso
 
 $$
-\sum_{N=0}^\infty N^2 P(N-1) = \sum_{M=-1}^\infty (M+1)^2 P(M) = 0^2\times P(-1) + 1^2 \times P(0) + \cdots + 6^2 \times P(5) + 7^2 \times P(6) + \cdots
+\begin{align}
+\nonumber
+& \sum_{N=0}^\infty N^2 P(N-1) = \\
+& \sum_{M=-1}^\infty (M+1)^2 P(M) = 0^2\times P(-1) + 1^2 \times P(0) + \cdots + 6^2 \times P(5) + \cdots
+\end{align}
 $$
 
 Note que o somatório é o mesmo, inclusive o resultado continua sendo o mesmo $13.7$. Isso poís a relação entre os termos da soma ainda é a mesma, como você mesmo pode verificar escrevendo termo a termo da soma.
@@ -311,7 +319,9 @@ $$
 
 $$
 \begin{align}
-    (d + \alpha) \sum_{N} N P(N+1;t) & = (d + \alpha) \sum_{N} (N-1) P(N;t) = (d + \alpha) \sum_{N} N P(N;t) - (d + \alpha)
+    \nonumber
+    (d + \alpha) \sum_{N} N P(N+1;t) & = \\
+    (d + \alpha) \sum_{N} (N-1) P(N;t) & = (d + \alpha) \sum_{N} N P(N;t) - (d + \alpha)
 \end{align}
 $$
 
@@ -321,9 +331,9 @@ $$
 \begin{align}
     \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle & = - (b + d+ \alpha) \sum_{N} N^2 P(N;t) + b \sum_{N} N^2 P(N;t) + 2 b \sum_{N} N P(N;t) + \\
     \nonumber
-    & + b - b \sum_{N} N P(N;t) - b + (d + \alpha) \sum_{N} N^2 P(N;t) - 2 (d + \alpha) \sum_{N} N P(N;t) + (d + \alpha) + \\
+    & + b - b \sum_{N} N P(N;t) - b + (d + \alpha) \sum_{N} N^2 P(N;t) - \\
     \nonumber
-    & + (d + \alpha) \sum_{N} N P(N;t) - (d + \alpha)
+    & - 2 (d + \alpha) \sum_{N} N P(N;t) + (d + \alpha) + (d + \alpha) \sum_{N} N P(N;t) - (d + \alpha)
 \end{align}
 $$
 

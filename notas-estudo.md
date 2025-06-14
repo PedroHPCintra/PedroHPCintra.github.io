@@ -16,11 +16,11 @@ layout: sub-page_pt-br
 
 - [De Indivíduos à Populações](./assets/pdf/Class-note-de-individuos-a-populacoes.pdf) **(AINDA EM DESENVOLVIMENTO)**: Anotações a respeito de equações mestras em ecologia e como equações diferenciais podem ser encontradas a partir das dinâmicas individuais.
 
-- [O surgimento do modelo logístico](./class-notes/pt-br/modelo-logistico-eq-mestre.md): 
+- [O surgimento do modelo logístico](./class-notes/pt-br/modelo-logistico-eq-mestre.md): Uma breve introdução a respeito de equações mestras em ecologia e a conexão entre dinâmicas individuais e a descrição populacional.
 
-- [Equação de Price e regra de Hamilton](./class-notes/pt-br/eq-price-&-altruismo.md): 
+- [Equação de Price e regra de Hamilton](./class-notes/pt-br/eq-price-&-altruismo.md) **(AINDA EM DESENVOLVIMENTO)**: 
 
 
 ## Outros
 
-- [Teoria da informação e o jogo Termo](./class-notes/pt-br/teoria-info.md): 
+- [Teoria da informação e o jogo Termo](./class-notes/pt-br/teoria-info.md) **(AINDA EM DESENVOLVIMENTO)**: 
