@@ -75,6 +75,16 @@ layout: CV-page
 > - Workload: 40 hours per week.
 > - Development and analysis of Machine Learning models aiming to provide solutions to specific problems concerning sustainable growth, focusing of Deep Learning Neural Networks.
 
+## Data Scientist
+
+> **Hired**
+> 
+> <i style="font-size:20px" class="fa fa-calendar"></i> Sep 2020 - Today    
+> <i style="font-size:20px" class="fa fa-map-marker"></i> Codee Tech
+> 
+> - Workload: 40 hours per week.
+> - Development and analysis of AI models aiming to provide solutions to specific problems concerning marketing in social networks.
+
 <hr style="border:2px black; color: black">
 
 # <u>RESEARCH PROJECTS</u>

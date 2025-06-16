@@ -48,9 +48,9 @@ Meu orientador em específico foi ótimo e guardo muito carinho por ele ainda ho
 
 # Dicas finais
 
-Para terminar, adiciono aqui 3 dicas para seu curso de graduação:
+Para terminar, adiciono aqui algumas dicas para seu curso de graduação:
 
-1. Participe de eventos! Busque auxílio da universidade para participar de eventos em outros estados e aproveite eles, conheça outros institutos, outros pesquisadores, aproveite as cidades. Durante minha graduação fui para São Paulo, Campinas (onde hoje faço o mestrado), Rio de Janeiro e Recife, e participei de eventos muito bons com meus amigos. Um desses eventos, em São Paulo, foi justamente onde eu achei o tema para meu Trabalho de Conclusão de Curso;
+1. Participe de eventos! Busque auxílio da universidade para participar de eventos em outros estados e aproveite eles, conheça outros institutos, outros pesquisadores, aproveite as cidades. Durante minha graduação fui para São Paulo, Campinas (onde mais tarde fiz o mestrado), Rio de Janeiro e Recife, e participei de eventos muito bons com meus amigos. Um desses eventos, em São Paulo, foi justamente onde eu achei o tema para meu Trabalho de Conclusão de Curso;
 
 2. Aprenda inglês! Se você já sabe, ótimo. Se não sabe, aprenda. A língua na qual o meio científico se comunica hoje é o inglês. Chegará o momento no curso em que todos os livros texto da disciplinas serão em inglês, aproveite o início do curso para aprender;
 
