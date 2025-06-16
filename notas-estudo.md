@@ -23,4 +23,4 @@ layout: sub-page_pt-br
 
 ## Outros
 
-- [Teoria da informação e o jogo Termo](./class-notes/pt-br/teoria-info.md) **(AINDA EM DESENVOLVIMENTO)**: 
+- [Teoria da informação e o jogo Termo](./class-notes/pt-br/teoria-info.md): Nesse texto eu exploro a conexão entre teoria da informação e o jogo de palavras Termo, versão em português do jogo Wordle, seguindo a linha de explicação de um vídeo do YouTube do canal [3blue1brown](https://www.youtube.com/@3blue1brown).
