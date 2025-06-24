@@ -2,244 +2,136 @@
 layout: sub-page_pt-br
 ---
 
-# Pair-Approximation Logistic Growth
+# _Pair Approximation_ - Modelo Logístico
 
-## System Description
+## Descrição do sistema
 
-We have a lattice where each site can be:
-- Empty (0) 
-- Occupied (1)
+Considere uma rede na qual cada sítio pode possuir dois estados:
+- Vazio (0) 
+- Ocupado (1)
 
-**Reactions:**
-1. **Birth**: Occupied sites produce offspring at rate $b$, dispersed randomly to $z$ neighboring sites
-2. **Crowding death**: Occupied sites die at rate $1 + \delta \times$(number of occupied neighbors)
-3. **Natural death**: Occupied sites die independently at rate $\gamma$
+**Reações:**
+1. **Nascimento (0 $\rightarrow$ 1)**: Sítios ocupados produzem novos indivíduos com uma taxa $b$, que são enviados aleatoriamente para um dos $z$  sítios vizinhos ao sítio focal, independente do estado da vizinhança $\mathcal{N}(i)$
+2. **Morte natural (1 $\rightarrow$ 0)**: Sítios ocupados morrem de forma natural, independente do estado da rede, com uma taxa $\gamma$
+3. **Morte por aglomeração (1 $\rightarrow$ 0)**: Sítios ocupados morrem devido à aglomeração (que leva à competição por recursos) com uma taxa $1 + \delta \times$(n° de vizinhos ocupados)
 
 ![prob-eq](https://pedrohpcintra.github.io/assets/img/class_notes/Neighborhood.png)
 
-## Master Equation
+## Equação Mestra
 
-Let $P(\mathbf{n}, t)$ be the probability of configuration $\mathbf{n} = (n_1, n_2, \ldots, n_N)$ at time $t$, where $n_i \in \{0,1\}$ is the state of site $i$.
+Seja $P(\vec{n}, t)$ a probabilidade de que a rede tenha a configuração $\vec{n} = (n_1, n_2, \ldots, n_N)$ no instante $t$, onde $n_i \in \{0,1\}$ é o estado do sítio $i$.
 
-$$\frac{dP(\mathbf{n}, t)}{dt} = \sum_{\mathbf{n}'} [W(\mathbf{n}|\mathbf{n}') P(\mathbf{n}', t) - W(\mathbf{n}'|\mathbf{n}) P(\mathbf{n}, t)]$$
+$$\frac{dP(\vec{n}, t)}{dt} = \sum_{\vec{n}'} [W(\vec{n}|\vec{n}') P(\vec{n}', t) - W(\vec{n}'|\vec{n}) P(\vec{n}, t)]$$
 
-**Transition rates $W(\mathbf{n}'|\mathbf{n})$:**
+**Taxas de transição $W(\vec{n}'|\vec{n})$:**
 
-1. **Birth transition** ($0 \to 1$ at site $i$):
+1. **Nascimento** ($0 \to 1$ no sítio $i$):
    $$
-   W(\mathbf{n} + \mathbf{e}_i|\mathbf{n}) = b \sum_{j \in \mathcal{N}(i)} n_j \cdot \frac{1}{z} \quad \text{if } n_i = 1
-   $$
-
-2. **Crowding death** ($1 \to 0$ at site $i$):
-   $$
-   W(\mathbf{n} - \mathbf{e}_i|\mathbf{n}) = \left(1 + \delta \sum_{j \in \mathcal{N}(i)} n_j\right) n_i
+   W(\vec{n} - \hat{e}_i|\vec{n}) = b \sum_{j \in \mathcal{N}(i)} n_j \cdot \frac{1}{z} \quad \text{if } n_i = 0
    $$
 
-3. **Natural death** ($1 \to 0$ at site $i$):
+2. **Aglomeração** ($1 \to 0$ no sítio $i$):
    $$
-   W(\mathbf{n} - \mathbf{e}_i|\mathbf{n}) = \gamma n_i
+   W(\vec{n} + \hat{e}_i|\vec{n}) = \left(1 + \delta \sum_{j \in \mathcal{N}(i)} n_j\right) n_i
    $$
 
-where $\mathcal{N}(i)$ is the neighborhood of site $i$ and $\mathbf{e}_i$ is the unit vector for site $i$.
+3. **Morte natural** ($1 \to 0$ no sítio $i$):
+   $$
+   W(\vec{n} + \hat{e}_i|\vec{n}) = \gamma n_i
+   $$
 
-## Moment Equations
+onde $\mathcal{N}(i)$ é a vizinhança do sítio $i$ e $\hat{e}_i$ é o vetor unitário do sítio $i$.
 
-Taking expectations and defining:
-- $\rho_1 = \langle n_i \rangle$ (density of occupied sites)
-- $\rho_{11} = \langle n_i n_j \rangle$ for neighbors $i,j$ (density of occupied pairs)
-- $\rho_{10} = \langle n_i (1-n_j) \rangle$ for neighbors $i,j$ (density of 10 pairs)
+## Equações para médias
 
-From the master equation:
+Tomando o valor esperado:
+- $\rho_1 = \langle n_i \rangle$ (densidade de sítios ocupados)
+- $\rho_{11} = \langle n_i n_j \rangle$ para vizinhos $i,j$ (densidade de pares ocupados)
+- $\rho_{10} = \langle n_i (1-n_j) \rangle$ para vizinhos $i,j$ (densidade de pares 10)
 
-$$\frac{d\rho_1}{dt} = \langle \frac{dn_i}{dt} \rangle$$
+A partir da equação mestra:
 
-**Birth contribution:**
+$$\frac{d\rho_1}{dt} = \left \langle \frac{dn_i}{dt} \right \rangle$$
+
+**Contribuição do nascimento:**
 
 $$
-\frac{b}{z} \sum_{j \in \mathcal{N}(i)} \langle n_j \rangle = \frac{b}{z} \cdot z \cdot \rho_0 \cdot P(\text{neighbor is occupied | site i is empty})
+\frac{b}{z} \sum_{j \in \mathcal{N}(i)} \langle n_j (1 - n_i) \rangle = \frac{b}{z} \cdot z \cdot \rho_{10}
 $$
 
-Using conditional probabilities: $P(\text{neighbor is occupied | site i empty}) = q_{1|0}$
+Usando a probabilidade condicional:
+$$
+P(\text{vizinho ocupado | sítio i está vazio}) = q_{1|0} = \frac{\rho_{10}}{\rho_0} \Rightarrow
+$$
+$$
+\Rightarrow \rho_{10} = q_{1|0} \rho_0
+$$
 
-So the birth rate for empty sites is: $b q_{1|0} \rho_0 = b q_{1|0} (1-\rho_1)$
+Portanto a taxa de nascimento fica: $b q_{1|0} \rho_0 = b q_{1|0} (1-\rho_1)$
 
-**Crowding death contribution:**
+**Contribuição da aglomeração:**
 $$
 -\left \langle \left(1 + \delta \sum_{j \in \mathcal{N}(i)} n_j\right) n_i \right \rangle = -(1 + \delta z q_{1|1})\rho_1
 $$
 
-**Natural death contribution:**
+**Contribuição da morte natural:**
 $$-\gamma \langle n_i \rangle = -\gamma \rho_1$$
 
-Therefore:
+portanto:
 $$\boxed{\frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (1 + \delta z q_{1|1} + \gamma)\rho_1}$$
 
-## Pair Equation Derivation
+Esta equação depende de $\rho_{11}$, poís $q_{1|1} = \rho_{11}/\rho_{1}$. Para conseguirmos resolver o sistema sem invocar a aproximação de campo médio, precisamos de uma equação para a frequência de pares $\rho_{11}$.
 
-For the pair density $\rho_{11}$:
+## Derivação da equação de pares
 
-$$\frac{1}{2}\frac{d\rho_{11}}{dt} = \left \langle \frac{d(n_i n_j)}{dt} \right \rangle \text{ for neighbors } i,j$$
+Para a densidade de pares $\rho_{11}$:
 
-**Birth contributions:**
-Each occupied site produces offspring at rate $b$, sending it to one of $z$ neighbors with equal probability $1/z$.
+$$\frac{1}{2}\frac{d\rho_{11}}{dt} = \left \langle \frac{d(n_i n_j)}{dt} \right \rangle \text{ para vizinhos } i,j$$
 
-For an 11 pair $(i,j)$ to be created by birth:
-- An occupied neighbor $k \in \mathcal{N}(i), k \neq j$ gives birth to empty site $i$ (probability $1/z$ per birth event)
-- An occupied neighbor $k \in \mathcal{N}(j), k \neq i$ gives birth to empty site $j$ (probability $1/z$ per birth event)
+**Contribuição do nascimento:**
 
-The rate of creating 11 pairs from 10 pairs is:
-$b \cdot \frac{1}{z} \cdot (z-1) \cdot \rho_{10} \cdot P(\text{other neighbors occupied | in 10 pair})$
+Cada sítio ocupado produz filhotes a uma taxa $b$, enviado-os para um dos $z$ vizinhos com igual probabilidade $1/z$.
 
-This simplifies to: $b[1 + (z-1)q_{1|0}]\rho_{10}$
+Para que um par $(1,1)$ seja criado a partir do nascimento:
+- Um vizinho ocupado $k \in \mathcal{N}(i), k \neq j$ gera um filho no sítio vazio $i$ (probabilidade $1/z$ a cada evento de nascimento)
+- Um vizinho ocupado $k \in \mathcal{N}(j), k \neq i$ gera um filho no sítio vazio $j$ (probabilidade $1/z$ a cada evento de nascimento)
 
-**Death contributions:**
-Each site in an 11 pair dies at rate $(1 + \delta \times \text{occupied neighbors} + \gamma)$
+A taxa com a qual pares $(1,1)$ são criados a partir de pares $(1,0)$ tem uma contribuição do sítio já previamente conhecido no estado $1$ $b/z$, mais a contribuição dos demais $z-1$ sítios em $\mathcal{N}(i)$ que estiverem no estado $1$:
 
-For a site in an 11 pair, it has 1 occupied neighbor for sure (its pair partner), plus $(z-1)q_{1|1}$ expected occupied neighbors among the remaining $(z-1)$ neighbors.
+$$
+\frac{b}{z} \rho_{10} \left[ 1 + (z-1) \cdot P(\text{outros sítios ocupados | par (1,0)}) \right]
+$$
 
-Total death rate: $(1 + \delta[1 + (z-1)q_{1|1}] + \gamma)\rho_{11}$
+Assumindo de forma simplificada que $P(\text{outros sítios ocupados | par (1,0)}) = P(\text{outros sítios ocupados | sítio focal = 0}) = q_{1|0}$ chegamos ao resultado
 
-$$\frac{1}{2}\frac{d\rho_{11}}{dt} = \frac{2b(z-1)}{z} \rho_{10} - (1 + \delta[1 + (z-1)q_{1|1}] + \gamma)\rho_{11}$$
+$$
+\frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10}
+$$
 
-Using $q_{1|0} = \rho_{10}/\rho_0 = \rho_{10}/(1-\rho_1)$:
+No final das contas estamos assumindo que a informação que um dos vizinhos do sítio focal $0$ é um sítio $1$ não muda de forma significante a probabilidade condicional de que outros sítios na vizinhança esteja ocupada.
+
+**Contribuições de morte:**
+
+Cada sítio $(1,1)$ morre com uma taxa $(1 + \delta \times \text{vizinhos ocupados} + \gamma)$
+
+Para um sítio $(1,1)$, há com certeza ao menos 1 vizinho ocupado (o outro par), mais $(z-1)q_{1|1}$ outros vizinhos ocupados esperados nos $(z-1)$ vizinhos. Aqui aplicamos a mesma aproximação anterior, de que a probabilidade condicional $q_{1|(1,1)}$ é aproximadamente igual à $q_{1|1}$.
+
+$$
+(1 + \delta[1 + (z-1)q_{1|1}] + \gamma)\rho_{11}
+$$
 
 $$\boxed{\frac{1}{2}\frac{d\rho_{11}}{dt} = \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10} - (1 + \delta[1 + (z-1)q_{1|1}] + \gamma)\rho_{11}}$$
 
-## Final Pair-Approximation Equations
+## Equações finais
 
-$$\frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (1 + \delta z q_{1|1} + \gamma)\rho_1$$
+$$
+\begin{align}
+   & \frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (1 + \delta z q_{1|1} + \gamma)\rho_1 \\
+   & \frac{1}{2}\frac{d\rho_{11}}{dt} = \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10} - (1 + \delta[1 + (z-1)q_{1|1}] + \gamma)\rho_{11}
+\end{align}
+$$
 
-$$\frac{1}{2}\frac{d\rho_{11}}{dt} = \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10} - (1 + \delta[1 + (z-1)q_{1|1}] + \gamma)\rho_{11}$$
-
-where:
+onde:
 - $q_{1|0} = \rho_{10}/(1-\rho_1)$
 - $q_{1|1} = \rho_{11}/\rho_1$ 
 - $\rho_{10} = \rho_1 - \rho_{11}$
-
----
-
-# Two-Species Competition Model: Pair-Approximation Derivation
-
-## System Description
-
-We have a lattice where each site can be:
-- Empty (0) 
-- Occupied by species 1 (1)
-- Occupied by species 2 (2)
-
-**Parameters for species $i$ ($i = 1,2$):**
-- $b_i$: birth rate
-- $\gamma_i$: natural death rate  
-- $\delta_{ii}$: intraspecific crowding coefficient
-- $\delta_{ij}$: interspecific crowding coefficient ($i \neq j$)
-
-**Reactions:**
-1. **Birth**: Species $i$ produces offspring at rate $b_i$, dispersed randomly to one of $z$ neighboring sites
-2. **Natural death**: Species $i$ dies independently at rate $\gamma_i$
-3. **Intraspecific crowding**: Species $i$ dies from crowding with species $i$ neighbors at rate $\delta_{ii} \times$ (number of species $i$ neighbors)
-4. **Interspecific crowding**: Species $i$ dies from competition with species $j$ neighbors at rate $\delta_{ij} \times$ (number of species $j$ neighbors)
-
-## State Variables and Notation
-
-**Densities:**
-- $\rho_0$: density of empty sites
-- $\rho_1$: density of sites occupied by species 1
-- $\rho_2$: density of sites occupied by species 2
-- $\rho_0 + \rho_1 + \rho_2 = 1$
-
-**Pair densities:**
-- $\rho_{ij}$: density of neighboring pairs where first site is type $i$, second is type $j$
-- By symmetry: $\rho_{ij} = \rho_{ji}$
-
-**Conditional probabilities:**
-- $q_{j|i} = \rho_{ij}/\rho_i$: probability neighbor is type $j$ given focal site is type $i$
-
-## Master Equation
-
-Let $P(\mathbf{n}, t)$ be the probability of configuration $\mathbf{n} = (n_1, n_2, \ldots, n_N)$ at time $t$, where $n_k \in \{0,1,2\}$ is the state of site $k$.
-
-$$\frac{dP(\mathbf{n}, t)}{dt} = \sum_{\mathbf{n}'} [W(\mathbf{n}|\mathbf{n}') P(\mathbf{n}', t) - W(\mathbf{n}'|\mathbf{n}) P(\mathbf{n}, t)]$$
-
-**Transition rates $W(\mathbf{n}'|\mathbf{n})$:**
-
-1. **Birth transition** ($0 \to i$ at site $k$):
-   $$W(\mathbf{n} + i\mathbf{e}_k|\mathbf{n}) = b_i \sum_{j \in \mathcal{N}(k)} \mathbf{1}_{n_j = i} \cdot \frac{1}{z} \quad \text{if } n_k = 0$$
-
-2. **Death transitions** ($i \to 0$ at site $k$):
-   $$W(\mathbf{n} - i\mathbf{e}_k|\mathbf{n}) = \left[\gamma_i + \delta_{ii} \sum_{j \in \mathcal{N}(k)} \mathbf{1}_{n_j = i} + \delta_{i\bar{i}} \sum_{j \in \mathcal{N}(k)} \mathbf{1}_{n_j = \bar{i}}\right] \mathbf{1}_{n_k = i}$$
-
-where $\bar{i}$ denotes the other species ($\bar{1} = 2$, $\bar{2} = 1$).
-
-## Single-Species Density Equations
-
-For species 1 density:
-
-$$\frac{d\rho_1}{dt} = \left \langle \frac{d\sum_k \mathbf{1}_{n_k = 1}}{dt} \right \rangle$$
-
-**Birth contribution:**
-Each empty site receives species 1 offspring at rate:
-$$b_1 \sum_{j \in \mathcal{N}(k)} \mathbf{1}_{n_j = 1} \cdot \frac{1}{z} = \frac{b_1}{z} \times z \times P(\text{neighbor is 1 | site is 0}) = b_1 q_{1|0}$$
-
-Total birth rate: $b_1 q_{1|0} \rho_0 = b_1 q_{1|0}(1 - \rho_1 - \rho_2)$
-
-**Death contributions:**
-- Natural death: $\gamma_1 \rho_1$
-- Intraspecific crowding: $\delta_{11} z q_{1|1} \rho_1$  
-- Interspecific crowding: $\delta_{12} z q_{2|1} \rho_1$
-
-Therefore:
-$$\boxed{\frac{d\rho_1}{dt} = b_1 q_{1|0}(1 - \rho_1 - \rho_2) - (\gamma_1 + \delta_{11} z q_{1|1} + \delta_{12} z q_{2|1})\rho_1}$$
-
-By symmetry, for species 2:
-$$\boxed{\frac{d\rho_2}{dt} = b_2 q_{2|0}(1 - \rho_1 - \rho_2) - (\gamma_2 + \delta_{22} z q_{2|2} + \delta_{21} z q_{1|2})\rho_2}$$
-
-## Pair Density Equations
-
-We need equations for all pair types: $\rho_{11}$, $\rho_{22}$, $\rho_{12}$, $\rho_{01}$, $\rho_{02}$
-
-### Intraspecific pairs: $\rho_{11}$
-
-$$\frac{1}{2}\frac{d\rho_{11}}{dt} = \text{Birth rate creating 11 pairs} - \text{Death rate destroying 11 pairs}$$
-
-**Birth contributions:**
-- 01 pair becomes 11 when species 1 gives birth to the empty site
-- Rate: $b_1 [1 + (z-1)q_{1|0}] \rho_{01}$
-
-**Death contributions:**
-Each site in 11 pair dies at rate:
-$$\gamma_1 + \delta_{11}[1 + (z-1)q_{1|1}] + \delta_{12}(z-1)q_{2|1}$$
-
-Therefore:
-$$\boxed{\frac{1}{2}\frac{d\rho_{11}}{dt} = b_1[1 + (z-1)q_{1|0}]\rho_{01} - [\gamma_1 + \delta_{11}(1 + (z-1)q_{1|1}) + \delta_{12}(z-1)q_{2|1}]\rho_{11}}$$
-
-### Interspecific pairs: $\rho_{12}$
-
-$$\frac{1}{2}\frac{d\rho_{12}}{dt} = \text{Birth rate creating 12 pairs} - \text{Death rate destroying 12 pairs}$$
-
-**Birth contributions:**
-- 02 pair becomes 12 when species 1 gives birth to the empty site: $b_1[1 + (z-1)q_{1|0}]\rho_{02}$
-- 01 pair becomes 12 when species 2 gives birth to the empty site: $b_2[1 + (z-1)q_{2|0}]\rho_{01}$
-
-**Death contributions:**
-- Species 1 site dies: $[\gamma_1 + \delta_{11}(z-1)q_{1|1} + \delta_{12}(1 + (z-1)q_{2|1})]\rho_{12}$
-- Species 2 site dies: $[\gamma_2 + \delta_{22}(z-1)q_{2|2} + \delta_{21}(1 + (z-1)q_{1|2})]\rho_{12}$
-
-Therefore:
-$$\boxed{\frac{1}{2}\frac{d\rho_{12}}{dt} = b_1[1 + (z-1)q_{1|0}]\rho_{02} + b_2[1 + (z-1)q_{2|0}]\rho_{01} - \text{Death terms}}$$
-
-where Death terms = $[\gamma_1 + \delta_{11}(z-1)q_{1|1} + \delta_{12}(1 + (z-1)q_{2|1})] + [\gamma_2 + \delta_{22}(z-1)q_{2|2} + \delta_{21}(1 + (z-1)q_{1|2})]$
-
-### Similar equations for $\rho_{22}$, $\rho_{01}$, $\rho_{02}$
-
-By symmetry:
-$$\boxed{\frac{1}{2}\frac{d\rho_{22}}{dt} = b_2[1 + (z-1)q_{2|0}]\rho_{02} - [\gamma_2 + \delta_{22}(1 + (z-1)q_{2|2}) + \delta_{21}(z-1)q_{1|2}]\rho_{22}}$$
-
-## Constraint Relations
-
-- $\rho_0 + \rho_1 + \rho_2 = 1$
-- $\rho_{01} + \rho_{11} + \rho_{21} = z\rho_1$ 
-- $\rho_{02} + \rho_{12} + \rho_{22} = z\rho_2$
-- $\rho_{00} + \rho_{10} + \rho_{20} = z\rho_0$
-- $\rho_{12} = \rho_{21}$ (by symmetry)
-
-This gives us a closed system for competitive dynamics between two species!

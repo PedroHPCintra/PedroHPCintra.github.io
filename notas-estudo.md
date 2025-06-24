@@ -20,6 +20,8 @@ layout: sub-page_pt-br
 
 - [Equação de Price e regra de Hamilton](./class-notes/pt-br/eq-price-&-altruismo.md) **(AINDA EM DESENVOLVIMENTO)**: 
 
+- [Pair-Approximation](./class-notes/pt-br/pair-approximation.md) **(AINDA EM DESENVOLVIMENTO)**: 
+
 
 ## Outros
 
