@@ -15,7 +15,7 @@ Considere uma rede na qual cada sítio pode possuir dois estados:
 2. **Morte natural (1 $\rightarrow$ 0)**: Sítios ocupados morrem de forma natural, independente do estado da rede, com uma taxa $\gamma$
 3. **Morte por aglomeração (1 $\rightarrow$ 0)**: Sítios ocupados morrem devido à aglomeração (que leva à competição por recursos) com uma taxa $1 + \delta \times$(n° de vizinhos ocupados)
 
-![prob-eq](https://pedrohpcintra.github.io/assets/img/class_notes/Neighborhood.png)
+![Neighborhood](https://pedrohpcintra.github.io/assets/img/class_notes/Neighborhood.png)
 
 ## Equação Mestra
 
@@ -95,6 +95,8 @@ Cada sítio ocupado produz filhotes a uma taxa $b$, enviado-os para um dos $z$ v
 Para que um par $(1,1)$ seja criado a partir do nascimento:
 - Um vizinho ocupado $k \in \mathcal{N}(i), k \neq j$ gera um filho no sítio vazio $i$ (probabilidade $1/z$ a cada evento de nascimento)
 - Um vizinho ocupado $k \in \mathcal{N}(j), k \neq i$ gera um filho no sítio vazio $j$ (probabilidade $1/z$ a cada evento de nascimento)
+
+![Neighborhood-2](https://pedrohpcintra.github.io/assets/img/class_notes/Neighborhood_2.png)
 
 A taxa com a qual pares $(1,1)$ são criados a partir de pares $(1,0)$ tem uma contribuição do sítio já previamente conhecido no estado $1$ $b/z$, mais a contribuição dos demais $z-1$ sítios em $\mathcal{N}(i)$ que estiverem no estado $1$:
 
