@@ -23,7 +23,7 @@ Seja $P(\vec{n}, t)$ a probabilidade de que a rede tenha a configuração $\vec{
 
 $$\frac{dP(\vec{n}, t)}{dt} = \sum_{\vec{n}'} [W(\vec{n}|\vec{n}') P(\vec{n}', t) - W(\vec{n}'|\vec{n}) P(\vec{n}, t)]$$
 
-**Taxas de transição $W(\vec{n}'|\vec{n})$:**
+**Taxas de transição $W(\vec{n}'\|\vec{n})$:**
 
 1. **Nascimento** ($0 \to 1$ no sítio $i$):
    $$
@@ -67,7 +67,7 @@ $$
 \Rightarrow \rho_{10} = q_{1|0} \rho_0
 $$
 
-Portanto a taxa de nascimento fica: $b q_{1|0} \rho_0 = b q_{1|0} (1-\rho_1)$
+Portanto a taxa de nascimento fica: $b q_{1\|0} \rho_0 = b q_{1\|0} (1-\rho_1)$
 
 **Contribuição da aglomeração:**
 $$
@@ -80,7 +80,7 @@ $$-\gamma \langle n_i \rangle = -\gamma \rho_1$$
 portanto:
 $$\boxed{\frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (1 + \delta z q_{1|1} + \gamma)\rho_1}$$
 
-Esta equação depende de $\rho_{11}$, poís $q_{1|1} = \rho_{11}/\rho_{1}$. Para conseguirmos resolver o sistema sem invocar a aproximação de campo médio, precisamos de uma equação para a frequência de pares $\rho_{11}$.
+Esta equação depende de $\rho_{11}$, poís $q_{1\|1} = \rho_{11}/\rho_{1}$. Para conseguirmos resolver o sistema sem invocar a aproximação de campo médio, precisamos de uma equação para a frequência de pares $\rho_{11}$.
 
 ## Derivação da equação de pares
 
@@ -104,7 +104,7 @@ $$
 \frac{b}{z} \rho_{10} \left[ 1 + (z-1) \cdot P(\text{outros sítios ocupados | par (1,0)}) \right]
 $$
 
-Assumindo de forma simplificada que $P(\text{outros sítios ocupados | par (1,0)}) = P(\text{outros sítios ocupados | sítio focal = 0}) = q_{1|0}$ chegamos ao resultado
+Assumindo de forma simplificada que $P(\text{outros sítios ocupados \| par (1,0)}) = P(\text{outros sítios ocupados \| sítio focal = 0}) = q_{1\|0}$ chegamos ao resultado
 
 $$
 \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10}
@@ -116,7 +116,7 @@ No final das contas estamos assumindo que a informação que um dos vizinhos do 
 
 Cada sítio $(1,1)$ morre com uma taxa $(1 + \delta \times \text{vizinhos ocupados} + \gamma)$
 
-Para um sítio $(1,1)$, há com certeza ao menos 1 vizinho ocupado (o outro par), mais $(z-1)q_{1|1}$ outros vizinhos ocupados esperados nos $(z-1)$ vizinhos. Aqui aplicamos a mesma aproximação anterior, de que a probabilidade condicional $q_{1|(1,1)}$ é aproximadamente igual à $q_{1|1}$.
+Para um sítio $(1,1)$, há com certeza ao menos 1 vizinho ocupado (o outro par), mais $(z-1)q_{1\|1}$ outros vizinhos ocupados esperados nos $(z-1)$ vizinhos. Aqui aplicamos a mesma aproximação anterior, de que a probabilidade condicional $q_{1\|(1,1)}$ é aproximadamente igual à $q_{1\|1}$.
 
 $$
 (1 + \delta[1 + (z-1)q_{1|1}] + \gamma)\rho_{11}
