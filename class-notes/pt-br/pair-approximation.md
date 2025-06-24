@@ -26,16 +26,19 @@ $$\frac{dP(\vec{n}, t)}{dt} = \sum_{\vec{n}'} [W(\vec{n}|\vec{n}') P(\vec{n}', t
 **Taxas de transição $W(\vec{n}'\|\vec{n})$:**
 
 1. **Nascimento** ($0 \to 1$ no sítio $i$):
+   
    $$
    W(\vec{n} - \hat{e}_i|\vec{n}) = b \sum_{j \in \mathcal{N}(i)} n_j \cdot \frac{1}{z} \quad \text{if } n_i = 0
    $$
 
 2. **Aglomeração** ($1 \to 0$ no sítio $i$):
+   
    $$
    W(\vec{n} + \hat{e}_i|\vec{n}) = \left(1 + \delta \sum_{j \in \mathcal{N}(i)} n_j\right) n_i
    $$
 
 3. **Morte natural** ($1 \to 0$ no sítio $i$):
+   
    $$
    W(\vec{n} + \hat{e}_i|\vec{n}) = \gamma n_i
    $$
@@ -70,14 +73,17 @@ $$
 Portanto a taxa de nascimento fica: $b q_{1\|0} \rho_0 = b q_{1\|0} (1-\rho_1)$
 
 **Contribuição da aglomeração:**
+
 $$
 -\left \langle \left(1 + \delta \sum_{j \in \mathcal{N}(i)} n_j\right) n_i \right \rangle = -(1 + \delta z q_{1|1})\rho_1
 $$
 
 **Contribuição da morte natural:**
+
 $$-\gamma \langle n_i \rangle = -\gamma \rho_1$$
 
 portanto:
+
 $$\boxed{\frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (1 + \delta z q_{1|1} + \gamma)\rho_1}$$
 
 Esta equação depende de $\rho_{11}$, poís $q_{1\|1} = \rho_{11}/\rho_{1}$. Para conseguirmos resolver o sistema sem invocar a aproximação de campo médio, precisamos de uma equação para a frequência de pares $\rho_{11}$.
@@ -104,7 +110,13 @@ $$
 \frac{b}{z} \rho_{10} \left[ 1 + (z-1) \cdot P(\text{outros sítios ocupados | par (1,0)}) \right]
 $$
 
-Assumindo de forma simplificada que $P(\text{outros sítios ocupados \| par (1,0)}) = P(\text{outros sítios ocupados \| sítio focal = 0}) = q_{1\|0}$ chegamos ao resultado
+Assumindo de forma simplificada que
+
+$$
+P(\text{outros sítios ocupados | par (1,0)}) = P(\text{outros sítios ocupados | sítio focal = 0}) = q_{1|0}
+$$
+
+chegamos ao resultado
 
 $$
 \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10}
