@@ -2,20 +2,41 @@
 layout: sub-page_pt-br
 ---
 
-# _Pair Approximation_ - Modelo Logístico
+**Nota:** Boa parte das contas apresentadas aqui neste texto são baseadas no artigo encontrado na referência 1.
 
-## Descrição do sistema
+# Descrição do sistema
 
-Considere uma rede na qual cada sítio pode possuir dois estados:
+Considere uma rede de sítios que podem estar ocupados ou vazios por um indivíduo. Cada sítio pode representar um pequeno pedaço de espaço físico onde indivíduos podem habitar e explorar, ou pode ser uma representação mais abstrata para quantificar onde indivíduos podem estar. No primeiro caso, a descrição deste sistema se assemelha muito à descrição de redes de átomos em física da matéria condensada, onde partículas em uma rede cristalina ocupam sítios e cada sítio pode ser caracterizado pelo _spin_ da partícula que o ocupa.
+
+Neste sistema, sítios podem possuir dois estados possíveis:
 - Vazio (0) 
 - Ocupado (1)
 
+(de forma análoga, em um sistema de uma rede de _spins_ podemos dizer que um sítio pode possuir os estados _spin up_ ou _spin down_)
+
+A característica que difere este sistema ecológico de um sistema físico está na forma como descrevemos a interação entre sítios. Para os leitores físicos interessados, podem notar que esta descrição de um sistema se assemelha muito a um [modelo de Ising](https://en.wikipedia.org/wiki/Ising_model).
+
 **Reações:**
+
+Em um sistema físico de _spin_, a interação entre sítios é descrita, usualmente, como uma interação entre sítios vizinhos na rede que exercem influência um no outro através da interação magnética entre o _spin_ das partículas em cada sítio. Em nosso cenário ecológico, a dinâmica de um dado sítio será dada de forma simplificada por três possíveis reações:
+
 1. **Nascimento (0 $\rightarrow$ 1)**: Sítios ocupados produzem novos indivíduos com uma taxa $b$, que são enviados aleatoriamente para um dos $z$  sítios vizinhos ao sítio focal, independente do estado da vizinhança $\mathcal{N}(i)$
 2. **Morte natural (1 $\rightarrow$ 0)**: Sítios ocupados morrem de forma natural, independente do estado da rede, com uma taxa $\gamma$
 3. **Morte por aglomeração (1 $\rightarrow$ 0)**: Sítios ocupados morrem devido à aglomeração (que leva à competição por recursos) com uma taxa $1 + \delta \times$(n° de vizinhos ocupados)
 
+A figura abaixo representa o sistema em rede descrito por este modelo. O sítio focal $i$ possui uma vizinhança de interação $\mathcal{N}(i)$ composta por $z$ sítios, nos quais alguns estão ocupados (círculos coloridos preenchidos) ou vazios (círculos tracejados brancos). Os demais sítios nesta rede que não são coloridos não fazem parte da vizinhança de $i$.
+
 ![Neighborhood](https://pedrohpcintra.github.io/assets/img/class_notes/Neighborhood.png)
+
+Nesta ilustração, $i$ é influenciado pelos dois vizinhos ocupados, causando a aglomeração. Ao mesmo tempo, $i$ influencia todos os seus vizinhos através da reprodução e nascimento de um novo indivíduo. Além disso, $i$ influencia a si mesmo podendo causar sua morte natural (velhice, doença não infecciosa, azar...). A natureza da influência vinda da aglomeração é dada por relações ecológicas, que podem ser benéficas ou maléficas. Em nosso cenário, estamos considerando a competição por recursos, portanto um elevado número de vizinhos próximos competindo por recursos em comum leva à uma maior chance de morte por fome.
+
+Como uma ilustração mais visual, considere um pequeno pedaço de vegetação onde um grupo de árvores cresce. Novamente, o indivíduo focal $i$ compete com as demais árvores ao redor de sua região por acesso à alimento e espaço para as raízes. Na imagem abaixo, árvores tracejadas representam locais vazios na região $\mathcal{N}(i)$ que define a vizinhança de $i$. Assumimos que uma árvore descendente de $i$ não é dispersada para longe da região de interação de $i$. Podemos generalizar o resultado que será mostrado a seguir para casos onde a vizinhança de competição $\mathcal{N}_c(i)$ e a vizinhança de reprodução $\mathcal{N}_r(i)$ são diferentes, abrangendo casos onde a dispersão é de longa distância (através de polinizadores, por exemplo). Mais tarde, incluiremos também a movimentação de indivíduos pelo espaço, de forma que nosso exemplo se torna mais generalizável a animais herbívoros que vivem sem grandes riscos de predação, como populações de bufalos africanos no Serengeti [[2]](https://doi.org/10.1111/j.1365-2656.2011.01885.x) e megaherbívoros, que excedem 1000 kg em peso quando adultos, no Parque Nacional Kruger [[3]](https://doi.org/10.1111/j.1365-2656.2007.01314.x).
+
+![Neighborhood](https://pedrohpcintra.github.io/assets/img/class_notes/Neighborhood_plants.png)
+
+# _Pair Approximation_ - Modelo Logístico - $\mathcal{N}_c(i) = \mathcal{N}_r(i)$
+
+Consideremos primeiro o caso onde a vizinhança de dispersão para reprodução e a vizinhança de competição são iguais.
 
 ## Equação Mestra
 
@@ -149,3 +170,11 @@ onde:
 - $q_{1\|0} = \rho_{10}/(1-\rho_1)$
 - $q_{1\|1} = \rho_{11}/\rho_1$ 
 - $\rho_{10} = \rho_1 - \rho_{11}$
+
+# Referências
+
+1. Ellner, S. P. (2001). _Pair Approximation for Lattice Models with Multiple Interaction Scales_. **Journal of Theoretical Biology**, v 210, p 435-447. [https://doi.org/10.1006/jtbi.2001.2322](https://doi.org/10.1006/jtbi.2001.2322)
+
+2. Hopcraft, J. G. C., Anderson, T. M., Pérez‐Vila, S., Mayemba, E., & Olff, H. (2012). _Body size and the division of niche space: food and predation differentially shape the distribution of Serengeti grazers_. **Journal of Animal Ecology**, 81(1), 201-213. [https://doi.org/10.1111/j.1365-2656.2011.01885.x](https://doi.org/10.1111/j.1365-2656.2011.01885.x)
+
+3. Owen‐Smith, N., & Mills, M. G. L. (2008). _Predator–prey size relationships in an African large‐mammal food web_. **Journal of Animal Ecology**, 77(1), 173-183. [https://doi.org/10.1111/j.1365-2656.2007.01314.x](https://doi.org/10.1111/j.1365-2656.2007.01314.x)
