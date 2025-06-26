@@ -157,7 +157,7 @@ No final das contas estamos assumindo que a informação que um dos vizinhos do 
 
 **Contribuições de morte:**
 
-Cada sítio $(1,1)$ morre com uma taxa $(1 + \delta \times \text{vizinhos ocupados} + \gamma)$
+Cada sítio $(1,1)$ morre com uma taxa $(\delta \times \text{vizinhos ocupados} + \gamma)$
 
 Para um sítio $(1,1)$, há com certeza ao menos 1 vizinho ocupado (o outro par), mais $(z-1)q_{1\|1}$ outros vizinhos ocupados esperados nos $(z-1)$ vizinhos. Aqui aplicamos a mesma aproximação anterior, de que a probabilidade condicional $q_{1\|(1,1)}$ é aproximadamente igual à $q_{1\|1}$.
 
@@ -171,7 +171,7 @@ $$\boxed{\frac{1}{2}\frac{d\rho_{11}}{dt} = \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{1
 
 $$
 \begin{align}
-   & \frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (1 + \delta z q_{1|1} + \gamma)\rho_1 \\
+   & \frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (\delta z q_{1|1} + \gamma)\rho_1 \\
    & \frac{1}{2}\frac{d\rho_{11}}{dt} = \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10} - [\delta(1 + (z-1)q_{1|1}) + \gamma]\rho_{11}
 \end{align}
 $$
@@ -246,68 +246,42 @@ portanto:
 
 $$\boxed{\frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (\delta \tilde{z} \tilde{q}_{1|1} + \gamma)\rho_1}$$
 
-Novamente, encontramos uma equação exata para a densidade de sítios ocupados na rede. Porém, note que agora está equação depende não de $\rho_{11}$, mas sim de $\tilde{\rho}_{11}$. Isso ocorre poís pares do tipo $(1,1)$ dentro da vizinhança de reprodução não possuem nenhum tipo de reação possível, uma vez que a aglomeração só é inclusa dentro da vizinhança de competição. Caso desejássemos incluir efeitos de cooperação, talvez pudéssemos incluir alguma reação benéfica entre sítios $(1,1)$ que percentem a $\mathcal{N}_r(i)$, porém, manteremos as reações simples por hora. Sendo assim, precisamos encontrar a equação diferencial para o par $\tilde{\rho}_{11}$.
+Novamente, encontramos uma equação exata para a densidade de sítios ocupados na rede. Porém, note que agora está equação depende não de $\rho_{11}$, mas sim de $\tilde{\rho}_{11}$. Isso ocorre poís pares do tipo $(1,1)$ dentro da vizinhança de reprodução não possuem nenhum tipo de reação possível, uma vez que a aglomeração só é inclusa dentro da vizinhança de competição. Caso desejássemos incluir efeitos de cooperação, talvez pudéssemos incluir alguma reação benéfica entre sítios $(1,1)$ que percentem a $\mathcal{N}_r(i)$, porém, manteremos as reações simples por hora. Sendo assim, precisamos encontrar a equação diferencial para o par $(1,1)$ na vizinhança de competição.
 
 ## Derivação da equação do par $\tilde{\rho}_{11}$
 
+Para isso, suponha que um sítio $s_k$ na vizinhança de competição $\mathcal{S}_c(i)$ do indivíduo focal $i$, podem ser ocupados a partir da reprodução de outro indivíduo $j$ cuja vizinhança de reprodução $\mathcal{S}_r(j)$ contém o sítio $s_k$.
+
 **Contribuição do nascimento:**
 
-Cada sítio ocupado produz filhotes a uma taxa $b$, enviado-os para um dos $z$ vizinhos com igual probabilidade $1/z$.
-
-Para que um par $(1,1)$ seja criado a partir do nascimento:
-- Um vizinho ocupado $k \in \mathcal{N}(i), k \neq j$ gera um filho no sítio vazio $i$ (probabilidade $1/z$ a cada evento de nascimento)
-- Um vizinho ocupado $k \in \mathcal{N}(j), k \neq i$ gera um filho no sítio vazio $j$ (probabilidade $1/z$ a cada evento de nascimento)
-
-A taxa com a qual pares $(1,1)$ são criados a partir de pares $(1,0)$ tem uma contribuição do sítio já previamente conhecido no estado $1$ $b/z$, mais a contribuição dos demais $z-1$ sítios em $\mathcal{N}(i)$ que estiverem no estado $1$:
+Sabemos que cada membro do par $(1,0)$ possui ao menos um sítio ocupado na vizinhança de competição. Já a vizinhança de reprodução é desconhecida. Sendo assim, podemos aproximar a taxa de reprodução por
 
 $$
-\begin{align}
-   \nonumber
-   & \frac{b}{z} \rho_{10} \left[ 1 + (z-1) \cdot P(\text{outros sítios ocupados | par (1,0)}) \right] = \\
-   \nonumber
-   & \frac{b}{z} \rho_{10} \left[ 1 + (z-1) \cdot q_{1|(1,0)} \right]
-\end{align}
+bq_{1|0}\tilde{\rho}_{10}
 $$
 
-Assumindo de forma simplificada que
-
-$$
-q_{1|(1,0)} = P(\text{outros sítios ocupados | sítio focal = 0}) = q_{1|0}
-$$
-
-chegamos ao resultado
-
-$$
-\frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10}
-$$
-
-No final das contas estamos assumindo que a informação que um dos vizinhos do sítio focal $0$ é um sítio $1$ não muda de forma significante a probabilidade condicional de que outros sítios na vizinhança esteja ocupada.
+Uma vez que apenas os vizinhos na vizinhança de reprodução irão contribuir para o surgimento de um par $(1,1)$ na vizinhança de competição.
 
 **Contribuições de morte:**
 
-Cada sítio $(1,1)$ morre com uma taxa $(1 + \delta \times \text{vizinhos ocupados} + \gamma)$
+Cada sítio $(1,1)$ morre com uma taxa $(\delta \times \text{vizinhos ocupados em }\mathcal{N}_r + \gamma)$
 
-Para um sítio $(1,1)$, há com certeza ao menos 1 vizinho ocupado (o outro par), mais $(z-1)q_{1\|1}$ outros vizinhos ocupados esperados nos $(z-1)$ vizinhos. Aqui aplicamos a mesma aproximação anterior, de que a probabilidade condicional $q_{1\|(1,1)}$ é aproximadamente igual à $q_{1\|1}$.
+Para um sítio $(1,1)$, há com certeza ao menos 1 vizinho ocupado (o outro par), mais $(\tilde{z}-1)\tilde{q}_{1\|1}$ outros vizinhos ocupados esperados nos $(\tilde{z}-1)$ vizinhos. Aqui aplicamos a mesma aproximação anterior, de que a probabilidade condicional $\tilde{q}_{1\|(1,1)}$ é aproximadamente igual à $\tilde{q}_{1\|1}$.
 
 $$
-[ \delta(1 + (z-1)q_{1|1}) + \gamma]\rho_{11}
+[\delta(1 + (\tilde{z}-1)\tilde{q}_{1|1}) + \gamma]\tilde{\rho}_{11}
 $$
 
-$$\boxed{\frac{1}{2}\frac{d\rho_{11}}{dt} = \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10} - [\delta(1 + (z-1)q_{1|1}) + \gamma]\rho_{11}}$$
+$$\boxed{\frac{1}{2}\frac{d\tilde{\rho}_{11}}{dt} = bq_{1|0}\tilde{\rho}_{10} - [ \delta(1 + (\tilde{z}-1)\tilde{q}_{1|1}) + \gamma]\tilde{\rho}_{11}}$$
 
 ## Equações finais
 
 $$
 \begin{align}
    & \frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (1 + \delta z q_{1|1} + \gamma)\rho_1 \\
-   & \frac{1}{2}\frac{d\rho_{11}}{dt} = \frac{b}{z}[1 + (z-1)q_{1|0}]\rho_{10} - [\delta(1 + (z-1)q_{1|1}) + \gamma]\rho_{11}
+   & \frac{1}{2}\frac{d\tilde{\rho}_{11}}{dt} = b q_{1|0}\rho_{10} - [\delta(1 + (\tilde{z}-1)\tilde{q}_{1|1}) + \gamma]\tilde{\rho}_{11}
 \end{align}
 $$
-
-onde:
-- $q_{1\|0} = \rho_{10}/(1-\rho_1)$
-- $q_{1\|1} = \rho_{11}/\rho_1$ 
-- $\rho_{10} = \rho_1 - \rho_{11}$
 
 # Referências
 
