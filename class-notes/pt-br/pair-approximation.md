@@ -278,8 +278,8 @@ $$\boxed{\frac{1}{2}\frac{d\tilde{\rho}_{11}}{dt} = bq_{1|0}\tilde{\rho}_{10} - 
 
 $$
 \begin{align}
-   & \frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (1 + \delta z q_{1|1} + \gamma)\rho_1 \\
-   & \frac{1}{2}\frac{d\tilde{\rho}_{11}}{dt} = b q_{1|0}\rho_{10} - [\delta(1 + (\tilde{z}-1)\tilde{q}_{1|1}) + \gamma]\tilde{\rho}_{11}
+   & \frac{d\rho_1}{dt} = bq_{1|0}(1-\rho_1) - (\delta \tilde{z} \tilde{q}_{1|1} + \gamma)\rho_1 \\
+   & \frac{1}{2}\frac{d\tilde{\rho}_{11}}{dt} = b q_{1|0}\tilde{\rho}_{10} - [\delta(1 + (\tilde{z}-1)\tilde{q}_{1|1}) + \gamma]\tilde{\rho}_{11}
 \end{align}
 $$
 
