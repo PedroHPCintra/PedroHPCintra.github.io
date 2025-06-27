@@ -266,11 +266,13 @@ Uma vez que apenas os vizinhos na vizinhança de reprodução irão contribuir p
 
 Cada sítio $(1,1)$ morre com uma taxa $(\delta \times \text{vizinhos ocupados em }\mathcal{N}_r + \gamma)$
 
-Para um sítio $(1,1)$, há com certeza ao menos 1 vizinho ocupado (o outro par), mais $(\tilde{z}-1)\tilde{q}_{1\|1}$ outros vizinhos ocupados esperados nos $(\tilde{z}-1)$ vizinhos. Aqui aplicamos a mesma aproximação anterior, de que a probabilidade condicional $\tilde{q}_{1\|(1,1)}$ é aproximadamente igual à $\tilde{q}_{1\|1}$.
+Para um sítio $(1,1)$, há com certeza ao menos 1 vizinho ocupado (o outro par), mais $(\tilde{z}-1)\tilde{q}_{1\|1}$ outros vizinhos ocupados esperados nos $(\tilde{z}-1)$ vizinhos. Aqui aplicamos a mesma aproximação anterior, de que a probabilidade condicional $\tilde{q}_{1\|(1,1)}$ é aproximadamente igual à $\tilde{q}_{1\|1}$, ignorando a informação já conhecida a respeito de ao menos um sítio ocupado na vizinhança do sítio focal.
 
 $$
 [\delta(1 + (\tilde{z}-1)\tilde{q}_{1|1}) + \gamma]\tilde{\rho}_{11}
 $$
+
+A equação final para $\tilde{\rho}_{11}$ assume a forma:
 
 $$\boxed{\frac{1}{2}\frac{d\tilde{\rho}_{11}}{dt} = bq_{1|0}\tilde{\rho}_{10} - [ \delta(1 + (\tilde{z}-1)\tilde{q}_{1|1}) + \gamma]\tilde{\rho}_{11}}$$
 
