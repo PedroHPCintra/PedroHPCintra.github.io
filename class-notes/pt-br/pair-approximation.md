@@ -285,6 +285,8 @@ $$
 \end{align}
 $$
 
+---
+
 # Referências
 
 1. Ellner, S. P. (2001). _Pair Approximation for Lattice Models with Multiple Interaction Scales_. **Journal of Theoretical Biology**, v 210, p 435-447. [doi.org/10.1006/jtbi.2001.2322](https://doi.org/10.1006/jtbi.2001.2322)
