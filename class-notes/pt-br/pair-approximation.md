@@ -484,9 +484,11 @@ $$
    & \frac{d\rho_2}{dt} = b_2 z_2 \rho_{20} - \gamma_2 \rho_2 + \delta_{22} z_2 \rho_{22} + \delta_{21} z_2 \rho_{12} \\
 
    & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1 \left[\rho_{10} + z_1 \frac{\rho_{10}^2}{\rho_0} - \frac{\rho_{10}^2}{\rho_0} \right] - \left[\gamma_1 \rho_{11} + \delta_{11} \left(\rho_{11} + z_1 \frac{\rho_{11}^2}{\rho_1}-\frac{\rho_{11}^2}{\rho_1} \right) + \right. \\
+   \nonumber
    & \left. + \delta_{12}(z_1-1)\frac{\rho_{12} \rho_{11}}{\rho_1} \right] \\
 
    & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2 \left[\rho_{20} + z_2 \frac{\rho_{20}^2}{\rho_0} - \frac{\rho_{20}^2}{\rho_0} \right] - \left[\gamma_2 \rho_{22} + \delta_{22} \left(\rho_{22} + z_2 \frac{\rho_{22}^2}{\rho_2}-\frac{\rho_{22}^2}{\rho_2} \right) + \right. \\
+   \nonumber
    & \left. + \delta_{21}(z_2-1)\frac{\rho_{12} \rho_{22}}{\rho_2} \right] \\
 
    & \frac{d\rho_{12}}{dt} = b_1 \left[\rho_{20} + z_1 \frac{\rho_{10} \rho_{20}}{\rho_0} - \frac{\rho_{10} \rho_{20}}{\rho_0} \right] + b_2 \left[\rho_{01} + z_2\frac{\rho_{20} \rho_{01}}{\rho_0} - \frac{\rho_{20} \rho_{01}}{\rho_0} \right] - \\
