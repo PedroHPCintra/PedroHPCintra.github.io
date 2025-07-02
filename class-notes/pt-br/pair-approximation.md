@@ -287,7 +287,7 @@ $$
 
 ---
 
-# _Pair Approximation_ - Competição entre espécies $\mathcal{N}_c^\mu(i) \neq \mathcal{N}_r^\mu(i)$ e $\left( \mathcal{N}_c^1, \mathcal{N}_r^1 \right) \neq \left( \mathcal{N}_c^2, \mathcal{N}_r^2 \right)$
+# _Pair Approximation_ - Competição entre espécies $\mathcal{N}_c^\mu(i) = \mathcal{N}_r^\mu(i)$ e $\left( \mathcal{N}_c^1, \mathcal{N}_r^1 \right) \neq \left( \mathcal{N}_c^2, \mathcal{N}_r^2 \right)$
 
 ## Descrição do sistema
 
@@ -317,7 +317,7 @@ $$
 
 nos diz que o primeiro e o último sítios da rede são ocupados por indivíduos da espécie 2, o segundo sítio está vazio e o 3ª sítio está ocupado por um indivíduo da espécie 1.
 
-Daqui em diante, usaremos as letras gregas $(\mu,\eta)$ para se referir de forma genérica as espécies e as letras latinas $(i,j,k)$ para se referir aos sítios da rede.
+Daqui em diante, usaremos as letras gregas $(\mu,\eta)$ para se referir de forma genérica as espécies e as letras latinas $(i,j,k)$ para se referir aos sítios da rede, e trataremos $\mathcal{N}_c^\mu(i) = \mathcal{N}_r^\mu(i) = \mathcal{N}^\mu(i)$ para iniciar com simplicidade.
 
 Como sempre, é útil trazer uma interpretação física/biológica para esta descrição abstrata. A imagem abaixo ilustra um cenário ecológico descrito pelo sistema acima. Neste caso, como ambas as espécies de árvores ilustradas são diferentes, as vizinhanças de reprodução e competição podem diferir entre as espécies, dado que cada uma pode ter estratégias de reprodução diferentes e captação e uso de recursos do solo, do ar e de luz diferentes. Ainda mais, podemos tornar a taxa de reprodução de cada espécie como uma função que dependa da distância entre sítios dentro da vizinhança de reprodução $b_\mu = b_\mu(r_{ij})$ [EXPLORAR ISSO DEPOIS E SE DER CERTO SÓ].
 
@@ -326,13 +326,13 @@ Como sempre, é útil trazer uma interpretação física/biológica para esta de
 De forma análoga ao caso logístico, definimos as taxas para as reações possíveis, que aumentam de 3 para 4:
 
 **Reações:**
-1. **Nasicmento**: A espécie $\mu$ se reproduz gerando descendentes a uma taxa $b_\mu$, que é dispersada aleatoriamente para um dos $z^\mu$ sítios em sua vizinhança de reprodução $\mathcal{N}_r^\mu(i)$.
+1. **Nasicmento**: A espécie $\mu$ se reproduz gerando descendentes a uma taxa $b_\mu$, que é dispersada aleatoriamente para um dos $z^\mu$ sítios em sua vizinhança de reprodução $\mathcal{N}^\mu(i)$.
 
 2. **Morte natural**: Indivíduos da espécie $\mu$ morrem de forma natural a uma taxa $\gamma_\mu$.
 
-3. **Aglomeração**: Indivíduos ainda morrem devido à aglomeração com outros indivíduos da mesma espécie, com uma taxa $\delta_{\mu \mu} \times$ (nº de vizinhos da espécie $\mu$ na vizinhança de competição $\mathcal{N}_c^\mu(i)$).
+3. **Aglomeração**: Indivíduos ainda morrem devido à aglomeração com outros indivíduos da mesma espécie, com uma taxa $\delta_{\mu \mu} \times$ (nº de vizinhos da espécie $\mu$ na vizinhança de competição $\mathcal{N}^\mu(i)$).
 
-4. **Competição interespecífica**: Sítios ocupados pela espécie $\mu$ morrem devido à competição por recursos com a espécie $\eta$ a uma taxa $\delta_{\mu \eta} \times$ (n° de vizinhos da espécie $\eta$ na vizinhança de competição $\mathcal{N}_c^\mu(i)$).
+4. **Competição interespecífica**: Sítios ocupados pela espécie $\mu$ morrem devido à competição por recursos com a espécie $\eta$ a uma taxa $\delta_{\mu \eta} \times$ (n° de vizinhos da espécie $\eta$ na vizinhança de competição $\mathcal{N}^\mu(i)$).
 
 Antes de continuar, agora que temos duas espécies, vamos rever as definições antes mostradas para o caso logístico:
 
@@ -346,7 +346,7 @@ Antes de continuar, agora que temos duas espécies, vamos rever as definições 
 - Por simetria: $\rho_{\mu \eta} = \rho_{\eta \mu}$
 
 **Probabilidades:**
-- $q_{\eta|\mu} = \rho_{\mu \eta}/\rho_\mu$: probabilidade de um vizinho ser da espécie $\eta$, dado um sítio focal da espécie $\mu$
+- $q_{\eta\|\mu} = \rho_{\mu \eta}/\rho_\mu$: probabilidade de um vizinho ser da espécie $\eta$, dado um sítio focal da espécie $\mu$
 
 ## Equação mestra e taxas
 
@@ -354,15 +354,15 @@ Sendo $P(\vec{n}, t)$ a probabilidade de o sistema se encontrar na configuraçã
 
 $$\frac{dP(\vec{n}, t)}{dt} = \sum_{\vec{n}'} [W(\vec{n}|\vec{n}') P(\vec{n}', t) - W(\vec{n}'|\vec{n}) P(\vec{n}, t)]$$
 
-**Taxas de transição $W(\vec{n}'|\vec{n})$:**
+**Taxas de transição $W(\vec{n}'\|\vec{n})$:**
 
 1. **Nascimento** ($0 \to \mu$ no sítio $i$): O nascimento se da da mesma forma que no caso logístico. Cada vizinho ocupado pela espécie $\mu$ na vizinhança de reprodução do sítio $i$ irá tentar ocupar o sítio com um descendente a uma taxa $b_\mu$
 
-   $$W(\vec{n} + \mu\hat{e}_i|\vec{n}) = b_\mu \sum_{j \in \mathcal{N}_r^\mu(i)} \vec{1}_{n_j = \mu} \quad \text{se } n_i = 0$$
+   $$W(\vec{n} + \mu\hat{e}_i|\vec{n}) = b_\mu \sum_{j \in \mathcal{N}^\mu(i)} \vec{1}_{n_j = \mu} \quad \text{se } n_i = 0$$
 
 2. **Morte** ($\mu \to 0$ no sítio $i$): Há três contribuições para a taxa total de morte. A morte natural e independente de vizinhos, a morte por competição interspecífica e a morte por competição intraespecífica
 
-   $$W(\vec{n} - \mu\hat{e}_i|\vec{n}) = \left[\gamma_\mu + \delta_{\mu \mu} \sum_{j \in \mathcal{N}_c^\mu(i)} \vec{1}_{n_j = \mu} + \delta_{\mu \eta} \sum_{j \in \vec{N}_c^\mu(i)} \vec{1}_{n_j = \eta}\right] \vec{1}_{n_i = \mu}$$
+   $$W(\vec{n} - \mu\hat{e}_i|\vec{n}) = \left[\gamma_\mu + \delta_{\mu \mu} \sum_{j \in \mathcal{N}^\mu(i)} \vec{1}_{n_j = \mu} + \delta_{\mu \eta} \sum_{j \in \vec{N}_c^\mu(i)} \vec{1}_{n_j = \eta}\right] \vec{1}_{n_i = \mu}$$
 
 Onde $\vec{1}_{n_j = \mu} = (n_0, n_1, \cdots, n_{z^\mu})$ representa o vetor cujas entradas são 1 sempre que $n_j = \mu$ e 0 caso contrário.
 
@@ -376,20 +376,20 @@ $$\frac{d\rho_\mu}{dt} = \left \langle \frac{d}{dt} \sum_i \mathbf{1}_{n_i = \mu
 
 Cada sítio vazio recebe um filhote a uma taxa:
 
-$$b_\mu \sum_{j \in \mathcal{N}_r^\mu(i)} \mathbf{1}_{n_j = \mu} = b_\mu \times z_\mu \times P(\text{vizinho é $\mu$ | sítio é 0}) = b_\mu z_\mu q_{\mu|0}$$
+$$b_\mu \sum_{j \in \mathcal{N}^\mu(i)} \mathbf{1}_{n_j = \mu} = b_\mu \times z_\mu \times P(\text{vizinho é $\mu$ | sítio é 0}) = b_\mu z_\mu q_{\mu|0}$$
 
-Taxa total de nascimentos: $b_\mu z_\mu q_{\mu|0} \rho_0 = b_\mu z_\mu q_{\mu|0}(1 - \rho_\mu - \rho_\eta)$
+Taxa total de nascimentos: $b_\mu z_\mu q_{\mu\|0} \rho_0 = b_\mu z_\mu q_{\mu\|0}(1 - \rho_\mu - \rho_\eta)$
 
 **Contribuição da morte:**
 - Morte natural: $\gamma_\mu \rho_\mu$
-- Competição intraespecífica: $\delta_{\mu \mu} \tilde{z}_\mu \tilde{q}_{\mu|\mu} \rho_\mu$  
-- Competição interespecífica: $\delta_{\mu \eta} \tilde{z}_\mu \tilde{q}_{\eta|\mu} \rho_\mu$
+- Competição intraespecífica: $\delta_{\mu \mu} z_\mu q_{\mu\|\mu} \rho_\mu$  
+- Competição interespecífica: $\delta_{\mu \eta} z_\mu q_{\eta\|\mu} \rho_\mu$
 
 Portanto:
 
 $$
 \begin{align}
-   \boxed{\frac{d\rho_\mu}{dt} = b_\mu z_\mu q_{\mu|0}(1 - \rho_\mu - \rho_\eta) - (\gamma_\mu + \delta_{\mu \mu} \tilde{z}_\mu \tilde{q}_{\mu|\mu} + \delta_{\mu \eta} \tilde{z}_\mu \tilde{q}_{\eta|\mu})\rho_\mu}
+   \boxed{\frac{d\rho_\mu}{dt} = b_\mu z_\mu q_{\mu|0}(1 - \rho_\mu - \rho_\eta) - (\gamma_\mu + \delta_{\mu \mu} z_\mu q_{\mu|\mu} + \delta_{\mu \eta} z_\mu q_{\eta|\mu})\rho_\mu}
 \end{align}   
 $$
 
@@ -420,44 +420,54 @@ $$
 **Contribuições da morte:** Cada sítio $(\mu,\mu)$ se desfaz com uma taxa dada pela mortalidade de um sítio $\mu$
 
 $$
-\gamma_\mu + \delta_{\mu \mu}[1 + (\tilde{z}_\mu-1)\tilde{q}_{\mu|\mu}] + \delta_{\mu \eta}(\tilde{z}_\mu-1)\tilde{q}_{\eta|\mu}
+\gamma_\mu + \delta_{\mu \mu}[1 + (z_\mu-1)q_{\mu|\mu}] + \delta_{\mu \eta}(z_\mu-1)q_{\eta|\mu}
 $$
 
 Portanto:
 
 $$
 \begin{align}
-   \boxed{\frac{1}{2}\frac{d\rho_{\mu \mu}}{dt} = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\mu} - [\gamma_\mu + \delta_{\mu \mu}(1 + (\tilde{z}_\mu-1)\tilde{q}_{\mu|\mu}) + \delta_{\mu \eta}(\tilde{z}_\mu-1)\tilde{q}_{\eta|\mu}]\rho_{\mu \mu}}
+   \boxed{\frac{1}{2}\frac{d\rho_{\mu \mu}}{dt} = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\mu} - [\gamma_\mu + \delta_{\mu \mu}(1 + (z_\mu-1)q_{\mu|\mu}) + \delta_{\mu \eta}(z_\mu-1)q_{\eta|\mu}]\rho_{\mu \mu}}
 \end{align}
 $$
 
 ### Par interespecífico: $\rho_{\mu \eta}$
 
-**Contribuição de nascimento:** Um par $(\mu,0)$ se torna um par $(\mu,\eta)$ quando a espécie $\eta$ der origem a um novo indivíduo no sítio vazio na vizinhança de $\mu$: $b_\eta[1 + (z_\eta-1)q_{\eta|0}]\rho_{0\mu}$. Da mesma forma, um par $(0,\eta)$ se torna um par $(\mu, \eta)$ quando um indivíduo da espécie $\mu$ se reproduzir gerando um novo ocupante na vizinhança do sítio focal da espécie $\eta$: $b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\eta}$.
+**Contribuição de nascimento:** Um par $(\mu,0)$ se torna um par $(\mu,\eta)$ quando a espécie $\eta$ der origem a um novo indivíduo no sítio vazio na vizinhança de $\mu$: $b_\eta[1 + (z_\eta-1)q_{\eta\|0}]\rho_{0\mu}$. Da mesma forma, um par $(0,\eta)$ se torna um par $(\mu, \eta)$ quando um indivíduo da espécie $\mu$ se reproduzir gerando um novo ocupante na vizinhança do sítio focal da espécie $\eta$: $b_\mu[1 + (z_\mu-1)q_{\mu\|0}]\rho_{0\eta}$.
 
-**Contribuição da morte:** Um sítio da espécie $\mu$ se torna desocupado ao morrer com taxa: $[\gamma_\mu + \delta_{\mu \mu}(\tilde{z}_\mu-1)\tilde{q}_{\mu|\mu} + \delta_{\mu \eta}(1 + (\tilde{z}_\mu-1)\tilde{q}_{\eta|\mu})]\rho_{\mu \eta}$. Além disso, um sítio da espécie $\eta$ se torna desocupado com taxa: $[\gamma_\eta + \delta_{\eta \eta}(\tilde{z}_\eta-1)\tilde{q}_{\eta|\eta} + \delta_{\eta \mu}(1 + (\tilde{z}_\eta-1)\tilde{q}_{\mu|\eta})]\rho_{\mu \eta}$
+**Contribuição da morte:** Um sítio da espécie $\mu$ se torna desocupado ao morrer com taxa: $[\gamma_\mu + \delta_{\mu \mu}(z_\mu-1)q_{\mu\|\mu} + \delta_{\mu \eta}(1 + (z_\mu-1)q_{\eta\|\mu})]\rho_{\mu \eta}$. Além disso, um sítio da espécie $\eta$ se torna desocupado com taxa: $[\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta\|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu\|\eta})]\rho_{\mu \eta}$
 
 Assim, acabamos com:
 
 $$
+\boxed{
 \begin{align}
-   \boxed{\frac{d\rho_{\mu \eta}}{dt} = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\eta} + b_\eta[1 + (z_\eta-1)q_{\eta|0}]\rho_{0\mu} - [\gamma_\mu + \delta_{\mu \mu}(\tilde{z}_\mu-1)\tilde{q}_{\mu|\mu} + \delta_{\mu \eta}(1 + (\tilde{z}_\mu-1)\tilde{q}_{\eta|\mu})] \rho_{\mu \eta} - [\gamma_\eta + \delta_{\eta \eta}(\tilde{z}_\eta-1)\tilde{q}_{\eta|\eta} + \delta_{\eta \mu}(1 + (\tilde{z}_\eta-1)\tilde{q}_{\mu|\eta})] \rho_{\mu \eta}}
+   \nonumber
+   \frac{d\rho_{\mu \eta}}{dt} & = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\eta} + b_\eta[1 + (z_\eta-1)q_{\eta|0}]\rho_{0\mu} \\
+   & - [\gamma_\mu + \delta_{\mu \mu}(z_\mu-1)q_{\mu|\mu} + \delta_{\mu \eta}(1 + (z_\mu-1)q_{\eta|\mu})] \rho_{\mu \eta} \\
+   \nonumber
+   & - [\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu|\eta})] \rho_{\mu \eta}
 \end{align}
+}
 $$
 
 ## Equações finais
 
 $$
 \begin{align}
-   & \frac{d\rho_1}{dt} = b_1 z_1 q_{1|0}(1 - \rho_1 - \rho_2) - (\gamma_1 + \delta_{11} \tilde{z}_1 \tilde{q}_{1|1} + \delta_{12} \tilde{z}_1 \tilde{q}_{2|1})\rho_1 \\
+   & \frac{d\rho_1}{dt} = b_1 z_1 q_{1|0}(1 - \rho_1 - \rho_2) - (\gamma_1 + \delta_{11} z_1 q_{1|1} + \delta_{12} z_1 q_{2|1})\rho_1 \\
 
-   & \frac{d\rho_2}{dt} = b_2 z_2 q_{2|0}(1 - \rho_1 - \rho_2) - (\gamma_2 + \delta_{22} \tilde{z}_2 \tilde{q}_{2|2} + \delta_{21} \tilde{z}_2 \tilde{q}_{1|2})\rho_2 \\
+   & \frac{d\rho_2}{dt} = b_2 z_2 q_{2|0}(1 - \rho_1 - \rho_2) - (\gamma_2 + \delta_{22} z_2 q_{2|2} + \delta_{21} z_2 q_{1|2})\rho_2 \\
 
-   & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1[1 + (z_1-1)q_{1|0}]\rho_{01} - [\gamma_1 + \delta_{11}(1 + (\tilde{z}_1-1)\tilde{q}_{1|1}) + \delta_{12}(\tilde{z}_1-1)\tilde{q}_{2|1}]\rho_{11} \\
+   & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1[1 + (z_1-1)q_{1|0}]\rho_{01} - [\gamma_1 + \delta_{11}(1 + (z_1-1)q_{1|1}) + \delta_{12}(z_1-1)q_{2|1}]\rho_{11} \\
 
-   & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2[1 + (z_2-1)q_{2|0}]\rho_{02} - [\gamma_2 + \delta_{22}(1 + (\tilde{z}_2-1)\tilde{q}_{2|2}) + \delta_{21}(\tilde{z}_2-1)\tilde{q}_{1|2}]\rho_{22} \\
+   & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2[1 + (z_2-1)q_{2|0}]\rho_{02} - [\gamma_2 + \delta_{22}(1 + (z_2-1)q_{2|2}) + \delta_{21}(z_2-1)q_{1|2}]\rho_{22} \\
 
-   & \frac{d\rho_{12}}{dt} = b_1[1 + (z_1-1)q_{1|0}]\rho_{02} + b_2[1 + (z_2-1)q_{2|0}]\rho_{01} - [\gamma_1 + \delta_{11}(\tilde{z}_1-1)\tilde{q}_{1|1} + \delta_{12}(1 + (\tilde{z}_1-1)\tilde{q}_{2|1})] \rho_{12} - [\gamma_2 + \delta_{22}(\tilde{z}_2-1)\tilde{q}_{2|2} + \delta_{21}(1 + (\tilde{z}_2-1)\tilde{q}_{1|2})] \rho_{12}
+   \nonumber
+   & \frac{d\rho_{\mu \eta}}{dt} = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\eta} + b_\eta[1 + (z_\eta-1)q_{\eta|0}]\rho_{0\mu} \\
+   & - [\gamma_\mu + \delta_{\mu \mu}(z_\mu-1)q_{\mu|\mu} + \delta_{\mu \eta}(1 + (z_\mu-1)q_{\eta|\mu})] \rho_{\mu \eta} \\
+   \nonumber
+   & - [\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu|\eta})] \rho_{\mu \eta}
 \end{align}
 $$
 
@@ -466,17 +476,19 @@ Explicitando os termos de probabilidades condicionais, chegamos a
 $$
 \boxed{
 \begin{align}
-   & \frac{d\rho_1}{dt} = b_1 z_1 \rho_{10} - \gamma_1 \rho_1 - \delta_{11} \tilde{z}_1 \rho_{11} - \delta_{12} \tilde{z}_1 \rho_{12}  \\
+   & \frac{d\rho_1}{dt} = b_1 z_1 \rho_{10} - \gamma_1 \rho_1 - \delta_{11} z_1 \rho_{11} - \delta_{12} z_1 \rho_{12}  \\
 
-   & \frac{d\rho_2}{dt} = b_2 z_2 \rho_{20} - \gamma_2 \rho_2 + \delta_{22} \tilde{z}_2 \rho_{22} + \delta_{21} \tilde{z}_2 \rho_{12} \\
+   & \frac{d\rho_2}{dt} = b_2 z_2 \rho_{20} - \gamma_2 \rho_2 + \delta_{22} z_2 \rho_{22} + \delta_{21} z_2 \rho_{12} \\
 
-   & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1 \left[\rho_{10} + z_1 \frac{\rho_{10}^2}{\rho_0} - \frac{\rho_{10}^2}{\rho_0} \right] - \left[\gamma_1 \rho_{11} + \delta_{11} \left(\rho_{11} + \tilde{z}_1 \frac{\rho_{11}^2}{\rho_1}-\frac{\rho_{11}^2}{\rho_1} \right) + \delta_{12}(\tilde{z}_1-1)\frac{\rho_{12} \rho_{11}}{\rho_1} \right] \\
+   & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1 \left[\rho_{10} + z_1 \frac{\rho_{10}^2}{\rho_0} - \frac{\rho_{10}^2}{\rho_0} \right] - \left[\gamma_1 \rho_{11} + \delta_{11} \left(\rho_{11} + z_1 \frac{\rho_{11}^2}{\rho_1}-\frac{\rho_{11}^2}{\rho_1} \right) + \right. \\
+   & \left. + \delta_{12}(z_1-1)\frac{\rho_{12} \rho_{11}}{\rho_1} \right] \\
 
-   & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2 \left[\rho_{20} + z_2 \frac{\rho_{20}^2}{\rho_0} - \frac{\rho_{20}^2}{\rho_0} \right] - \left[\gamma_2 \rho_{22} + \delta_{22} \left(\rho_{22} + \tilde{z}_2 \frac{\rho_{22}^2}{\rho_2}-\frac{\rho_{22}^2}{\rho_2} \right) + \delta_{21}(\tilde{z}_2-1)\frac{\rho_{12} \rho_{22}}{\rho_2} \right] \\
+   & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2 \left[\rho_{20} + z_2 \frac{\rho_{20}^2}{\rho_0} - \frac{\rho_{20}^2}{\rho_0} \right] - \left[\gamma_2 \rho_{22} + \delta_{22} \left(\rho_{22} + z_2 \frac{\rho_{22}^2}{\rho_2}-\frac{\rho_{22}^2}{\rho_2} \right) + \right. \\
+   & \left. + \delta_{21}(z_2-1)\frac{\rho_{12} \rho_{22}}{\rho_2} \right] \\
 
    & \frac{d\rho_{12}}{dt} = b_1 \left[\rho_{20} + z_1 \frac{\rho_{10} \rho_{20}}{\rho_0} - \frac{\rho_{10} \rho_{20}}{\rho_0} \right] + b_2 \left[\rho_{01} + z_2\frac{\rho_{20} \rho_{01}}{\rho_0} - \frac{\rho_{20} \rho_{01}}{\rho_0} \right] - \\
-   & - \left[\gamma_1 \rho_{12} + \delta_{11}(\tilde{z}_1-1)\frac{\rho_{11} \rho_{12}}{\rho_1} + \delta_{12}\left(1 + (\tilde{z}_1-1)\frac{\rho_{12}^2}{\rho_1} \right) \right] - \\
-   & - \left[\gamma_2 \rho_{12} + \delta_{22}(\tilde{z}_2-1)\frac{\rho_{22} \rho_{12}}{\rho_2} + \delta_{21} \left(1 + (\tilde{z}_2-1)\frac{\rho_{12}^2}{\rho_2} \right) \right]
+   & - \left[\gamma_1 \rho_{12} + \delta_{11}(z_1-1)\frac{\rho_{11} \rho_{12}}{\rho_1} + \delta_{12}\left(1 + (z_1-1)\frac{\rho_{12}^2}{\rho_1} \right) \right] - \\
+   & - \left[\gamma_2 \rho_{12} + \delta_{22}(z_2-1)\frac{\rho_{22} \rho_{12}}{\rho_2} + \delta_{21} \left(1 + (z_2-1)\frac{\rho_{12}^2}{\rho_2} \right) \right]
 \end{align}
 }
 $$
