@@ -468,10 +468,10 @@ $$
    & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2[1 + (z_2-1)q_{2|0}]\rho_{02} - [\gamma_2 + \delta_{22}(1 + (z_2-1)q_{2|2}) + \delta_{21}(z_2-1)q_{1|2}]\rho_{22} \\
 
    \nonumber
-   & \frac{d\rho_{\mu \eta}}{dt} = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\eta} + b_\eta[1 + (z_\eta-1)q_{\eta|0}]\rho_{0\mu} \\
-   & - [\gamma_\mu + \delta_{\mu \mu}(z_\mu-1)q_{\mu|\mu} + \delta_{\mu \eta}(1 + (z_\mu-1)q_{\eta|\mu})] \rho_{\mu \eta} \\
+   & \frac{d\rho_{1 2}}{dt} = b_1[1 + (z_1-1)q_{1|0}]\rho_{02} + b_2[1 + (z_2-1)q_{2|0}]\rho_{01} \\
+   & - [\gamma_1 + \delta_{1 1}(z_1-1)q_{1|1} + \delta_{1 2}(1 + (z_1-1)q_{2|1})] \rho_{1 2} \\
    \nonumber
-   & - [\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu|\eta})] \rho_{\mu \eta}
+   & - [\gamma_2 + \delta_{2 2}(z_2-1)q_{2|2} + \delta_{2 1}(1 + (z_2-1)q_{1|2})] \rho_{1 2}
 \end{align}
 $$
 
