@@ -364,7 +364,13 @@ $$\frac{dP(\vec{n}, t)}{dt} = \sum_{\vec{n}'} [W(\vec{n}|\vec{n}') P(\vec{n}', t
 
    $$W(\vec{n} - \mu\hat{e}_i|\vec{n}) = \left[\gamma_\mu + \delta_{\mu \mu} \sum_{j \in \mathcal{N}^\mu(i)} \vec{1}_{n_j = \mu} + \delta_{\mu \eta} \sum_{j \in \vec{N}_c^\mu(i)} \vec{1}_{n_j = \eta}\right] \vec{1}_{n_i = \mu}$$
 
-Onde $\vec{1}_{n_j = \mu} = (n_0, n_1, \cdots, n_{z^\mu})$ representa o vetor cujas entradas são 1 sempre que $n_j = \mu$ e 0 caso contrário.
+Onde
+
+$$
+\vec{1}_{n_j = \mu} = (n_0, n_1, \cdots, n_{z^\mu})
+
+$$
+representa o vetor cujas entradas são 1 sempre que $n_j = \mu$ e 0 caso contrário.
 
 ## Equações de densidades
 
@@ -440,7 +446,6 @@ $$
 Assim, acabamos com:
 
 $$
-\boxed{
 \begin{align}
    \nonumber
    \frac{d\rho_{\mu \eta}}{dt} & = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\eta} + b_\eta[1 + (z_\eta-1)q_{\eta|0}]\rho_{0\mu} \\
@@ -448,7 +453,6 @@ $$
    \nonumber
    & - [\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu|\eta})] \rho_{\mu \eta}
 \end{align}
-}
 $$
 
 ## Equações finais
@@ -474,7 +478,6 @@ $$
 Explicitando os termos de probabilidades condicionais, chegamos a
 
 $$
-\boxed{
 \begin{align}
    & \frac{d\rho_1}{dt} = b_1 z_1 \rho_{10} - \gamma_1 \rho_1 - \delta_{11} z_1 \rho_{11} - \delta_{12} z_1 \rho_{12}  \\
 
@@ -490,7 +493,6 @@ $$
    & - \left[\gamma_1 \rho_{12} + \delta_{11}(z_1-1)\frac{\rho_{11} \rho_{12}}{\rho_1} + \delta_{12}\left(1 + (z_1-1)\frac{\rho_{12}^2}{\rho_1} \right) \right] - \\
    & - \left[\gamma_2 \rho_{12} + \delta_{22}(z_2-1)\frac{\rho_{22} \rho_{12}}{\rho_2} + \delta_{21} \left(1 + (z_2-1)\frac{\rho_{12}^2}{\rho_2} \right) \right]
 \end{align}
-}
 $$
 
 # Referências
