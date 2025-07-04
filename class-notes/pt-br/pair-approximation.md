@@ -358,19 +358,22 @@ $$\frac{dP(\vec{n}, t)}{dt} = \sum_{\vec{n}'} [W(\vec{n}|\vec{n}') P(\vec{n}', t
 
 1. **Nascimento** ($0 \to \mu$ no sítio $i$): O nascimento se da da mesma forma que no caso logístico. Cada vizinho ocupado pela espécie $\mu$ na vizinhança de reprodução do sítio $i$ irá tentar ocupar o sítio com um descendente a uma taxa $b_\mu$
 
-   $$W(\vec{n} + \mu\hat{e}_i|\vec{n}) = b_\mu \sum_{j \in \mathcal{N}^\mu(i)} \vec{1}_{n_j = \mu} \quad \text{se } n_i = 0$$
+   $$W(\vec{n} + \mu\hat{e}_i|\vec{n}) = b_\mu \sum_{j \in \mathcal{N}^\mu(i)} \delta_{n_j,\mu} \quad \text{se } n_i = 0$$
 
 2. **Morte** ($\mu \to 0$ no sítio $i$): Há três contribuições para a taxa total de morte. A morte natural e independente de vizinhos, a morte por competição interspecífica e a morte por competição intraespecífica
 
-   $$W(\vec{n} - \mu\hat{e}_i|\vec{n}) = \left[\gamma_\mu + \delta_{\mu \mu} \sum_{j \in \mathcal{N}^\mu(i)} \vec{1}_{n_j = \mu} + \delta_{\mu \eta} \sum_{j \in \vec{N}_c^\mu(i)} \vec{1}_{n_j = \eta}\right] \vec{1}_{n_i = \mu}$$
+   $$W(\vec{n} - \mu\hat{e}_i|\vec{n}) = \left[\gamma_\mu + \delta_{\mu \mu} \sum_{j \in \mathcal{N}^\mu(i)} \delta_{n_j,\mu} + \delta_{\mu \eta} \sum_{j \in \vec{N}_c^\mu(i)} \delta_{n_j,\eta} \right] \vec{1}_{n_i = \mu}$$
 
 Onde
 
 $$
-\vec{1}_{n_j = \mu} = (n_0, n_1, \cdots, n_{z^\mu})
+\delta_{n_j,\mu} = \begin{cases}
+   0, \, \text{se } n_j \neq \mu \\
+   1, \, \text{se } n_j = \mu
+\end{cases}
 
 $$
-representa o vetor cujas entradas são 1 sempre que $n_j = \mu$ e 0 caso contrário.
+é a delta de dirac, assumindo o valor 1 sempre que $n_j = \mu$ e 0 caso contrário.
 
 ## Equações de densidades
 
@@ -439,7 +442,7 @@ $$
 
 ### Par interespecífico: $\rho_{\mu \eta}$
 
-**Contribuição de nascimento:** Um par $(\mu,0)$ se torna um par $(\mu,\eta)$ quando a espécie $\eta$ der origem a um novo indivíduo no sítio vazio na vizinhança de $\mu$: $b_\eta[1 + (z_\eta-1)q_{\eta\|0}]\rho_{0\mu}$. Da mesma forma, um par $(0,\eta)$ se torna um par $(\mu, \eta)$ quando um indivíduo da espécie $\mu$ se reproduzir gerando um novo ocupante na vizinhança do sítio focal da espécie $\eta$: $b_\mu[1 + (z_\mu-1)q_{\mu\|0}]\rho_{0\eta}$.
+**Contribuição de nascimento:** Um par $(\mu,0)$ se torna um par $(\mu,\eta)$ quando a espécie $\eta$ der origem a um novo indivíduo no sítio vazio na vizinhança de $\mu$: $b_\eta(z_\eta-1)q_{\eta\|0}\rho_{0\mu}$. Da mesma forma, um par $(0,\eta)$ se torna um par $(\mu, \eta)$ quando um indivíduo da espécie $\mu$ se reproduzir gerando um novo ocupante na vizinhança do sítio focal da espécie $\eta$: $b_\mu(z_\mu-1)q_{\mu\|0}\rho_{0\eta}$. Note que aqui não termos o termo $1 + \cdots$ que nem nos pares intraespecíficos, pois o vizinho já conhecido na vizinhança do espaço vazio percente a outra espécie, e portanto não contribui para o nascimento de um indivíduo da espécie focal.
 
 **Contribuição da morte:** Um sítio da espécie $\mu$ se torna desocupado ao morrer com taxa: $[\gamma_\mu + \delta_{\mu \mu}(z_\mu-1)q_{\mu\|\mu} + \delta_{\mu \eta}(1 + (z_\mu-1)q_{\eta\|\mu})]\rho_{\mu \eta}$. Além disso, um sítio da espécie $\eta$ se torna desocupado com taxa: $[\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta\|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu\|\eta})]\rho_{\mu \eta}$
 
@@ -448,7 +451,7 @@ Assim, acabamos com:
 $$
 \begin{align}
    \nonumber
-   \frac{d\rho_{\mu \eta}}{dt} & = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\eta} + b_\eta[1 + (z_\eta-1)q_{\eta|0}]\rho_{0\mu} \\
+   \frac{d\rho_{\mu \eta}}{dt} & = b_\mu (z_\mu-1)q_{\mu|0}\rho_{0\eta} + b_\eta (z_\eta-1)q_{\eta|0}\rho_{0\mu} \\
    & - [\gamma_\mu + \delta_{\mu \mu}(z_\mu-1)q_{\mu|\mu} + \delta_{\mu \eta}(1 + (z_\mu-1)q_{\eta|\mu})] \rho_{\mu \eta} \\
    \nonumber
    & - [\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu|\eta})] \rho_{\mu \eta}
@@ -468,7 +471,7 @@ $$
    & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2[1 + (z_2-1)q_{2|0}]\rho_{02} - [\gamma_2 + \delta_{22}(1 + (z_2-1)q_{2|2}) + \delta_{21}(z_2-1)q_{1|2}]\rho_{22} \\
 
    \nonumber
-   & \frac{d\rho_{1 2}}{dt} = b_1[1 + (z_1-1)q_{1|0}]\rho_{02} + b_2[1 + (z_2-1)q_{2|0}]\rho_{01} \\
+   & \frac{d\rho_{1 2}}{dt} = b_1(z_1-1)q_{1|0}\rho_{20} + b_2(z_2-1)q_{2|0}\rho_{10} \\
    & - [\gamma_1 + \delta_{1 1}(z_1-1)q_{1|1} + \delta_{1 2}(1 + (z_1-1)q_{2|1})] \rho_{1 2} \\
    \nonumber
    & - [\gamma_2 + \delta_{2 2}(z_2-1)q_{2|2} + \delta_{2 1}(1 + (z_2-1)q_{1|2})] \rho_{1 2}
@@ -481,7 +484,7 @@ $$
 \begin{align}
    & \frac{d\rho_1}{dt} = b_1 z_1 \rho_{10} - \gamma_1 \rho_1 - \delta_{11} z_1 \rho_{11} - \delta_{12} z_1 \rho_{12}  \\
 
-   & \frac{d\rho_2}{dt} = b_2 z_2 \rho_{20} - \gamma_2 \rho_2 + \delta_{22} z_2 \rho_{22} + \delta_{21} z_2 \rho_{12} \\
+   & \frac{d\rho_2}{dt} = b_2 z_2 \rho_{20} - \gamma_2 \rho_2 - \delta_{22} z_2 \rho_{22} - \delta_{21} z_2 \rho_{12} \\
 
    & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1 \left[\rho_{10} + z_1 \frac{\rho_{10}^2}{\rho_0} - \frac{\rho_{10}^2}{\rho_0} \right] - \left[\gamma_1 \rho_{11} + \delta_{11} \left(\rho_{11} + z_1 \frac{\rho_{11}^2}{\rho_1}-\frac{\rho_{11}^2}{\rho_1} \right) + \right. \\
    \nonumber
@@ -491,7 +494,7 @@ $$
    \nonumber
    & \left. + \delta_{21}(z_2-1)\frac{\rho_{12} \rho_{22}}{\rho_2} \right] \\
 
-   & \frac{d\rho_{12}}{dt} = b_1 \left[\rho_{20} + z_1 \frac{\rho_{10} \rho_{20}}{\rho_0} - \frac{\rho_{10} \rho_{20}}{\rho_0} \right] + b_2 \left[\rho_{01} + z_2\frac{\rho_{20} \rho_{01}}{\rho_0} - \frac{\rho_{20} \rho_{01}}{\rho_0} \right] - \\
+   & \frac{d\rho_{12}}{dt} = b_1 (z_1 -1)\frac{\rho_{10} \rho_{20}}{\rho_0} + b_2 (z_2 - 1)\frac{\rho_{20} \rho_{10}}{\rho_0} - \\
    & - \left[\gamma_1 \rho_{12} + \delta_{11}(z_1-1)\frac{\rho_{11} \rho_{12}}{\rho_1} + \delta_{12}\left(1 + (z_1-1)\frac{\rho_{12}^2}{\rho_1} \right) \right] - \\
    & - \left[\gamma_2 \rho_{12} + \delta_{22}(z_2-1)\frac{\rho_{22} \rho_{12}}{\rho_2} + \delta_{21} \left(1 + (z_2-1)\frac{\rho_{12}^2}{\rho_2} \right) \right]
 \end{align}
