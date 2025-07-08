@@ -330,11 +330,22 @@ De forma análoga ao caso logístico, definimos as taxas para as reações poss�
 
 2. **Morte natural**: Indivíduos da espécie $\mu$ morrem de forma natural a uma taxa $\gamma_\mu$.
 
-3. **Aglomeração**: Indivíduos ainda morrem devido à aglomeração com outros indivíduos da mesma espécie, com uma taxa $\delta_{\mu \mu} \times$ (nº de vizinhos da espécie $\mu$ na vizinhança de competição $\mathcal{N}^\mu(i)$).
+3. **Aglomeração**: Indivíduos ainda morrem devido à aglomeração com outros indivíduos da mesma espécie, com uma taxa $\sigma_{\mu \mu} \times$ (nº de vizinhos da espécie $\mu$ na vizinhança de competição $\mathcal{N}^\mu(i)$).
 
-4. **Competição interespecífica**: Sítios ocupados pela espécie $\mu$ morrem devido à competição por recursos com a espécie $\eta$ a uma taxa $\delta_{\mu \eta} \times$ (n° de vizinhos da espécie $\eta$ na vizinhança de competição $\mathcal{N}^\mu(i)$).
+4. **Competição interespecífica**: Sítios ocupados pela espécie $\mu$ morrem devido à competição por recursos com a espécie $\eta$ a uma taxa $\sigma_{\mu \eta} \times$ (n° de vizinhos da espécie $\eta$ na vizinhança de competição $\mathcal{N}^\mu(i)$).
 
-Antes de continuar, agora que temos duas espécies, vamos rever as definições antes mostradas para o caso logístico:
+A partir de agora, mudamos a representação do termo de competição de $\delta$ para $\sigma$. $\sigma$ é agora uma matriz de interação que define os coeficientes das taxas de competição inter e intraespecífica entre as espécies $\mu$ e $\eta$.
+
+$$
+\begin{align}
+   \sigma = \begin{pmatrix}
+      \sigma_{\mu \mu} & \sigma_{\mu \eta} \\
+      \sigma_{\eta \mu} & \sigma_{\eta \eta}
+   \end{pmatrix}
+\end{align}
+$$
+
+onde $\sigma_{\mu \eta} \neq \sigma_{\eta \mu}$, poís uma espécie pode ser mais afetada pela presença de outra. Antes de continuar, agora que temos duas espécies, vamos rever as definições antes mostradas para o caso logístico:
 
 **Densidades:**
 - $\rho_0$: densidade de sítios vazios
@@ -362,7 +373,7 @@ $$\frac{dP(\vec{n}, t)}{dt} = \sum_{\vec{n}'} [W(\vec{n}|\vec{n}') P(\vec{n}', t
 
 2. **Morte** ($\mu \to 0$ no sítio $i$): Há três contribuições para a taxa total de morte. A morte natural e independente de vizinhos, a morte por competição interspecífica e a morte por competição intraespecífica
 
-   $$W(\vec{n} - \mu\hat{e}_i|\vec{n}) = \left[\gamma_\mu + \delta_{\mu \mu} \sum_{j \in \mathcal{N}^\mu(i)} \delta_{n_j,\mu} + \delta_{\mu \eta} \sum_{j \in \vec{N}_c^\mu(i)} \delta_{n_j,\eta} \right] \vec{1}_{n_i = \mu}$$
+   $$W(\vec{n} - \mu\hat{e}_i|\vec{n}) = \left[\gamma_\mu + \sigma_{\mu \mu} \sum_{j \in \mathcal{N}^\mu(i)} \delta_{n_j,\mu} + \sigma_{\mu \eta} \sum_{j \in \vec{N}_c^\mu(i)} \delta_{n_j,\eta} \right] \delta_{n_i, \mu}$$
 
 Onde
 
@@ -391,14 +402,14 @@ Taxa total de nascimentos: $b_\mu z_\mu q_{\mu\|0} \rho_0 = b_\mu z_\mu q_{\mu\|
 
 **Contribuição da morte:**
 - Morte natural: $\gamma_\mu \rho_\mu$
-- Competição intraespecífica: $\delta_{\mu \mu} z_\mu q_{\mu\|\mu} \rho_\mu$  
-- Competição interespecífica: $\delta_{\mu \eta} z_\mu q_{\eta\|\mu} \rho_\mu$
+- Competição intraespecífica: $\sigma_{\mu \mu} z_\mu q_{\mu\|\mu} \rho_\mu$  
+- Competição interespecífica: $\sigma_{\mu \eta} z_\mu q_{\eta\|\mu} \rho_\mu$
 
 Portanto:
 
 $$
 \begin{align}
-   \boxed{\frac{d\rho_\mu}{dt} = b_\mu z_\mu q_{\mu|0}(1 - \rho_\mu - \rho_\eta) - (\gamma_\mu + \delta_{\mu \mu} z_\mu q_{\mu|\mu} + \delta_{\mu \eta} z_\mu q_{\eta|\mu})\rho_\mu}
+   \boxed{\frac{d\rho_\mu}{dt} = b_\mu z_\mu q_{\mu|0}(1 - \rho_\mu - \rho_\eta) - (\gamma_\mu + \sigma_{\mu \mu} z_\mu q_{\mu|\mu} + \sigma_{\mu \eta} z_\mu q_{\eta|\mu})\rho_\mu}
 \end{align}   
 $$
 
@@ -429,14 +440,14 @@ $$
 **Contribuições da morte:** Cada sítio $(\mu,\mu)$ se desfaz com uma taxa dada pela mortalidade de um sítio $\mu$
 
 $$
-\gamma_\mu + \delta_{\mu \mu}[1 + (z_\mu-1)q_{\mu|\mu}] + \delta_{\mu \eta}(z_\mu-1)q_{\eta|\mu}
+\gamma_\mu + \sigma_{\mu \mu}[1 + (z_\mu-1)q_{\mu|\mu}] + \sigma_{\mu \eta}(z_\mu-1)q_{\eta|\mu}
 $$
 
 Portanto:
 
 $$
 \begin{align}
-   \boxed{\frac{1}{2}\frac{d\rho_{\mu \mu}}{dt} = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\mu} - [\gamma_\mu + \delta_{\mu \mu}(1 + (z_\mu-1)q_{\mu|\mu}) + \delta_{\mu \eta}(z_\mu-1)q_{\eta|\mu}]\rho_{\mu \mu}}
+   \boxed{\frac{1}{2}\frac{d\rho_{\mu \mu}}{dt} = b_\mu[1 + (z_\mu-1)q_{\mu|0}]\rho_{0\mu} - [\gamma_\mu + \sigma_{\mu \mu}(1 + (z_\mu-1)q_{\mu|\mu}) + \sigma_{\mu \eta}(z_\mu-1)q_{\eta|\mu}]\rho_{\mu \mu}}
 \end{align}
 $$
 
@@ -444,7 +455,7 @@ $$
 
 **Contribuição de nascimento:** Um par $(\mu,0)$ se torna um par $(\mu,\eta)$ quando a espécie $\eta$ der origem a um novo indivíduo no sítio vazio na vizinhança de $\mu$: $b_\eta(z_\eta-1)q_{\eta\|0}\rho_{0\mu}$. Da mesma forma, um par $(0,\eta)$ se torna um par $(\mu, \eta)$ quando um indivíduo da espécie $\mu$ se reproduzir gerando um novo ocupante na vizinhança do sítio focal da espécie $\eta$: $b_\mu(z_\mu-1)q_{\mu\|0}\rho_{0\eta}$. Note que aqui não termos o termo $1 + \cdots$ que nem nos pares intraespecíficos, pois o vizinho já conhecido na vizinhança do espaço vazio percente a outra espécie, e portanto não contribui para o nascimento de um indivíduo da espécie focal.
 
-**Contribuição da morte:** Um sítio da espécie $\mu$ se torna desocupado ao morrer com taxa: $[\gamma_\mu + \delta_{\mu \mu}(z_\mu-1)q_{\mu\|\mu} + \delta_{\mu \eta}(1 + (z_\mu-1)q_{\eta\|\mu})]\rho_{\mu \eta}$. Além disso, um sítio da espécie $\eta$ se torna desocupado com taxa: $[\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta\|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu\|\eta})]\rho_{\mu \eta}$
+**Contribuição da morte:** Um sítio da espécie $\mu$ se torna desocupado ao morrer com taxa: $[\gamma_\mu + \sigma_{\mu \mu}(z_\mu-1)q_{\mu\|\mu} + \sigma_{\mu \eta}(1 + (z_\mu-1)q_{\eta\|\mu})]\rho_{\mu \eta}$. Além disso, um sítio da espécie $\eta$ se torna desocupado com taxa: $[\gamma_\eta + \sigma_{\eta \eta}(z_\eta-1)q_{\eta\|\eta} + \sigma_{\eta \mu}(1 + (z_\eta-1)q_{\mu\|\eta})]\rho_{\mu \eta}$
 
 Assim, acabamos com:
 
@@ -452,9 +463,9 @@ $$
 \begin{align}
    \nonumber
    \frac{d\rho_{\mu \eta}}{dt} & = b_\mu (z_\mu-1)q_{\mu|0}\rho_{0\eta} + b_\eta (z_\eta-1)q_{\eta|0}\rho_{0\mu} \\
-   & - [\gamma_\mu + \delta_{\mu \mu}(z_\mu-1)q_{\mu|\mu} + \delta_{\mu \eta}(1 + (z_\mu-1)q_{\eta|\mu})] \rho_{\mu \eta} \\
+   & - [\gamma_\mu + \sigma_{\mu \mu}(z_\mu-1)q_{\mu|\mu} + \sigma_{\mu \eta}(1 + (z_\mu-1)q_{\eta|\mu})] \rho_{\mu \eta} \\
    \nonumber
-   & - [\gamma_\eta + \delta_{\eta \eta}(z_\eta-1)q_{\eta|\eta} + \delta_{\eta \mu}(1 + (z_\eta-1)q_{\mu|\eta})] \rho_{\mu \eta}
+   & - [\gamma_\eta + \sigma_{\eta \eta}(z_\eta-1)q_{\eta|\eta} + \sigma_{\eta \mu}(1 + (z_\eta-1)q_{\mu|\eta})] \rho_{\mu \eta}
 \end{align}
 $$
 
@@ -462,19 +473,19 @@ $$
 
 $$
 \begin{align}
-   & \frac{d\rho_1}{dt} = b_1 z_1 q_{1|0}(1 - \rho_1 - \rho_2) - (\gamma_1 + \delta_{11} z_1 q_{1|1} + \delta_{12} z_1 q_{2|1})\rho_1 \\
+   & \frac{d\rho_1}{dt} = b_1 z_1 q_{1|0}(1 - \rho_1 - \rho_2) - (\gamma_1 + \sigma_{11} z_1 q_{1|1} + \sigma_{12} z_1 q_{2|1})\rho_1 \\
 
-   & \frac{d\rho_2}{dt} = b_2 z_2 q_{2|0}(1 - \rho_1 - \rho_2) - (\gamma_2 + \delta_{22} z_2 q_{2|2} + \delta_{21} z_2 q_{1|2})\rho_2 \\
+   & \frac{d\rho_2}{dt} = b_2 z_2 q_{2|0}(1 - \rho_1 - \rho_2) - (\gamma_2 + \sigma_{22} z_2 q_{2|2} + \sigma_{21} z_2 q_{1|2})\rho_2 \\
 
-   & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1[1 + (z_1-1)q_{1|0}]\rho_{01} - [\gamma_1 + \delta_{11}(1 + (z_1-1)q_{1|1}) + \delta_{12}(z_1-1)q_{2|1}]\rho_{11} \\
+   & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1[1 + (z_1-1)q_{1|0}]\rho_{01} - [\gamma_1 + \sigma_{11}(1 + (z_1-1)q_{1|1}) + \sigma_{12}(z_1-1)q_{2|1}]\rho_{11} \\
 
-   & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2[1 + (z_2-1)q_{2|0}]\rho_{02} - [\gamma_2 + \delta_{22}(1 + (z_2-1)q_{2|2}) + \delta_{21}(z_2-1)q_{1|2}]\rho_{22} \\
+   & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2[1 + (z_2-1)q_{2|0}]\rho_{02} - [\gamma_2 + \sigma_{22}(1 + (z_2-1)q_{2|2}) + \sigma_{21}(z_2-1)q_{1|2}]\rho_{22} \\
 
    \nonumber
    & \frac{d\rho_{1 2}}{dt} = b_1(z_1-1)q_{1|0}\rho_{20} + b_2(z_2-1)q_{2|0}\rho_{10} \\
-   & - [\gamma_1 + \delta_{1 1}(z_1-1)q_{1|1} + \delta_{1 2}(1 + (z_1-1)q_{2|1})] \rho_{1 2} \\
+   & - [\gamma_1 + \sigma_{1 1}(z_1-1)q_{1|1} + \sigma_{1 2}(1 + (z_1-1)q_{2|1})] \rho_{1 2} \\
    \nonumber
-   & - [\gamma_2 + \delta_{2 2}(z_2-1)q_{2|2} + \delta_{2 1}(1 + (z_2-1)q_{1|2})] \rho_{1 2}
+   & - [\gamma_2 + \sigma_{2 2}(z_2-1)q_{2|2} + \sigma_{2 1}(1 + (z_2-1)q_{1|2})] \rho_{1 2}
 \end{align}
 $$
 
@@ -482,21 +493,21 @@ Explicitando os termos de probabilidades condicionais, chegamos a
 
 $$
 \begin{align}
-   & \frac{d\rho_1}{dt} = b_1 z_1 \rho_{10} - \gamma_1 \rho_1 - \delta_{11} z_1 \rho_{11} - \delta_{12} z_1 \rho_{12}  \\
+   & \frac{d\rho_1}{dt} = b_1 z_1 \rho_{10} - \gamma_1 \rho_1 - \sigma_{11} z_1 \rho_{11} - \sigma_{12} z_1 \rho_{12}  \\
 
-   & \frac{d\rho_2}{dt} = b_2 z_2 \rho_{20} - \gamma_2 \rho_2 - \delta_{22} z_2 \rho_{22} - \delta_{21} z_2 \rho_{12} \\
+   & \frac{d\rho_2}{dt} = b_2 z_2 \rho_{20} - \gamma_2 \rho_2 - \sigma_{22} z_2 \rho_{22} - \sigma_{21} z_2 \rho_{12} \\
 
-   & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1 \left[\rho_{10} + z_1 \frac{\rho_{10}^2}{\rho_0} - \frac{\rho_{10}^2}{\rho_0} \right] - \left[\gamma_1 \rho_{11} + \delta_{11} \left(\rho_{11} + z_1 \frac{\rho_{11}^2}{\rho_1}-\frac{\rho_{11}^2}{\rho_1} \right) + \right. \\
+   & \frac{1}{2}\frac{d\rho_{11}}{dt} = b_1 \left[\rho_{10} + z_1 \frac{\rho_{10}^2}{\rho_0} - \frac{\rho_{10}^2}{\rho_0} \right] - \left[\gamma_1 \rho_{11} + \sigma_{11} \left(\rho_{11} + z_1 \frac{\rho_{11}^2}{\rho_1}-\frac{\rho_{11}^2}{\rho_1} \right) + \right. \\
    \nonumber
-   & \left. + \delta_{12}(z_1-1)\frac{\rho_{12} \rho_{11}}{\rho_1} \right] \\
+   & \left. + \sigma_{12}(z_1-1)\frac{\rho_{12} \rho_{11}}{\rho_1} \right] \\
 
-   & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2 \left[\rho_{20} + z_2 \frac{\rho_{20}^2}{\rho_0} - \frac{\rho_{20}^2}{\rho_0} \right] - \left[\gamma_2 \rho_{22} + \delta_{22} \left(\rho_{22} + z_2 \frac{\rho_{22}^2}{\rho_2}-\frac{\rho_{22}^2}{\rho_2} \right) + \right. \\
+   & \frac{1}{2}\frac{d\rho_{22}}{dt} = b_2 \left[\rho_{20} + z_2 \frac{\rho_{20}^2}{\rho_0} - \frac{\rho_{20}^2}{\rho_0} \right] - \left[\gamma_2 \rho_{22} + \sigma_{22} \left(\rho_{22} + z_2 \frac{\rho_{22}^2}{\rho_2}-\frac{\rho_{22}^2}{\rho_2} \right) + \right. \\
    \nonumber
-   & \left. + \delta_{21}(z_2-1)\frac{\rho_{12} \rho_{22}}{\rho_2} \right] \\
+   & \left. + \sigma_{21}(z_2-1)\frac{\rho_{12} \rho_{22}}{\rho_2} \right] \\
 
    & \frac{d\rho_{12}}{dt} = b_1 (z_1 -1)\frac{\rho_{10} \rho_{20}}{\rho_0} + b_2 (z_2 - 1)\frac{\rho_{20} \rho_{10}}{\rho_0} - \\
-   & - \left[\gamma_1 \rho_{12} + \delta_{11}(z_1-1)\frac{\rho_{11} \rho_{12}}{\rho_1} + \delta_{12}\left(1 + (z_1-1)\frac{\rho_{12}^2}{\rho_1} \right) \right] - \\
-   & - \left[\gamma_2 \rho_{12} + \delta_{22}(z_2-1)\frac{\rho_{22} \rho_{12}}{\rho_2} + \delta_{21} \left(1 + (z_2-1)\frac{\rho_{12}^2}{\rho_2} \right) \right]
+   & - \left[\gamma_1 \rho_{12} + \sigma_{11}(z_1-1)\frac{\rho_{11} \rho_{12}}{\rho_1} + \sigma_{12}\left(1 + (z_1-1)\frac{\rho_{12}^2}{\rho_1} \right) \right] - \\
+   & - \left[\gamma_2 \rho_{12} + \sigma_{22}(z_2-1)\frac{\rho_{22} \rho_{12}}{\rho_2} + \sigma_{21} \left(1 + (z_2-1)\frac{\rho_{12}^2}{\rho_2} \right) \right]
 \end{align}
 $$
 
