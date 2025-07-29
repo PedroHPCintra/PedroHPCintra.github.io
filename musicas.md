@@ -57,11 +57,63 @@ Para quem tiver mais interesse, a página da [wikipédia sobre samba](https://pt
 > Leci Brandao \
 ><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/3UDX9t8WuQ0jYjt80gcdKN?si=612c5bc6dfea49ac) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/nEZFja1t80k?si=SZG7yb7RDudsHrIq)
 
-Aqui também vou deixar o link para minha playlist pública de samba/pagode no spotify
+Aqui também vou deixar o link para minha playlist pública de samba/pagode no Spotify
+
+<hr style="border:2px black; color: black">
 
 <i class="fa fa-volume-off"></i> **[Minha playlist de samba/pagode](https://open.spotify.com/playlist/0tESpgj85rhHBUMRkyO4qT?si=cf94dc6fa9bb4296)**
 
+<hr style="border:2px black; color: black">
+
 # Forró
+
+O gênero musical é originado do nordeste, o que ainda me traz um gosto de família. O termo forró é usado como um grande termo guarda-chuva que abarca estilos musicais diferentes como o xote, baião, arrasta-pé e o xaxado. No interior de Pernambuco os bailes de dança eram comuns desde o século XIX, porém foi em torno da década de 1950 que o forró se espalhou para o restante do país graças ao sucesso de Luiz Gonzaga e a migração de nordestinos para as três maiores cidades do país: Brasília, São Paulo e Rio de Janeiro. Nessas capitais surgiram as "casas de forró" e o estilo se diversificou e se espalhou para o restante do país. Em 2021 o forró foi declarado Patrimônio Cultural Imaterial no Brasil.
+
+Falando por um lado mais pessoal, o forró vive no meu coração, desde Setembro de 2024 quando comecei a fazer aulas de dança de forró, me apaixonei totalmente por esse estilo, a dança, as músicas e as pessoas que ele me trouxe. A banda dos meus professores é verdadeiramente incrível: <i class="fa fa-youtube"></i>[Ipê Fulô](https://youtu.be/mxqIb0kN0V8?si=IArfcW1_8Qcxju1P) <i class="fa fa-instagram"></i>[@ipefulo](https://www.instagram.com/ipefulo/)
+
+Ainda deixo aqui uma menção especial ao albúm <i class="fa fa-youtube"></i>[Dominguinho](https://youtu.be/3IcyRLeZDIs?si=LmPT-EVwkwpZPjdu) dos artistas João Gomes, Jota.pê e Mestrinho, que traz um tom de forró para várias músicas de outros estilos brasileiros.
+
+### Algumas músicas de forró que eu adoro
+
+><i class="fa fa-music"></i> **Meu Cenário** \
+>Flávio José \
+><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+>
+><i class="fa fa-music"></i> **Tareco & Mariola** \
+>Flávio José \
+><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+>
+><i class="fa fa-music"></i> **Feira de Mangaio** \
+>Clara Nunes \
+><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+>
+><i class="fa fa-music"></i> **Sanfona Sentida** \
+>Dominguinhos \
+><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+>
+><i class="fa fa-music"></i> **Forró no Escuro** \
+>Luiz Gonzaga \
+><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+>
+><i class="fa fa-music"></i> **Sossego do meu sonhar** \
+>Trio Macaíba \
+><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+>
+><i class="fa fa-music"></i>  **Dom do Amor** \
+>Ó Do Forró \
+><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+>
+><i class="fa fa-music"></i>  **Você Endoideceu Meu Coração** \
+>Trio Forrozão \
+><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+
+Aqui também vou deixar o link para minha playlist pública de forró no Spotify
+
+<hr style="border:2px black; color: black">
+
+<i class="fa fa-volume-off"></i> **[Minha playlist de forró](https://open.spotify.com/playlist/0Ru1058dsqjXykaeV9ZdSE?si=e56013983fb449b6)**
+
+<hr style="border:2px black; color: black">
 
 # Piseiro
 
