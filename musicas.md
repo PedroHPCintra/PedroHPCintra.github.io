@@ -27,35 +27,35 @@ Para quem tiver mais interesse, a página da [wikipédia sobre samba](https://pt
 
 ><i class="fa fa-music"></i> **Cheia de Manias** \
 >Raça Negra \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/1wtLEFD3kYHydIrPoB1TPj?si=a22b6639895a42cf) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/cOchidcyv9Q?si=wLqdOKjjIlFLe1lJ)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1wtLEFD3kYHydIrPoB1TPj?si=a22b6639895a42cf) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/cOchidcyv9Q?si=wLqdOKjjIlFLe1lJ)
 >
 ><i class="fa fa-music"></i> **Meu Lugar** \
 >Arlindo Cruz \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/40ejYprsOG1G7RwuOcRyxo?si=2f50c56683ef4430) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/TC3BhhraHgc?si=ftOepjSXSMn5S3tP)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/40ejYprsOG1G7RwuOcRyxo?si=2f50c56683ef4430) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/TC3BhhraHgc?si=ftOepjSXSMn5S3tP)
 >
 ><i class="fa fa-music"></i> **Até que Durou** \
 >Péricles \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/3AxhdZNzt7T6sIJIOWcgfm?si=0daba6173412414c) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/T3Y6RRSDm4o?si=LFYfY4H5hRGgCbaS)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3AxhdZNzt7T6sIJIOWcgfm?si=0daba6173412414c) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/T3Y6RRSDm4o?si=LFYfY4H5hRGgCbaS)
 >
 ><i class="fa fa-music"></i> **O Show Tem Que Continuar** \
 >Grupo Fundo de Quintal \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/1AeZGZtgWxgd5ye9h7rzWx?si=d7e17959ab964395) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/6FRnhuK6O_o?si=3eoSS7eTQMGzNHKk)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1AeZGZtgWxgd5ye9h7rzWx?si=d7e17959ab964395) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/6FRnhuK6O_o?si=3eoSS7eTQMGzNHKk)
 >
 ><i class="fa fa-music"></i> **Brincadeira Tem Hora - Ao Vivo** \
 > Xande de Pilares \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/5vryB0TX5RLIfXjoVDQrAh?si=9c48eaaec3564b8c) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/gd9geIr944A?si=rLh2eu7enjBztx0F)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/5vryB0TX5RLIfXjoVDQrAh?si=9c48eaaec3564b8c) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/gd9geIr944A?si=rLh2eu7enjBztx0F)
 >
 ><i class="fa fa-music"></i> **Malandro Não Vacila** \
 > Bezerra da Silva \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/3u7m7OnPbSIUP1JFuDFafr?si=e03d715d89e54e70) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/Tc_cd0oz9mk?si=gdFN7DE_z5om_E6-)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3u7m7OnPbSIUP1JFuDFafr?si=e03d715d89e54e70) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/Tc_cd0oz9mk?si=gdFN7DE_z5om_E6-)
 >
 ><i class="fa fa-music"></i>  **Só Vai de Camarote - Ao Vivo** \
 > Grupo Revelação \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/1QaNsRazpKjGm3xhIrEVfO?si=f9d015cec13340a1) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/ykWnIOV4kuY?si=ZpGhSh19CGANLa5z)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1QaNsRazpKjGm3xhIrEVfO?si=f9d015cec13340a1) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/ykWnIOV4kuY?si=ZpGhSh19CGANLa5z)
 >
 ><i class="fa fa-music"></i>  **Isso É Fundo de Quintal** \
 > Leci Brandao \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/3UDX9t8WuQ0jYjt80gcdKN?si=612c5bc6dfea49ac) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/nEZFja1t80k?si=SZG7yb7RDudsHrIq)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3UDX9t8WuQ0jYjt80gcdKN?si=612c5bc6dfea49ac) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/nEZFja1t80k?si=SZG7yb7RDudsHrIq)
 
 Aqui também vou deixar o link para minha playlist pública de samba/pagode no Spotify
 
@@ -69,43 +69,43 @@ Aqui também vou deixar o link para minha playlist pública de samba/pagode no S
 
 O gênero musical é originado do nordeste, o que ainda me traz um gosto de família. O termo forró é usado como um grande termo guarda-chuva que abarca estilos musicais diferentes como o xote, baião, arrasta-pé e o xaxado. No interior de Pernambuco os bailes de dança eram comuns desde o século XIX, porém foi em torno da década de 1950 que o forró se espalhou para o restante do país graças ao sucesso de Luiz Gonzaga e a migração de nordestinos para as três maiores cidades do país: Brasília, São Paulo e Rio de Janeiro. Nessas capitais surgiram as "casas de forró" e o estilo se diversificou e se espalhou para o restante do país. Em 2021 o forró foi declarado Patrimônio Cultural Imaterial no Brasil.
 
-Falando por um lado mais pessoal, o forró vive no meu coração, desde Setembro de 2024 quando comecei a fazer aulas de dança de forró, me apaixonei totalmente por esse estilo, a dança, as músicas e as pessoas que ele me trouxe. A banda dos meus professores é verdadeiramente incrível: <i class="fa fa-youtube"></i>[Ipê Fulô](https://youtu.be/mxqIb0kN0V8?si=IArfcW1_8Qcxju1P) <i class="fa fa-instagram"></i>[@ipefulo](https://www.instagram.com/ipefulo/)
+Falando por um lado mais pessoal, o forró vive no meu coração, desde Setembro de 2024 quando comecei a fazer aulas de dança de forró, me apaixonei totalmente por esse estilo, a dança, as músicas e as pessoas que ele me trouxe. A banda dos meus professores é verdadeiramente incrível: <i class="fa fa-youtube"></i> [Ipê Fulô](https://youtu.be/mxqIb0kN0V8?si=IArfcW1_8Qcxju1P) <i class="fa fa-instagram"></i> [@ipefulo](https://www.instagram.com/ipefulo/)
 
-Ainda deixo aqui uma menção especial ao albúm <i class="fa fa-youtube"></i>[Dominguinho](https://youtu.be/3IcyRLeZDIs?si=LmPT-EVwkwpZPjdu) dos artistas João Gomes, Jota.pê e Mestrinho, que traz um tom de forró para várias músicas de outros estilos brasileiros.
+Ainda deixo aqui uma menção especial ao albúm <i class="fa fa-youtube"></i> [Dominguinho](https://youtu.be/3IcyRLeZDIs?si=LmPT-EVwkwpZPjdu) dos artistas João Gomes, Jota.pê e Mestrinho, que traz um tom de forró para várias músicas de outros estilos brasileiros.
 
 ### Algumas músicas de forró que eu adoro
 
 ><i class="fa fa-music"></i> **Meu Cenário** \
 >Flávio José \
-><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
 >
 ><i class="fa fa-music"></i> **Tareco & Mariola** \
 >Flávio José \
-><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
 >
 ><i class="fa fa-music"></i> **Feira de Mangaio** \
 >Clara Nunes \
-><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
 >
 ><i class="fa fa-music"></i> **Sanfona Sentida** \
 >Dominguinhos \
-><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
 >
 ><i class="fa fa-music"></i> **Forró no Escuro** \
 >Luiz Gonzaga \
-><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
 >
 ><i class="fa fa-music"></i> **Sossego do meu sonhar** \
 >Trio Macaíba \
-><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
 >
 ><i class="fa fa-music"></i>  **Dom do Amor** \
 >Ó Do Forró \
-><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
 >
 ><i class="fa fa-music"></i>  **Você Endoideceu Meu Coração** \
 >Trio Forrozão \
-><i class="fa fa-spotify"></i>[Spotify]() <i class="fa fa-youtube"></i>[Youtube]()
+><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
 
 Aqui também vou deixar o link para minha playlist pública de forró no Spotify
 

@@ -11,7 +11,7 @@ layout: sub-page
 
 This page is dedicated to sharing my affection towards brazilian music and all of it's genres, maybe you'll like one of them too. As musics that I hear change, I'll keep updating this page and adding new playlists and recommendations :)
 
-For some genres, I will put links for my public playlists on Spotify<i class="fa fa-spotify"></i>, if anyone is interested in hearing more about a specific music genre that I mention here. I'll also try to add a small text talking about the history of each genre, but please remember that **I am not a professional musician or even researcher in music**.
+For some genres, I will put links for my public playlists on Spotify <i class="fa fa-spotify"></i>, if anyone is interested in hearing more about a specific music genre that I mention here. I'll also try to add a small text talking about the history of each genre, but please remember that **I am not a professional musician or even researcher in music**.
 
 Let's go...
 
@@ -25,35 +25,35 @@ For those more interested the [wikipédia page about samba](https://pt.wikipedia
 
 ><i class="fa fa-music"></i> **Cheia de Manias** \
 >Raça Negra \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/1wtLEFD3kYHydIrPoB1TPj?si=a22b6639895a42cf) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/cOchidcyv9Q?si=wLqdOKjjIlFLe1lJ)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1wtLEFD3kYHydIrPoB1TPj?si=a22b6639895a42cf) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/cOchidcyv9Q?si=wLqdOKjjIlFLe1lJ)
 >
 ><i class="fa fa-music"></i> **Meu Lugar** \
 >Arlindo Cruz \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/40ejYprsOG1G7RwuOcRyxo?si=2f50c56683ef4430) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/TC3BhhraHgc?si=ftOepjSXSMn5S3tP)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/40ejYprsOG1G7RwuOcRyxo?si=2f50c56683ef4430) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/TC3BhhraHgc?si=ftOepjSXSMn5S3tP)
 >
 ><i class="fa fa-music"></i> **Até que Durou** \
 >Péricles \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/3AxhdZNzt7T6sIJIOWcgfm?si=0daba6173412414c) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/T3Y6RRSDm4o?si=LFYfY4H5hRGgCbaS)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3AxhdZNzt7T6sIJIOWcgfm?si=0daba6173412414c) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/T3Y6RRSDm4o?si=LFYfY4H5hRGgCbaS)
 >
 ><i class="fa fa-music"></i> **O Show Tem Que Continuar** \
 >Grupo Fundo de Quintal \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/1AeZGZtgWxgd5ye9h7rzWx?si=d7e17959ab964395) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/6FRnhuK6O_o?si=3eoSS7eTQMGzNHKk)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1AeZGZtgWxgd5ye9h7rzWx?si=d7e17959ab964395) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/6FRnhuK6O_o?si=3eoSS7eTQMGzNHKk)
 >
 ><i class="fa fa-music"></i> **Brincadeira Tem Hora - Ao Vivo** \
 > Xande de Pilares \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/5vryB0TX5RLIfXjoVDQrAh?si=9c48eaaec3564b8c) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/gd9geIr944A?si=rLh2eu7enjBztx0F)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/5vryB0TX5RLIfXjoVDQrAh?si=9c48eaaec3564b8c) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/gd9geIr944A?si=rLh2eu7enjBztx0F)
 >
 ><i class="fa fa-music"></i> **Malandro Não Vacila** \
 > Bezerra da Silva \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/3u7m7OnPbSIUP1JFuDFafr?si=e03d715d89e54e70) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/Tc_cd0oz9mk?si=gdFN7DE_z5om_E6-)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3u7m7OnPbSIUP1JFuDFafr?si=e03d715d89e54e70) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/Tc_cd0oz9mk?si=gdFN7DE_z5om_E6-)
 >
 ><i class="fa fa-music"></i>  **Só Vai de Camarote - Ao Vivo** \
 > Grupo Revelação \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/1QaNsRazpKjGm3xhIrEVfO?si=f9d015cec13340a1) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/ykWnIOV4kuY?si=ZpGhSh19CGANLa5z)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1QaNsRazpKjGm3xhIrEVfO?si=f9d015cec13340a1) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/ykWnIOV4kuY?si=ZpGhSh19CGANLa5z)
 >
 ><i class="fa fa-music"></i>  **Isso É Fundo de Quintal** \
 > Leci Brandao \
-><i class="fa fa-spotify"></i>[Spotify](https://open.spotify.com/track/3UDX9t8WuQ0jYjt80gcdKN?si=612c5bc6dfea49ac) <i class="fa fa-youtube"></i>[Youtube](https://youtu.be/nEZFja1t80k?si=SZG7yb7RDudsHrIq)
+><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3UDX9t8WuQ0jYjt80gcdKN?si=612c5bc6dfea49ac) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/nEZFja1t80k?si=SZG7yb7RDudsHrIq)
 
 I'm also leaving there the link for my public samba/pagode playlist on Spotify:
 
