@@ -93,7 +93,7 @@ Ainda deixo aqui uma menção especial ao albúm <i class="fa fa-youtube"></i> [
             <b><i class="fa fa-music"></i> Meu Cenário </b> <br> Flávio José <br> <a href="https://open.spotify.com/track/7tjzBUMPPdWjKlmSdKw4rs?si=iMJdRF7IREukeKow1BN1xA" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/DOY2gXuHWao?si=CXX5Z4a2QGasvTC2" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
         <td>
-            <b><i class="fa fa-music"></i> Tareco & Mariola </b> <br> Flávio José <br> <a href="https://open.spotify.com/track/3fTC2g9Po4DW8MKvcKdpMD?si=ihjLc0HzR_-0x9PkNWe-hA" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/DOY2gXuHWao?si=CXX5Z4a2QGasvTC2" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+            <b><i class="fa fa-music"></i> Tareco & Mariola </b> <br> Flávio José <br> <a href="https://open.spotify.com/track/3fTC2g9Po4DW8MKvcKdpMD?si=ihjLc0HzR_-0x9PkNWe-hA" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/zF9f_1OHnFk?si=TeYZLvnJl-kw82aY" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
     </tr>
     <tr>
@@ -147,42 +147,42 @@ O piseiro é um estilo musical nascido por volta dos anos 2000 em zonas rurais d
 <table>
     <tr>
         <td>
-            <b><i class="fa fa-music"></i> Tá Rocheda</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+            <b><i class="fa fa-music"></i> Tá Rocheda</b> <br> Os Barões Da Pisadinha <br> <a href="https://open.spotify.com/track/3dPvQLKl42dMYWV4LWRTLK?si=2K0UBfXIQ4W5_xsDW6mSWg"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/O2jqBzpAp0c?si=QIYhsjEnClYNSDRj"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
         <td>
-            <b><i class="fa fa-music"></i> Rapariga Oficial</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b><i class="fa fa-music"></i> Arriadin por Tu - Ao Vivo</b> <br> Zé Vaqueiro, João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-        </td>
-        <td>
-            <b><i class="fa fa-music"></i> Cabeça Voando</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+            <b><i class="fa fa-music"></i> Rapariga Oficial</b> <br> Os Barões Da Pisadinha <br> <a href="https://open.spotify.com/track/200MELMFIVTTctrcZBOjIB?si=GYsNYySOTEOeGQJpiiC65Q"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/o93ELh919Xc?si=3l8Qy5UvHRG5CXF1"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
     </tr>
     <tr>
         <td>
-            <b><i class="fa fa-music"></i> Aquelas Coisas</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+            <b><i class="fa fa-music"></i> Arriadin por Tu - Ao Vivo</b> <br> Zé Vaqueiro, João Gomes <br> <a href="https://open.spotify.com/track/6sYUwCpHuAnuAU24RUCgGB?si=ck-DEib2SEW_PNIIzikHPA"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/gSbmVgWtDgE?si=3SflaLKm-FTgBKI0"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
         <td>
-            <b><i class="fa fa-music"></i> Dengo</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b><i class="fa fa-music"></i> Agarrada em Mim</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-        </td>
-        <td>
-            <b><i class="fa fa-music"></i> Letícia</b> <br> Zé Vaqueiro <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+            <b><i class="fa fa-music"></i> Cabeça Voando</b> <br> Os Barões Da Pisadinha <br> <a href="https://open.spotify.com/track/6wDzwmywQ2X8O0FN1IQGol?si=MWDuuBPnTv6ejYhR0s9lIg"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/K0k9YXz4gf0?si=sgJpCsz9gohuFdGG"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
     </tr>
     <tr>
         <td>
-            <b><i class="fa fa-music"></i> Skin de Vaqueiro</b> <br> Hugo Menezes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+            <b><i class="fa fa-music"></i> Aquelas Coisas</b> <br> João Gomes <br> <a href="https://open.spotify.com/track/2aJm1uVFVtTlbEXSIxcOAs?si=NvFrswpJSFyu6TflDAoktg"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/mpiX5Szs-Xs?si=424AePGlVp-FEPIl"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
         <td>
-            <b><i class="fa fa-music"></i> Endoideceu Meu Coração</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+            <b><i class="fa fa-music"></i> Dengo</b> <br> João Gomes <br> <a href="https://open.spotify.com/track/6Ulh9GPYz6JKdv04qc3q2U?si=yoeNwHN-QeC24Swe6IZqbQ"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/I-UEY8A-b5c?si=UlbeATg1mHrb25gl"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Agarrada em Mim</b> <br> João Gomes <br> <a href="https://open.spotify.com/track/7nM4oenBKpq75kP2oXbPPz?si=I1vmIav8TkynoV27BHkYIA"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/w77NRE_BNSc?si=rwCVHZNHcjiUyowT"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Letícia</b> <br> Zé Vaqueiro <br> <a href="https://open.spotify.com/track/1Qzse4pBfaUXY6wWOqYoRH?si=RVe51fuXTZavBulTq5qwew"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/mNWt8j9e-Zs?si=ndnDUuS7jszP9SmK"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Skin de Vaqueiro</b> <br> Hugo Menezes <br> <a href="https://open.spotify.com/track/2bl42hv4a1ZZNCaWaAYNa5?si=3hh1gjlqQp6rWlXZgmpzfA"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/nNwughSOy5U?si=3RTa5lbriBFLexx1"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Endoideceu Meu Coração</b> <br> João Gomes <br> <a href="https://open.spotify.com/track/5vi8CltWdwADxNEintDvUr?si=9T7nZbJGQha2NsqlFRnh-g"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/_O7AviQapE0?si=3N6QW389XFApt5GK"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
     </tr>
 </table>
@@ -196,6 +196,64 @@ Aqui também vou deixar o link para minha playlist pública de piseiro no Spotif
 <hr style="border:2px black; color: black">
 
 # Funk
+
+Apesar do nome _funk_, o funk carioca não é o mesmo do funk estadounidense. Entretanto, foi dele que o funk carioca surgiu nas favelas do Rio de Janeiro por volta dos anos 1990. Já tem 1970, o funk e o soul tocavam em bailes pelo Rio de Janeiro. Em 1980 o fenômeno já estava adquirindo algumas particularidades próprias, comparado ao funk estadounidense original, e foi tema do primeiro estudo social feito por [Hermano Vianna](http://www.overmundo.com.br/banco/o-baile-funk-carioca-hermano-vianna). É por volta de 1990 que as letras de funk ganham um aumento grande de participação nacional e concursos de rap dentro das comunidades e favelas do Rio de Janeiro fazem as letras voltadas ao dia a dia na favela.
+
+Na década de 2000 o funk ganha popularidade nacional e se diversifica por todo o país, influenciando diversos outros gêneros musicais e criando gêneros híbridos como o brega funk, o piseiro e o MTG.
+
+### Algumas músicas de funk que eu adoro
+
+<table>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Bumbum de Ouro </b> <br> Glória Groove <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Na Ponta Ela Fica </b> <br> Delano <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Glamurosa </b> <br> MC Marcinho <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Rap do Silva </b> <br> Bob Rum, DJ Marlboro <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Qual Bumbum Mais Bate </b> <br> MC WM, Os Cretinos <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Fui Mlk </b> <br> Nilo, MC Paiva ZS <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Rainha da Favela </b> <br> Ludmilla <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Penélope Charmosa 2 </b> <br> Boladin 211, MC Rick, Dejinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Ta OK </b> <br> Dennis, MC Kevin o Chris <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> De Kenner </b> <br> FBC, VHOOR <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+</table>
+
+Aqui também vou deixar o link para minha playlist pública de funk no Spotify. Esse é um estilo extremamente amplo e que fez parte da minha vida desde a infância até hoje. Essa playlist inclui músicas do período da minha adolescência até hoje. Além disso, podem notar que essa playlist inclui músicas de vários subgêneros de funk diferentes.
+
+<hr style="border:2px black; color: black">
+
+<i class="fa fa-volume-off"></i> **[Minha playlist de funk](https://open.spotify.com/playlist/0napk8Hlu1Tx6pkkIyJWW3?si=_dECt9gTQMWZqTnVMYIphQ&pi=7lOzl4TCT-Gvm)**
+
+<hr style="border:2px black; color: black">
+
 
 # MPB
 
