@@ -25,37 +25,48 @@ Para quem tiver mais interesse, a página da [wikipédia sobre samba](https://pt
 
 ### Algumas músicas de samba que eu adoro
 
-><i class="fa fa-music"></i> **Cheia de Manias** \
->Raça Negra \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1wtLEFD3kYHydIrPoB1TPj?si=a22b6639895a42cf) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/cOchidcyv9Q?si=wLqdOKjjIlFLe1lJ)
->
-><i class="fa fa-music"></i> **Meu Lugar** \
->Arlindo Cruz \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/40ejYprsOG1G7RwuOcRyxo?si=2f50c56683ef4430) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/TC3BhhraHgc?si=ftOepjSXSMn5S3tP)
->
-><i class="fa fa-music"></i> **Até que Durou** \
->Péricles \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3AxhdZNzt7T6sIJIOWcgfm?si=0daba6173412414c) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/T3Y6RRSDm4o?si=LFYfY4H5hRGgCbaS)
->
-><i class="fa fa-music"></i> **O Show Tem Que Continuar** \
->Grupo Fundo de Quintal \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1AeZGZtgWxgd5ye9h7rzWx?si=d7e17959ab964395) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/6FRnhuK6O_o?si=3eoSS7eTQMGzNHKk)
->
-><i class="fa fa-music"></i> **Brincadeira Tem Hora - Ao Vivo** \
-> Xande de Pilares \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/5vryB0TX5RLIfXjoVDQrAh?si=9c48eaaec3564b8c) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/gd9geIr944A?si=rLh2eu7enjBztx0F)
->
-><i class="fa fa-music"></i> **Malandro Não Vacila** \
-> Bezerra da Silva \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3u7m7OnPbSIUP1JFuDFafr?si=e03d715d89e54e70) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/Tc_cd0oz9mk?si=gdFN7DE_z5om_E6-)
->
-><i class="fa fa-music"></i>  **Só Vai de Camarote - Ao Vivo** \
-> Grupo Revelação \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1QaNsRazpKjGm3xhIrEVfO?si=f9d015cec13340a1) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/ykWnIOV4kuY?si=ZpGhSh19CGANLa5z)
->
-><i class="fa fa-music"></i>  **Isso É Fundo de Quintal** \
-> Leci Brandao \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3UDX9t8WuQ0jYjt80gcdKN?si=612c5bc6dfea49ac) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/nEZFja1t80k?si=SZG7yb7RDudsHrIq)
+<table>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Cheia de Manias </b> <br> Raça Negra <br> <a href="https://open.spotify.com/track/1wtLEFD3kYHydIrPoB1TPj?si=a22b6639895a42cf"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/cOchidcyv9Q?si=wLqdOKjjIlFLe1lJ"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Meu Lugar</b> <br> Arlindo Cruz <br> <a href="https://open.spotify.com/track/40ejYprsOG1G7RwuOcRyxo?si=2f50c56683ef4430"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/TC3BhhraHgc?si=ftOepjSXSMn5S3tP"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Até que Durou</b> <br> Péricles <br> <a href="https://open.spotify.com/track/3AxhdZNzt7T6sIJIOWcgfm?si=0daba6173412414c"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/T3Y6RRSDm4o?si=LFYfY4H5hRGgCbaS"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> O Show Tem Que Continuar</b> <br> Os Grupo Fundo de Quintal <br> <a href="https://open.spotify.com/track/1AeZGZtgWxgd5ye9h7rzWx?si=d7e17959ab964395"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/6FRnhuK6O_o?si=3eoSS7eTQMGzNHKk"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Brincadeira Tem Hora - Ao Vivo</b> <br> Xande de Pilares <br> <a href="https://open.spotify.com/track/5vryB0TX5RLIfXjoVDQrAh?si=9c48eaaec3564b8c"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/gd9geIr944A?si=rLh2eu7enjBztx0F"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Malandro Não Vacila</b> <br> Bezerra da Silva <br> <a href="https://open.spotify.com/track/3u7m7OnPbSIUP1JFuDFafr?si=e03d715d89e54e70"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/Tc_cd0oz9mk?si=gdFN7DE_z5om_E6-"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Só Vai de Camarote - Ao Vivo</b> <br> Grupo Revelação <br> <a href="https://open.spotify.com/track/1QaNsRazpKjGm3xhIrEVfO?si=f9d015cec13340a1"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/ykWnIOV4kuY?si=ZpGhSh19CGANLa5z"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Isso É Fundo de Quintal</b> <br> Leci Brandao <br> <a href="https://open.spotify.com/track/3UDX9t8WuQ0jYjt80gcdKN?si=612c5bc6dfea49ac"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/nEZFja1t80k?si=SZG7yb7RDudsHrIq"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Vou Festejar</b> <br> Grupo Fundo de Quintal, Beth Carvalho <br> <a href="https://open.spotify.com/track/3TfHKaSjz2SnAzIMFbdmWj?si=fd3ae84bd02b44b6"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/-mPwdM4-_QQ?si=j1A36bdofIOxiWyK"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Roda Ciranda/Casa de Bamba - Ao Vivo</b> <br> Martinho Da Vila <br> <a href="https://open.spotify.com/track/7EhPd9XxfeGYX9iJKJIfAK?si=1fd98139c1dd48d4"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/o1RQWPJxWXE?si=c_h_EsjJAopK98CU"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+</table>
 
 Aqui também vou deixar o link para minha playlist pública de samba/pagode no Spotify
 
@@ -130,46 +141,46 @@ O piseiro é um estilo musical nascido por volta dos anos 2000 em zonas rurais d
 ### Algumas músicas de piseiro que eu adoro
 
 <table>
-  <tr>
-    <td>
-        <b><i class="fa fa-music"></i> Tá Rocheda</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-    <td>
-        <b><i class="fa fa-music"></i> Rapariga Oficial</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <b><i class="fa fa-music"></i> Arriadin por Tu - Ao Vivo</b> <br> Zé Vaqueiro, João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-    <td>
-        <b><i class="fa fa-music"></i> Cabeça Voando</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <b><i class="fa fa-music"></i> Aquelas Coisas</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-    <td>
-        <b><i class="fa fa-music"></i> Dengo</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <b><i class="fa fa-music"></i> Agarrada em Mim</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-    <td>
-        <b><i class="fa fa-music"></i> Letícia</b> <br> Zé Vaqueiro <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <b><i class="fa fa-music"></i> Skin de Vaqueiro</b> <br> Hugo Menezes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-    <td>
-        <b><i class="fa fa-music"></i> Endoideceu Meu Coração</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
-    </td>
-  </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Tá Rocheda</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Rapariga Oficial</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Arriadin por Tu - Ao Vivo</b> <br> Zé Vaqueiro, João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Cabeça Voando</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Aquelas Coisas</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Dengo</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Agarrada em Mim</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Letícia</b> <br> Zé Vaqueiro <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Skin de Vaqueiro</b> <br> Hugo Menezes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Endoideceu Meu Coração</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
 </table>
 
 Aqui também vou deixar o link para minha playlist pública de piseiro no Spotify. Esse é um estilo que comecei a consumir mais frequentemente a partir de 2024, na minha playlist há algumas músicas que não são necessariamente piseiro, mas que me lembram um pouco o estilo e por isso coloquei elas lá. Não sou nenhum curador de música no final das contas.
