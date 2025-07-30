@@ -39,7 +39,7 @@ Para quem tiver mais interesse, a página da [wikipédia sobre samba](https://pt
             <b><i class="fa fa-music"></i> Até que Durou</b> <br> Péricles <br> <a href="https://open.spotify.com/track/3AxhdZNzt7T6sIJIOWcgfm?si=0daba6173412414c" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/T3Y6RRSDm4o?si=LFYfY4H5hRGgCbaS" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
         <td>
-            <b><i class="fa fa-music"></i> O Show Tem Que Continuar</b> <br> Os Grupo Fundo de Quintal <br> <a href="https://open.spotify.com/track/1AeZGZtgWxgd5ye9h7rzWx?si=d7e17959ab964395" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/6FRnhuK6O_o?si=3eoSS7eTQMGzNHKk" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+            <b><i class="fa fa-music"></i> O Show Tem Que Continuar</b> <br> Grupo Fundo de Quintal <br> <a href="https://open.spotify.com/track/1AeZGZtgWxgd5ye9h7rzWx?si=d7e17959ab964395" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/6FRnhuK6O_o?si=3eoSS7eTQMGzNHKk" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
         </td>
     </tr>
     <tr>
@@ -86,45 +86,49 @@ Ainda deixo aqui uma menção especial ao albúm <i class="fa fa-youtube"></i> [
 
 ### Algumas músicas de forró que eu adoro
 
-><i class="fa fa-music"></i> **Meu Cenário** \
->Flávio José \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/7tjzBUMPPdWjKlmSdKw4rs?si=iMJdRF7IREukeKow1BN1xA) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/DOY2gXuHWao?si=CXX5Z4a2QGasvTC2)
->
-><i class="fa fa-music"></i> **Tareco & Mariola** \
->Flávio José \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3fTC2g9Po4DW8MKvcKdpMD?si=ihjLc0HzR_-0x9PkNWe-hA) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/zF9f_1OHnFk?si=dOGPl4h3adu69SsH)
->
-><i class="fa fa-music"></i> **Feira de Mangaio** \
->Clara Nunes \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/3bZy4mfepri8X7JIdhCj5L?si=tez35H_yRduaotwltfmF2A) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/V0KLXs0SCpE?si=P6IdCpu3zY7_wzvt)
->
-><i class="fa fa-music"></i> **Sanfona Sentida** \
->Dominguinhos \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/0DztKNmklzeNUtPvLJmDU3?si=VShGmDpTRdWZMwdiYdC2eg) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/U0bnZ5AHgfI?si=cqA7mBvbmQvFKORb)
->
-><i class="fa fa-music"></i> **Forró no Escuro** \
->Luiz Gonzaga \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/5FBB9Q3tM3pplsFYUkYfRe?si=_fKrLQmuSriqdGyo-LWDkg) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/oeFXySVW78o?si=anF4gi1S3m0jgEwO)
->
-><i class="fa fa-music"></i> **Sossego do meu sonhar** \
->Trio Macaíba \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/0651POdBfU4L3bfdTM6wz3?si=K2x7_F5RTi-7-nUzZL66KQ) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/XPk3q8cNdfI?si=hCuIzLwzF2DPTubv)
->
-><i class="fa fa-music"></i>  **Dom do Amor** \
->Ó Do Forró \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/5aIkOR69dYODZ6kAzeeWfA?si=JOHdQsMyTuClSvzpqJfu8w) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/2EN9PX1E-j8?si=XFs11b3k7zt1MG8j)
->
-><i class="fa fa-music"></i>  **Você Endoideceu Meu Coração** \
->Trio Forrozão \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/1hq8BtY65XOEtRqJN8iCd3?si=DAok_VwySRqL8rwRXOpNnA) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/U_IPcv6Ofto?si=Pih-omybGUnd2-7J)
->
-><i class="fa fa-music"></i>  **O Xote das Meninas** \
->Luiz Gonzaga \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/0V7iPl67ctA3MioAzO2ae5?si=RpHEtLy1RrK2rMAX-bnw5Q) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/4hBmHs0-f14?si=-GGyoNSWiehFK6La)
->
-><i class="fa fa-music"></i>  **Última Dança** \
->Agnes Nunes \
-><i class="fa fa-spotify"></i> [Spotify](https://open.spotify.com/track/5ypeYDodf7RV3Uhaj6jkJ3?si=xdpitK30SF-wiCPVCcr8rA) <i class="fa fa-youtube"></i> [Youtube](https://youtu.be/3hKkcJWqPkg?si=RoNNRDH4oSOOHWmO)
+
+<table>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Meu Cenário </b> <br> Flávio José <br> <a href="https://open.spotify.com/track/7tjzBUMPPdWjKlmSdKw4rs?si=iMJdRF7IREukeKow1BN1xA" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/DOY2gXuHWao?si=CXX5Z4a2QGasvTC2" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Tareco & Mariola </b> <br> Flávio José <br> <a href="https://open.spotify.com/track/3fTC2g9Po4DW8MKvcKdpMD?si=ihjLc0HzR_-0x9PkNWe-hA" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/DOY2gXuHWao?si=CXX5Z4a2QGasvTC2" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Feira de Mangaio </b> <br> Clara Nunes <br> <a href="https://open.spotify.com/track/3bZy4mfepri8X7JIdhCj5L?si=tez35H_yRduaotwltfmF2A" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/V0KLXs0SCpE?si=P6IdCpu3zY7_wzvt" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Sanfona Sentida </b> <br> Dominguinhos <br> <a href="https://open.spotify.com/track/0DztKNmklzeNUtPvLJmDU3?si=VShGmDpTRdWZMwdiYdC2eg" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/U0bnZ5AHgfI?si=cqA7mBvbmQvFKORb" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Forró no Escuro </b> <br> Luiz Gonzaga <br> <a href="https://open.spotify.com/track/5FBB9Q3tM3pplsFYUkYfRe?si=_fKrLQmuSriqdGyo-LWDkg" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/oeFXySVW78o?si=anF4gi1S3m0jgEwO" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Sossego do meu sonhar </b> <br> Trio Macaíba <br> <a href="https://open.spotify.com/track/0651POdBfU4L3bfdTM6wz3?si=K2x7_F5RTi-7-nUzZL66KQ" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/XPk3q8cNdfI?si=hCuIzLwzF2DPTubv" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> Dom do Amor </b> <br> Ó Do Forró <br> <a href="https://open.spotify.com/track/5aIkOR69dYODZ6kAzeeWfA?si=JOHdQsMyTuClSvzpqJfu8w" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/2EN9PX1E-j8?si=XFs11b3k7zt1MG8j" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Você Endoideceu Meu Coração </b> <br> Trio Forrozão <br> <a href="https://open.spotify.com/track/1hq8BtY65XOEtRqJN8iCd3?si=DAok_VwySRqL8rwRXOpNnA" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/U_IPcv6Ofto?si=Pih-omybGUnd2-7J" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b><i class="fa fa-music"></i> O Xote das Meninas </b> <br> Luiz Gonzaga <br> <a href="https://open.spotify.com/track/0V7iPl67ctA3MioAzO2ae5?si=RpHEtLy1RrK2rMAX-bnw5Q" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/4hBmHs0-f14?si=-GGyoNSWiehFK6La" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+        <td>
+            <b><i class="fa fa-music"></i> Última Dança </b> <br> Agnes Nunes <br> <a href="https://open.spotify.com/track/5ypeYDodf7RV3Uhaj6jkJ3?si=xdpitK30SF-wiCPVCcr8rA" target="_blank"><i class="fa fa-spotify"></i> Spotify</a> <a href="https://youtu.be/3hKkcJWqPkg?si=RoNNRDH4oSOOHWmO" target="_blank"><i class="fa fa-youtube"></i> Youtube</a>
+        </td>
+    </tr>
+</table>
 
 Aqui também vou deixar o link para minha playlist pública de forró no Spotify
 
