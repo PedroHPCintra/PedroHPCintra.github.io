@@ -129,41 +129,48 @@ O piseiro é um estilo musical nascido por volta dos anos 2000 em zonas rurais d
 
 ### Algumas músicas de piseiro que eu adoro
 
-><i class="fa fa-music"></i> **Tá Rocheda** \
->Os Barões Da Pisadinha \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
->
-><i class="fa fa-music"></i> **Rapariga Oficial** \
->Os Barões Da Pisadinha \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
->
-><i class="fa fa-music"></i> **Arriadin por Tu - Ao Vivo** \
->Zé Vaqueiro, João Gomes \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
->
-><i class="fa fa-music"></i> **Cabeça Voando** \
->Os Barões da Pisadinha \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
->
-><i class="fa fa-music"></i> **Aquelas Coisas** \
->João Gomes \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
->
-><i class="fa fa-music"></i> **Dengo** \
->João Gomes \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
->
-><i class="fa fa-music"></i> **Agarrada em Mim** \
->João Gomes \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
->
-><i class="fa fa-music"></i>  **Letícia** \
->Zé Vaqueiro \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
->
-><i class="fa fa-music"></i>  **Skin de Vaqueiro** \
->Hugo Menezez \
-><i class="fa fa-spotify"></i> [Spotify]() <i class="fa fa-youtube"></i> [Youtube]()
+<table>
+  <tr>
+    <td>
+        <b><i class="fa fa-music"></i> Tá Rocheda</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+    <td>
+        <b><i class="fa fa-music"></i> Rapariga Oficial</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <b><i class="fa fa-music"></i> Arriadin por Tu - Ao Vivo</b> <br> Zé Vaqueiro, João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+    <td>
+        <b><i class="fa fa-music"></i> Cabeça Voando</b> <br> Os Barões Da Pisadinha <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <b><i class="fa fa-music"></i> Aquelas Coisas</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+    <td>
+        <b><i class="fa fa-music"></i> Dengo</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <b><i class="fa fa-music"></i> Agarrada em Mim</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+    <td>
+        <b><i class="fa fa-music"></i> Letícia</b> <br> Zé Vaqueiro <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <b><i class="fa fa-music"></i> Skin de Vaqueiro</b> <br> Hugo Menezes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+    <td>
+        <b><i class="fa fa-music"></i> Endoideceu Meu Coração</b> <br> João Gomes <br> <a href=""><i class="fa fa-spotify"></i> Spotify</a> <a href=""><i class="fa fa-youtube"></i> Youtube</a>
+    </td>
+  </tr>
+</table>
 
 Aqui também vou deixar o link para minha playlist pública de piseiro no Spotify. Esse é um estilo que comecei a consumir mais frequentemente a partir de 2024, na minha playlist há algumas músicas que não são necessariamente piseiro, mas que me lembram um pouco o estilo e por isso coloquei elas lá. Não sou nenhum curador de música no final das contas.
 
