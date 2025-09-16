@@ -1,0 +1,26 @@
+@import "{{ site.theme }}";
+
+/* Sobrescreve os estilos do header para corrigir a duplicação da imagem no mobile */
+.page-header {
+    /* Remove o gradiente padrão do tema */
+    background-image: none !important;
+    
+    /* Define sua imagem de fundo personalizada */
+    background-image: url('../assets/img/Lotka-Volterra_art.png') !important;
+    
+    /* Configurações para evitar repetição e garantir boa visualização */
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    
+    /* Mantém a cor de fundo caso a imagem não carregue */
+    background-color: #159957;
+}
+
+/* Media queries específicas para mobile se necessário */
+@media screen and (max-width: 42em) {
+    .page-header {
+        background-size: cover !important;
+        background-position: center top !important;
+    }
+}
