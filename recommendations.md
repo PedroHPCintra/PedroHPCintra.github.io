@@ -34,6 +34,8 @@ Here you'll find my favorite books, articles and YouTube channels. I highly reco
 
 - Things could be better: Eight studies reveal a (possibly universal) bias in human imagination. Adam Mastroianni. 2022. [https://experimentalhistory.substack.com/p/things-could-be-better](https://experimentalhistory.substack.com/p/things-could-be-better)
 
+- A Concise History of the Black-body Radiation Problem. Himanshu Mavani, Navinder Singh. Arxiv. 2022. [https://arxiv.org/abs/2208.06470](https://arxiv.org/abs/2208.06470)
+
 ## Books
 
 If you want to see more books I've read and my opinions about them, you can check my profile in [Goodreads](https://www.goodreads.com/user/show/118164947-pedro)

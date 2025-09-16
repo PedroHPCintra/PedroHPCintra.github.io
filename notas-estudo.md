@@ -12,6 +12,8 @@ layout: sub-page_pt-br
 
 - [Átomo de Hidrogênio Dirac](./assets/pdf/Class-note-atomo-H-dirac.pdf): Uns anos atrás estava estudando a solução do átomo de hidrogênio pela equação de Dirac e resolvi digitalizar minhas contas.
 
+- [Massa crítica bomba atômica](./class-notes/pt-br/massa-critica.md): Após ver o filme Oppenheimer, fiquei curioso com o processo para se calcular a massa de Urânio-235 necessária para se construir uma bomba atômica, estas anotações são fruto da conta para responder isso.
+
 ## Ecologia Teórica
 
 - [De Indivíduos à Populações](./assets/pdf/Class-note-de-individuos-a-populacoes.pdf) **(AINDA EM DESENVOLVIMENTO)**: Anotações a respeito de equações mestras em ecologia e como equações diferenciais podem ser encontradas a partir das dinâmicas individuais.
