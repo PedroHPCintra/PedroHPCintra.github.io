@@ -1,21 +1,4 @@
 // Placeholder file. If your site uses
 //     @import "{{ site.theme }}";
 // Then using this theme with jekyll-remote-theme will work fine.
-// @import "jekyll-theme-cayman";
----
----
-
-@import "{{ site.theme }}";
-
-/* Customizações para corrigir a imagem duplicada no mobile */
-.page-header {
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-}
-
-.page-header-pt-br {
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-}
+@import "jekyll-theme-cayman";
