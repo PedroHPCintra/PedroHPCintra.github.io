@@ -111,7 +111,9 @@ a {
   text-align: center;
 //   background-color: $header-bg-color;
   background-image: url("/assets/img/Lotka-Volterra_art.png");
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;  // Adicionar esta linha
+  background-position: center center;  // Adicionar esta linha
   position: relative;
   z-index: 0;
 
@@ -129,26 +131,28 @@ a {
 }
 
 .page-header-pt-br {
-    color: $header-heading-color;
-    text-align: center;
+  color: $header-heading-color;
+  text-align: center;
   //   background-color: $header-bg-color;
-    // background-clip: url("/assets/video/output_Julia.mp4");
-    background-image: url("/assets/img/Lotka-Volterra_artv2.png");
-    background-size: 100%;
-    position: relative;
-    z-index: 0;
-  
-    @include large {
-      padding: 5rem 6rem;
-    }
-  
-    @include medium {
-      padding: 3rem 4rem;
-    }
-  
-    @include small {
-      padding: 2rem 1rem;
-    }
+  // background-clip: url("/assets/video/output_Julia.mp4");
+  background-image: url("/assets/img/Lotka-Volterra_artv2.png");
+  background-size: cover;
+  background-repeat: no-repeat;  // Adicionar esta linha
+  background-position: center center;  // Adicionar esta linha
+  position: relative;
+  z-index: 0;
+
+  @include large {
+    padding: 5rem 6rem;
+  }
+
+  @include medium {
+    padding: 3rem 4rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+  }
 }
 
 #pot {
