@@ -1,8 +1,8 @@
 ---
-layout: sub-page_pt-br
+layout: sub-page
 ---
 
-Se você já estudou dinâmica de populações, seja em ecologia ou epidemiologia, você já deve ter se deparado com o modelo logístico. Um dos primeiros modelos apresentados na descrição de um crescimento populacional. E assim como eu, você provavelmente se deparou com uma equação diferencial nesse formato
+If you have ever studied the mathematical dynamics of populations, be it in ecology or epidemiology, you have probably seen the logistic growth model. It is one of the first models studied in the description of population growth. Then, I imagine that just like me, you probably seen a differential equation like this one (if you haven't that's also ok)
 
 $$
 \begin{align}
@@ -10,19 +10,19 @@ $$
 \end{align}
 $$
 
-onde $k$ é a capacidade de suporte da população; isto é, o valor máximo que ela pode atingir, $r$ é a taxa de crescimento e $N$ é o valor da população em um certo instante de tempo. O que essa equação nos diz é que a taxa de variação no tempo, de uma população sujeita apenas à limitação de recursos (sem sofrer predação ou outras interações com outras populações) cresce rapidamente mas tende a se estabilizar em um valor máximo, ditado pelas condições ambientais.
+where $k$ is the carrying capacity of the population, i. e., the maximum value that it can reach, given the limitations of the environment, $r$ is the growth rate and $N$ is the population size on a given moment in time (more formally, one would write $N(t)$ to highlight the fact that $N$ is a function of time). What this equation is telling us is that the rate of change for a population only subjected to the limitations in resources (no predation or interactions with other populations) is proportional to the number of individuals in the population and constrained by the carrying capacity of the environment.
 
-Mas ok, e de onde essa equação veio? Você talvez tenha visto uma construção que começa a partir de um crescimento exponencial, e então adiciona a limitação por recursos para chegar ao modelo logístico. Eu não gosto muito dessa derivação (aos mais preciosistas que queiram argumentar se isso é ou não uma derivação, estou simplificando a linguagem aqui para tentar elaborar algo mais coloquial), pois ela não nos mostra de forma clara que tipo de premissas assumimos a respeito dos indivíduos que compõe essa população. Para isso, precisamos montar essa equação, partindo da dinâmica individual. **Esté é meu objetivo aqui.**
+Well nice, but where does this equation came from? You maybe have seen a construction that begins with an exponential growth to then add a term related to resource limitation in order to arrive at the logistic model. I'm not a big fan of this derivation (some readers may argue that this is not a formal derivation, but I'm simplifying the language here to make this more coloquial), because it does not shows us explicitly what are the kinds of assumptions we make with respect to the individuals that make up this population. In order to get this clearly, we must build the equation from the individual dynamics. **This is my objective here.**
 
-A transição entre a dinâmica de indivíduos para o comportamento de população é para mim um fenômeno extraordinário. Talvez pelo meu histórico como um físico, eu tenha me apegado e encontrado uma certa beleza em observar descrições individuais e simples resultar em comportamentos macroscópicos complexos. Para os leitores físicos, eu tendo a pensar na transição entre o formalismo de operadores da mecânica quântica para o formalismo padrão da mecânica clássica, ao tomarmos a média dos operadores em um sistema de muitas partículas. Aqui a coisa não será tão diferente, matematicamente falando.
+The transition from individual dynamics to population behavior is for me an extraordinary phenomenon. Perhaps due to my background as a physicist, I have grown attached to and found a certain beauty in observing simple individual descriptions resulting in complex macroscopic behaviors. For the physicist readers, I tend to think of the transition from the operator formalism of quantum mechanics to the standard formalism of classical mechanics, when taking the average of operators in a many-particle system. Here things won't be so different, mathematically speaking.
 
-Mas chega de enrolação, vamos lá. Aqui irei supor uma dinâmica que, a primeira vista, pode enfurecer muitos dos meus amigos biológos, mas peço paciência pois tentarei justificar as suposições aqui feitas. A **primeira suposição** é a de que **a única interação que ocorre é entre indivíduos consumidores e seus recursos**, ou seja, estamos ignorando a predação, competição interespecífica e até mesmo a reprodução sexuada dentro da própria população. É claro que este é um cenário longe da realidade, mas temos que começar em algum lugar. Foi ignorando a resistência do ar que Galileu começou a descrever o movimento dos corpos.
+But enough chatting, let's go. Here I will assume dynamics that, at first glance, may infuriate many of my biologist friends, but I ask for patience as I will try to justify the assumptions made here. The **first assumption** is that **the only interaction that occurs is between consumer individuals and their resources**, that is, we are ignoring predation, interspecific competition and even sexual reproduction within the population itself. Of course this is a scenario far from reality, but we have to start somewhere. It was by ignoring air resistance that Galileo began to describe the motion of bodies after all.
 
-Como consequência da primeira suposição, a **segunda suposição** é que **os indivíduos se reproduzem assexuadamente**. Não é atoa que as observações que melhor batem com a dinâmica logística são aquelas feitas em laboratório com microorganismos (um dos primeiros experimentos avaliando o crescimento logístico foi em 1934 por G. F. Gause, [Struggle for Existence](http://193.204.79.40/wp-content/uploads/2015/12/gause1934.pdf)).
+As a consequence of the first assumption, the **second assumption** is that **individuals reproduce asexually**. It is no coincidence that the observations that best match logistic dynamics are those made in the laboratory with microorganisms (one of the first experiments evaluating logistic growth was in 1934 by G. F. Gause, [Struggle for Existence](http://193.204.79.40/wp-content/uploads/2015/12/gause1934.pdf)).
 
-Uma vez que estamos interessados apenas em descrever a dinâmica dos consumidores do recurso, focaremos neles. Sendo assim, em um certo intervalo de tempo curto, 4 coisas diferentes podem ocorrer:
+Since we are only interested in describing the dynamics of resource consumers, we will focus on them. Thus, at a certain brief period of time, 4 different things can occur:
 
-- Um indivíduo $X$ pode se reproduzir assexuadamente resultando então em $X + X$. Representamos isso da forma
+- An individual $X$ can reproduce asexually resulting in $X + X$. We represent this as
 
 $$
 \begin{align}
@@ -30,7 +30,7 @@ $$
 \end{align}
 $$
 
-- Um indvíduo $X$ pode morrer por causas naturais (velhice, doença, etc).
+- An individual $X$ can die from natural causes (old age, disease, etc.).
 
 $$
 \begin{align}
@@ -38,7 +38,7 @@ $$
 \end{align}
 $$
 
-- Dois indivíduos podem "brigar" por um recurso ou até mesmo por espaço, de forma que apenas um deles sobreviva (aqui estamos implicitamente falando que os recursos ou o espaço são limitados)
+- Two individuals can "fight" for a resource or even for space, such that only one of them survives (here we are implictly stating that space or resource is limited, if we want to make a clear argument for which of the two we are referring to, we need to work on the specific form of the rate $\alpha$)
 
 $$
 \begin{align}
@@ -46,25 +46,25 @@ $$
 \end{align}
 $$
 
-- Nada acontecer
+- Nothing happens
 
-Aqui $b$ é a taxa com a qual indivíduos se reproduzem. Está taxa é proporcional à quantidade de recurso disponível para cada indivíduo e a probabilidade de um indivíduo encontrar recurso. Mais tarde discutirei mais a respeito destas taxas. $d$ é a taxa de morte por causas naturais e $\alpha$ a taxa com a qual indivíduos morrem devido à competição.
+Here $b$ is the rate at which individuals reproduce. This rate is proportional to the amount of resource available per individual and the probability of an individual finding a resource. I will discuss more about these rates later. $d$ is the death rate from natural causes and $\alpha$ the rate at which individuals die due to competition.
 
-Vale notar aqui que deixamos aqui implícita a **3ª premissa** do modelo: **Não há mutações e as taxas de para cada processo não dependem das características do indivído**, ou seja, todos os indivíduos são iguais. Em termos ecológicos, podemos dizer que todos os indivíduos possuem a mesma aptidão (aqui estou usando aptidão como uma tradução para o _fitness_).
+It is worth noting here that we leave implicit the **3rd assumption** of the model: **There are no mutations and the rates for each process do not depend on the characteristics of the individual**, that is, all individuals are equal. In ecological terms, we can say that all individuals have the same fitness.
 
-**As coisas agora ficarão mais matemáticas :nerd_face:**. Afim de obter uma descrição populacional destes indivíduos, nos perguntamos qual é a probabilidade de que, entre os instantes de tempo $t$ e $t + \Delta t$, observemos $N$ indivíduos nesta população. De forma mais "física" dizemos que o sistema está no estado $N$. Alguns físicos talvez possam pensar algo como "pera aê :raised_eyebrow: isso não parece com a terminologia que se usa para descrever o estado de um sistema em mecânica quântica?" e quem pensou isso está completamente certo. Se você não pensou, tudo bem a vida já tem coisa demais para pensarmos.
+**Things are now going to get more mathematical :nerd_face:**. In order to obtain a population description of these individuals, we ask ourselves what is the probability that, between time instants $t$ and $t + \Delta t$, we observe $N$ individuals in this population. In more "physics-like" terms we say that the system is in state $N$. Some physicists might think something like "wait a minute :raised_eyebrow: doesn't this look like the terminology used to describe the state of a system in quantum mechanics?" and whoever thought that is completely right. If you didn't think that, that's fine, life already has too many things to think about.
 
-Bem, é claro que muitas coisas podem ocorrer em um intervalo de tempo $\Delta t$, porém algumas são mais prováveis do que outras. Como assim? Bem, vejamos... se $b$, $d$ e $\alpha$ são taxas para a ocorrência de cada cenário, a probabilidade de que cada um deles sozinho ocorra em um certo intervalo $\Delta t$ é dada pela quantidade de indivíduos no início deste intervalo, multiplicada pela taxa de ocorrência e o intervalo de tempo em questão.  Por exemplo, a chance de que alguém se reproduza durante $\Delta t$ e a população vá para o valor $N$ é $(N-1) b \Delta t$. Se você parar para pensar, faz sentido que quanto mais indivíduos na população, maior a chance de algum deles se reproduzir, assim como essa chance também deve aumentar quanto maior for o intervalo $\Delta t$, ou maior for a taxa $b$.
+Well, of course many things can occur in a time interval $\Delta t$, but some are more probable than others. What do I mean? Well, let's see... if $b$, $d$ and $\alpha$ are rates for the occurrence of each scenario, the probability that each one of them alone occurs in a certain interval $\Delta t$ is given by the number of individuals at the beginning of this interval, multiplied by the occurrence rate and the time interval in question. For example, the chance that someone reproduces during $\Delta t$ and the population goes to the value $N$ is $(N-1) b \Delta t$. If you stop to think about it, it makes sense that the more individuals in the population, the greater the chance of one of them reproducing, just as this chance should also increase the larger the interval $\Delta t$, or the larger the rate $b$. The $(N-1)$ in the beginning of the expression is to say that one $t$ we had $(N-1)$ individuals, and thus after $\Delta t$ we got to $N$.
 
-Entretanto, para quem a população saia de $N-1$ indivíduos em $t$ e vá para $N$ indivíduos em $t + \Delta t$, devido apenas à reprodução, somente um indivíduo deve se reproduzir. Sendo assim, a chance $P$ de que isso ocorra se resume a probabilidade de um indivíduo se reproduzir enquanto que todos os outros não se reproduzam. Se a chance de reprodução de um único indivíduo é $b \Delta t$, a chance de que um indivíduo não se reproduza é $1 - b \Delta t$. Portanto
+However, for the population to leave $N-1$ individuals at $t$ and go to $N$ individuals at $t + \Delta t$, due only to reproduction, only one individual must reproduce. Therefore, the chance $P$ that this occurs boils down to the probability of one individual reproducing while all the others do not reproduce. If the chance of reproduction of a single individual is $b \Delta t$, the chance that an individual does not reproduce is $1 - b \Delta t$. Therefore
 
 $$
 \begin{align}
-    P_{N-1 \rightarrow N}^{r} &= \underbrace{(N-1)b \Delta t}_{\text{um dos N-1 se reproduz}} \times \overbrace{\left(1 - b \Delta t \right)^{N-2}}^{\text{todos os outros N-2 não}}
+    P_{N-1 \rightarrow N}^{r} &= \underbrace{(N-1)b \Delta t}_{\text{one of the N-1 reproduces}} \times \overbrace{\left(1 - b \Delta t \right)^{N-2}}^{\text{all the other N-2 don't}}
 \end{align}
 $$
 
-por exemplo, se queremos a chance de que através da reprodução, a população chege em $N = 4$ em $t + \Delta t$, teremos então
+for example, if we want the chance that through reproduction, the population reaches $N = 4$ at $t + \Delta t$, we will then have
 
 $$
 \begin{align}
@@ -76,19 +76,19 @@ $$
 \end{align}
 $$
 
-e este polinômio de $\Delta t$ aumenta cada vez mais conforme $N$ aumenta. Ótimo, parece que temos uma descrição completamente intratável, como alguém esperaria que nós iremos calcular um polinômio desses em um caso onde $N = 10000$ por exemplo? :angry:
+and this polynomial in $\Delta t$ increases more and more as $N$ increases. Great, it seems we have a completely intractable description, how would anyone expect us to calculate such a polynomial in a case where $N = 10000$ for example? :angry:
 
-Para a nossa felicidade, as maravilhas do cálculo nos salvarão. Mas deixarei para invocar nosso herói mais tarde.
+To our happiness, the wonders of calculus will save us. But I'll leave our hero for later.
 
-E você pode estar pensando _"ora, ora, ora, mas você mesmo disse que muitas coisas podem ocorrer neste intervalo de tempo. E se dois indivíduos se reproduzirem?"_. Vamos ver exatamente isso agora. Nesse caso, a população precisaria estar, no instante de tempo $t$, com $N-2$ indivíduos e dois deles precisariam se reproduzir (lembrando aqui que queremos apenas considerar eventos que contribuam para que em $t + \Delta t$ a população tenha $N$ indivíduos). Após a primeira reprodução, seria necessária uma segunda, agora com a população em $N-1$ e um intervalo de tempo restante $\Delta t' < \Delta t$. Assim, podemos dizer que a probabilidade $P$ de que o sistema saia do estado $N -2 $ e vá para $N$ durante $\Delta t$, apenas por reprodução, é
+And you might be thinking, "Well, well, well, but you yourself said that many things can happen in this time interval. What if two individuals reproduce?" Let's look at exactly that now. In this case, the population would need to have $N-2$ individuals at time $t$, and two of them would need to reproduce (remembering here that we only want to consider events that contribute to the population having $N$ individuals at $t + \Delta t$). After the first reproduction, a second reproduction would be necessary, now with the population at $N-1$ and a remaining time interval $\Delta t' < \Delta t$. Thus, we can say that the probability $P$ that the system will leave the state $N - 2$ and go to $N$ during $\Delta t$, only through reproduction, is
 
 $$
 \begin{align}
-    P_{N-2 \rightarrow N}^{r} = \underbrace{(N-2)b \Delta t}_{\text{1ª reprodução}} \overbrace{(N-1) b \Delta t'}^{\text{2ª reprodução}} \underbrace{\left(1 - b \Delta t\right)^{N-3}}_{\text{Ninguém mais reproduz}}.
+    P_{N-2 \rightarrow N}^{r} = \underbrace{(N-2)b \Delta t}_{\text{1ª reproduction}} \overbrace{(N-1) b \Delta t'}^{\text{2ª reproduction}} \underbrace{\left(1 - b \Delta t\right)^{N-3}}_{\text{Nobody else reproduces}}.
 \end{align}
 $$
 
-Caso a reprodução seja simultânea $\Delta t' = \Delta t$ e a população em ambas as reproduções é a mesma, portanto
+If both reproductions happen at the same time, then $\Delta t' = \Delta t$ and the equation becomes
 
 $$
 \begin{align}
@@ -96,11 +96,11 @@ $$
 \end{align}
 $$
 
-Podemos brincar com diversos cenários e inumeras formas nas quais a população pode estar em um nível $N' \neq N$ e chegar em $N$ entre os momentos $t$ e $t + \Delta t$.
+We can keep playing with different scenarios and various numbers and forms in which the population may initially be on $N' \neq N$ and then arrive at $N$ between the instants $t$ and $t + \Delta t$.
 
-> Aqui é importante notar que para calcular estas probabilidades eu tive que introduzir sutilmente a **4ª premissa** de que **os eventos são independentes**; ou seja, o que ocorre com seu vizinho pouco importa a você.
+> Here is important to note that in order to compute these probabilities, I had to subtly introduce the **4th assumption** that **events are independent**; that is, what happens to your neighbor is of no interest to you.
 
-Note que para qualquer evento neste intervalo, há termos na probabilidade que dependem de $\left(\Delta t\right)^m$. Uma vez que iremos considerar intervalos de tempo pequenos, de forma que $\Delta t \rightarrow 0$, probabilidades com maiores potências de $\Delta t$ se tornam cada vez menos prováveis. Por exemplo, no caso de uma única reprodução, para atingir uma população de $N = 4$, calculamos a probabilidade desse evento como sendo a equação
+Note that for any event in this interval, there are terms in the probability that depend on $\left(\Delta t\right)^m$. Since we will consider small time intervals, such that $\Delta t \rightarrow 0$, probabilities with higher powers of $\Delta t$ become increasingly less likely. For example, in the case of a single reproduction, to reach a population of $N = 4$, we calculate the probability of this event as the equation
 
 $$
 \begin{align}
@@ -108,7 +108,7 @@ $$
 \end{align}
 $$
 
-e a chance de que duas reproduções ocorram é dada por
+and the chances that this happens by means of two reproductions is
 
 $$
 \begin{align}
@@ -118,44 +118,44 @@ $$
 \end{align}
 $$
 
-Note que apenas o evento de uma única reprodução possui uma contribuição de $\Delta t$. Isso significa que conforme $\Delta t \rightarrow 0$, este termo fica muito maior do que todos os demais e então $P_{3 \rightarrow 4}^{r} \gg P_{2 \rightarrow 4}^{r}$. Ou seja, se olharmos para um intervalo de tempo curto o suficiente, a chance de que dois eventos ocorram se torna muito menor do que apenas um deles ocorrer.
+Note that only the single-reproduction event has a contribution of $\Delta t$. This means that as $\Delta t \rightarrow 0$, this term becomes much larger than all the others, and therefore $P_{3 \rightarrow 4}^{r} \gg P_{2 \rightarrow 4}^{r}$. In other words, **if we look at a sufficiently short time interval, the chance of two events occurring becomes much smaller than the chance of only one of them occurring.**
 
-> Antes de continuar, vamos parar um pouco para pensar sobre isso. Se considerarmos um intervalo de tempo de 1 mês, o que você acha mais provável, que apenas uma criança nasça no Brasil durante esse intervalo, ou que muitas crianças nasçam? Certamente em um mês, é mais provável algumas milhares de crianças nascerem no Brasil do que uma apenas (na verdade em 2022, cerca de 200 mil nascimentos ocorreram a cada mês de acordo com o [noticias.uol.com.br](https://noticias.uol.com.br/cotidiano/ultimas-noticias/2024/03/27/criancas-nascidas-2022-brasil.htm)).
+> Before we continue, let's pause for a moment to think about this. If we consider a time interval of 1 month, what do you think is more likely: that only one child will be born in Brazil during that interval, or that many children will be born? Certainly, in one month, it is more likely that several thousand children will be born in Brazil than just one (in fact, in 2022, approximately 200,000 births occurred each month according to [noticias.uol.com.br](https://noticias.uol.com.br/cotidiano/ultimas-noticias/2024/03/27/criancas-nascidas-2022-brasil.htm)).
 >
-> Mas diminuiremos este intervalo para 1 dia. Acredito que seja razoável assumir que a chance de que mais de uma criança nascer ainda seja maior do que a de uma criança apenas nascer. Mas com certeza, a chance de 200 mil nascerem também é bem menor. E se o intervalo for de 1 minuto? Qual é a chance de que durante um minuto, dois bebês nasçam no Brasil? Essa chance é maior do que a de apenas um nascer?
+> But let's reduce this interval to 1 day. I believe it's reasonable to assume that the chance of more than one child being born is still greater than the chance of only one child being born. But surely, the chance of 200,000 being born is also much smaller. And what if the interval is 1 minute? What is the chance that two babies will be born in Brazil during that one minute? Is that chance greater than the chance of only one being born?
 >
-> Conforme olhamos para intervalos de tempo mais e mais curtos, eventos múltiplos ou até simultâneos se tornam cada vez mais raros.
+> As we look at shorter and shorter time intervals, multiple or even simultaneous events become increasingly rare.
 
-Por causa disso, consideramos apenas as contribuições dos eventos únicos na dinâmica populacional, chamamos isso de **aproximação de primeira ordem.**
+Because of this, we only consider the contributions of unique events in population dynamics; we call this a **first-order approximation.**
 
-Voltemos nossa atenção para a pergunta: Qual é a probabilidade de que observemos a população com $N$ indivíduos após o intervalo de $t$ até $t + \Delta t$?
+Let's turn our attention to the question: What is the probability that we will observe the population with $N$ individuals after the interval from $t$ to $t + \Delta t$?
 
-Como já sabemos os 4 possíveis eventos que os indivíduos em nossa população podem fazer, as possibilidades são
+Since we already know the 4 possible events that individuals in our population can undergo, the possibilities are:
 
-1. No momento $t$, o sistema já estava no estado $N$, e não mudou de estado durante o intervalo $\Delta t$;
-    
-2. No tempo $t$, o sistema estava com $N+1$ indivíduos e um indivíduo morreu por causas naturais, levando o sistema ao estado $N$;
-    
-3. Novamente, no tempo $t$ o sistema estava com $N+1$ indivíduos, porém um deles morreu devido à competição por recursos com seus vizinhos;
-    
-4. A população em $t$ era de $N-1$ indivíduos e um deles se reproduziu e gerou um novo integrante.
+1. At time $t$, the system was already in state $N$, and did not change state during the interval $\Delta t$;
 
-A probabilidade de transição para o item 2 é $ d (N+1) \Delta t \left( 1 - d N \Delta t \right)^N = d (N+1) \Delta t + \mathcal{O}(\Delta t^2)$. Onde aqui empacotamos todos os termos que possuem uma contribuição da potência de $\Delta t$ maior ou igual a 2 em como _"termos de ordem $\mathcal{O}$ maior ou igual a $\Delta t^2$"_. De forma análoga para o item 3, a probabilidade de ocorrência é $ \alpha (N+1) \Delta t + \mathcal{O}(\Delta t^2)$. Podemos representar a probabilidade total $P_{n+1 \rightarrow n} = (d + \alpha) (N + 1) \Delta t + \mathcal{O}(\Delta t^2)$.
+2. At time $t$, the system had $N+1$ individuals and one individual died of natural causes, bringing the system to state $N$;
 
-Para o item 4, escrevemos diretamente $b(N-1) \Delta t + \mathcal{O}(\Delta t^2)$. E finalmente, o item 1 pode ser visto como 1 menos a probabilidade de 2, 3 e 4 ocorrerem, já que ao menos um dos 4 deve ocorrer.
+3. Again, at time $t$ the system had $N+1$ individuals, but one of them died due to competition for resources with its neighbors;
 
-Portanto, podemos escrever a probabilidade de observar o sistema com $N$ indivíduos, após um intervalo $\Delta t$ como
+4. The population at $t$ was $N-1$ individuals and one of them reproduced and generated a new member.
+
+The transition probability for item 2 is $d(N+1)\Delta t\left(1 - dN\Delta t\right)^N = d(N+1)\Delta t + \mathcal{O}(\Delta t^2)$. Here we pack all terms that have a contribution of the power of $\Delta t$ greater than or equal to 2 as _"terms of order $\mathcal{O}$ greater than or equal to $\Delta t^2$"_. Analogously for item 3, the probability of occurrence is $\alpha(N+1)\Delta t + \mathcal{O}(\Delta t^2)$. We can represent the total probability $P_{n+1 \rightarrow n} = (d + \alpha) (N + 1) \Delta t + \mathcal{O}(\Delta t^2)$.
+
+For item 4, we write directly $b(N-1) \Delta t + \mathcal{O}(\Delta t^2)$. And finally, item 1 can be seen as 1 minus the probability of 2, 3, and 4 occurring, since at least one of the 4 must occur.
+
+Therefore, we can write the probability of observing the system with $N$ individuals, after an interval $\Delta t$ as
 
 $$
 \begin{align}
     \nonumber
-    P(N;t+\Delta t) & = \overbrace{P(N-1;t)}^{\text{prob. estar em N-1 no instante t}} \underbrace{b (N-1) \Delta t}_{\text{prob. reprodução}} + \\
+    P(N;t+\Delta t) & = \overbrace{P(N-1;t)}^{\text{prob. be in N-1 at t}} \underbrace{b (N-1) \Delta t}_{\text{prob. reproduction}} + \\
     \nonumber
-    & + \overbrace{P(N+1;t)}^{\text{prob. estar em N+1 no instante t}} \underbrace{(d + \alpha)(N+1) \Delta t}_{\text{prob. morte}} + \\
+    & + \overbrace{P(N+1;t)}^{\text{prob. be in N+1 at t}} \underbrace{(d + \alpha)(N+1) \Delta t}_{\text{prob. death}} + \\
     \nonumber
-    & + \overbrace{P(N;t)}^{\text{prob. estar em N no instante t}} \underbrace{(1 - bN\Delta t)(1 - dN \Delta t)(1 - \alpha N \Delta t)}_{\text{prob. nada acontece}} + \\
+    & + \overbrace{P(N;t)}^{\text{prob. be in N at t}} \underbrace{(1 - bN\Delta t)(1 - dN \Delta t)(1 - \alpha N \Delta t)}_{\text{prob. nothing happens}} + \\
     \nonumber
-    & + \underbrace{\mathcal{O}(\Delta t^2)}_{\text{outros termos de ordem maior ou igual a } \Delta t^2}
+    & + \underbrace{\mathcal{O}(\Delta t^2)}_{\text{other terms of order equal or greater than } \Delta t^2}
 \end{align}
 $$
 
@@ -172,17 +172,20 @@ $$
 \end{align}
 $$
 
-E aqui parece que só deixamos as coisas mais confusas :fearful:. A resposta para nossa pergunta parece depender da probabilidade de outros estados, que por sua vez tem suas próprias equações de probabilidade. A resposta parece longe e improvável, como se estivessemos adentro em um longo túnel escuro sem fim. Porém, como já dizia Tio Iroh em Avatar:
+Here it seems we only made things worse :fearful:. The answer to our question seems to depend on the probability of all other configurations, that should have their own probabilities. The answer seems far and unlikely, as if we were in a dark tunel without end. However, as uncle Iroh once said in Avatar, the legend of Aang:
 
-> "Às vezes, a vida é como este túnel escuro, você não pode sempre ver a luz no final do túnel, mas se você continuar em movimento, você chegará a um lugar melhor."
+. "Sometimes, life is like this dark tunnel, you can't always see the light at the end of the tunnel, but if you keep going, you'll get to a better place"
 
-Nosso herói sem capa, cálculo, aparece agora. Porém, antes de invocá-lo, vamos tentar entender o que esta equação tenebrosa para a probabilidade $P(N;t + \Delta t)$ nos diz. A imagem a seguir esquematiza o que temos em nossas mãos:
+Our hero without cape, calculus, appears now! Yet, before invoking it, we must understand what does this dark scary equation for $P(N;t + \Delta t)$ is telling us. The image below shows what we have in our hands:
 
-![prob-eq](https://pedrohpcintra.github.io/assets/img/class_notes/master_eq_scheme_pt-br.png)
+![prob-eq](https://pedrohpcintra.github.io/assets/img/class_notes/master_eq_scheme_en-us.png)
 
-Nessa imagem, há 3 dimensões representadas. A vertical representa a probabilidade $P(N)$ de que a população esteja em um estado $N$. Barras mais altas vão indicar uma probabilidade maior. Os outros dois eixos que estão "no chão" indicam a dimensão do tempo, e o valor de $N$. No instante $t$, observamos que há vários valores de $N$ com probabilidade $P(N)$ maior que zero. Ao escolhermos um desses valores de $N$, calculamos o valor desta probabilidade em $t + \Delta t$ de acordo com a equação acima. Na imagem há duas setas indicando que $P(N+1;t)$ e $P(N-1;t)$ afetam o resultado de $P(N;t+\Delta t)$, como evidenciado na equação. Podemos pensar então que $P(N;t+\Delta t)$ depende das probabilidades de que a população esteja em $N+1$, $N-1$ e $N$ no instante $t$, cada probabilidade pesada pela chance de que reproduções ou mortes ocorrerem. Se quisessemos calcular como essa distribuição de probabilidade toda muda de um momento para outro, precisariamos calcular $P(N;t+\Delta t)$ para todos os valores de $N$.
+On this image we have 3 dimensions. The vertical one represents the probability $P(N)$ that the population is on the state $N$. Lower bars indicate lower probability. The other two axes on "the ground" indicate the time dimension and the specific state $N$. At the instant $t$, we notice that there are several values for $N$, with probabilities $P(N)$ greater than 0. When chosing one of these values of $N$, we compute the value for the probability of this value at time $t + \Delta t$ according to the equation above. On the image, there are two arrows indicating that $P(N+1;t)$ and $P(N-1;t)$ also afect the result of $P(N;t + \Delta t)$, as highlighted by the equation. We can then think that $P(N;t+\Delta t)$ depends on the probabilities that the population is at $N+1$, $N-1$ and $N$ at time $t$. Each probability is weighted by the chance that reproductions and deaths occur (or not). If we want to compute how this whole distribution changes from one moment to another, we need to compute $P(N;t+\Delta t)$ for all values of $N$.
 
-Ao invés de se perguntar então sobre a chance de que a população esteja em um determinado nível, faz mais sentido se perguntar como essa chance muda conforme o tempo passa. Frequentemente na natureza é mais fácil explicar como as coisas mudam do que explicar porque elas estão do jeito que estão agora. Para isso, dividimos a probabilidade por $\Delta t$ e passamos o termo $P(N;t)$ para o lado esquerdo da equação, obtendo a taxa de variação da probabilidade conforme o tempo passa
+Then, instead of asking ourselves about the chance that the population IS in a given value, it makes more sence to ask how this probability changes over time.
+> Frequently in nature, it is easier to explain why things change then to explain why they are in the exact way they are now.
+
+To achieve that, we divide the probability by $\Delta$ and move the term $P(N;t)$ to the left-hand side of the equation, obtaining the rate of change for the probability over time
 
 $$
 \begin{align}
@@ -192,7 +195,7 @@ $$
 \end{align}
 $$
 
-e como mencionado anteriormente, tomamos o limite $\Delta t \rightarrow 0$.
+and as mentioned before, we are going to take the limit $\Delta t \rightarrow 0$, so that our rate of change represents "instantaneous" rates of change.
 
 $$
 \begin{align}
@@ -200,7 +203,7 @@ $$
 \end{align}
 $$
 
-finalmente obtendo
+finally, we obtain
 
 $$
 \begin{align}
@@ -210,11 +213,12 @@ $$
 \end{align}
 $$
 
-Aaahh vejam só, uma equação diferencial! Felizmente elas são muito mais tratáveis e como dizia Steven Strogatz:
+Aaahh look at this, a differential equation! Happly they are much more solvable and as Steven Strogatz once said:
 
-> "Desde Newton, a humanidade percebeu que as leis da natureza são sempre expressas na língua das equações diferenciais"
+> "Since Newton, humanity has learned that the laws of nature are often expressed in the language of differential equations"
 
-Na verdade está é justamente a **equação mestra** para este sistema!
+In fact this is exactly the **master equation** of this system!
+
 
 Entretanto, essa equação é mais uma vez complicada demais, poís a probabilidade parar um estado $N$ depende da probabilidade de $N$, $N+1$ e $N-1$. E as probabilidades de $N+1$ e $N-1$ vão depender das probabilidades de $N+2$, $N$, $N-1$ e $N-2$, $N$ e $N-1$, respectivamente; e assim por diante. No fim teremos um sistema de sei la quantas centenas de ou milhares de equações diferenciais acopladas. Isso pode até ser solúvel para $N$ baixos, se estabelecermos um limite máximo para a distribuição de probabilidades de $N$, mas rapidamente se torna impraticável para $N$ altos.
 

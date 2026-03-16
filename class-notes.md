@@ -6,4 +6,6 @@ layout: sub-page
 
 ## Theoretical Ecology
 
-- [Master Equations](./assets/pdf/Class-note-from-individuals-to-populations.pdf): This one is still under the process of translation, I first wrote it in portuguese and now I'm translating it to english.
+- [From individuals to populations](./assets/pdf/Class-note-from-individuals-to-populations.pdf) **(STILL IN TRANSLATION)**: This one is still under the process of translation, I first wrote it in portuguese and now I'm translating it to english.
+
+- [Where does the logistic model comes from?](./class-notes/en-us/logistic-model-master-eq.md): A brief introduction on master equations in ecology and the conection of individual dynamics and population level descriptions.

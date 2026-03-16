@@ -1,5 +1,5 @@
 ---
-layout: sub-page_pt-br
+layout: sub-page
 ---
 
 # Pair-Approximation Logistic Growth
