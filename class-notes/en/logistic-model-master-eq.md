@@ -2,13 +2,23 @@
 layout: sub-page
 ---
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['\\(','\\)'], ['$', '$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 If you have ever studied the mathematical dynamics of populations, be it in ecology or epidemiology, you have probably seen the logistic growth model. It is one of the first models studied in the description of population growth. Then, I imagine that just like me, you probably seen a differential equation like this one (if you haven't that's also ok)
 
-$$
+\\[
 \begin{align}
     \frac{\mathrm{d}N}{\mathrm{d}t} = rN \left(1 - \frac{N}{k} \right)
 \end{align}
-$$
+\\]
 
 where $k$ is the carrying capacity of the population, i. e., the maximum value that it can reach, given the limitations of the environment, $r$ is the growth rate and $N$ is the population size on a given moment in time (more formally, one would write $N(t)$ to highlight the fact that $N$ is a function of time). What this equation is telling us is that the rate of change for a population only subjected to the limitations in resources (no predation or interactions with other populations) is proportional to the number of individuals in the population and constrained by the carrying capacity of the environment.
 
