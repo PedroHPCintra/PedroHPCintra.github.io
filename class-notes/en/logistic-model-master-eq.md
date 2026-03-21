@@ -12,6 +12,11 @@ layout: sub-page
   </script>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
+---
+Last change: 20/03/2026
+
+---
+
 If you have ever studied the mathematical dynamics of populations, be it in ecology or epidemiology, you have probably seen the logistic growth model. It is one of the first models studied in the description of population growth. Then, I imagine that just like me, you probably seen a differential equation like this one (if you haven't that's also ok)
 
 $$
@@ -229,10 +234,9 @@ Aaahh look at this, a differential equation! Happly they are much more solvable 
 
 In fact this is exactly the **master equation** of this system!
 
+However, this equation is still to complicated. Not to say that it is useless, it contains all the information necessary to describe the system, allowing us to conduct simulations and some mathematical analysis. But to our aim here, we need to simplify it more, because right now the probability of going to state $N$ depends on the probability of $N$ itself, $N+1$ and $N-1$. The probabilities for $N+1$ and $N-1$ will then depend on the probabilities of $N+2$, $N$, $N-1$ and $N-2$, $N$, $N-1$, respectively; and so on. In the end we will end up with a system of god knows how many coupled differential equations. For small values of $N$ this could be solvable, if we estabilish a maximum limit for the probability distribution of $N$, but it quickly becomes impractical for large values of $N$.
 
-Entretanto, essa equação é mais uma vez complicada demais, poís a probabilidade parar um estado $N$ depende da probabilidade de $N$, $N+1$ e $N-1$. E as probabilidades de $N+1$ e $N-1$ vão depender das probabilidades de $N+2$, $N$, $N-1$ e $N-2$, $N$ e $N-1$, respectivamente; e assim por diante. No fim teremos um sistema de sei la quantas centenas de ou milhares de equações diferenciais acopladas. Isso pode até ser solúvel para $N$ baixos, se estabelecermos um limite máximo para a distribuição de probabilidades de $N$, mas rapidamente se torna impraticável para $N$ altos.
-
-E se então nos perguntarmos a respeito do comportamento médio :thinking:? E se ao invés de nos preocuparmos com a distribuição de probabilidades de $N$ em um dado instante $t$, nos perguntarmos qual é o valor médio de $N$ naquele instante? Aqui entra a nossa **5ª premissa**, a de que **nosso sistema é homogêneo o suficiente de forma que a média seja representativa da população inteira**. Esse calculo do valor médio de $N$ é representado na imagem que mostrei a pouco, pelas linhas fortes que mostram o valor de $\left \langle N \right \rangle$ nos instantes $t$ e $t + \Delta t$. Ou seja, o que estamos fazendo aqui é assumindo que a variação temporal deste valor médio é descritivo da variação temporal da distribuição inteira. Para uma distribuição discreta, tal qual a distribuição de valores de população $N$, a média é calculada através de
+What if then, instead of asking about the probability of a specific value, we ask ourselves about the average behavior :thinking:? What if instead of looking at the probabilities of $N$ at a given moment $t$, we just ask what is the mean value of $N$ at that instant? Here comes our **5th assumption**. The one that **the system is homogeneous enough, such that the mean is representative of the whole population**. This computation of the mean value of $N$ is represented on the image showed above by the strong lines that show the values of $\left \langle N \right \rangle$ at $t$ and $t + \Delta t$. That is, what we are assuming here is that the change in time of that mean is equivalent to the change in time of the whole distribution. For a discrete distribution, such as the values of a population, the average is given by
 
 $$
 \begin{align}
@@ -240,9 +244,9 @@ $$
 \end{align}
 $$
 
-Aqui a notação $\left \langle N \right \rangle$ significa _o valor médio de_ $N$. Leitores físicos provavelmente estão acostumados a esta notação e novamente peço desculpas aos amigos e amigas biológos pela possível confusão na mente de vocês com notações novas, mas pela minha formação acho a escrita dessa forma muito mais fluída e fácil.
+Here the notation $\left \langle N \right \rangle$ means _the average value of_ $N$ (or in statistical terms _the expected value of_ $N$). Readers from physics are probably used to this notation and once again I ask sorry for my friends in biology for the mess in your head with all notations, but due to my training I find this writting more fluid and easy. It is worth noting that by writting $\left \langle N \right \rangle$ we actually mean $\left \langle N (t) \right \rangle$, but we are omitting the temporal dependence of $N$ to make the notation more clean. Some friends from statistics might be more used to representing this as $\bar{N}$.
 
-Iremos tornar a equação mestra em uma equação diferencial para o valor médio de $N$. Multiplicando a equação mestra por $N$ e somando sobre todos os estados, obtemos
+We will now transform the master equation into a differential equation for the mean value of $N$. By multiplying the master equation by $N$ and summing over all possible states, we get
 
 $$
 \begin{align}
@@ -258,7 +262,7 @@ $$
 \end{align}
 $$
 
-E agora parece que a situação piorou ainda mais. Antes tinhamos um sistema de equações acoplado e agora temos uma equação diferencial com vários somatórios??? Mas confiem no processo. Se pudermos deixar os somatórios no formato $\displaystyle \sum_{N} N P(N;t)$, poderemos escrever tudo apenas em termos das médias de $N$, já que essa soma é justamente a definição da média. O primeiro termo da equação diferencial já tem esse formato, e portanto nos atentaremos ao segundo. Se fizermos uma renomeação dos índices no somatório, passando de uma soma em $N$ para uma soma em um nov índice $M$, tal que $M = N - 1$, reescrevemos
+But now it seems the situation only got worse. Before we had a system of coupled differential equations and now we have a differential equation with a lot of sums??? Yes, but trust the process. If we manage to turn all of these sums into something of the sort $\displaystyle \sum_{N} N P(N;t)$, we will be able to rewrite everything in terms of the average $N$, since this is exactly the definition of mean. The first term of the equation is already in this format and we shall then pay attention to the second. If we rename the indexes of the sum from $N$ to a new index $M$, such that $M = N-1$ we rewrite the sum as
 
 $$
 \begin{align}
@@ -266,7 +270,7 @@ $$
 \end{align}
 $$
 
-Porém, $M$ é apenas um índice de soma e podemos nomeá-lo da forma como quisermos. Por isso iremos renomeá-lo novamente para $N$, de forma que
+However, $M$ is just an index of sum, it doesn't matter how we call it. We will then rename it back to $N$, in such a way that now
 
 $$
 \begin{align}
@@ -274,12 +278,12 @@ $$
 \end{align}
 $$
 
-Isso pode parecer um truque sem sentido e talvez mágico para alguns, então permitam-me fazer um pause em nossa derivação afim de explicar o que ocorre aqui (quem não quiser ver pode continuar lendo após o ---).
+This may seem to be a nonsensical magic trick for some, so allow me to pause our derivation in order to explain what is happening here (those who don't want to see it may keep reading after the ---).
 
 ---
-O que fizemos aqui na prática foi mover o somatório em 1 índice para trás. Isso pode soar um movimento ilegal e freestyle, mas peguemos um exemplo prático:
+What we did here in practice was to move the sum 1 index behind. This may sound ilegal and freestyle, but let's get a pratical example:
 
-Suponha $P(0) = 0.05$, $P(1) = 0.15$, $P(2) = 0.3$, $P(3) = 0.3$, $P(4) = 0.15$, $P(5) = 0.05$ e $P(N>5) = 0$. Nesse caso
+Assume $P(0) = 0.05$, $P(1) = 0.15$, $P(2) = 0.3$, $P(3) = 0.3$, $P(4) = 0.15$, $P(5) = 0.05$ and $P(N>5) = 0$. In this case
 
 $$
 \begin{align}
@@ -289,7 +293,7 @@ $$
 \end{align}
 $$
 
-naturalmente todos os termos que envolvem $P(6)$ em diante serão nulos, bem como o primeiro termo por envolver $P(-1) = 0$. O resultado desta soma é $13.7$. Poís bem, façamos uma mudança no índice de tal forma que $M$ agora é $N-1$. Neste caso
+naturally all terms from $P(6)$ forward will be null, just like the first term, since it deals with $P(-1)$, which is not defined here (our sum begins at 0), making it 0. The result of this sum is $13.7$. Nice, now let us do the change in index such that $M = N-1$. We now have
 
 $$
 \begin{align}
@@ -299,11 +303,11 @@ $$
 \end{align}
 $$
 
-Note que o somatório é o mesmo, inclusive o resultado continua sendo o mesmo $13.7$. Isso poís a relação entre os termos da soma ainda é a mesma, como você mesmo pode verificar escrevendo termo a termo da soma.
+Note that this is still the same sum. The result is still $13.7$. That happens because the relationship between the terms of the sum is still the same, as you may verify by writting term by term of the sum.
 
 ---
 
-Expandindo o termo do somatório recém encontrado, podemos escrever
+Expanding the recently found term of the sum, we write
 
 $$
 \begin{align}
@@ -313,7 +317,7 @@ $$
 \end{align}
 $$
 
-onde na última linha utilizamos a normalização $ \sum_{N} P(N;t) = 1$. O somatório no terceiro termo fica
+where the in the last line we used the normalization condition $\sum_{N} P(N;t) = 1$. The sum at the third term becomes
 
 $$
 \begin{align}
@@ -321,7 +325,7 @@ $$
 \end{align}
 $$
 
-Analogamente para as somas envolvendo $P(N+1;t)$, fazemos a mudança de índice $M = N+1$ e obtemos, após a renomeação de $M$
+In analogy for the sums with $P(N+1;t)$, we make the change of index $M = N+1$ and obtain, after renaming it back to $N$
 
 $$
 \begin{align}
@@ -339,7 +343,7 @@ $$
 \end{align}
 $$
 
-Juntando tudo, a equação mestra fica escrita como
+Bringing it all together, the master equation is written as
 
 $$
 \begin{align}
@@ -357,7 +361,7 @@ $$
 \end{align}
 $$
 
-Veja que caso $b$, $d$ e $\alpha$ sejam constantes, podemos escrever
+Notice that if $b$, $d$ and $\alpha$ are constants, we may write
 
 $$
 \begin{align}
@@ -367,9 +371,11 @@ $$
 \end{align}
 $$
 
-e essa equação se torna a mesma equação do crescimento exponencial, com a diferença que o termo de mortalidade é agora adicionado de um fator devido à competição por recursos, e ao invés de $b > d$ ser a condição necessária para o crescimento exponencial, precisamos ter $b > d + \alpha$. Ou seja, a taxa de reprodução da população precisa ser maior do que a soma da taxa de mortalidade por causas naturais com a taxa de mortalidade por competição intraespecífica.
+and this equation becomes the same as a equation for exponential growth, with a difference that the total mortality term is now added a new factor due to intraspecific competition. Now instead of $b > d$ being the necessary condition for exponential growth, we need $b > d + \alpha$. If the reproduction rate of the population is higher than the sum of death rate by natural causes and death rate by intraspecific competition, then the population grows exponentially.
 
-Porém a taxa de mortalidade por competição de recursos é proporcional à probabilidade de que outro indivíduo adquira o recurso antes, levando o primeiro à fome. Naturalmente a chance de que isso ocorra é proporcional ao numero de indivíduos. Portanto em uma descrição mais realística a competição por recursos depende da quantidade de indivíduos na população. Quanto menos indivíduos, menor a necessidade de competir com vizinhos por comida, água, espaço, etc. Acontece que essa depêndencia pode assumir muitas formas, e muito provavelmente não ocorre de forma linear.Entretanto, pegando o espírito da aproximação de primeira ordem mencionado anteriormente, aproximamos a dependência da taxa de competição com a população por $\alpha = \alpha_0 N$. Isto é, a competição por recursos aumenta linearmente com o aumento da população. Apenas com essa melhoria, mantendo a taxa de mortalidade por causas naturais e a natalidade fixas, obtemos
+But the death rate by intraspecific competition is proportional to the probability that two individuals find the same source of food in order for them to fight over it. This means that if we consider $\alpha$ a constant, we are saying that this probability is always the same, regardless of the population size. This is only possible if space and resources are infinite. Then, the birth of a new individual does not prevent anyone else from reaching a food source. However, in reality this is not true. Naturally, the chance of encounter is proportional to the number of individuals. Thus a more realistic description would be to set the death rate by intraspecific competiton as a function of population size. The less individuals, the smaller the need to compete for food, water, space, etc. The specific form of this function will depend on a lot of things, for example the foraging behavior of individuals and spatial geometry, which will dictate what is exactly the probability of encounter for a given population size. However, in the spirit of starting with simple and general descriptions, we approximate the dependency of competition with population by a linear relationship $\alpha = \alpha_0 N$. That is, resource competition rises linearly with population size.
+
+With this improvement only, keeping all other parameters as constants, we get
 
 $$
 \begin{align}
@@ -379,9 +385,9 @@ $$
 \end{align}
 $$
 
-que parece ser a equação diferencial de um modelo logístico, porém note que está equação envolve a média de $N^2$, isto é, o segundo momento estatístico da distribuição de probabilidades para os estados possíveis do sistema. Precisamos ser capazes de encontrar $\left \langle N^2 \right \rangle$ para poder solucionar esta equação. Poderíamos refazer todo o processo para encontrar uma equação que descreva a variação temporal de $\left \langle N^2 \right \rangle$, e substituir a integral desta equação no último termo. Porém, está equação iria depender do terceiro momento estatístico $\left \langle N^3 \right \rangle$. Não ajudaria muito.
+which seems to be the differential equation for the logistic model, except that it requires the mean value of $N^2$, that is, the second statistical moment of the probability distribution of possible states of the system :nerd_face:. We need to find $\left \langle N^2 \right \rangle$ in order to solve this equation. We could remake the whole process of multiplying by $N$ and adding the sum, but with $N^2$ in order to find the equation for $N^2$ and substitute. However, that equation would then depend on $\left \langle N^3 \right \rangle$, which wouldn't help much.
 
-A aproximação de campo médio também supõe no fundo que todos os momentos estatísticos de ordem maior que 1 são dados em termos do primeiro momento estatístico (a média). Logo
+The mean field approximation also assumes that deep down, all statistical moments of the distribution of order bigger than 1 are given in terms of the first statistical moment (the mean). Thus
 
 $$
 \begin{align}
@@ -389,9 +395,30 @@ $$
 \end{align}
 $$
 
-Esta é a equação conhecida para um crescimento logístico!
+**This is the known equation for the logistic model! :partying_face:**
 
-No fundo, o que a aproximação de campo médio está dizendo nesta equação é que a variância na distribuição de probabilidade dos estados $N$, em um dado instante $t$, é nula. $\mathrm{Var}[N] = \left \langle N^2 \right \rangle - \left \langle N \right \rangle^2 = 0 \Rightarrow \left \langle N^2 \right \rangle = \left \langle N \right \rangle^2$. Caso a variância não seja nula, podemos reescrever a equação como
+When analysing it, we may notice that
+
+$$
+\begin{align}
+    \nonumber
+    & \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle = 0 \Leftrightarrow \left \langle N \right \rangle = 0 \\
+    \nonumber
+    & \text{or} \\
+    \nonumber
+    & \frac{\mathrm{d}}{\mathrm{d}t} \left \langle N \right \rangle = 0 \Leftrightarrow \left \langle N \right \rangle = \frac{r}{\alpha_0}
+\end{align}
+$$
+
+That is, the population stops growing ($\mathrm{d} \left \langle N \right \rangle / \mathrm{d}t = 0$) either if the population is $0$ (everyone is dead) or when it reaches the value $r/\alpha_0$. Since $r/\alpha_0$ is bigger than 0, this ration sets a maximum for the size of the average population size. We call it **carrying capacity $k$**. By writting $\left \langle N \right \rangle = n$, just to make the notation clean and state that the population size $n$ here is the expected value of it, we arrive at the version of the logistic model we saw at the beginning of this text
+
+$$
+\begin{align}
+    \frac{\mathrm{d}n}{\mathrm{d}t} = rn \left(1 - \frac{n}{k} \right)
+\end{align}
+$$
+
+Deep down, the mean field approximation is telling us that the variance in the probability distribution of $N$ is negligible. $\mathrm{Var}[N] = \left \langle N^2 \right \rangle - \left \langle N \right \rangle^2 = 0 \Rightarrow \left \langle N^2 \right \rangle = \left \langle N \right \rangle^2$. If the variance was not negligible, than we could rewrite the equation as
 
 $$
 \begin{align}
@@ -399,27 +426,30 @@ $$
 \end{align}
 $$
 
-Ou seja, a presença de uma variação na distribuição de probabilidade de estados do sistema, naturalmente provoca uma diminuição no valor esperado de $N$ para um dado instante de tempo $t$. A estocasticidade não apenas provoca flutuações em torno da média, como também é capaz de mudar o próprio valor esperado de população $t$ tempo após o início da dinâmica.
+That means that the presence of a spread in the probability distribution of states for this system, naturally induces a change in the expected value of $N$ for a given time $t$. This means that **stochasticity not only creates fluctuations around the mean, but it is also capable of changing the expected value itself**.
 
-E agora que chegamos ao fim dessa derivação, e encontramos a tão famosa equação diferencial do modelo logístico, vamos parar para ver algumas coisas:
+We now arrive at the end of this derivation and found the famous equation for the logistic model. It is worth taking a breath to reflect on some things:
 
-A primeira delas é que tivemos que assumir 5 premissas para chegar nela:
+The first of them is that we had to assume 5 things to arrive on it:
+1. Individuals only interact with their food and amongst themselves
+2. Reproduction is assexual
+3. All individuals have the same fitness
+4. Death, reproduction and competition occur independently from each other
+5. The system is spatially homogeneous
 
-1. Os indivíduos só interagem com sua comida e entre si.
-2. A reprodução ocorre de forma assexuada.
-3. Todos os indivíduos são iguais e possuem a mesma aptidão.
-4. Eventos de morte, reprodução ou competição que ocorrem com um indivíduo, não dependem do que ocorre com os outros indivíduos.
-5. O sistema é espacialmente homogêneo.
+And on top of this the extra assumption that the variance in the state probability of $N$ is negligible and that the competition rate is linearly proportional to the population size $\alpha = \alpha_0 N$.
 
-Somado a isso há a suposição de que a variância na distribuição de probabilidade de estados de $N$ é nula. E que a taxa de competição é linearmente dependente da população $\alpha = \alpha_0 N$.
+Many things had to be assumed for us to get to this equation. In a lab, it is "easy" to achieve these requirements, which makes the verification of this equation more tangible. That however, does not turn the equation useless outside the lab, in real life, for it serves as a base to build descriptions on the behavior populations on it's most basic level. Later we can divide the population into males $M$ and females $F$, and assume sexual reproduction, for example. Eliminating that assumption. Each one of them may be tackled individually to approximate the model from reality.
 
-Muita coisa teve que ser suposta como verdade para chegarmos nessa equação. Em laboratório, é muito mais fácil atingir estes requerimentos, o que torna a verificação dessa equação muito mais papável. Isso não torna a equação inútil na vida real fora do laboratório, ela serve como a base para descrever o comportamento das populações em nível mais básico. Podemos por exemplo, dividir a população em machos $M$ e fêmeas $F$ e assumir uma reprodução sexuada, eliminando uma das premissas. Cada uma delas pode ser atacada individualmente para aproximar o modelo da realidade.
+In fact, some of these assumptions are what may be called "weak" assumptions. Meaning that their requirement is not central to the qualitative behavior described by the equation. For example, sexual reproduction requires individuals with different sexes, but adding it to the model does not change the fact that populations start growing fast and eventually reach a plateau given a constant environmental condition and absence of other competitors. In fact, depending on the timescale we look at, and the composition of the population, even a sexual reproduction that it's not instant may be treated as a assexual instant phenomena. For example, suppose that sexual reproduction takes some time $\delta$ to occur. If $\delta$ is negligible in the timescale studied and the population has a somewhat equal share of males and females, then population growth will be proportional to the current population size, which is not different than what we get by assuming assexual reproduction. That happens because the scale of the assumption is much smaller than the scale of the system, and it's violation does not affect the system. This discussion is a reminder that in mathematics **assumptions are not statements about reality**, but instead **they are statements about what is approximately equivalent to reality under the specifics of the system at hand**.
 
-## Mas para que serve um modelo?
+But all of it then begs the question:
 
-Seu único e exclusivo fim é descrever a realidade com a melhor exatidão possível? Ou ele serve como uma ferramenta para entender o papel de diversos mecanismos que atuam em um sistema? Se a sua resposta tender ao primeiro caso, então receio que nenhum modelo (seja matemático ou não) irá lhe satisfazer. Já no segundo caso, começamos a ver o papel do modelo logístico, ao observarmos um sistema que obedece de forma razoável o comportamento descrito pelo modelo logístico, podemos dizer que as 5 premissas são satisfeitas? Não, mas podemos afirmar que os outros mecanismos que sem dúvida estão presentes talvez não sejam dominantes na vida dos indivíduos que compõe esta população.
+## But what is the purpose of a model?
 
-Como um exemplo, trarei o leitor para a minha área de formação, a física. Quando aprendemos física no ensino médio, sempre desprezamos a resistência do ar. Porque? Porque passar 3 anos aprendendo fórmulas e leis que não descrevem aquilo que encontramos todos os dias? Há dois motivos para isso, no meu ver. O primeiro está relacionado à dificuldade, é muito mais fácil começar pelo mais simples (e já vemos o trauma que isso causa em muitos alunos). Incluir a resistência do ar em, digamos, o lançamento parabólico de objetos, envolve resolver uma equação diferencial de 2ª ordem
+Is it's only purpose to describe reality with the biggest precision possible? Or does it serve as a tool to understand the role of several mechanisms that act on a system? If your answer tends to the first otpion than I fear no model (be it mathematical or not) will ever satisfy you. Now if you believe in the second option we begin to see the use of the logistic model. When we observe a system that obeys the logistic model fairly well, does that mean that all 5 premisses are satisfied? No! But it does mean that other mechanisms present are not so dominant in the life of individuals making up this population.
+
+As an example, I will bring the reader to my mother field, physics. When we learn physics at school we always neglect air resistence. Why? Why spending years learning physics formulas and laws that do not describe the current world that we encounter everyday? There are two reasons for that, I believe. The first is difficulty. It is much easier to start with the simpler case (and we already see how much trauma it causes to students). Adding air resistence to a parabolic throw of an object, means to solve a second order differential equation
 
 $$
 \begin{align}
@@ -427,8 +457,12 @@ $$
 \end{align}
 $$
 
-na qual eu acho razoável argumentar que alunos de ensino médio não possuem a maturidade para compreender e interpretar. O segundo motivo está relacionado aos mecanismos. Sim, claro que o ar está sempre presente, mas não é ele que determina majoritariamente a trajetória de uma bolinha atirada no ar na maioria das vezes. Quem determina isso é a força gravitacional. A resistência do ar ocupa um papel muito pequeno nestes casos, de forma que ensinar os alunos equações e fórmulas que envolvam-na se torna mais uma distração do que é realmente mais importante e mais geral do que uma adição valiosa para o saber do aluno sobre o funcionamento do mundo.
+in which I find reasonable to argue that students in high school do not have the maturity to comprehend and interpret.
 
-O modelo logístico faz esse mesmo papel na ecologia. Ele é a 2ª lei de Newton para a ecologia, ele é o caso ecológico da mecânica sem resistência do ar, rotação, carga elétrica e tudo mais. Mas é através dele que notamos alguns comportamentos gerais.
+The second reason is related to mechanisms. Yes, of course air is always present, but it is not air that rules the majority of the trajectory of a boll thrown in the air most of the times. Who dictates that is gravity. Air resistence plays a role so small under these scenarios that teaching students to solve differential equations just to find the trajectory of a ball thrown in the air during an american football match becomes equivalent of killing a fly with a balistic missile. It becomes more of a distraction of what really shapes this movement, than a valuable addition to the students knowledge about the functioning of the world.
 
-E por fim, no caso da resistência do ar, a descrição é tão boa sem ela, que muitas vezes nem precisamos considerá-la. Em cenários ecológicos o mesmo ocorre, algumas interações entre indivíduos podem estar sempre presentes, mas dependendo da escala de tempo e precisão que nos interessa, elas se tornam desprezíveis.
+The logistic model plays the same role in ecology. It is the ecological equivalent of mechanics without air resistence, rotation, electric charge and all else. But it is through it that we learn some general behaviors.
+
+As a final note, in the case of air resistence, the description without it is so good that many times, we don't even need to account for it unless we are looking for an extra precision. Let's say we want to measure the reach of a ball kicked by a football player during the world cup. If our measurement has an error of $\pm 10$ cm and inclusion of air resistence in the model predicting where the ball lands adds $4$ cm of accuracy, then this higher accuracy falls below the error of our measurement, making it undetectable. We just wasted effort.
+
+In ecology that happens many times, some interactions between individuals are always present, but depending on the timescale and precision that we care, they become negligible.
