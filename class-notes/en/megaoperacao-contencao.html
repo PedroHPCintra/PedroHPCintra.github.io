@@ -1,0 +1,374 @@
+---
+layout: sub-page
+title: "Crime, Police, and the Megaoperação Contenção in Rio de Janeiro"
+description: "A data exploration of shooting incidents and a preliminary dynamical model for AISP 16"
+---
+
+<!-- ── MathJax + Highlight.js ──────────────────────────────────── -->
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>document.addEventListener('DOMContentLoaded', () => hljs.highlightAll());</script>
+
+<style>
+  /* escape main-content horizontal padding */
+  .post-outer { margin-left: -5rem; margin-right: -4rem; }
+
+  /* two-column shell */
+  .post-layout { display: flex; gap: 2rem; align-items: flex-start; }
+
+  /* sticky TOC */
+  .post-toc {
+    width: 200px; flex-shrink: 0;
+    position: sticky; top: 1.5rem;
+    max-height: calc(100vh - 3rem); overflow-y: auto;
+    background: #ede0c4; border-right: 1px solid #d4c4a8;
+    padding: 1.4rem 1rem 1.4rem 1.2rem; border-radius: 4px;
+    font-family: "Open Sans", Arial, sans-serif; font-size: 12.5px;
+  }
+  .post-toc .toc-title {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 1.8px;
+    color: #888; font-weight: 700; margin-bottom: 0.9rem;
+  }
+  .post-toc ul { list-style: none; margin: 0; padding: 0; }
+  .post-toc li { margin-bottom: 0.25rem; }
+  .post-toc a {
+    color: #555; text-decoration: none; display: block;
+    padding: 2px 0 2px 8px; border-left: 3px solid transparent;
+    line-height: 1.35; transition: color 0.15s, border-color 0.15s;
+  }
+  .post-toc a:hover, .post-toc a.toc-active {
+    color: #51127c; border-left-color: #51127c; text-decoration: none;
+  }
+  .post-toc a.toc-active { font-weight: 600; }
+  .post-toc li.toc-h3 a { padding-left: 18px; font-size: 11.5px; color: #777; }
+  .post-toc li.toc-h3 a:hover { color: #51127c; }
+
+  /* text column */
+  .post-body { flex: 1; min-width: 0; }
+
+  /* post header */
+  .post-header { border-bottom: 2px solid #51127c; padding-bottom: 1.2rem; margin-bottom: 2rem; }
+  .post-header h1 {
+    font-size: 1.85rem; line-height: 1.22; color: #1c1c1d;
+    margin-top: 0; margin-bottom: 0.7rem; font-weight: 600;
+  }
+  .post-meta { font-size: 13px; color: #888; }
+  .post-meta span { margin-right: 1.2rem; }
+
+  /* headings */
+  .post-body h2 {
+    font-size: 1.3rem; color: #51127c; margin-top: 2.6rem; margin-bottom: 0.7rem;
+    padding-bottom: 0.3rem; border-bottom: 1px solid #d9c8ef; font-weight: 600;
+  }
+  .post-body h3 { font-size: 1.05rem; color: #41494d; margin-top: 1.8rem; margin-bottom: 0.4rem; font-weight: 600; }
+
+  /* callouts */
+  .callout {
+    border-left: 4px solid #51127c; background: #f3eef9;
+    padding: 0.9rem 1.1rem; margin: 1.4rem 0; border-radius: 0 4px 4px 0; font-size: 0.95rem;
+  }
+  .callout.warning { border-left-color: #b7770d; background: #fef9e7; }
+  .callout-label {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 1.8px;
+    font-weight: 700; color: #51127c; margin-bottom: 0.35rem;
+  }
+  .callout.warning .callout-label { color: #b7770d; }
+
+  /* code label */
+  .code-label {
+    font-size: 10.5px; color: #999; text-transform: uppercase; letter-spacing: 1px;
+    margin-top: 1.2rem; margin-bottom: -0.4rem; font-family: "Open Sans", sans-serif;
+  }
+
+  /* stat row */
+  .stat-row { display: flex; gap: 1rem; margin: 1.4rem 0; flex-wrap: wrap; }
+  .stat-box {
+    flex: 1; min-width: 120px; background: #f3eef9;
+    border: 1px solid #d9c8ef; border-radius: 5px; padding: 0.8rem 1rem; text-align: center;
+  }
+  .stat-num { font-size: 1.7rem; font-weight: 700; color: #51127c; line-height: 1.1; }
+  .stat-lbl { font-size: 11.5px; color: #666; margin-top: 0.25rem; line-height: 1.3; }
+  .stat-box.red { background: #fdf0f0; border-color: #f0c0c0; }
+  .stat-box.red .stat-num { color: #a93226; }
+
+  /* figures */
+  figure { margin: 1.8rem 0; }
+  figure img { max-width: 100%; border: 1px solid #d4c4a8; border-radius: 3px; }
+  figcaption { font-size: 12.5px; color: #666; margin-top: 0.5rem; line-height: 1.45; }
+  figcaption strong { color: #444; }
+
+  /* math */
+  .math-block { overflow-x: auto; margin: 1.4rem 0; }
+
+  /* data credit */
+  .data-credit {
+    font-size: 12px; color: #999;
+    border-top: 1px solid #d4c4a8; margin-top: 2.5rem; padding-top: 0.9rem;
+  }
+
+  /* responsive */
+  @media screen and (max-width: 860px) {
+    .post-outer  { margin-left: 0; margin-right: 0; }
+    .post-toc    { display: none; }
+    .post-layout { display: block; }
+  }
+</style>
+
+<div class="post-outer">
+<div class="post-layout">
+
+  <nav class="post-toc" aria-label="Table of contents">
+    <div class="toc-title">Contents</div>
+    <ul>
+      <li class="toc-h2"><a href="#context">1. Context</a></li>
+      <li class="toc-h2"><a href="#data">2. Data</a></li>
+      <li class="toc-h3"><a href="#fogo-cruzado">Fogo Cruzado</a></li>
+      <li class="toc-h3"><a href="#isp-rj">ISP-RJ</a></li>
+      <li class="toc-h2"><a href="#spatial">3. Spatial Analysis</a></li>
+      <li class="toc-h3"><a href="#favela-rate">Favelas vs. non-favelas</a></li>
+      <li class="toc-h2"><a href="#timeseries">4. Time Series: AISP 16</a></li>
+      <li class="toc-h2"><a href="#model">5. The Model</a></li>
+      <li class="toc-h3"><a href="#model-basic">Basic formulation</a></li>
+      <li class="toc-h3"><a href="#model-extended">Time-varying parameters</a></li>
+      <li class="toc-h3"><a href="#model-scenarios">Three scenarios</a></li>
+      <li class="toc-h2"><a href="#discussion">6. Discussion</a></li>
+      <li class="toc-h2"><a href="#data-sources">Data sources</a></li>
+    </ul>
+  </nav>
+
+  <div class="post-body">
+
+    <div class="post-header">
+      <h1>Crime, Police, and the Megaopera&ccedil;&atilde;o Conten&ccedil;&atilde;o in Rio de Janeiro</h1>
+      <div class="post-meta">
+        <span>June 2026</span>
+        <span>Pedro H. P. Cintra &mdash; Stanford Doerr School of Sustainability</span>
+      </div>
+    </div>
+
+    <h2 id="context">1. Context</h2>
+
+    <p>On October 28, 2025, approximately 2,500 officers from the Civil and Military Police of Rio de Janeiro entered the Complexo do Alem&atilde;o and Complexo da Penha in what became known as the Megaopera&ccedil;&atilde;o Conten&ccedil;&atilde;o. The official objective was to contain the territorial expansion of Comando Vermelho (CV) and to execute some 100 outstanding arrest warrants. By the end of the operation, over 120 people had been killed, making it the deadliest police operation in the history of the state of Rio de Janeiro. Data from the Instituto Fogo Cruzado for the months that followed show no significant sustained reduction in incidents in the affected area.</p>
+
+    <div class="stat-row">
+      <div class="stat-box red"><div class="stat-num">120+</div><div class="stat-lbl">deaths during<br>the operation</div></div>
+      <div class="stat-box red"><div class="stat-num">2,500</div><div class="stat-lbl">officers<br>deployed</div></div>
+      <div class="stat-box"><div class="stat-num">~6</div><div class="stat-lbl">shooting incidents<br>per month (post-op avg.)</div></div>
+      <div class="stat-box"><div class="stat-num">~40%</div><div class="stat-lbl">of post-op incidents<br>during police actions</div></div>
+    </div>
+
+    <p>This post documents a first attempt at studying the relationship between police enforcement and violent crime in this territory using longitudinal data and a simple dynamical systems model. The goal is not to produce a definitive causal analysis &mdash; that would require a more careful identification strategy and a richer model &mdash; but to establish some basic empirical patterns and to ask whether a mechanistic model of the enforcement-crime feedback loop can reproduce the broad features of what we observe in the data. This is exploratory and preliminary work; a more rigorous version of the analysis is in preparation.</p>
+
+    <div class="callout">
+      <div class="callout-label">Research question</div>
+      Is enforcement of formal institutions via institutional agents an effective strategy in contested urban communities with settled informal institutional rules? The Complexo do Alem&atilde;o and Penha provide a natural laboratory: they have been subject to successive waves of intensive state enforcement since the late 2000s, with rich longitudinal data on both enforcement intensity and crime outcomes.
+    </div>
+
+    <h2 id="data">2. Data</h2>
+
+    <h3 id="fogo-cruzado">Fogo Cruzado</h3>
+
+    <p>The primary spatial data source is the <a href="https://fogocruzado.org.br" target="_blank">Instituto Fogo Cruzado</a>, which records georeferenced shooting incidents across the metropolitan region of Rio de Janeiro, derived from Disque Den&uacute;ncia tip data. Each occurrence is classified as involving victims (dead or wounded) or not, with further breakdowns by civilian/police status, age category, and whether the incident took place during a police action. I use data covering 2022&ndash;2024 for the spatial analysis.</p>
+
+    <div class="code-label">Python &mdash; loading the Fogo Cruzado data</div>
+<pre><code class="language-python">year_start = 2022
+year_final = 2024
+n_years    = year_final - year_start + 1
+
+for year in range(year_start, year_final + 1):
+    df_v  = pd.read_csv(f'fc_api_occurrences_with_victims_{year}.csv')
+    df_nv = pd.read_csv(f'fc_api_occurrences__{year}.csv')
+    # concatenate with other-region files and accumulate
+</code></pre>
+
+    <p>Victim counts aggregate civilians, police officers, children, teenagers, and the elderly across dead and wounded categories. All annual figures reported below are averages over the three-year period to smooth out year-specific variation.</p>
+
+    <h3 id="isp-rj">ISP-RJ</h3>
+
+    <p>For the time series analysis I use the monthly historical series from the <a href="https://www.ispdados.rj.gov.br/estatistica.html" target="_blank">Instituto de Seguran&ccedil;a P&uacute;blica do Rio de Janeiro (ISP-RJ)</a>, which reports crime statistics disaggregated by delegacia (CISP) and integrated security area (AISP) from January 2003 onward. The primary outcome variable is <em>Crimes Violentos Letais Intencionais</em> (CVLI), encompassing intentional homicide, robbery followed by death, and grievous bodily harm resulting in death. The enforcement intensity variable, which I call <em>a&ccedil;&otilde;es policiais</em> (AMP), is the sum of monthly drug search-and-seizure warrants (<code>cmp</code>) and arrest warrant executions (<code>cmba</code>). This counts active enforcement events, not passive police presence.</p>
+
+    <div class="code-label">Python &mdash; aggregating CVLI and police actions by zone</div>
+<pre><code class="language-python">df_cisp = pd.read_csv('BaseDPEvolucaoMensalCisp.csv', sep=';', encoding='iso-8859-1')
+north_zone_aisps = [17, 16, 6, 4, 3, 9, 41, 22]
+
+for y in range(begin_year, end_year + 1):
+    for aisp in north_zone_aisps:
+        filtered = df_cisp.loc[(df_cisp['aisp'] == aisp) & (df_cisp['ano'] == y)]
+        zones_cvlis[i, y - begin_year] += filtered['cvli'].sum()
+        zones_amp[i, y - begin_year]   += filtered['cmp'].sum() + filtered['cmba'].sum()
+</code></pre>
+
+    <p>Population estimates for each AISP are constructed from IBGE Census data (2000, 2010, 2022) with inter-censal values interpolated linearly. Per-capita rates are expressed per 100,000 inhabitants per year unless noted.</p>
+
+    <h2 id="spatial">3. Spatial Analysis of Shooting Incidents</h2>
+
+    <p>For each AISP in the metropolitan sample, I count the annual average number of victim-involving occurrences and total victims (dead plus wounded) over 2022&ndash;2024, then normalize by AISP population from the 2022 Census.</p>
+
+    <figure>
+      <img src="victims_rj_metropolitan_AVG-2022-2024.svg" alt="Map of victim rates across Rio de Janeiro's metropolitan region, 2022-2024 average" />
+      <figcaption><strong>Figure 1.</strong> Annual average victim rate from shooting incidents per 100,000 inhabitants across Rio de Janeiro's metropolitan integrated security areas, 2022&ndash;2024. Victims include both civilians and police officers killed or wounded in shooting incidents recorded by Fogo Cruzado. The North Zone concentrations, including AISP 16 covering the Complexo do Alem&atilde;o and Penha, stand out clearly. Source: Fogo Cruzado; IBGE Censo 2022.</figcaption>
+    </figure>
+
+    <h3 id="favela-rate">Favelas vs. non-favelas within the same AISPs</h3>
+
+    <p>I use the IBGE 2022 Census shapefile of <em>Favelas e Comunidades Urbanas</em> (FCU) to classify each Fogo Cruzado occurrence as falling inside or outside favela boundaries, with a small buffer (approximately 55 meters) around the FCU polygons to account for geolocation error.</p>
+
+    <div class="code-label">Python &mdash; spatial join with favela polygons</div>
+<pre><code class="language-python">favelas_rio = gpd.read_file('./Favelas_Comunidades_Urbanas_Censo2022/qg_2022_670_fcu_agregPolygon.shp')
+
+for i in range(len(favelas_rio)):
+    for j in range(len(df_v)):
+        if favelas_rio.iloc[i].geometry.buffer(0.0005).contains(
+            Point(df_v['longitude'][j], df_v['latitude'][j])
+        ):
+            victim_occurrences += 1
+</code></pre>
+
+    <figure>
+      <img src="Compare_victim_rates_outside-inside_fcu.svg" alt="Comparison of victim rates inside and outside favelas" />
+      <figcaption><strong>Figure 2.</strong> Distribution of annual victim rates from shooting incidents per 100,000 inhabitants, comparing favela territories (inside FCU) and non-favela areas (outside FCU) within the same AISPs. Thick bars show the interquartile range; thin bars the 2.5&ndash;97.5 percentile interval; dots show medians. The median rate inside favelas is roughly an order of magnitude higher than outside. Source: Fogo Cruzado; IBGE Censo 2022.</figcaption>
+    </figure>
+
+    <div class="callout warning">
+      <div class="callout-label">Interpretation note</div>
+      Favela boundaries in the Census shapefile follow administrative demarcation, not the full extent of faction-controlled territory. Some incidents in peri-favela areas may be misclassified as outside-FCU. The buffer correction mitigates but does not eliminate this.
+    </div>
+
+    <h2 id="timeseries">4. Time Series: CVLI and Police Actions in AISP 16</h2>
+
+    <p>I now focus on AISP 16, which covers the Complexo do Alem&atilde;o and Complexo da Penha. The time series covers January 2006 through December 2025. To reduce monthly noise, I fit a Generalized Additive Model (GAM) with a single spline term to each series.</p>
+
+    <div class="code-label">Python &mdash; GAM smoothing</div>
+<pre><code class="language-python">from pygam import LinearGAM, s
+
+gam_cvli = LinearGAM(s(0)).fit(x_new, 1e5 * alemao_cvlis_percapita)
+gam_amp  = LinearGAM(s(0)).fit(x_new, alemao_amp)
+</code></pre>
+
+    <figure>
+      <img src="CVLI_acao_policial_aisp16_RJ-EN.png" alt="Time series of CVLI death rate and police actions in AISP 16, 2006-2025" />
+      <figcaption><strong>Figure 3.</strong> GAM-smoothed monthly CVLI death rate per 100,000 inhabitants (left axis, blue) and monthly police action count (right axis, orange) in AISP 16, 2006&ndash;2025. Inset maps show the AISP location within Rio de Janeiro and the Complexo boundaries (gold). Source: ISP-RJ; IBGE Censo 2022.</figcaption>
+    </figure>
+
+    <p>The CVLI death rate fell sharply following the UPP occupation in 2010&ndash;2012 and remained low through roughly 2014&ndash;2015, then rose steadily as the UPP entered a period of fiscal constraint and operational contraction. Police action intensity does not track this pattern: it remains elevated throughout the post-pacification period without a corresponding reduction in CVLI. The Pearson correlation between the monthly smoothed series is not statistically significant ($r \approx 0.2$, $p > 0.05$). This absence of a simple negative correlation is the first empirical motivation for a mechanistic model.</p>
+
+    <h2 id="model">5. A Simple Dynamical Model</h2>
+
+    <h3 id="model-basic">Basic formulation</h3>
+
+    <p>I start from a predator-prey-style system where $H(t)$ is the CVLI death rate and $P(t)$ is the police enforcement intensity:</p>
+
+    <div class="math-block">
+    $$\begin{align}
+        \frac{dP}{dt} &= \alpha\, H(t - \tau) \\[6pt]
+        \frac{dH}{dt} &= \gamma\, H(t) - \delta\, P(t)\, H(t)
+    \end{align}$$
+    </div>
+
+    <p>Here $\delta$ is police effectiveness, $\alpha$ is the sensitivity of deployment to rising crime, $\tau$ is the response delay, and $\gamma$ is the intrinsic crime growth rate in the absence of enforcement. Rather than solving the full coupled system, I use the observed (GAM-smoothed) police action series directly as the input $P(t)$ and integrate only the $H(t)$ equation forward.</p>
+
+    <div class="code-label">Python &mdash; Euler integration with observed P(t)</div>
+<pre><code class="language-python">P  = gam_amp.predict(x_new)
+H  = np.zeros(len(x_new) + 1)
+H[0] = gam_cvli.predict(x_new)[0]
+dt = x_new[1] - x_new[0]
+pars = {'gamma': 0.4, 'delta': 0.028, 'Hmax': 200, 'tau': 1}
+
+for idx, t in enumerate(x_new):
+    Hd   = H[idx - pars['tau']] if idx >= pars['tau'] else 0
+    dHdt = pars['gamma'] * H[idx] * (1 - H[idx] / pars['Hmax']) \
+           - pars['delta'] * P[idx] * H[idx]
+    H[idx + 1] = H[idx] + dHdt * dt
+</code></pre>
+
+    <h3 id="model-extended">Time-varying parameters</h3>
+
+    <p>The empirical series shows a structural shift around 2012&ndash;2014 that a constant-coefficient model cannot reproduce. Two mechanisms can account for this: an increase in the intrinsic crime growth rate $\gamma$ as criminal organizations adapted to UPP presence, and a decline in police effectiveness $\delta$ as institutional legitimacy eroded. I model both as sigmoidal transitions centred at $t_c \approx 2012$:</p>
+
+    <div class="math-block">
+    $$\begin{align}
+        \gamma(t) &= \frac{\gamma_+}{1 + e^{-b_1(t - t_c)}} + \gamma_0 \\[6pt]
+        \delta(t) &= \frac{\delta_0 - \delta_-}{1 + e^{b_2(t - t_c)}} + \delta_-
+    \end{align}$$
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">Connection to institutional theory</div>
+      The time-variation in $\delta(t)$ formalizes Evans' (1995) argument that enforcement effectiveness depends on the state's social embeddedness in the community. As legitimacy erodes, the same enforcement intensity produces progressively less crime reduction.
+    </div>
+
+    <h3 id="model-scenarios">Three scenarios</h3>
+
+    <table>
+      <thead><tr><th>Scenario</th><th>$\gamma$</th><th>$\delta$</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>constant</td><td>constant</td><td>Baseline homogeneous model</td></tr>
+        <tr><td>2</td><td>$\gamma(t)$</td><td>constant</td><td>Adaptive criminal growth only</td></tr>
+        <tr><td>3</td><td>$\gamma(t)$</td><td>$\delta(t)$</td><td>Adaptive growth + declining effectiveness</td></tr>
+      </tbody>
+    </table>
+
+    <figure>
+      <img src="Modelo_CVLI_model_aisp16.png" alt="Model results for three scenarios against observed CVLI series in AISP 16" />
+      <figcaption><strong>Figure 4.</strong> Simulated CVLI death rate per 100,000 inhabitants under three model scenarios (colored lines) against the GAM-smoothed observed trend (dashed black) for AISP 16, 2006&ndash;2025. Scenario 1 fails to capture the post-2012 resurgence. Scenario 3, with time-varying $\gamma$ and $\delta$, produces the closest match. Source: ISP-RJ; author's calculations.</figcaption>
+    </figure>
+
+    <p>Only once we allow for a structural decline in enforcement effectiveness &mdash; a declining $\delta(t)$ &mdash; does the model begin to approximate the observed trajectory. Formal calibration via nonlinear least squares and sensitivity analysis remain to be done.</p>
+
+    <h2 id="discussion">6. Discussion</h2>
+
+    <p>Several patterns emerge consistently across the spatial, time-series, and modeling components of the analysis.</p>
+
+    <p>Shooting violence in Rio de Janeiro is highly concentrated in favela territory. The median annual victim rate per 100,000 inhabitants inside favelas is roughly an order of magnitude higher than in non-favela areas within the same AISPs, across the full distribution of communities.</p>
+
+    <p>The relationship between police enforcement intensity and lethal crime in AISP 16 is not well described by simple deterrence logic. The sharp CVLI reduction following the 2010&ndash;2012 occupation was not maintained despite continued enforcement activity in subsequent years, consistent with the findings of Bell&eacute;go and Drouard (2024) at the UPP programme level.</p>
+
+    <p>The dynamical model provides a candidate mechanism. If police effectiveness $\delta$ declines over time as institutional legitimacy erodes, then constant or increasing enforcement intensity will produce rising crime outcomes after a threshold. The October 2025 Megaopera&ccedil;&atilde;o Conten&ccedil;&atilde;o fits naturally into this framework: by the time of the operation, the institutional legitimacy of the state in the Complexo do Alem&atilde;o/Penha had been depleted by years of abusive enforcement and the effective collapse of the UPP community policing model. A massive enforcement operation in a low-legitimacy environment should produce a large transient spike in police-involved incidents without generating sustained reductions in community violence &mdash; because the mechanism through which enforcement reduces crime (community cooperation, information sharing, and the social embedding of formal authority) is absent. The Fogo Cruzado data in the months following the operation are consistent with this prediction.</p>
+
+    <p>The next steps are to extend the model to include a third state variable for institutional legitimacy, implement formal nonlinear least squares calibration, incorporate Disque Den&uacute;ncia data as a reporting-correction mechanism and legitimacy proxy, and extend the comparative analysis to Rocinha to exploit the cross-territory variation that motivates the comparative case design.</p>
+
+    <h2 id="data-sources">Data sources</h2>
+
+    <table>
+      <thead><tr><th>Source</th><th>Data</th><th>Access</th></tr></thead>
+      <tbody>
+        <tr><td>Instituto Fogo Cruzado</td><td>Georeferenced shooting incidents with victim counts, 2022&ndash;2024</td><td><a href="https://api.fogocruzado.org.br/search" target="_blank">api.fogocruzado.org.br</a></td></tr>
+        <tr><td>ISP-RJ</td><td>Monthly CVLI, robbery, and police action statistics by CISP/AISP, 2003&ndash;2025</td><td><a href="https://www.ispdados.rj.gov.br/estatistica.html" target="_blank">ispdados.rj.gov.br</a></td></tr>
+        <tr><td>IBGE Censo Demogr&aacute;fico 2022</td><td>Population by neighborhood; FCU shapefile</td><td><a href="https://censo2022.ibge.gov.br" target="_blank">censo2022.ibge.gov.br</a></td></tr>
+        <tr><td>SISPOL/PMERJ</td><td>AISP and CISP boundary shapefiles (July 2024)</td><td>Via ISP-RJ</td></tr>
+        <tr><td>geobr</td><td>Rio de Janeiro municipality and state geometries</td><td><a href="https://github.com/ipeaGIT/geobr" target="_blank">github.com/ipeaGIT/geobr</a></td></tr>
+      </tbody>
+    </table>
+
+    <div class="data-credit">
+      All code and processed data for this post are available at [repository link]. Figures were generated in Python using geopandas, matplotlib, seaborn, and pygam. The ODE integration uses a simple forward Euler scheme; model results should be treated as qualitative illustrations pending formal calibration.
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script>
+  (function () {
+    const headings = document.querySelectorAll('.post-body h2[id], .post-body h3[id]');
+    const links    = document.querySelectorAll('.post-toc a');
+    if (!headings.length || !links.length) return;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          links.forEach(l => l.classList.remove('toc-active'));
+          const a = document.querySelector(`.post-toc a[href="#${entry.target.id}"]`);
+          if (a) a.classList.add('toc-active');
+        }
+      });
+    }, { rootMargin: '-5% 0px -80% 0px' });
+    headings.forEach(h => observer.observe(h));
+  })();
+</script>

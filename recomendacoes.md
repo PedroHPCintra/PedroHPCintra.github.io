@@ -149,3 +149,5 @@ Se você quer ver mais sobre livros que li, veja meu perfil no [Goodreads](https
 - [Bertrand's Paradox (with 3blue1brown) - Numberphile](https://youtu.be/mZBwsm6B280?si=EP-qbOa4LHunZ4X0)
 
 - [The Crisis In Physics: Are We Missing 17 Layers of Reality?](https://youtu.be/cY6Y4lE3LTo?si=Dd8LHvA_YbjZQvlJ)
+
+- [The food industry is destroying us](https://youtu.be/eo9iKHhcZuQ?si=Ta219so90igdUJqr)
