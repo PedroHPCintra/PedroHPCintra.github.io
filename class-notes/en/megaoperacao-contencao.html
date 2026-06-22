@@ -1,7 +1,7 @@
 ---
 layout: sub-page
 title: "Crime, Police, and the Megaoperação Contenção in Rio de Janeiro"
-description: "A data exploration of shooting incidents and a preliminary dynamical model for AISP 16"
+description: "A preliminary dynamical model for testing hypothesis about the relationship between police and crime in Rio de Janeiro"
 ---
 
 <!-- ── MathJax + Highlight.js ──────────────────────────────────── -->
@@ -155,20 +155,22 @@ description: "A data exploration of shooting incidents and a preliminary dynamic
 
     <h2 id="context">1. Context</h2>
 
-    <p>On October 28, 2025, approximately 2,500 officers from the Civil and Military Police of Rio de Janeiro entered the Complexo do Alem&atilde;o and Complexo da Penha in what became known as the Megaopera&ccedil;&atilde;o Conten&ccedil;&atilde;o. The official objective was to contain the territorial expansion of Comando Vermelho (CV) and to execute some 100 outstanding arrest warrants. By the end of the operation, over 120 people had been killed, making it the deadliest police operation in the history of the state of Rio de Janeiro. Data from the Instituto Fogo Cruzado for the months that followed show no significant sustained reduction in incidents in the affected area.</p>
+    <p>On October 28, 2025, approximately 2,500 officers from the Civil and Military Police of Rio de Janeiro entered the Complexo do Alemão and Complexo da Penha, a favela complex in the north zone of Rio de Janeiro, in what became known as the Megaoperação Contenção. The official objective was to contain the territorial expansion of Comando Vermelho (CV, one of the biggest criminal organizations in the country) and to execute some 100 arrest warrants and 180 search and seizure warrants. By the end of the operation, <a href="https://www.nytimes.com/2025/10/29/world/americas/rio-brazil-police-raid-deaths.html">over 130 people had been killed and 100 arrests, as well as 118 weapons seized</a>, making it the deadliest police operation in the history of the state of Rio de Janeiro.
 
-    <p>This post documents a first attempt at studying the relationship between police enforcement and violent crime in this territory using longitudinal data and a simple dynamical systems model. The goal is not to produce a definitive causal analysis &mdash; that would require a more careful identification strategy and a richer model &mdash; but to establish some basic empirical patterns and to ask whether a mechanistic model of the enforcement-crime feedback loop can reproduce the broad features of what we observe in the data. This is exploratory and preliminary work; a more rigorous version of the analysis is in preparation.</p>
+    <p>After the operation, the debate regarding the efficacy of police force as a mean to fight organized crime and ensure public safety in contested zones gained a lot of the highlights. Some defend that the police is ineffective and the killings are a prove of the lack of preparadness from the police. Others state that this action will discourage individuals to join factions due to the risk it poses to their life. Other arguments are presented from both sides, heating the dabate. The problem with the discussion is that it is mostly based on the recall of case studies, narratives, sequence of "logical" connections and sometimes data that show or not correlations favoured to an argument. As I see it, this creates a fundamental problem of communication between both sides of the discussion, specially when the topic quickly becomes polarized and defending or critizing the operation becomes a signal to being a "leftist" or "rightist".</p>
+
+    <p>This post aims to a first attempt at studying the relationship between police enforcement and violent crime in this contested territory using longitudinal data and a simple dynamical systems model to lay down a formalization of some hypothesis raised by the arguments in the discussion. The goal is not to produce a definitive causal analysis (that would require a more careful identification strategy and a richer model) but to establish some basic empirical patterns and to test whether a few assumptions that supposedly dominate this relationship are enough to explain the observed data. This is exploratory and preliminary work; a more rigorous version of the analysis is under development.</p>
 
     <div class="callout">
-      <div class="callout-label">Research question</div>
-      Is enforcement of formal institutions via institutional agents an effective strategy in contested urban communities with settled informal institutional rules? The Complexo do Alem&atilde;o and Penha provide a natural laboratory: they have been subject to successive waves of intensive state enforcement since the late 2000s, with rich longitudinal data on both enforcement intensity and crime outcomes.
+      <div class="callout-label">Formal question at hand</div>
+      Is enforcement of order via police actions an effective strategy in contested urban communities with settled organized criminal gangs? Do a dynamical relationship between crime, recruitment, police reprimand and police actions, manage to recreate the historical pattern of violent crimes and robery at the region of Complexo do Alemão and Complexo da Penha in Rio de Janeiro?
     </div>
 
     <h2 id="data">2. Data</h2>
 
     <h3 id="fogo-cruzado">Fogo Cruzado</h3>
 
-    <p>The primary spatial data source is the <a href="https://fogocruzado.org.br" target="_blank">Instituto Fogo Cruzado</a>, which records georeferenced shooting incidents across the metropolitan region of Rio de Janeiro, derived from Disque Den&uacute;ncia tip data. Each occurrence is classified as involving victims (dead or wounded) or not, with further breakdowns by civilian/police status, age category, and whether the incident took place during a police action. I use data covering 2022&ndash;2024 for the spatial analysis.</p>
+    <p>The primary spatial data source is the <a href="https://fogocruzado.org.br" target="_blank">Instituto Fogo Cruzado</a>, which records georeferenced shooting incidents across the metropolitan region of Rio de Janeiro, derived from Disque Denúncia tip data. Each occurrence is classified as involving victims (dead or wounded) or not, with further breakdowns by civilian/police status, age category, and whether the incident took place during a police action. I use data covering 2022&ndash;2024 for the spatial analysis.</p>
 
     <div class="code-label">Python &mdash; loading the Fogo Cruzado data</div>
 <pre><code class="language-python">year_start = 2022
@@ -185,7 +187,7 @@ for year in range(year_start, year_final + 1):
 
     <h3 id="isp-rj">ISP-RJ</h3>
 
-    <p>For the time series analysis I use the monthly historical series from the <a href="https://www.ispdados.rj.gov.br/estatistica.html" target="_blank">Instituto de Seguran&ccedil;a P&uacute;blica do Rio de Janeiro (ISP-RJ)</a>, which reports crime statistics disaggregated by delegacia (CISP) and integrated security area (AISP) from January 2003 onward. The primary outcome variable is <em>Crimes Violentos Letais Intencionais</em> (CVLI), encompassing intentional homicide, robbery followed by death, and grievous bodily harm resulting in death. The enforcement intensity variable, which I call <em>a&ccedil;&otilde;es policiais</em> (AMP), is the sum of monthly drug search-and-seizure warrants (<code>cmp</code>) and arrest warrant executions (<code>cmba</code>). This counts active enforcement events, not passive police presence.</p>
+    <p>For the time series analysis I use the monthly historical series from the <a href="https://www.ispdados.rj.gov.br/estatistica.html" target="_blank">Instituto de Segurança Pública do Rio de Janeiro (ISP-RJ)</a>, which reports crime statistics disaggregated by delegacia (CISP) and integrated security area (AISP) from January 2003 onward. The primary outcome variable is <em>Crimes Violentos Letais Intencionais</em> (CVLI), encompassing intentional homicide, robbery followed by death, and grievous bodily harm resulting in death. The enforcement intensity variable, which I call <em>ações policiais</em> (AMP), is the sum of monthly drug search-and-seizure warrants (<code>cmp</code>) and arrest warrant executions (<code>cmba</code>). This counts active enforcement events, not passive police presence.</p>
 
     <div class="code-label">Python &mdash; aggregating CVLI and police actions by zone</div>
 <pre><code class="language-python">df_cisp = pd.read_csv('BaseDPEvolucaoMensalCisp.csv', sep=';', encoding='iso-8859-1')
@@ -206,7 +208,7 @@ for y in range(begin_year, end_year + 1):
 
     <figure>
       <img src="victims_rj_metropolitan_AVG-2022-2024.svg" alt="Map of victim rates across Rio de Janeiro's metropolitan region, 2022-2024 average" />
-      <figcaption><strong>Figure 1.</strong> Annual average victim rate from shooting incidents per 100,000 inhabitants across Rio de Janeiro's metropolitan integrated security areas, 2022&ndash;2024. Victims include both civilians and police officers killed or wounded in shooting incidents recorded by Fogo Cruzado. The North Zone concentrations, including AISP 16 covering the Complexo do Alem&atilde;o and Penha, stand out clearly. Source: Fogo Cruzado; IBGE Censo 2022.</figcaption>
+      <figcaption><strong>Figure 1.</strong> Annual average victim rate from shooting incidents per 100,000 inhabitants across Rio de Janeiro's metropolitan integrated security areas, 2022&ndash;2024. Victims include both civilians and police officers killed or wounded in shooting incidents recorded by Fogo Cruzado. The North Zone concentrations, including AISP 16 covering the Complexo do Alemão and Penha, stand out clearly. Source: Fogo Cruzado; IBGE Censo 2022.</figcaption>
     </figure>
 
     <h3 id="favela-rate">Favelas vs. non-favelas within the same AISPs</h3>
@@ -236,7 +238,7 @@ for i in range(len(favelas_rio)):
 
     <h2 id="timeseries">4. Time Series: CVLI and Police Actions in AISP 16</h2>
 
-    <p>I now focus on AISP 16, which covers the Complexo do Alem&atilde;o and Complexo da Penha. The time series covers January 2006 through December 2025. To reduce monthly noise, I fit a Generalized Additive Model (GAM) with a single spline term to each series.</p>
+    <p>I now focus on AISP 16, which covers the Complexo do Alemão and Complexo da Penha. The time series covers January 2006 through December 2025. To reduce monthly noise, I fit a Generalized Additive Model (GAM) with a single spline term to each series.</p>
 
     <div class="code-label">Python &mdash; GAM smoothing</div>
 <pre><code class="language-python">from pygam import LinearGAM, s
@@ -256,7 +258,7 @@ gam_amp  = LinearGAM(s(0)).fit(x_new, alemao_amp)
 
     <h3 id="model-basic">Basic formulation</h3>
 
-    <p>I start from a predator-prey-style system where $H(t)$ is the CVLI death rate and $P(t)$ is the police enforcement intensity:</p>
+    <p>I start from a predator-prey-style system, which is commonly used to model relationships between police and criminals (see <a href="http://dx.doi.org/10.1098/rsos.160083">Sooknanan, J., Bhatt, B., & Comissiong, D. M. G. 2016)</a>, where $H(t)$ is the CVLI death rate and $P(t)$ is the police enforcement intensity:</p>
 
     <div class="math-block">
     $$\begin{align}
@@ -321,11 +323,11 @@ for idx, t in enumerate(x_new):
 
     <p>Shooting violence in Rio de Janeiro is highly concentrated in favela territory. The median annual victim rate per 100,000 inhabitants inside favelas is roughly an order of magnitude higher than in non-favela areas within the same AISPs, across the full distribution of communities.</p>
 
-    <p>The relationship between police enforcement intensity and lethal crime in AISP 16 is not well described by simple deterrence logic. The sharp CVLI reduction following the 2010&ndash;2012 occupation was not maintained despite continued enforcement activity in subsequent years, consistent with the findings of Bell&eacute;go and Drouard (2024) at the UPP programme level.</p>
+    <p>The relationship between police enforcement intensity and lethal crime in AISP 16 is not well described by simple deterrence logic. The sharp CVLI reduction following the 2010&ndash;2012 occupation was not maintained despite continued enforcement activity in subsequent years, consistent with the findings of Bellégo and Drouard (2024) at the UPP programme level.</p>
 
-    <p>The dynamical model provides a candidate mechanism. If police effectiveness $\delta$ declines over time as institutional legitimacy erodes, then constant or increasing enforcement intensity will produce rising crime outcomes after a threshold. The October 2025 Megaopera&ccedil;&atilde;o Conten&ccedil;&atilde;o fits naturally into this framework: by the time of the operation, the institutional legitimacy of the state in the Complexo do Alem&atilde;o/Penha had been depleted by years of abusive enforcement and the effective collapse of the UPP community policing model. A massive enforcement operation in a low-legitimacy environment should produce a large transient spike in police-involved incidents without generating sustained reductions in community violence &mdash; because the mechanism through which enforcement reduces crime (community cooperation, information sharing, and the social embedding of formal authority) is absent. The Fogo Cruzado data in the months following the operation are consistent with this prediction.</p>
+    <p>The dynamical model provides a candidate mechanism. If police effectiveness $\delta$ declines over time as institutional legitimacy erodes, then constant or increasing enforcement intensity will produce rising crime outcomes after a threshold. The October 2025 Megaoperação Contenção fits naturally into this framework: by the time of the operation, the institutional legitimacy of the state in the Complexo do Alemão/Penha had been depleted by years of abusive enforcement and the effective collapse of the UPP community policing model. A massive enforcement operation in a low-legitimacy environment should produce a large transient spike in police-involved incidents without generating sustained reductions in community violence &mdash; because the mechanism through which enforcement reduces crime (community cooperation, information sharing, and the social embedding of formal authority) is absent. The Fogo Cruzado data in the months following the operation are consistent with this prediction.</p>
 
-    <p>The next steps are to extend the model to include a third state variable for institutional legitimacy, implement formal nonlinear least squares calibration, incorporate Disque Den&uacute;ncia data as a reporting-correction mechanism and legitimacy proxy, and extend the comparative analysis to Rocinha to exploit the cross-territory variation that motivates the comparative case design.</p>
+    <p>The next steps are to extend the model to include a third state variable for institutional legitimacy, implement formal nonlinear least squares calibration, incorporate Disque Denúncia data as a reporting-correction mechanism and legitimacy proxy, and extend the comparative analysis to Rocinha to exploit the cross-territory variation that motivates the comparative case design.</p>
 
     <h2 id="data-sources">Data sources</h2>
 
@@ -334,7 +336,7 @@ for idx, t in enumerate(x_new):
       <tbody>
         <tr><td>Instituto Fogo Cruzado</td><td>Georeferenced shooting incidents with victim counts, 2022&ndash;2024</td><td><a href="https://api.fogocruzado.org.br/search" target="_blank">api.fogocruzado.org.br</a></td></tr>
         <tr><td>ISP-RJ</td><td>Monthly CVLI, robbery, and police action statistics by CISP/AISP, 2003&ndash;2025</td><td><a href="https://www.ispdados.rj.gov.br/estatistica.html" target="_blank">ispdados.rj.gov.br</a></td></tr>
-        <tr><td>IBGE Censo Demogr&aacute;fico 2022</td><td>Population by neighborhood; FCU shapefile</td><td><a href="https://censo2022.ibge.gov.br" target="_blank">censo2022.ibge.gov.br</a></td></tr>
+        <tr><td>IBGE Censo Demográfico 2022</td><td>Population by neighborhood; FCU shapefile</td><td><a href="https://censo2022.ibge.gov.br" target="_blank">censo2022.ibge.gov.br</a></td></tr>
         <tr><td>SISPOL/PMERJ</td><td>AISP and CISP boundary shapefiles (July 2024)</td><td>Via ISP-RJ</td></tr>
         <tr><td>geobr</td><td>Rio de Janeiro municipality and state geometries</td><td><a href="https://github.com/ipeaGIT/geobr" target="_blank">github.com/ipeaGIT/geobr</a></td></tr>
       </tbody>
