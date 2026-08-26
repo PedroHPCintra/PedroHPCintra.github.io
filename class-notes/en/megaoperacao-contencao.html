@@ -170,45 +170,23 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
 
     <h3 id="fogo-cruzado">Fogo Cruzado</h3>
 
-    <p>The primary spatial data source is the <a href="https://fogocruzado.org.br" target="_blank">Instituto Fogo Cruzado</a>, which records georeferenced shooting incidents across the metropolitan region of Rio de Janeiro, derived from Disque Denúncia tip data. Each occurrence is classified as involving victims (dead or wounded) or not, with further breakdowns by civilian/police status, age category, and whether the incident took place during a police action. I use data covering 2022&ndash;2024 for the spatial analysis.</p>
+    <p>The first data source is the <a href="https://fogocruzado.org.br" target="_blank">Instituto Fogo Cruzado</a>, which records georeferenced shooting incidents across the metropolitan region of Rio de Janeiro, derived from Disque Denúncia tip data. Each occurrence is classified as involving victims (dead or wounded) or not, with further breakdowns by civilian/police status, age category, and whether the incident took place during a police action. I use data covering 2022 - 2025 for a spatial analysis of the rate of victimsm from shootings accross the city of Rio de Janeiro. I choose to start from 2022 to eliminate anomalous effects during the COVID-19 pandemic. The results will thus show the annual average, based on these 4 recent years (2022, 2023, 2024 and 2025). A note worth mentioning is that victim counts aggregate civilians, police officers, children, teenagers, and the elderly across dead and wounded categories.</p>
 
-    <div class="code-label">Python &mdash; loading the Fogo Cruzado data</div>
-<pre><code class="language-python">year_start = 2022
-year_final = 2024
-n_years    = year_final - year_start + 1
-
-for year in range(year_start, year_final + 1):
-    df_v  = pd.read_csv(f'fc_api_occurrences_with_victims_{year}.csv')
-    df_nv = pd.read_csv(f'fc_api_occurrences__{year}.csv')
-    # concatenate with other-region files and accumulate
-</code></pre>
-
-    <p>Victim counts aggregate civilians, police officers, children, teenagers, and the elderly across dead and wounded categories. All annual figures reported below are averages over the three-year period to smooth out year-specific variation.</p>
+    <p>Disque Denúncia is a initiative operated by Public Security Secretariats across Brazil, it ensures anonymity of callers, without tracking IP, phone numbers or any personal data. The data is filtered to eliminate false accusations and to direct emergency registers to the police. Disque Denúncia receives registers of missing people, violence against women, fraud, tips on wanted criminals and shooting incidents, the last one is the one I'll be using to build one of the analysis on violence in Rio de Janeiro.</p>
 
     <h3 id="isp-rj">ISP-RJ</h3>
 
-    <p>For the time series analysis I use the monthly historical series from the <a href="https://www.ispdados.rj.gov.br/estatistica.html" target="_blank">Instituto de Segurança Pública do Rio de Janeiro (ISP-RJ)</a>, which reports crime statistics disaggregated by delegacia (CISP) and integrated security area (AISP) from January 2003 onward. The primary outcome variable is <em>Crimes Violentos Letais Intencionais</em> (CVLI), encompassing intentional homicide, robbery followed by death, and grievous bodily harm resulting in death. The enforcement intensity variable, which I call <em>ações policiais</em> (AMP), is the sum of monthly drug search-and-seizure warrants (<code>cmp</code>) and arrest warrant executions (<code>cmba</code>). This counts active enforcement events, not passive police presence.</p>
+    <p>For the time series analysis I use the monthly historical series from the <a href="https://www.ispdados.rj.gov.br/estatistica.html" target="_blank">Instituto de Segurança Pública do Rio de Janeiro (ISP-RJ)</a>, which reports crime statistics disaggregated by delegacia (CISP) and integrated security area (AISP) from January 2003 onward. The primary outcome variable is <em>Crimes Violentos Letais Intencionais</em> (CVLI), encompassing intentional homicide, robbery followed by death, and grievous bodily harm resulting in death. I am interested here in violent crimes, which I assume is what individuals fear the most (at least I fear more losing my life than my phone). The enforcement intensity variable, which I call <em>police actions</em> (AMP), represents not passive police presence on the streets, but incursion events that leads policemen to enter favelas and frequently engage in gunfire with local gangs. This is importat to state here because this means that the entire model developed here is not capable of of taking into account police presence, only actions registered on the system. Police action is then defined as the sum of monthly drug search-and-seizure warrants (<code>cmp</code>) and arrest warrant executions (<code>cmba</code>).</p>
 
-    <div class="code-label">Python &mdash; aggregating CVLI and police actions by zone</div>
-<pre><code class="language-python">df_cisp = pd.read_csv('BaseDPEvolucaoMensalCisp.csv', sep=';', encoding='iso-8859-1')
-north_zone_aisps = [17, 16, 6, 4, 3, 9, 41, 22]
-
-for y in range(begin_year, end_year + 1):
-    for aisp in north_zone_aisps:
-        filtered = df_cisp.loc[(df_cisp['aisp'] == aisp) & (df_cisp['ano'] == y)]
-        zones_cvlis[i, y - begin_year] += filtered['cvli'].sum()
-        zones_amp[i, y - begin_year]   += filtered['cmp'].sum() + filtered['cmba'].sum()
-</code></pre>
-
-    <p>Population estimates for each AISP are constructed from IBGE Census data (2000, 2010, 2022) with inter-censal values interpolated linearly. Per-capita rates are expressed per 100,000 inhabitants per year unless noted.</p>
+    <p>If the reader of this text is a Portuguese speaker, I highly recommend listenning to the podcast <em>A República das Milícias</em>. On it, you will see that a considerable fraction of police incursions on favelas do not go registered. This may be one of the largest limitations of our dataset. Finally, population estimates for each AISP are constructed from IBGE Census data (2000, 2010, 2022) for neighborhoods that are included in each AISP and years between census had their population estimated via a linear interpolation. Per-capita rates are expressed per 100,000 inhabitants per year unless noted.</p>
 
     <h2 id="spatial">3. Spatial Analysis of Shooting Incidents</h2>
 
-    <p>For each AISP in the metropolitan sample, I count the annual average number of victim-involving occurrences and total victims (dead plus wounded) over 2022&ndash;2024, then normalize by AISP population from the 2022 Census.</p>
+    <p>For each AISP in the metropolitan sample, I count the annual average number of victim-involving occurrences and total victims (dead plus wounded) over 2022-2025, then normalize by AISP population from the 2022 Census.</p>
 
     <figure>
-      <img src="victims_rj_metropolitan_AVG-2022-2024.svg" alt="Map of victim rates across Rio de Janeiro's metropolitan region, 2022-2024 average" />
-      <figcaption><strong>Figure 1.</strong> Annual average victim rate from shooting incidents per 100,000 inhabitants across Rio de Janeiro's metropolitan integrated security areas, 2022&ndash;2024. Victims include both civilians and police officers killed or wounded in shooting incidents recorded by Fogo Cruzado. The North Zone concentrations, including AISP 16 covering the Complexo do Alemão and Penha, stand out clearly. Source: Fogo Cruzado; IBGE Censo 2022.</figcaption>
+      <img src="https://pedrohpcintra.github.io/assets/img/class_notes/victims_rj_metropolitan_AVG-2022-2025-EN-US.png" alt="Map of victim rates across Rio de Janeiro's metropolitan region, 2022-2025 average" />
+      <figcaption><strong>Figure 1.</strong> Annual average victim rate from shooting incidents per 100,000 inhabitants across Rio de Janeiro's metropolitan integrated security areas, 2022-2024. Victims include both civilians and police officers killed or wounded in shooting incidents recorded by Fogo Cruzado. The North Zone concentrations, including AISP 16 covering the Complexo do Alemão and Penha, stand out clearly. Source: Fogo Cruzado; IBGE Censo 2022.</figcaption>
     </figure>
 
     <h3 id="favela-rate">Favelas vs. non-favelas within the same AISPs</h3>
