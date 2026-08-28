@@ -246,21 +246,21 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
 
     <h3 id="model-basic">Basic formulation</h3>
 
-    <p>In order to start writting down the model for what we should expect between police actions and violent crimes, let us start by thinking what should happen with crime in the absense of police, and what should happen with police in the absense of crime. Beginning by crime with no police. A reasonable thought I have is that without any law enforcement, criminal activity would rise, but not forever, eventually crime would saturate at some level. In cooperation games, the lack of some form of vigilance increases the number of players choosing to be selfish and not cooperate (see references [1] and [2] at the reference sections). Crime is then considered to be a self-replicating activity (due to recruting of civilians or incentives others feel to engange in ilegal activities). Writting $H$ as the violent death rate by intentional crimes (the CVLI) I would expect that at some point, more violence (translated into more deaths by CVLI) does not increase the benefits from criminal activity and thus $H$ would saturate at some point $H_{\max}$.</p>
+    <p>In order to start writting down the model for what we should expect between police actions and violent crimes, let us start by thinking what should happen with crime in the absense of police, and what should happen with police in the absense of crime. Beginning by crime with no police. A reasonable thought I have is that without any law enforcement, criminal activity would rise, but not forever, eventually crime would saturate at some level. In cooperation games, the lack of some form of vigilance increases the number of players choosing to be selfish and not cooperate (see references [1] and [2] at the reference sections). Crime is then considered to be a self-replicating activity (due to recruting of civilians or incentives others feel to engange in ilegal activities). Writting $H(t)$ as the monthly violent death rate by intentional crimes (the CVLI), I would expect that at some point more violence (translated into more deaths by CVLI) does not increase the benefits from criminal activity and thus $H$ would saturate at some point $H_{\max}$.</p>
 
     <div class="math-block">
     $$\begin{align}
-        \frac{dH}{dt} &= \gamma\, H\, \left(1 - \frac{H}{H_{\max}} \right) \, .
+        \frac{dH}{dt} &= \gamma\, H(t)\, \left(1 - \frac{H(t)}{H_{\max}} \right) \, .
     \end{align}$$
     </div>
 
     <p>The above equation is the mathematical formulation of what I just wrote, given the absence of police, crime first increases exponentially with a rate $\gamma$, slowing down until it eventually reaches a maximum of $H_{\max}$. Of course, fluctuations are expected, this model merely describes the tendency, not the point value at each month. The reader here may disagree with any of the thoughts I lay down here, the point is not that my reasoning is correct. Instead, I'm trying to lay down the most simple model for us to start thinking about this relationship more mechanistically.</p>
 
-    <p>Now we turn our attention to the police dynamics alone. Imagine that there is not crime. It vanishes suddenly! For sure, it wouldn't make sense to keep rising police actions. In fact, given the money spent on equipament, salaries and other stuff, if crime was non-existent governments would most likely diverge money to other resources, leading police actions to a decrease over time until it reaches 0, given that criminal absence persisted. We thus write $P$ as representing the frequency of police actions per month and assume that the baseline dynamics is characterized by</p>
+    <p>Now we turn our attention to the police dynamics alone. Imagine that there is not crime. It vanishes suddenly! For sure, it wouldn't make sense to keep rising police actions. In fact, given the money spent on equipament, salaries and other stuff, if crime was non-existent governments would most likely diverge money to other resources, leading police actions to a decrease over time until it reaches 0, given that criminal absence persisted. We thus write $P(t)$ as representing the frequency of police actions per month $t$ and assume that the baseline dynamics is characterized by</p>
 
     <div class="math-block">
     $$\begin{align}
-        \frac{dP}{dt} &= - \mu P \, ,
+        \frac{dP}{dt} &= - \mu P(t) \, ,
     \end{align}$$
     </div>
 
@@ -270,7 +270,7 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
 
     <div class="math-block">
     $$\begin{align}
-        \frac{dP}{dt} &= \alpha\, H(t - \tau) \\[6pt]
+        \frac{dP}{dt} &= \alpha\, H(t - \tau) - \mu P(t)\\[6pt]
         \frac{dH}{dt} &= \gamma\, H(t) - \delta\, P(t)\, H(t)
     \end{align}$$
     </div>
