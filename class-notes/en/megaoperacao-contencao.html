@@ -238,11 +238,23 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
       <figcaption><strong>Figure 3.</strong> GAM-smoothed monthly CVLI death rate per 100,000 inhabitants (left axis, blue) and monthly police action count (right axis, orange) in AISP 16, 2006-2025. Inset maps show the AISP location within Rio de Janeiro and the Complexo boundaries (gold). Source: ISP-RJ; IBGE Censo 2022.</figcaption>
     </figure>
 
-    <p>The CVLI death rate fell sharply following the UPP occupation in 2010-2012 and remained low through roughly 2014-2015, then rose steadily as the UPP entered a period of fiscal constraint and operational contraction. Police action intensity does not track this pattern: it remains elevated throughout the post-pacification period without a corresponding reduction in CVLI. The Pearson correlation between the monthly smoothed series is not statistically significant ($r \approx 0.2$, $p > 0.05$). This absence of a simple negative correlation is the first empirical motivation for a mechanistic model.</p>
+    <p>The CVLI death rate tendency fell sharply from 2007-2012 and remained low through roughly 2012-2015, then rose steadily until around 2017, decreasing back between 2018 to 2024, followed by a sharper decrease is 2025. The Pearson correlation between the monthly smoothed series is statistically significant ($r \approx -0.17$, $p < 0.01$). We are again back at a favorable result towards the police intervention argument.</p>
+
+    <p>We could continue on and on, building arguments that should lead to analysis of the same data from a different angle. This is why I don't think that simply looking at data with statistics is enough to test arguments and hypothesis. We need to bring our arguments to the realm of mathematics, where they can be formalized and used to generate expected behaviors, given our thoughts about the issue, that can be then compared to the data.</p>
 
     <h2 id="model">5. A Simple Dynamical Model</h2>
 
     <h3 id="model-basic">Basic formulation</h3>
+
+    <p>In order to start writting down the model for what we should expect between police actions and violent crimes, let us start by thinking what should happen with crime in the absense of police, and what should happen with police in the absense of crime. Beginning by crime with no police. A reasonable thought I have is that without any law enforcement, criminal activity would rise, but not forever, eventually crime would saturate at some level. In cooperation games, the lack of some form of vigilance increases the number of players choosing to be selfish and not cooperate (see references [1] and [2] at the reference sections). Crime is then considered to be a self-replicating activity (due to recruting of civilians or incentives others feel to engange in ilegal activities). Writting $H$ as the violent death rate by intentional crimes (the CVLI) I would expect that at some point, more violence (translated into more deaths by CVLI) does not increase the benefits from criminal activity and thus $H$ would saturate at some point $H_{\max}$.</p>
+
+    <div class="math-block">
+    $$\begin{align}
+        \frac{dH}{dt} &= \gamma\, H(t)\, \left(1 - \frac{H(t)}{H_{\max}} \right)
+    \end{align}$$
+    </div>
+
+    <p>The above equation is the mathematical formulation of what I just wrote, given the absence of police, crime first increases exponentially with a rate $\gamma$, slowing down until it eventually reaches a maximum of $H_{\max}$. Of course, fluctuations are expected, this model merely describes the tendency, not the point value at each month. The reader here may disagree with any of the thoughts I lay down here, the point is not that my reasoning is correct. Instead, I'm trying to lay down the most simple model for us to start thinking about this relationship more mechanistically.</p>
 
     <p>I start from a predator-prey-style system, which is commonly used to model relationships between police and criminals (see <a href="http://dx.doi.org/10.1098/rsos.160083">Sooknanan, J., Bhatt, B., & Comissiong, D. M. G. 2016)</a>, where $H(t)$ is the CVLI death rate and $P(t)$ is the police enforcement intensity:</p>
 
@@ -254,20 +266,6 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
     </div>
 
     <p>Here $\delta$ is police effectiveness, $\alpha$ is the sensitivity of deployment to rising crime, $\tau$ is the response delay, and $\gamma$ is the intrinsic crime growth rate in the absence of enforcement. Rather than solving the full coupled system, I use the observed (GAM-smoothed) police action series directly as the input $P(t)$ and integrate only the $H(t)$ equation forward.</p>
-
-    <div class="code-label">Python &mdash; Euler integration with observed P(t)</div>
-<pre><code class="language-python">P  = gam_amp.predict(x_new)
-H  = np.zeros(len(x_new) + 1)
-H[0] = gam_cvli.predict(x_new)[0]
-dt = x_new[1] - x_new[0]
-pars = {'gamma': 0.4, 'delta': 0.028, 'Hmax': 200, 'tau': 1}
-
-for idx, t in enumerate(x_new):
-    Hd   = H[idx - pars['tau']] if idx >= pars['tau'] else 0
-    dHdt = pars['gamma'] * H[idx] * (1 - H[idx] / pars['Hmax']) \
-           - pars['delta'] * P[idx] * H[idx]
-    H[idx + 1] = H[idx] + dHdt * dt
-</code></pre>
 
     <h3 id="model-extended">Time-varying parameters</h3>
 
@@ -314,6 +312,14 @@ for idx, t in enumerate(x_new):
     <p>The dynamical model provides a candidate mechanism. If police effectiveness $\delta$ declines over time as institutional legitimacy erodes, then constant or increasing enforcement intensity will produce rising crime outcomes after a threshold. The October 2025 Megaoperação Contenção fits naturally into this framework: by the time of the operation, the institutional legitimacy of the state in the Complexo do Alemão/Penha had been depleted by years of abusive enforcement and the effective collapse of the UPP community policing model. A massive enforcement operation in a low-legitimacy environment should produce a large transient spike in police-involved incidents without generating sustained reductions in community violence &mdash; because the mechanism through which enforcement reduces crime (community cooperation, information sharing, and the social embedding of formal authority) is absent. The Fogo Cruzado data in the months following the operation are consistent with this prediction.</p>
 
     <p>The next steps are to extend the model to include a third state variable for institutional legitimacy, implement formal nonlinear least squares calibration, incorporate Disque Denúncia data as a reporting-correction mechanism and legitimacy proxy, and extend the comparative analysis to Rocinha to exploit the cross-territory variation that motivates the comparative case design.</p>
+
+    <h2 id="model">References</h2>
+
+    <ol>
+      <li>Tavoni, A., Dannenberg, A., Kallis, G., & Löschel, A. (2011). Inequality, communication, and the avoidance of disastrous climate change in a public goods game. <i>Proceedings of the National Academy of Sciences</i>, 108(29), 11825-11829.</li>
+      <li>Ostrom, E. (2000). Collective action and the evolution of social norms. <i>Journal of economic perspectives</i>, 14(3), 137-158.
+</li>
+    </ol>
 
     <h2 id="data-sources">Data sources</h2>
 
