@@ -266,20 +266,20 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
 
     <p>a exponential decay that keeps on and on, going eventually to 0.</p>
 
-    <p>I start from a predator-prey-style system, which is commonly used to model relationships between police and criminals (see <a href="http://dx.doi.org/10.1098/rsos.160083">Sooknanan, J., Bhatt, B., & Comissiong, D. M. G. 2016)</a>, where $H(t)$ is the CVLI death rate and $P(t)$ is the police enforcement intensity:</p>
+    <!-- <p>I start from a predator-prey-style system, which is commonly used to model relationships between police and criminals (see <a href="http://dx.doi.org/10.1098/rsos.160083">Sooknanan, J., Bhatt, B., & Comissiong, D. M. G. 2016)</a>, where $H(t)$ is the CVLI death rate and $P(t)$ is the police enforcement intensity:</p> -->
 
-    <div class="math-block">
+    <!-- <div class="math-block">
     $$\begin{align}
         \frac{dP}{dt} &= \alpha\, H(t - \tau) - \mu P(t)\\[6pt]
         \frac{dH}{dt} &= \gamma\, H(t) - \delta\, P(t)\, H(t)
     \end{align}$$
-    </div>
+    </div> -->
 
-    <p>Here $\delta$ is police effectiveness, $\alpha$ is the sensitivity of deployment to rising crime, $\tau$ is the response delay, and $\gamma$ is the intrinsic crime growth rate in the absence of enforcement. Rather than solving the full coupled system, I use the observed (GAM-smoothed) police action series directly as the input $P(t)$ and integrate only the $H(t)$ equation forward.</p>
+    <!-- <p>Here $\delta$ is police effectiveness, $\alpha$ is the sensitivity of deployment to rising crime, $\tau$ is the response delay, and $\gamma$ is the intrinsic crime growth rate in the absence of enforcement. Rather than solving the full coupled system, I use the observed (GAM-smoothed) police action series directly as the input $P(t)$ and integrate only the $H(t)$ equation forward.</p> -->
 
     <h3 id="model-extended">Time-varying parameters</h3>
 
-    <p>The empirical series shows a structural shift around 2012&ndash;2014 that a constant-coefficient model cannot reproduce. Two mechanisms can account for this: an increase in the intrinsic crime growth rate $\gamma$ as criminal organizations adapted to UPP presence, and a decline in police effectiveness $\delta$ as institutional legitimacy eroded. I model both as sigmoidal transitions centred at $t_c \approx 2012$:</p>
+    <!-- <p>The empirical series shows a structural shift around 2012&ndash;2014 that a constant-coefficient model cannot reproduce. Two mechanisms can account for this: an increase in the intrinsic crime growth rate $\gamma$ as criminal organizations adapted to UPP presence, and a decline in police effectiveness $\delta$ as institutional legitimacy eroded. I model both as sigmoidal transitions centred at $t_c \approx 2012$:</p>
 
     <div class="math-block">
     $$\begin{align}
@@ -291,11 +291,11 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
     <div class="callout">
       <div class="callout-label">Connection to institutional theory</div>
       The time-variation in $\delta(t)$ formalizes Evans' (1995) argument that enforcement effectiveness depends on the state's social embeddedness in the community. As legitimacy erodes, the same enforcement intensity produces progressively less crime reduction.
-    </div>
+    </div> -->
 
     <h3 id="model-scenarios">Three scenarios</h3>
 
-    <table>
+    <!-- <table>
       <thead><tr><th>Scenario</th><th>$\gamma$</th><th>$\delta$</th><th>Description</th></tr></thead>
       <tbody>
         <tr><td>1</td><td>constant</td><td>constant</td><td>Baseline homogeneous model</td></tr>
@@ -309,11 +309,11 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
       <figcaption><strong>Figure 4.</strong> Simulated CVLI death rate per 100,000 inhabitants under three model scenarios (colored lines) against the GAM-smoothed observed trend (dashed black) for AISP 16, 2006&ndash;2025. Scenario 1 fails to capture the post-2012 resurgence. Scenario 3, with time-varying $\gamma$ and $\delta$, produces the closest match. Source: ISP-RJ; author's calculations.</figcaption>
     </figure>
 
-    <p>Only once we allow for a structural decline in enforcement effectiveness &mdash; a declining $\delta(t)$ &mdash; does the model begin to approximate the observed trajectory. Formal calibration via nonlinear least squares and sensitivity analysis remain to be done.</p>
+    <p>Only once we allow for a structural decline in enforcement effectiveness &mdash; a declining $\delta(t)$ &mdash; does the model begin to approximate the observed trajectory. Formal calibration via nonlinear least squares and sensitivity analysis remain to be done.</p> -->
 
     <h2 id="discussion">6. Discussion</h2>
 
-    <p>Several patterns emerge consistently across the spatial, time-series, and modeling components of the analysis.</p>
+    <!-- <p>Several patterns emerge consistently across the spatial, time-series, and modeling components of the analysis.</p>
 
     <p>Shooting violence in Rio de Janeiro is highly concentrated in favela territory. The median annual victim rate per 100,000 inhabitants inside favelas is roughly an order of magnitude higher than in non-favela areas within the same AISPs, across the full distribution of communities.</p>
 
@@ -321,7 +321,7 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
 
     <p>The dynamical model provides a candidate mechanism. If police effectiveness $\delta$ declines over time as institutional legitimacy erodes, then constant or increasing enforcement intensity will produce rising crime outcomes after a threshold. The October 2025 Megaoperação Contenção fits naturally into this framework: by the time of the operation, the institutional legitimacy of the state in the Complexo do Alemão/Penha had been depleted by years of abusive enforcement and the effective collapse of the UPP community policing model. A massive enforcement operation in a low-legitimacy environment should produce a large transient spike in police-involved incidents without generating sustained reductions in community violence &mdash; because the mechanism through which enforcement reduces crime (community cooperation, information sharing, and the social embedding of formal authority) is absent. The Fogo Cruzado data in the months following the operation are consistent with this prediction.</p>
 
-    <p>The next steps are to extend the model to include a third state variable for institutional legitimacy, implement formal nonlinear least squares calibration, incorporate Disque Denúncia data as a reporting-correction mechanism and legitimacy proxy, and extend the comparative analysis to Rocinha to exploit the cross-territory variation that motivates the comparative case design.</p>
+    <p>The next steps are to extend the model to include a third state variable for institutional legitimacy, implement formal nonlinear least squares calibration, incorporate Disque Denúncia data as a reporting-correction mechanism and legitimacy proxy, and extend the comparative analysis to Rocinha to exploit the cross-territory variation that motivates the comparative case design.</p> -->
 
     <h2 id="model">References</h2>
 
