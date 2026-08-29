@@ -265,16 +265,30 @@ description: "A preliminary dynamical model for testing hypothesis about the rel
     \end{align}$$
     </div>
 
-    <p>a exponential decay that keeps on and on, going eventually to 0.</p>
+    <p>a exponential decay that keeps on and on, going eventually to 0. We can now think of the interaction between two things and the dynamics of it! First of all, I assume that police action is motivated through, primarily, violent crime levels. The main path through which police forces acquire knowledge of deaths by violent crimes is through reports $R(t)$, which are a fraction of true death rates $H(t)$ ($R(t) = p_R H(t) \, , 0 \leq p_R \leq 1$) and inteligence/investigations. The later takes some time $\theta$ to reveal a proportion $p_I$ of the real death rates. Thus the contribution from inteligence takes the form $p_I H(t)/\theta$. Finally, police action works as a response to criminal activity with some delay $\tau$, associated to the issue of mandates, planning and resource allocation. With all of this information, police action in the region increases on a rate $\beta$. Taking all of that into account, I consider that the police action dynamics takes the complete form</p>
+
+    <div class="math-block">
+    $$\begin{align}
+        \frac{dP}{dt} &= \left(p_R + \frac{p_I}{\theta}\right) \beta \, H(t - \tau) - \mu P(t)
+    \end{align}$$
+    </div>
+
+    where the combination $(p_R + p_I / \theta)\beta$ represents the intensity of police action increase, given a level of death rates by violent crime. It is worth noting here that I did not include the time delay in the reports itself because I'm assuming that this time is much smaller than the characteristic time of the system (months). Basically, if someones neighbor dies, I assume that this person will not take more than a month to report it. A reasonable assumption, I believe. To make things more compact, I'll write $(p_R + p_I / \theta)\beta = \alpha$, where $\alpha$ is a single constant that captures the sensitivity of police action to increases in violent crimes (CVLIs). We thus arrive at a compact form
+
+    <div class="math-block">
+    $$\begin{align}
+        \frac{dP}{dt} &= \alpha \, H(t - \tau) - \mu P(t) \, .
+    \end{align}$$
+    </div>
 
     <!-- <p>I start from a predator-prey-style system, which is commonly used to model relationships between police and criminals (see <a href="http://dx.doi.org/10.1098/rsos.160083">Sooknanan, J., Bhatt, B., & Comissiong, D. M. G. 2016)</a>, where $H(t)$ is the CVLI death rate and $P(t)$ is the police enforcement intensity:</p> -->
 
-    <!-- <div class="math-block">
+    <div class="math-block">
     $$\begin{align}
         \frac{dP}{dt} &= \alpha\, H(t - \tau) - \mu P(t)\\[6pt]
-        \frac{dH}{dt} &= \gamma\, H(t) - \delta\, P(t)\, H(t)
+        \frac{dH}{dt} &= \gamma\, H(t)\, \left(1 - \frac{H(t)}{H_{\max}} \right) - \delta\, P(t)\, H(t)
     \end{align}$$
-    </div> -->
+    </div>
 
     <!-- <p>Here $\delta$ is police effectiveness, $\alpha$ is the sensitivity of deployment to rising crime, $\tau$ is the response delay, and $\gamma$ is the intrinsic crime growth rate in the absence of enforcement. Rather than solving the full coupled system, I use the observed (GAM-smoothed) police action series directly as the input $P(t)$ and integrate only the $H(t)$ equation forward.</p> -->
 
